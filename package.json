@@ -1,0 +1,19 @@
+{
+  "name": "skyux-icons",
+  "version": "1.0.0",
+  "description": "A glyph font and stylesheet for displaying SKY UX icons.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackbaud/skyux-icons.git"
+  },
+  "author": "Blackbaud, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blackbaud/skyux-icons/issues"
+  },
+  "homepage": "https://github.com/blackbaud/skyux-icons#readme"
+}
