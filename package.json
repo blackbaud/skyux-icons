@@ -1,10 +1,9 @@
 {
   "name": "skyux-icons",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "A glyph font and stylesheet for displaying SKY UX icons.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./scripts/prepare-package.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +14,13 @@
   "bugs": {
     "url": "https://github.com/blackbaud/skyux-icons/issues"
   },
-  "homepage": "https://github.com/blackbaud/skyux-icons#readme"
+  "homepage": "https://github.com/blackbaud/skyux-icons#readme",
+  "pipelineSettings": {
+    "publishToCDN": true,
+    "publishToNPM": true
+  },
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "fs-extra": "9.0.0"
+  }
 }
