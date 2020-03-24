@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'skyux-icons';
+  src: url('../font/skyux-icons.eot?86158703');
+  src: url('../font/skyux-icons.eot?86158703#iefix') format('embedded-opentype'),
+       url('../font/skyux-icons.woff2?86158703') format('woff2'),
+       url('../font/skyux-icons.woff?86158703') format('woff'),
+       url('../font/skyux-icons.ttf?86158703') format('truetype'),
+       url('../font/skyux-icons.svg?86158703#skyux-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'skyux-icons';
+    src: url('../font/skyux-icons.svg?86158703#skyux-icons') format('svg');
+  }
+}
+*/
+ 
+ [class^="sky-i-"]:before, [class*=" sky-i-"]:before {
+  font-family: "skyux-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.sky-i-info:before { content: '\e800'; } /* '' */
+.sky-i-calendar:before { content: '\e801'; } /* '' */
+.sky-i-warning:before { content: '\e802'; } /* '' */
+.sky-i-clock:before { content: '\e803'; } /* '' */
+.sky-i-filter:before { content: '\e804'; } /* '' */
+.sky-i-sort:before { content: '\e805'; } /* '' */
+.sky-i-column-layout:before { content: '\e806'; } /* '' */
+.sky-i-newspaper:before { content: '\e807'; } /* '' */
+.sky-i-send:before { content: '\e808'; } /* '' */
+.sky-i-comment:before { content: '\e809'; } /* '' */
+.sky-i-check:before { content: '\e80a'; } /* '' */
+.sky-i-chevron-right:before { content: '\e80b'; } /* '' */
+.sky-i-chevron-up:before { content: '\e80c'; } /* '' */
+.sky-i-announcement:before { content: '\e80d'; } /* '' */
+.sky-i-thumbs-down:before { content: '\e80e'; } /* '' */
+.sky-i-chevron-down:before { content: '\e80f'; } /* '' */
+.sky-i-edit:before { content: '\e810'; } /* '' */
+.sky-i-add:before { content: '\e812'; } /* '' */
+.sky-i-chevron-left:before { content: '\e813'; } /* '' */
+.sky-i-search:before { content: '\e814'; } /* '' */
+.sky-i-close:before { content: '\e815'; } /* '' */
