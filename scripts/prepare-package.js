@@ -31,7 +31,7 @@ async function minifyCss() {
     const cssFilePath = path.join(distAssetsCssPath, cssFile);
     const cssFileParsedPath = path.parse(cssFilePath);
 
-    const css = await fs.readFile(cssFilePath, { encoding: 'utf-8'});
+    const css = await fs.readFile(cssFilePath, { encoding: 'utf-8' });
 
     const minifier = new CleanCSS(
       {
@@ -49,7 +49,7 @@ async function minifyCss() {
       `${cssFileParsedPath.name}.min${cssFileParsedPath.ext}`
     );
 
-    await fs.writeFile(cssMinifiedFilePath, cssMinified, { encoding: 'utf-8'});
+    await fs.writeFile(cssMinifiedFilePath, cssMinified, { encoding: 'utf-8' });
   }
 }
 
