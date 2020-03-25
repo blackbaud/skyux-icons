@@ -1,5 +1,5 @@
-const fs = require('fs-extra');
 const CleanCSS = require('clean-css');
+const fs = require('fs-extra');
 const path = require('path');
 
 const projectPath = path.join(__dirname, '..');
