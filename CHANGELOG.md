@@ -1,6 +1,6 @@
 # 3.0.0-beta.0 (2020-03-26)
 
-- Initial beta release.
+- Initial beta release. [#4](https://github.com/blackbaud/skyux-icons/pull/4)
 
 # 3.0.0-alpha.1 (2020-03-25)
 
