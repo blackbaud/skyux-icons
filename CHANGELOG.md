@@ -1,3 +1,7 @@
+# 3.0.0-beta.0 (2020-03-26)
+
+- Initial beta release.
+
 # 3.0.0-alpha.1 (2020-03-25)
 
 - Moved all files to the `dist/assets` folder so they can be picked up by the NPM publish step. [#2](https://github.com/blackbaud/skyux-icons/pull/2)
