@@ -1,0 +1,12 @@
+{
+  "glyphs": [
+    {
+      "name": "add",
+      "usage": ["Add"]
+    },
+    {
+      "name": "close",
+      "usage": ["Cancel", "Close"]
+    }
+  ]
+}

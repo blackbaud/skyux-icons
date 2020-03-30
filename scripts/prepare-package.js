@@ -55,24 +55,36 @@ async function minifyCss() {
 
 async function createManifest() {
   const configPath = path.join(srcPath, 'config.json');
+  const metadataPath = path.join(projectPath, 'metadata.json');
 
   const config = await fs.readJSON(configPath);
+  const metadata = await fs.readJSON(metadataPath);
 
   const manifest = {
     name: config.name,
     cssPrefix: config.css_prefix_text,
-    glyphs: config.glyphs.map((glyph) => {
-      return {
-        name: glyph.css,
-        code: glyph.code
-      };
-    })
+    glyphs: [...metadata.glyphs]
   };
 
-  const manifestPath = path.join(distAssetsPath, 'manifest.json');
+  for (const glyph of config.glyphs) {
+    const matchingGlyph = manifest.glyphs.find(item => item.name === glyph.css);
+
+    const glpyhData = {
+      name: glyph.css,
+      code: glyph.code
+    };
+
+    if (matchingGlyph) {
+      Object.assign(matchingGlyph, glpyhData);
+    } else {
+      manifest.glyphs.push(glpyhData);
+    }
+  }
+
+  const manifestDistPath = path.join(distAssetsPath, 'manifest.json');
 
   await fs.writeJSON(
-    manifestPath,
+    manifestDistPath,
     manifest,
     {
       spaces: 2
