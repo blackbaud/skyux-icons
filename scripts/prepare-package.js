@@ -63,6 +63,11 @@ async function createManifest() {
   const manifest = {
     name: config.name,
     cssPrefix: config.css_prefix_text,
+    // Initialize the glyph list with items from metadata.json; additional properties will be
+    // added from matching items in config.json. Any items from config.json without a matching
+    // item in metadata.json will be added to the end of the list. This preserves the order
+    // of the items in metadata.json so documentation generated from the list will be in the
+    // specified order.
     glyphs: [...metadata.glyphs]
   };
 
@@ -75,8 +80,10 @@ async function createManifest() {
     };
 
     if (matchingGlyph) {
+      // Preserve the order in metadata.json by updating the properties on the existing item.
       Object.assign(matchingGlyph, glpyhData);
     } else {
+      // The item is missing from metadata.json; append it to the end.
       manifest.glyphs.push(glpyhData);
     }
   }
