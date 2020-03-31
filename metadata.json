@@ -47,6 +47,26 @@
     {
       "name": "info",
       "usage": ["More information"]
+    },
+    {
+      "name": "sort",
+      "usage": ["Sort"]
+    },
+    {
+      "name": "column-layout",
+      "usage": ["Column layout"]
+    },
+    {
+      "name": "send",
+      "usage": ["Send"]
+    },
+    {
+      "name": "comment",
+      "usage": ["Comment"]
+    },
+    {
+      "name": "announcement",
+      "usage": ["Announcement"]
     }
   ]
 }
