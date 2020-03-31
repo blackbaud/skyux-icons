@@ -15,7 +15,7 @@ The URLs in the examples point to minified files. If you would like to load the 
 
 `@import url("https://sky.blackbaudcdn.net/static/skyux-icons/<version>/assets/css/skyux-icons.min.css");`
 
-If you are using the SKY UX icon font in a non-web-based project, you may also install it via NPM:
+If you are using the SKY UX icon font in a non-web-based project, you may install it via NPM:
 
 `npm install @skyux/icons`
 
@@ -25,7 +25,7 @@ If you are using SKY UX icons in a [SKY UX](https://developer.blackbaud.com/skyu
 
 To display an icon on an HTML page, specify an element with the CSS class `sky-i-` followed by the name of the icon. It is typical to use an `i` element for displaying icons from an icon font.
 
-`<i class="sky-i-calendar></i>`
+`<i class="sky-i-calendar"></i>`
 
 If you are using SKY UX, use the `sky-icon` component documented [here](https://host.nxt.blackbaud.com/skyux-indicators/docs/icon).
 
@@ -41,7 +41,7 @@ The SKY UX icon font is generated using [Fontello](http://fontello.com/). To add
 
 - To add a new icon, drag the SVG file onto Fontello's homepage, then switch to the "Customize Names" tab and give the icon a name that follows the [kebab-case](https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841) convention (where each word is all lowercase and separated by a hyphen).
 
-- To edit an existing icon, take note of the existing icon's name on the "Customize Names" tab and the character code on the "Customize Codes" tab on Fontello's homepage. Return to the "Select Icons" tab and drag the new icon's SVG file onto the page, then delete the existing icon. Change the new icon's name and character codes to the same values as the icon you are replacing. **When changing an existing icon, it is imperitave that you use the same name and character code for its replacement; otherwise you will break the icon for existing consumers!**
+- To edit an existing icon, take note of the existing icon's name on the "Customize Names" tab and the character code on the "Customize Codes" tab on Fontello's homepage. Return to the "Select Icons" tab and drag the new icon's SVG file onto the page, then delete the existing icon. Change the new icon's name and character codes to the same values as the icon you are replacing. **When changing an existing icon, it is imperitave that you use the same name and character code for its replacement; otherwise you will break the font for consumers!**
 
 - When you have finished editing the icons, click the "Download webfont" button at the top of the page.
 
