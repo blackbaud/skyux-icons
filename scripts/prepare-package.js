@@ -8,6 +8,14 @@ const distPath = path.join(projectPath, 'dist');
 const distAssetsPath = path.join(distPath, 'assets');
 const distAssetsCssPath = path.join(distAssetsPath, 'css');
 
+async function readUtf8(filePath) {
+  return fs.readFile(filePath, { encoding: 'utf-8' });
+}
+
+async function writeUtf8(filePath, contents) {
+  return fs.writeFile(filePath, contents, { encoding: 'utf-8'} );
+}
+
 async function copyToDist() {
   if (await fs.exists(distPath)) {
     await fs.emptyDir(distPath);
@@ -24,14 +32,27 @@ async function copyToDist() {
   );
 }
 
-async function minifyCss() {
+async function processCss() {
+  const cssOverridesFileNames = [
+    'skyux-icons-embedded.css',
+    'skyux-icons.css'
+  ];
+
+  const cssOverrides = await readUtf8(path.join(projectPath, 'overrides.css'));
+
   const cssFiles = await fs.readdir(distAssetsCssPath);
 
   for (const cssFile of cssFiles) {
     const cssFilePath = path.join(distAssetsCssPath, cssFile);
     const cssFileParsedPath = path.parse(cssFilePath);
 
-    const css = await fs.readFile(cssFilePath, { encoding: 'utf-8' });
+    let css = await readUtf8(cssFilePath);
+
+    if (cssOverridesFileNames.indexOf(cssFileParsedPath.base) >= 0) {
+      css = `${css}\n\n${cssOverrides}`;
+
+      await writeUtf8(cssFilePath, css);
+    }
 
     const minifier = new CleanCSS(
       {
@@ -49,7 +70,7 @@ async function minifyCss() {
       `${cssFileParsedPath.name}.min${cssFileParsedPath.ext}`
     );
 
-    await fs.writeFile(cssMinifiedFilePath, cssMinified, { encoding: 'utf-8' });
+    await writeUtf8(cssMinifiedFilePath, cssMinified);
   }
 }
 
@@ -101,6 +122,6 @@ async function createManifest() {
 
 (async () => {
   await copyToDist();
-  await minifyCss();
+  await processCss();
   await createManifest();
 })();
