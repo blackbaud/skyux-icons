@@ -26,7 +26,7 @@
     },
     {
       "name": "warning",
-      "usage": ["Inactive", "Warning"]
+      "usage": ["Danger", "Warning"]
     },
     {
       "name": "search",
@@ -39,10 +39,6 @@
     {
       "name": "check",
       "usage": ["Complete", "Success"]
-    },
-    {
-      "name": "thumbs-down",
-      "usage": ["Thumbs down"]
     },
     {
       "name": "info",
