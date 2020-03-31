@@ -67,6 +67,18 @@
     {
       "name": "announcement",
       "usage": ["Announcement"]
+    },
+    {
+      "name": "clock",
+      "usage": ["Time", "Timepicker"]
+    },
+    {
+      "name": "chevron-right",
+      "usage": ["Navigate to"]
+    },
+    {
+      "name": "chevron-left",
+      "usage": ["Back to"]
     }
   ]
 }
