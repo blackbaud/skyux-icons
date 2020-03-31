@@ -5,8 +5,48 @@
       "usage": ["Add"]
     },
     {
+      "name": "edit",
+      "usage": ["Edit"]
+    },
+    {
       "name": "close",
       "usage": ["Cancel", "Close"]
+    },
+    {
+      "name": "chevron-down",
+      "usage": ["Expand"]
+    },
+    {
+      "name": "chevron-up",
+      "usage": ["Collapse"]
+    },
+    {
+      "name": "calendar",
+      "usage": ["Calendar", "Date"]
+    },
+    {
+      "name": "warning",
+      "usage": ["Inactive", "Warning"]
+    },
+    {
+      "name": "search",
+      "usage": ["Search"]
+    },
+    {
+      "name": "filter",
+      "usage": ["Filter"]
+    },
+    {
+      "name": "check",
+      "usage": ["Complete", "Success"]
+    },
+    {
+      "name": "thumbs-down",
+      "usage": ["Thumbs down"]
+    },
+    {
+      "name": "info",
+      "usage": ["More information"]
     }
   ]
 }
