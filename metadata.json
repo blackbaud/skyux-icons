@@ -1,0 +1,68 @@
+{
+  "glyphs": [
+    {
+      "name": "add",
+      "usage": ["Add"]
+    },
+    {
+      "name": "edit",
+      "usage": ["Edit"]
+    },
+    {
+      "name": "close",
+      "usage": ["Cancel", "Close"]
+    },
+    {
+      "name": "chevron-down",
+      "usage": ["Expand"]
+    },
+    {
+      "name": "chevron-up",
+      "usage": ["Collapse"]
+    },
+    {
+      "name": "calendar",
+      "usage": ["Calendar", "Date"]
+    },
+    {
+      "name": "warning",
+      "usage": ["Danger", "Warning"]
+    },
+    {
+      "name": "search",
+      "usage": ["Search"]
+    },
+    {
+      "name": "filter",
+      "usage": ["Filter"]
+    },
+    {
+      "name": "check",
+      "usage": ["Complete", "Success"]
+    },
+    {
+      "name": "info",
+      "usage": ["More information"]
+    },
+    {
+      "name": "sort",
+      "usage": ["Sort"]
+    },
+    {
+      "name": "column-layout",
+      "usage": ["Column layout"]
+    },
+    {
+      "name": "clock",
+      "usage": ["Time", "Timepicker"]
+    },
+    {
+      "name": "chevron-right",
+      "usage": ["Navigate to"]
+    },
+    {
+      "name": "chevron-left",
+      "usage": ["Back to"]
+    }
+  ]
+}
