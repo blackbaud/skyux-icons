@@ -1,3 +1,8 @@
+# 3.0.0-beta.1 (2020-04-01)
+
+- Added icon usage documentation to the manifest file. [#5](https://github.com/blackbaud/skyux-icons/pull/5)
+- Removed the left and right margins from icons. [#5](https://github.com/blackbaud/skyux-icons/pull/5)
+
 # 3.0.0-beta.0 (2020-03-26)
 
 - Initial beta release. [#4](https://github.com/blackbaud/skyux-icons/pull/4)
