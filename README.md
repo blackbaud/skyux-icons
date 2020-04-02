@@ -47,6 +47,8 @@ The SKY UX icon font is generated using [Fontello](http://fontello.com/). To add
 
 - Unzip the contents of the downloaded file and drop them in this project's `src` folder, overwriting any existing files.
 
+- Update the `metadata.json` file at the root of this project with your added or updated icons, following the existing pattern in that file. Each new icon should be listed in this file with a `usage` property which lists the scenarios where the new icon should be used. Documentation is generated from this file, so if an icon is not listed, it will not be listed in the documentation and therefore hidden from consumers. If you are deprecating an icon, you can remove it from the list which will remove it from the documentation but not affect any code that already uses this icon. This is a way to "remove" an icon while not breaking existing consumers.
+
 - Commit your changes to your branch and push them to GitHub, then create a pull request so they can be reviewed.
 
 - Your work is now done. The owners of this repo will handle reviewing, merging and releasing your changes.
