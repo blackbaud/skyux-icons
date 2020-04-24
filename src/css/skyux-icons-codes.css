@@ -94,5 +94,7 @@
 .sky-i-triangle-solid:before { content: '\e862'; } /* '' */
 .sky-i-exclamation:before { content: '\e863'; } /* '' */
 .sky-i-circle-solid:before { content: '\e864'; } /* '' */
+.sky-i-group:before { content: '\e865'; } /* '' */
+.sky-i-group-solid:before { content: '\e866'; } /* '' */
 .sky-i-attach:before { content: '\e890'; } /* '' */
 .sky-i-add-circle-solid:before { content: '\e891'; } /* '' */
