@@ -14,8 +14,6 @@
 .sky-i-edit:before { content: '\e820'; } /* '' */
 .sky-i-ellipsis:before { content: '\e823'; } /* '' */
 .sky-i-filter:before { content: '\e82b'; } /* '' */
-.sky-i-help:before { content: '\e82c'; } /* '' */
-.sky-i-add-circle:before { content: '\e830'; } /* '' */
 .sky-i-open:before { content: '\e83d'; } /* '' */
 .sky-i-tile-drag:before { content: '\e854'; } /* '' */
 .sky-i-trash:before { content: '\e855'; } /* '' */
@@ -23,4 +21,3 @@
 .sky-i-triangle-solid:before { content: '\e862'; } /* '' */
 .sky-i-exclamation:before { content: '\e863'; } /* '' */
 .sky-i-circle-solid:before { content: '\e864'; } /* '' */
-.sky-i-add-circle-solid:before { content: '\e891'; } /* '' */
