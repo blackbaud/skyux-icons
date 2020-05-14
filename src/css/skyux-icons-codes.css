@@ -14,6 +14,7 @@
 .sky-i-edit:before { content: '\e820'; } /* '' */
 .sky-i-ellipsis:before { content: '\e823'; } /* '' */
 .sky-i-filter:before { content: '\e82b'; } /* '' */
+.sky-i-menu:before { content: '\e838'; } /* '' */
 .sky-i-open:before { content: '\e83d'; } /* '' */
 .sky-i-tile-drag:before { content: '\e854'; } /* '' */
 .sky-i-trash:before { content: '\e855'; } /* '' */
