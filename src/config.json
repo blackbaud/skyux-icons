@@ -7,6 +7,20 @@
   "ascent": 850,
   "glyphs": [
     {
+      "uid": "a1ded242a1a709bc59eb167276263ec8",
+      "css": "__do_not_delete",
+      "code": 59801,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "",
+        "width": 1500
+      },
+      "search": [
+        "sentinel"
+      ]
+    },
+    {
       "uid": "8c4246f4c4492b8bbcb626bd6b25f0b9",
       "css": "menu",
       "code": 59448,
