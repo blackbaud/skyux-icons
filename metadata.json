@@ -9,8 +9,16 @@
       "usage": ["Edit"]
     },
     {
+      "name": "trash",
+      "usage": ["Delete"]
+    },
+    {
       "name": "close",
       "usage": ["Cancel", "Close"]
+    },
+    {
+      "name": "open",
+      "usage": ["Open file"]
     },
     {
       "name": "chevron-down",
@@ -21,12 +29,32 @@
       "usage": ["Collapse"]
     },
     {
+      "name": "chevron-right",
+      "usage": ["Navigate to"]
+    },
+    {
+      "name": "chevron-left",
+      "usage": ["Back to"]
+    },
+    {
+      "name": "ellipsis",
+      "usage": ["More actions"]
+    },
+    {
+      "name": "menu",
+      "usage": ["Navigation menu"]
+    },
+    {
+      "name": "tile-drag",
+      "usage": ["Drag and drop handle"]
+    },
+    {
       "name": "calendar",
       "usage": ["Calendar", "Date"]
     },
     {
-      "name": "warning",
-      "usage": ["Danger", "Warning"]
+      "name": "clock",
+      "usage": ["Time", "Timepicker"]
     },
     {
       "name": "search",
@@ -37,32 +65,16 @@
       "usage": ["Filter"]
     },
     {
-      "name": "check",
-      "usage": ["Complete", "Success"]
-    },
-    {
-      "name": "info",
-      "usage": ["More information"]
-    },
-    {
       "name": "sort",
       "usage": ["Sort"]
     },
     {
-      "name": "column-layout",
+      "name": "columns",
       "usage": ["Column layout"]
     },
     {
-      "name": "clock",
-      "usage": ["Time", "Timepicker"]
-    },
-    {
-      "name": "chevron-right",
-      "usage": ["Navigate to"]
-    },
-    {
-      "name": "chevron-left",
-      "usage": ["Back to"]
+      "name": "check",
+      "usage": ["Complete", "Success"]
     }
   ]
 }
