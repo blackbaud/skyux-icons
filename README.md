@@ -39,6 +39,8 @@ The SKY UX icon font is generated using [Fontello](http://fontello.com/). To add
 
 - Navigate to [fontello.com](http://fontello.com/) and drag the `config.json` file in this project's `src` folder onto Fontello's homepage. This will load the font project for editing.
 
+- You will notice that the fist icon selected is blank and is named `__do_not_delete`. **DO NOT DELETE THIS ICON!** Without it, the SPA will not be able to detect that the font is loaded, causing rendering to be delayed by 3 seconds.
+
 - To add a new icon, drag the SVG file onto Fontello's homepage, then switch to the "Customize Names" tab and give the icon a name that follows the [kebab-case](https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841) convention (where each word is all lowercase and separated by a hyphen).
 
 - To edit an existing icon, take note of the existing icon's name on the "Customize Names" tab and the character code on the "Customize Codes" tab on Fontello's homepage. Return to the "Select Icons" tab and drag the new icon's SVG file onto the page, then delete the existing icon. Change the new icon's name and character codes to the same values as the icon you are replacing. **When changing an existing icon, it is imperitave that you use the same name and character code for its replacement; otherwise you will break the font for consumers!**
