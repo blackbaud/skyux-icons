@@ -12,6 +12,8 @@
 
 <glyph glyph-name="filter-solid" unicode="&#xe804;" d="M222 544v-31a14 14 0 0 1 4-9l203-205a14 14 0 0 0 4-10v-191a14 14 0 0 1 8-12l109-40a14 14 0 0 1 20 13l0 233a15 15 0 0 0 5 10l198 201a14 14 0 0 1 4 10v31z" horiz-adv-x="1000" />
 
+<glyph glyph-name="sort" unicode="&#xe805;" d="M793 489h-586a28 28 0 0 0 0 55h586a28 28 0 0 0 0-55z m-205-167h-381a28 28 0 0 0 0 56h381a28 28 0 0 0 0-56z m-206-166h-175a28 28 0 0 0 0 55h175a28 28 0 0 0 0-55z" horiz-adv-x="1000" />
+
 <glyph glyph-name="columns" unicode="&#xe806;" d="M861 711h-722a56 56 0 0 1-56-55v-612a56 56 0 0 1 56-55h722a56 56 0 0 1 56 55v612a56 56 0 0 1-56 55z m-500-667h-222v612h222z m278 0h-222v612h222z" horiz-adv-x="1000" />
 
 <glyph glyph-name="check" unicode="&#xe80a;" d="M381 81l-290 289a28 28 0 0 0 40 39l250-250 488 489a28 28 0 0 0 39-40z" horiz-adv-x="1000" />
