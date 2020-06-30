@@ -1,3 +1,7 @@
+# 4.0.0-beta.0 (2020-06-30)
+
+- Fixed an issue where some icons displayed diagonal lines on pages in Chrome on Windows. [#14](https://github.com/blackbaud/skyux-icons/pull/14)
+
 # 3.0.0-beta.2 (2020-05-28)
 
 - Removed unused icons and cleaned up icon names. [#10](https://github.com/blackbaud/skyux-icons/pull/10)
