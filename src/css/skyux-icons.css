@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'skyux-icons';
-  src: url('../font/skyux-icons.eot?96134914');
-  src: url('../font/skyux-icons.eot?96134914#iefix') format('embedded-opentype'),
-       url('../font/skyux-icons.woff2?96134914') format('woff2'),
-       url('../font/skyux-icons.woff?96134914') format('woff'),
-       url('../font/skyux-icons.ttf?96134914') format('truetype'),
-       url('../font/skyux-icons.svg?96134914#skyux-icons') format('svg');
+  src: url('../font/skyux-icons.eot?52124086');
+  src: url('../font/skyux-icons.eot?52124086#iefix') format('embedded-opentype'),
+       url('../font/skyux-icons.woff2?52124086') format('woff2'),
+       url('../font/skyux-icons.woff?52124086') format('woff'),
+       url('../font/skyux-icons.ttf?52124086') format('truetype'),
+       url('../font/skyux-icons.svg?52124086#skyux-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'skyux-icons';
-    src: url('../font/skyux-icons.svg?96134914#skyux-icons') format('svg');
+    src: url('../font/skyux-icons.svg?52124086#skyux-icons') format('svg');
   }
 }
 */
@@ -59,6 +59,7 @@
 .sky-i-calendar:before { content: '\e801'; } /* '' */
 .sky-i-form-line:before { content: '\e802'; } /* '' */
 .sky-i-clock:before { content: '\e803'; } /* '' */
+.sky-i-filter-solid:before { content: '\e804'; } /* '' */
 .sky-i-sort:before { content: '\e805'; } /* '' */
 .sky-i-columns:before { content: '\e806'; } /* '' */
 .sky-i-help-solid:before { content: '\e807'; } /* '' */
@@ -87,6 +88,7 @@
 .sky-i-bell-line:before { content: '\e828'; } /* '' */
 .sky-i-bell-solid:before { content: '\e829'; } /* '' */
 .sky-i-help-line:before { content: '\e82a'; } /* '' */
+.sky-i-filter:before { content: '\e82b'; } /* '' */
 .sky-i-double-chevron-left:before { content: '\e82c'; } /* '' */
 .sky-i-double-chevron-right:before { content: '\e82d'; } /* '' */
 .sky-i-menu:before { content: '\e838'; } /* '' */
@@ -97,5 +99,4 @@
 .sky-i-triangle-solid:before { content: '\e862'; } /* '' */
 .sky-i-exclamation:before { content: '\e863'; } /* '' */
 .sky-i-circle-solid:before { content: '\e864'; } /* '' */
-.sky-i-filter-line:before { content: '\e901'; } /* '' */
 .sky-i-__do_not_delete:before { content: '\e999'; } /* '' */

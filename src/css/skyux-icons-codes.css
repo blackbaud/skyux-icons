@@ -3,6 +3,7 @@
 .sky-i-calendar:before { content: '\e801'; } /* '' */
 .sky-i-form-line:before { content: '\e802'; } /* '' */
 .sky-i-clock:before { content: '\e803'; } /* '' */
+.sky-i-filter-solid:before { content: '\e804'; } /* '' */
 .sky-i-sort:before { content: '\e805'; } /* '' */
 .sky-i-columns:before { content: '\e806'; } /* '' */
 .sky-i-help-solid:before { content: '\e807'; } /* '' */
@@ -31,6 +32,7 @@
 .sky-i-bell-line:before { content: '\e828'; } /* '' */
 .sky-i-bell-solid:before { content: '\e829'; } /* '' */
 .sky-i-help-line:before { content: '\e82a'; } /* '' */
+.sky-i-filter:before { content: '\e82b'; } /* '' */
 .sky-i-double-chevron-left:before { content: '\e82c'; } /* '' */
 .sky-i-double-chevron-right:before { content: '\e82d'; } /* '' */
 .sky-i-menu:before { content: '\e838'; } /* '' */
@@ -41,5 +43,4 @@
 .sky-i-triangle-solid:before { content: '\e862'; } /* '' */
 .sky-i-exclamation:before { content: '\e863'; } /* '' */
 .sky-i-circle-solid:before { content: '\e864'; } /* '' */
-.sky-i-filter-line:before { content: '\e901'; } /* '' */
 .sky-i-__do_not_delete:before { content: '\e999'; } /* '' */
