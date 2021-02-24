@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'skyux-icons';
-  src: url('../font/skyux-icons.eot?52124086');
-  src: url('../font/skyux-icons.eot?52124086#iefix') format('embedded-opentype'),
-       url('../font/skyux-icons.woff2?52124086') format('woff2'),
-       url('../font/skyux-icons.woff?52124086') format('woff'),
-       url('../font/skyux-icons.ttf?52124086') format('truetype'),
-       url('../font/skyux-icons.svg?52124086#skyux-icons') format('svg');
+  src: url('../font/skyux-icons.eot?56855530');
+  src: url('../font/skyux-icons.eot?56855530#iefix') format('embedded-opentype'),
+       url('../font/skyux-icons.woff2?56855530') format('woff2'),
+       url('../font/skyux-icons.woff?56855530') format('woff'),
+       url('../font/skyux-icons.ttf?56855530') format('truetype'),
+       url('../font/skyux-icons.svg?56855530#skyux-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'skyux-icons';
-    src: url('../font/skyux-icons.svg?52124086#skyux-icons') format('svg');
+    src: url('../font/skyux-icons.svg?56855530#skyux-icons') format('svg');
   }
 }
 */
