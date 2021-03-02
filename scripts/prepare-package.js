@@ -1,6 +1,7 @@
 const CleanCSS = require('clean-css');
 const fs = require('fs-extra');
 const path = require('path');
+const { exit } = require('process');
 
 const projectPath = path.join(__dirname, '..');
 const srcPath = path.join(projectPath, 'src');
@@ -116,7 +117,12 @@ async function createManifest() {
 }
 
 (async () => {
-  await copyToDist();
-  await processCss();
-  await createManifest();
+  try {
+    await copyToDist();
+    await processCss();
+    await createManifest();
+  } catch (err) {
+    console.error(err);
+    exit(1);
+  }
 })();
