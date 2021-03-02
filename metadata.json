@@ -9,7 +9,15 @@
       "usage": ["Edit"]
     },
     {
+      "name": "pencil-solid",
+      "usage": ["Edit"]
+    },
+    {
       "name": "trash",
+      "usage": ["Delete"]
+    },
+    {
+      "name": "trash-solid",
       "usage": ["Delete"]
     },
     {
@@ -37,6 +45,14 @@
       "usage": ["Back to"]
     },
     {
+      "name": "double-chevron-left",
+      "usage": ["Collapse navigation"]
+    },
+    {
+      "name": "double-chevron-right",
+      "usage": ["Expand navigation"]
+    },
+    {
       "name": "ellipsis",
       "usage": ["More actions"]
     },
@@ -53,7 +69,15 @@
       "usage": ["Calendar", "Date"]
     },
     {
+      "name": "calendar-solid",
+      "usage": ["Calendar", "Date"]
+    },
+    {
       "name": "clock",
+      "usage": ["Time", "Timepicker"]
+    },
+    {
+      "name": "clock-solid",
       "usage": ["Time", "Timepicker"]
     },
     {
@@ -62,6 +86,10 @@
     },
     {
       "name": "filter",
+      "usage": ["Filter"]
+    },
+    {
+      "name": "filter-line",
       "usage": ["Filter"]
     },
     {
@@ -75,6 +103,66 @@
     {
       "name": "check",
       "usage": ["Complete", "Success"]
-    }
+    },
+    {
+      "name": "check",
+      "usage": ["Complete", "Success"]
+    },
+    {
+      "name": "help-line",
+      "usage": ["Help"]
+    },
+    {
+      "name": "help-solid",
+      "usage": ["Help"]
+    },
+    {
+      "name": "bell-line",
+      "usage": ["Notifications"]
+    },
+    {
+      "name": "bell-solid",
+      "usage": ["Notifications"]
+    },
+    {
+      "name": "cog-solid",
+      "usage": ["Settings"]
+    },
+    {
+      "name": "cog-line",
+      "usage": ["Settings"]
+    },
+    {
+      "name": "dollar-bill-solid",
+      "usage": ["Financial"]
+    },
+    {
+      "name": "dollar-bill-line",
+      "usage": ["Financial"]
+    },
+    {
+      "name": "form-line",
+      "usage": ["Form"]
+    },
+    {
+      "name": "users-line",
+      "usage": ["User group"]
+    },
+    {
+      "name": "users-solid",
+      "usage": ["User group"]
+    },
+    {
+      "name": "house-line",
+      "usage": ["Home"]
+    },
+    {
+      "name": "house-solid",
+      "usage": ["Home"]
+    },
+    {
+      "name": "folder-open-solid",
+      "usage": ["Open"]
+    },
   ]
 }
