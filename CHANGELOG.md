@@ -1,3 +1,7 @@
+# 4.0.0-beta.1 (2021-03-02)
+
+- Added new icons. [#17](https://github.com/blackbaud/skyux-icons/pull/17)
+
 # 4.0.0-beta.0 (2020-06-30)
 
 - Fixed an issue where some icons displayed diagonal lines on pages in Chrome on Windows. [#14](https://github.com/blackbaud/skyux-icons/pull/14)
