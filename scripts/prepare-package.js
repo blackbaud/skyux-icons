@@ -116,7 +116,12 @@ async function createManifest() {
 }
 
 (async () => {
-  await copyToDist();
-  await processCss();
-  await createManifest();
+  try {
+    await copyToDist();
+    await processCss();
+    await createManifest();
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
 })();
