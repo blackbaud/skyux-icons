@@ -1,3 +1,7 @@
+# 4.0.0-beta.2 (2021-03-02)
+
+- Fixed an issue that kept the list of icons from displaying in the SKY UX documentation. [#20](https://github.com/blackbaud/skyux-icons/pull/20)
+
 # 4.0.0-beta.1 (2021-03-02)
 
 - Added new icons. [#17](https://github.com/blackbaud/skyux-icons/pull/17)
