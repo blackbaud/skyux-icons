@@ -1,32 +1,36 @@
 {
   "glyphs": [
     {
-      "name": "add",
+      "name": "add-line",
       "usage": ["Add"]
     },
     {
-      "name": "edit",
+      "name": "edit-line",
       "usage": ["Edit"]
     },
     {
-      "name": "pencil-solid",
+      "name": "edit-solid",
       "usage": ["Edit"]
     },
     {
-      "name": "trash",
+      "name": "delete-line",
       "usage": ["Delete"]
     },
     {
-      "name": "trash-solid",
+      "name": "delete-solid",
       "usage": ["Delete"]
     },
     {
-      "name": "close",
+      "name": "close-line",
       "usage": ["Cancel", "Close"]
     },
     {
-      "name": "open",
+      "name": "open-line",
       "usage": ["Open file"]
+    },
+    {
+      "name": "open-solid",
+      "usage": ["Open"]
     },
     {
       "name": "chevron-down",
@@ -57,7 +61,7 @@
       "usage": ["More actions"]
     },
     {
-      "name": "menu",
+      "name": "menu-line",
       "usage": ["Navigation menu"]
     },
     {
@@ -65,7 +69,7 @@
       "usage": ["Drag and drop handle"]
     },
     {
-      "name": "calendar",
+      "name": "calendar-line",
       "usage": ["Calendar", "Date"]
     },
     {
@@ -73,7 +77,7 @@
       "usage": ["Calendar", "Date"]
     },
     {
-      "name": "clock",
+      "name": "clock-line",
       "usage": ["Time", "Timepicker"]
     },
     {
@@ -81,11 +85,11 @@
       "usage": ["Time", "Timepicker"]
     },
     {
-      "name": "search",
+      "name": "search-line",
       "usage": ["Search"]
     },
     {
-      "name": "filter",
+      "name": "filter-solid",
       "usage": ["Filter"]
     },
     {
@@ -93,19 +97,15 @@
       "usage": ["Filter"]
     },
     {
-      "name": "sort",
+      "name": "sort-by-line",
       "usage": ["Sort"]
     },
     {
-      "name": "columns",
+      "name": "columns-line",
       "usage": ["Column layout"]
     },
     {
-      "name": "check",
-      "usage": ["Complete", "Success"]
-    },
-    {
-      "name": "check",
+      "name": "check-line",
       "usage": ["Complete", "Success"]
     },
     {
@@ -133,11 +133,11 @@
       "usage": ["Settings"]
     },
     {
-      "name": "dollar-bill-solid",
+      "name": "money-solid",
       "usage": ["Financial"]
     },
     {
-      "name": "dollar-bill-line",
+      "name": "money-line",
       "usage": ["Financial"]
     },
     {
@@ -153,16 +153,76 @@
       "usage": ["User group"]
     },
     {
-      "name": "house-line",
+      "name": "home-line",
       "usage": ["Home"]
     },
     {
-      "name": "house-solid",
+      "name": "home-solid",
       "usage": ["Home"]
     },
     {
-      "name": "folder-open-solid",
-      "usage": ["Open"]
-    }
+      "name": "credit-card-line",
+      "usage": ["Credit Card"]
+    },
+    {
+      "name": "credit-card-solid",
+      "usage": ["Credit Card"]
+    },
+    {
+      "name": "printer-line",
+      "usage": ["Print"]
+    },
+    {
+      "name": "printer-solid",
+      "usage": ["Print"]
+    },
+    {
+      "name": "duplicate-line",
+      "usage": ["Duplicate"]
+    },
+    {
+      "name": "duplicate-solid",
+      "usage": ["Duplicate"]
+    },
+    {
+      "name": "file-line",
+      "usage": ["File"]
+    },
+    {
+      "name": "file-solid",
+      "usage": ["File"]
+    },
+    {
+      "name": "thumbs-up-line",
+      "usage": ["Like"]
+    },
+    {
+      "name": "thumbs-up-solid",
+      "usage": ["Like"]
+    },
+    {
+      "name": "chat-solid",
+      "usage": ["Chat"]
+    },
+    {
+      "name": "chat-line",
+      "usage": ["Chat"]
+    },
+    {
+      "name": "phone-line",
+      "usage": ["Phone"]
+    },
+    {
+      "name": "email-line",
+      "usage": ["Email"]
+    },
+    {
+      "name": "email-solid",
+      "usage": ["Email"]
+    },
+    {
+      "name": "copy-to-clipboard-line",
+      "usage": ["Copy to clipboard"]
+    },
   ]
 }
