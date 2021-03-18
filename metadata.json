@@ -5,29 +5,63 @@
       "usage": ["Add"]
     },
     {
-      "name": "edit",
+      "name": "edit-line",
       "usage": ["Edit"]
+    },
+    {
+      "name": "edit-solid",
+      "usage": ["Edit"]
+    },
+    {
+      "name": "edit",
+      "usage": ["Edit"],
+      "replacedBy": ["edit-line"]
     },
     {
       "name": "pencil-solid",
-      "usage": ["Edit"]
+      "usage": ["Edit"],
+      "replacedBy": ["edit-solid"]
+    },
+    {
+      "name": "delete-line",
+      "usage": ["Delete"]
+    },
+    {
+      "name": "delete-solid",
+      "usage": ["Delete"]
     },
     {
       "name": "trash",
-      "usage": ["Delete"]
+      "usage": ["Delete"],
+      "replacedBy": ["delete-line"]
     },
     {
       "name": "trash-solid",
-      "usage": ["Delete"]
+      "usage": ["Delete"],
+      "replacedBy": ["delete-solid"]
     },
     {
       "name": "close",
       "usage": ["Cancel", "Close"]
     },
     {
-      "name": "open",
-      "usage": ["Open file"]
+      "name": "open-line",
+      "usage": ["Open file"],
     },
+    {
+      "name": "open-solid",
+      "usage": ["Open file"],
+    },
+    {
+      "name": "open",
+      "usage": ["Open file"],
+      "replacedBy": ["open-line"],
+    },
+    {
+      "name": "folder-open-solid",
+      "usage": ["Open"],
+      "replacedBy": ["open-solid"],
+    }
     {
       "name": "chevron-down",
       "usage": ["Expand"]
@@ -89,7 +123,7 @@
       "usage": ["Filter"]
     },
     {
-      "name": "filter-line",
+      "name": "filter-solid",
       "usage": ["Filter"]
     },
     {
@@ -105,10 +139,6 @@
       "usage": ["Complete", "Success"]
     },
     {
-      "name": "check",
-      "usage": ["Complete", "Success"]
-    },
-    {
       "name": "help-line",
       "usage": ["Help"]
     },
@@ -117,32 +147,62 @@
       "usage": ["Help"]
     },
     {
-      "name": "bell-line",
+      "name": "notification-line",
       "usage": ["Notifications"]
+    },
+    {
+      "name": "notification-solid",
+      "usage": ["Notifications"]
+    },
+    {
+      "name": "bell-line",
+      "usage": ["Notifications"],
+      "replacedBy": ["notification-line"],
     },
     {
       "name": "bell-solid",
-      "usage": ["Notifications"]
+      "usage": ["Notifications"],
+      "replacedBy": ["notification-solid"],
+    },
+    {
+      "name": "settings-solid",
+      "usage": ["Settings"]
+    },
+    {
+      "name": "settings-line",
+      "usage": ["Settings"]
     },
     {
       "name": "cog-solid",
-      "usage": ["Settings"]
+      "usage": ["Settings"],
+      "replacedBy": ["settings-solid"],
     },
     {
       "name": "cog-line",
-      "usage": ["Settings"]
+      "usage": ["Settings"],
+      "replacedBy": ["settings-line"],
+    },
+    {
+      "name": "money-solid",
+      "usage": ["Financial"]
+    },
+    {
+      "name": "money-line",
+      "usage": ["Financial"]
     },
     {
       "name": "dollar-bill-solid",
-      "usage": ["Financial"]
+      "usage": ["Financial"],
+      "replacedBy": ["money-solid"],
     },
     {
       "name": "dollar-bill-line",
-      "usage": ["Financial"]
+      "usage": ["Financial"],
+      "replacedBy": ["money-line"],
     },
     {
       "name": "form-line",
-      "usage": ["Form"]
+      "usage": ["Form"],
     },
     {
       "name": "users-line",
@@ -153,16 +213,86 @@
       "usage": ["User group"]
     },
     {
-      "name": "house-line",
+      "name": "home-line",
       "usage": ["Home"]
+    },
+    {
+      "name": "home-solid",
+      "usage": ["Home"]
+    },
+    {
+      "name": "house-line",
+      "usage": ["Home"],
+      "replacedBy": ["home-line"],
     },
     {
       "name": "house-solid",
-      "usage": ["Home"]
+      "usage": ["Home"],
+      "replacedBy": ["home-solid"],
     },
     {
-      "name": "folder-open-solid",
-      "usage": ["Open"]
-    }
+      "name": "credit-card-line",
+      "usage": ["Credit Card"]
+    },
+    {
+      "name": "credit-card-solid",
+      "usage": ["Credit Card"]
+    },
+    {
+      "name": "printer-line",
+      "usage": ["Print"]
+    },
+    {
+      "name": "printer-solid",
+      "usage": ["Print"]
+    },
+    {
+      "name": "duplicate-line",
+      "usage": ["Duplicate"]
+    },
+    {
+      "name": "duplicate-solid",
+      "usage": ["Duplicate"]
+    },
+    {
+      "name": "file-line",
+      "usage": ["File"]
+    },
+    {
+      "name": "file-solid",
+      "usage": ["File"]
+    },
+    {
+      "name": "thumbs-up-line",
+      "usage": ["Like"]
+    },
+    {
+      "name": "thumbs-up-solid",
+      "usage": ["Like"]
+    },
+    {
+      "name": "chat-solid",
+      "usage": ["Chat"]
+    },
+    {
+      "name": "chat-line",
+      "usage": ["Chat"]
+    },
+    {
+      "name": "phone-line",
+      "usage": ["Phone"]
+    },
+    {
+      "name": "email-line",
+      "usage": ["Email"]
+    },
+    {
+      "name": "email-solid",
+      "usage": ["Email"]
+    },
+    {
+      "name": "copy-to-clipboard-line",
+      "usage": ["Copy to clipboard"]
+    },
   ]
 }
