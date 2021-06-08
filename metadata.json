@@ -163,6 +163,182 @@
     {
       "name": "folder-open-solid",
       "usage": ["Open"]
+    },
+    {
+      "name": "notification-line",
+      "usage": ["Notifications"]
+    },
+    {
+      "name": "notification-solid",
+      "usage": ["Notifications"]
+    },
+    {
+      "name": "settings-solid",
+      "usage": ["Settings"]
+    },
+    {
+      "name": "settings-line",
+      "usage": ["Settings"]
+    },
+    {
+      "name": "money-solid",
+      "usage": ["Financial"]
+    },
+    {
+      "name": "money-line",
+      "usage": ["Financial"]
+    },
+    {
+      "name": "book-line",
+      "usage": ["Onboarding"]
+    },
+    {
+      "name": "coin-bag-line",
+      "usage": ["Financial"]
+    },
+    {
+      "name": "wand-line",
+      "usage": ["Onboarding"]
+    },
+    {
+      "name": "bar-chart-line",
+      "usage": ["Data visualization"]
+    },
+    {
+      "name": "user-line",
+      "usage": ["User single"]
+    },
+    {
+      "name": "align-left-text-line",
+      "usage": ["Left align text"]
+    },
+    {
+      "name": "align-right-text-line",
+      "usage": ["Right align text"]
+    },
+    {
+      "name": "center-text-line",
+      "usage": ["Center align text"]
+    },
+    {
+      "name": "list-line",
+      "usage": ["List"]
+    },
+    {
+      "name": "note-line",
+      "usage": ["Note"]
+    },
+    {
+      "name": "link-line",
+      "usage": ["Hyperlink"]
+    },
+    {
+      "name": "ban-line",
+      "usage": ["Ban"]
+    },
+    {
+      "name": "business-line",
+      "usage": ["Building"]
+    },
+    {
+      "name": "cloud-line",
+      "usage": ["Cloud"]
+    },
+    {
+      "name": "grid-view-line",
+      "usage": ["Grid view"]
+    },
+    {
+      "name": "star-line",
+      "usage": ["Favorite"]
+    },
+    {
+      "name": "tag-line",
+      "usage": ["Tag"]
+    },
+    {
+      "name": "save-line",
+      "usage": ["Save"]
+    },
+    {
+      "name": "upload-line",
+      "usage": ["Upload"]
+    },
+    {
+      "name": "zoom-out-line",
+      "usage": ["Zoom out"]
+    },
+    {
+      "name": "zoom-in-line",
+      "usage": ["Zoom in"]
+    },
+    {
+      "name": "image-line",
+      "usage": ["Image"]
+    },
+    {
+      "name": "bullet-list-line",
+      "usage": ["Bulleted list"]
+    },
+    {
+      "name": "number-list-line",
+      "usage": ["Numbered list"]
+    },
+    {
+      "name": "bold-line",
+      "usage": ["Bold text"]
+    },
+    {
+      "name": "font-size-line",
+      "usage": ["Font size"]
+    },
+    {
+      "name": "highlighter-line",
+      "usage": ["Highlight text"]
+    },
+    {
+      "name": "text-color-line",
+      "usage": ["Text color"]
+    },
+    {
+      "name": "subscript-line",
+      "usage": ["Subscript text"]
+    },
+    {
+      "name": "superscript-line",
+      "usage": ["Superscript text"]
+    },
+    {
+      "name": "italic-line",
+      "usage": ["Italicize text"]
+    },
+    {
+      "name": "strikethrough-line",
+      "usage": ["Strikethrough text"]
+    },
+    {
+      "name": "underline-line",
+      "usage": ["Underline text"]
+    },
+    {
+      "name": "justify-text-line",
+      "usage": ["Justify text"]
+    },
+    {
+      "name": "unlink-line",
+      "usage": ["Remove hyperlink"]
+    },
+    {
+      "name": "xls-file-line",
+      "usage": ["Excel file type"]
+    },
+    {
+      "name": "pdf-file-line",
+      "usage": ["PDF file type"]
+    },
+    {
+      "name": "doc-file-line",
+      "usage": ["Word file type"]
     }
   ]
 }

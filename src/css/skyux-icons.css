@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'skyux-icons';
-  src: url('../font/skyux-icons.eot?122702');
-  src: url('../font/skyux-icons.eot?122702#iefix') format('embedded-opentype'),
-       url('../font/skyux-icons.woff2?122702') format('woff2'),
-       url('../font/skyux-icons.woff?122702') format('woff'),
-       url('../font/skyux-icons.ttf?122702') format('truetype'),
-       url('../font/skyux-icons.svg?122702#skyux-icons') format('svg');
+  src: url('../font/skyux-icons.eot?42104676');
+  src: url('../font/skyux-icons.eot?42104676#iefix') format('embedded-opentype'),
+       url('../font/skyux-icons.woff2?42104676') format('woff2'),
+       url('../font/skyux-icons.woff?42104676') format('woff'),
+       url('../font/skyux-icons.ttf?42104676') format('truetype'),
+       url('../font/skyux-icons.svg?42104676#skyux-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'skyux-icons';
-    src: url('../font/skyux-icons.svg?122702#skyux-icons') format('svg');
+    src: url('../font/skyux-icons.svg?42104676#skyux-icons') format('svg');
   }
 }
 */
@@ -102,6 +102,7 @@
 .sky-i-double-chevron-left:before { content: '\e82c'; } /* '' */
 .sky-i-double-chevron-right:before { content: '\e82d'; } /* '' */
 .sky-i-doc-file-line:before { content: '\e82e'; } /* '' */
+.sky-i-trash-line:before { content: '\e82f'; } /* '' */
 .sky-i-envelope-line:before { content: '\e833'; } /* '' */
 .sky-i-envelope-solid:before { content: '\e834'; } /* '' */
 .sky-i-talk-bubbles-line:before { content: '\e835'; } /* '' */
@@ -136,7 +137,7 @@
 .sky-i-note-line:before { content: '\e852'; } /* '' */
 .sky-i-link-line:before { content: '\e853'; } /* '' */
 .sky-i-tile-drag:before { content: '\e854'; } /* '' */
-.sky-i-trash-line:before { content: '\e855'; } /* '' */
+.sky-i-trash:before { content: '\e855'; } /* '' */
 .sky-i-cloud-line:before { content: '\e856'; } /* '' */
 .sky-i-grid-view-line:before { content: '\e857'; } /* '' */
 .sky-i-star-line:before { content: '\e858'; } /* '' */
