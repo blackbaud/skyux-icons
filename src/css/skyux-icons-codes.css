@@ -47,6 +47,8 @@
 .sky-i-double-chevron-right:before { content: '\e82d'; } /* '' */
 .sky-i-doc-file-line:before { content: '\e82e'; } /* '' */
 .sky-i-trash-line:before { content: '\e82f'; } /* '' */
+.sky-i-pie-chart-line:before { content: '\e830'; } /* '' */
+.sky-i-donut-chart-line:before { content: '\e831'; } /* '' */
 .sky-i-envelope-line:before { content: '\e833'; } /* '' */
 .sky-i-envelope-solid:before { content: '\e834'; } /* '' */
 .sky-i-talk-bubbles-line:before { content: '\e835'; } /* '' */
@@ -110,4 +112,10 @@
 .sky-i-thumbs-up-line:before { content: '\e870'; } /* '' */
 .sky-i-phone-solid:before { content: '\e871'; } /* '' */
 .sky-i-phone-line:before { content: '\e872'; } /* '' */
+.sky-i-headline-chart-line:before { content: '\e873'; } /* '' */
+.sky-i-table-line:before { content: '\e874'; } /* '' */
+.sky-i-bar-chart-line-1:before { content: '\e875'; } /* '' */
+.sky-i-horizontal-bar-chart-line:before { content: '\e876'; } /* '' */
+.sky-i-line-chart-line:before { content: '\e877'; } /* '' */
+.sky-i-bullet-chart-line:before { content: '\e878'; } /* '' */
 .sky-i-__do_not_delete:before { content: '\e999'; } /* '' */

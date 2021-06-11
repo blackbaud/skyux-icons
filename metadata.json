@@ -339,6 +339,38 @@
     {
       "name": "doc-file-line",
       "usage": ["Word file type"]
+    },
+    {
+      "name": "bullet-chart-line",
+      "usage": ["Bullet chart"]
+    },
+    {
+      "name": "donut-chart-line",
+      "usage": ["Donut chart"]
+    },
+    {
+      "name": "pie-chart-line",
+      "usage": ["Pie chart"]
+    },
+    {
+      "name": "headline-chart-line",
+      "usage": ["Headline chart"]
+    },
+    {
+      "name": "table-line",
+      "usage": ["Table"]
+    },
+    {
+      "name": "bar-chart-line",
+      "usage": ["Bar chart"]
+    },
+    {
+      "name": "horizontal-bar-chart-line",
+      "usage": ["Horizontal bar chart"]
+    },
+    {
+      "name": "line-chart-line",
+      "usage": ["Line chart"]
     }
   ]
 }
