@@ -1,3 +1,7 @@
+# 4.0.0-beta.3 (2021-06-15)
+
+- Added new icons to support charting, text editing, and global navigation. [#25](https://github.com/blackbaud/skyux-icons/pull/25)
+
 # 4.0.0-beta.2 (2021-03-02)
 
 - Fixed an issue that kept the list of icons from displaying in the SKY UX documentation. [#20](https://github.com/blackbaud/skyux-icons/pull/20)
