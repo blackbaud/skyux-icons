@@ -1,6 +1,6 @@
 {
   "name": "@skyux/icons",
-  "version": "4.0.0-beta.3",
+  "version": "5.0.0-beta.0",
   "description": "A glyph font and stylesheet for displaying SKY UX icons.",
   "scripts": {
     "build": "node ./scripts/prepare-package.js"
@@ -22,6 +22,6 @@
   "devDependencies": {
     "clean-css": "4.2.3",
     "eslint": "6.8.0",
-    "fs-extra": "9.0.0"
+    "fs-extra": "9.1.0"
   }
 }
