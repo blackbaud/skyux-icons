@@ -49,6 +49,7 @@
 .sky-i-trash-line:before { content: '\e82f'; } /* '' */
 .sky-i-pie-chart-line:before { content: '\e830'; } /* '' */
 .sky-i-donut-chart-line:before { content: '\e831'; } /* '' */
+.sky-i-share-line:before { content: '\e832'; } /* '' */
 .sky-i-envelope-line:before { content: '\e833'; } /* '' */
 .sky-i-envelope-solid:before { content: '\e834'; } /* '' */
 .sky-i-talk-bubbles-line:before { content: '\e835'; } /* '' */
@@ -118,4 +119,9 @@
 .sky-i-horizontal-bar-chart-line:before { content: '\e876'; } /* '' */
 .sky-i-line-chart-line:before { content: '\e877'; } /* '' */
 .sky-i-bullet-chart-line:before { content: '\e878'; } /* '' */
+.sky-i-align-image-center-line:before { content: '\e87b'; } /* '' */
+.sky-i-align-image-left-line:before { content: '\e87c'; } /* '' */
+.sky-i-align-image-right-line:before { content: '\e87d'; } /* '' */
+.sky-i-divider-line:before { content: '\e87e'; } /* '' */
+.sky-i-social-share-line:before { content: '\e87f'; } /* '' */
 .sky-i-__do_not_delete:before { content: '\e999'; } /* '' */

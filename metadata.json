@@ -105,10 +105,6 @@
       "usage": ["Complete", "Success"]
     },
     {
-      "name": "check",
-      "usage": ["Complete", "Success"]
-    },
-    {
       "name": "help-line",
       "usage": ["Help"]
     },
@@ -371,6 +367,34 @@
     {
       "name": "line-chart-line",
       "usage": ["Line chart"]
+    },
+    {
+      "name": "bullet-chart-line",
+      "usage": ["Bullet chart"]
+    },
+    {
+      "name": "share-line",
+      "usage": ["Share"]
+    },
+    {
+      "name": "align-image-center-line",
+      "usage": ["Align image center"]
+    },
+    {
+      "name": "align-image-left-line",
+      "usage": ["Align image left"]
+    },
+    {
+      "name": "align-image-center-right",
+      "usage": ["Align image right"]
+    },
+    {
+      "name": "divider-line",
+      "usage": ["Divider"]
+    },
+    {
+      "name": "social-share-line",
+      "usage": ["Social share"]
     }
   ]
 }
