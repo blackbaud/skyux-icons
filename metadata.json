@@ -369,6 +369,10 @@
       "usage": ["Horizontal bar chart"]
     },
     {
+      "name": "line-chart-line",
+      "usage": ["Line chart"]
+    },
+    {
       "name": "undo-line",
       "usage": ["Undo"]
     },
