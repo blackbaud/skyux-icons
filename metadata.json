@@ -371,6 +371,22 @@
     {
       "name": "line-chart-line",
       "usage": ["Line chart"]
+    },
+    {
+      "name": "undo-line",
+      "usage": ["Undo"]
+    },
+    {
+      "name": "redo-line",
+      "usage": ["Redo"]
+    },
+    {
+      "name": "indent-line",
+      "usage": ["Indent"]
+    },
+    {
+      "name": "outdent-line",
+      "usage": ["Outdent"]
     }
   ]
 }

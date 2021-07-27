@@ -104,6 +104,7 @@
 .sky-i-strikethrough-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe866;&nbsp;'); }
 .sky-i-text-color-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe867;&nbsp;'); }
 .sky-i-superscript-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe868;&nbsp;'); }
+.sky-i-undo-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe869;&nbsp;'); }
 .sky-i-underline-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe86a;&nbsp;'); }
 .sky-i-justify-text-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe86b;&nbsp;'); }
 .sky-i-unlink-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe86c;&nbsp;'); }
@@ -119,9 +120,12 @@
 .sky-i-horizontal-bar-chart-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe876;&nbsp;'); }
 .sky-i-line-chart-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe877;&nbsp;'); }
 .sky-i-bullet-chart-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe878;&nbsp;'); }
+.sky-i-redo-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe879;&nbsp;'); }
 .sky-i-align-image-center-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe87b;&nbsp;'); }
 .sky-i-align-image-left-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe87c;&nbsp;'); }
 .sky-i-align-image-right-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe87d;&nbsp;'); }
 .sky-i-divider-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe87e;&nbsp;'); }
 .sky-i-social-share-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe87f;&nbsp;'); }
+.sky-i-indent-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe880;&nbsp;'); }
+.sky-i-outdent-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe881;&nbsp;'); }
 .sky-i-__do_not_delete { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe999;&nbsp;'); }
