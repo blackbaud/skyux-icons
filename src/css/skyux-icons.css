@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'skyux-icons';
-  src: url('../font/skyux-icons.eot?95793970');
-  src: url('../font/skyux-icons.eot?95793970#iefix') format('embedded-opentype'),
-       url('../font/skyux-icons.woff2?95793970') format('woff2'),
-       url('../font/skyux-icons.woff?95793970') format('woff'),
-       url('../font/skyux-icons.ttf?95793970') format('truetype'),
-       url('../font/skyux-icons.svg?95793970#skyux-icons') format('svg');
+  src: url('../font/skyux-icons.eot?92797234');
+  src: url('../font/skyux-icons.eot?92797234#iefix') format('embedded-opentype'),
+       url('../font/skyux-icons.woff2?92797234') format('woff2'),
+       url('../font/skyux-icons.woff?92797234') format('woff'),
+       url('../font/skyux-icons.ttf?92797234') format('truetype'),
+       url('../font/skyux-icons.svg?92797234#skyux-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,46 +15,45 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'skyux-icons';
-    src: url('../font/skyux-icons.svg?95793970#skyux-icons') format('svg');
+    src: url('../font/skyux-icons.svg?92797234#skyux-icons') format('svg');
   }
 }
 */
- 
- [class^="sky-i-"]:before, [class*=" sky-i-"]:before {
+[class^="sky-i-"]:before, [class*=" sky-i-"]:before {
   font-family: "skyux-icons";
   font-style: normal;
   font-weight: normal;
   speak: never;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
- 
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
+
 .sky-i-house-solid:before { content: '\e800'; } /* '' */
 .sky-i-calendar:before { content: '\e801'; } /* '' */
 .sky-i-form-line:before { content: '\e802'; } /* '' */
@@ -105,6 +104,7 @@
 .sky-i-trash-line:before { content: '\e82f'; } /* '' */
 .sky-i-pie-chart-line:before { content: '\e830'; } /* '' */
 .sky-i-donut-chart-line:before { content: '\e831'; } /* '' */
+.sky-i-share-line:before { content: '\e832'; } /* '' */
 .sky-i-envelope-line:before { content: '\e833'; } /* '' */
 .sky-i-envelope-solid:before { content: '\e834'; } /* '' */
 .sky-i-talk-bubbles-line:before { content: '\e835'; } /* '' */
@@ -159,6 +159,7 @@
 .sky-i-strikethrough-line:before { content: '\e866'; } /* '' */
 .sky-i-text-color-line:before { content: '\e867'; } /* '' */
 .sky-i-superscript-line:before { content: '\e868'; } /* '' */
+.sky-i-undo-line:before { content: '\e869'; } /* '' */
 .sky-i-underline-line:before { content: '\e86a'; } /* '' */
 .sky-i-justify-text-line:before { content: '\e86b'; } /* '' */
 .sky-i-unlink-line:before { content: '\e86c'; } /* '' */
@@ -174,4 +175,12 @@
 .sky-i-horizontal-bar-chart-line:before { content: '\e876'; } /* '' */
 .sky-i-line-chart-line:before { content: '\e877'; } /* '' */
 .sky-i-bullet-chart-line:before { content: '\e878'; } /* '' */
+.sky-i-redo-line:before { content: '\e879'; } /* '' */
+.sky-i-align-image-center-line:before { content: '\e87b'; } /* '' */
+.sky-i-align-image-left-line:before { content: '\e87c'; } /* '' */
+.sky-i-align-image-right-line:before { content: '\e87d'; } /* '' */
+.sky-i-divider-line:before { content: '\e87e'; } /* '' */
+.sky-i-social-share-line:before { content: '\e87f'; } /* '' */
+.sky-i-indent-line:before { content: '\e880'; } /* '' */
+.sky-i-outdent-line:before { content: '\e881'; } /* '' */
 .sky-i-__do_not_delete:before { content: '\e999'; } /* '' */

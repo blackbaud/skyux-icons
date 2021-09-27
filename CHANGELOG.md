@@ -1,3 +1,11 @@
+# 4.0.0-beta.5 (2021-07-27)
+
+- Added indent/outdent and undo/redo icons. [#30](https://github.com/blackbaud/skyux-icons/pull/30)
+
+# 4.0.0-beta.4 (2021-07-21)
+
+- Added new icons to support text editing. [#28](https://github.com/blackbaud/skyux-icons/pull/28)
+
 # 4.0.0-beta.3 (2021-06-15)
 
 - Added new icons to support charting, text editing, and global navigation. [#25](https://github.com/blackbaud/skyux-icons/pull/25)
