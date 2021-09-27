@@ -1,3 +1,7 @@
+# 5.0.0 (2021-09-27)
+
+- Initial 5.0.0 release. [#32](https://github.com/blackbaud/skyux-icons/pull/32)
+
 # 4.0.0-beta.5 (2021-07-27)
 
 - Added indent/outdent and undo/redo icons. [#30](https://github.com/blackbaud/skyux-icons/pull/30)
