@@ -387,6 +387,10 @@
     {
       "name": "outdent-line",
       "usage": ["Outdent"]
+    },
+    {
+      "name": "bb-brand-accent-line",
+      "usage": ["Blackbaud brand accent"]
     }
   ]
 }
