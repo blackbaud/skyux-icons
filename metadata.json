@@ -265,6 +265,10 @@
       "usage": ["Upload"]
     },
     {
+      "name": "download-line",
+      "usage": ["Download"]
+    },
+    {
       "name": "zoom-out-line",
       "usage": ["Zoom out"]
     },
@@ -373,6 +377,14 @@
       "usage": ["Line chart"]
     },
     {
+      "name": "pie-chart-line",
+      "usage": ["Pie chart"]
+    },
+    {
+      "name": "donut-chart-line",
+      "usage": ["Donut chart"]
+    },
+    {
       "name": "undo-line",
       "usage": ["Undo"]
     },
@@ -387,6 +399,10 @@
     {
       "name": "outdent-line",
       "usage": ["Outdent"]
+    },
+    {
+      "name": "talk-bubbles-line",
+      "usage": ["Talk bubbles"]
     },
     {
       "name": "bb-brand-accent-line",
