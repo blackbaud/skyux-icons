@@ -387,6 +387,14 @@
     {
       "name": "download-line",
       "usage": ["Download"]
+    },
+    {
+      "name": "hide",
+      "usage": ["Hide input"]
+    },
+    {
+      "name": "show",
+      "usage": ["Show input"]
     }
   ]
 }
