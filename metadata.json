@@ -229,8 +229,16 @@
       "usage": ["Note"]
     },
     {
+      "name": "attach-line",
+      "usage": ["Attach"]
+    },
+    {
       "name": "link-line",
       "usage": ["Hyperlink"]
+    },
+    {
+      "name": "unlink-line",
+      "usage": ["Remove hyperlink"]
     },
     {
       "name": "ban-line",
@@ -327,10 +335,6 @@
     {
       "name": "justify-text-line",
       "usage": ["Justify text"]
-    },
-    {
-      "name": "unlink-line",
-      "usage": ["Remove hyperlink"]
     },
     {
       "name": "xls-file-line",
