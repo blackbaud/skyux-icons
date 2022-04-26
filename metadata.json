@@ -225,8 +225,16 @@
       "usage": ["Note"]
     },
     {
+      "name": "attach-line",
+      "usage": ["Attach"]
+    },
+    {
       "name": "link-line",
       "usage": ["Hyperlink"]
+    },
+    {
+      "name": "unlink-line",
+      "usage": ["Remove hyperlink"]
     },
     {
       "name": "ban-line",
@@ -259,6 +267,10 @@
     {
       "name": "upload-line",
       "usage": ["Upload"]
+    },
+    {
+      "name": "download-line",
+      "usage": ["Download"]
     },
     {
       "name": "zoom-out-line",
@@ -321,10 +333,6 @@
       "usage": ["Justify text"]
     },
     {
-      "name": "unlink-line",
-      "usage": ["Remove hyperlink"]
-    },
-    {
       "name": "xls-file-line",
       "usage": ["Excel file type"]
     },
@@ -369,6 +377,14 @@
       "usage": ["Line chart"]
     },
     {
+      "name": "pie-chart-line",
+      "usage": ["Pie chart"]
+    },
+    {
+      "name": "donut-chart-line",
+      "usage": ["Donut chart"]
+    },
+    {
       "name": "undo-line",
       "usage": ["Undo"]
     },
@@ -383,6 +399,14 @@
     {
       "name": "outdent-line",
       "usage": ["Outdent"]
+    },
+    {
+      "name": "talk-bubbles-line",
+      "usage": ["Talk bubbles"]
+    },
+    {
+      "name": "bb-brand-accent-line",
+      "usage": ["Blackbaud brand accent"]
     },
     {
       "name": "download-line",
