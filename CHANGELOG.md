@@ -1,3 +1,9 @@
+# 5.1.0 (2022-04-26)
+
+- Added Blackbaud brandmark and download icons. [#34](https://github.com/blackbaud/skyux-icons/pull/34)
+- Added show/hide icons. [#35](https://github.com/blackbaud/skyux-icons/pull/35)
+- Reconciled duplicate glyphs and added new icons. [#33](https://github.com/blackbaud/skyux-icons/pull/33)
+
 # 5.0.0 (2021-09-27)
 
 - Initial 5.0.0 release. [#32](https://github.com/blackbaud/skyux-icons/pull/32)
