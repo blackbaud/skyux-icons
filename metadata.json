@@ -105,10 +105,6 @@
       "usage": ["Complete", "Success"]
     },
     {
-      "name": "check",
-      "usage": ["Complete", "Success"]
-    },
-    {
       "name": "help-line",
       "usage": ["Help"]
     },
@@ -411,6 +407,18 @@
     {
       "name": "bb-brand-accent-line",
       "usage": ["Blackbaud brand accent"]
+    },
+    {
+      "name": "download-line",
+      "usage": ["Download"]
+    },
+    {
+      "name": "hide",
+      "usage": ["Hide input"]
+    },
+    {
+      "name": "show",
+      "usage": ["Show input"]
     }
   ]
 }
