@@ -82,7 +82,7 @@
 .sky-i-center-text-line:before { content: '\e850'; } /* '' */
 .sky-i-list-line:before { content: '\e851'; } /* '' */
 .sky-i-note-line:before { content: '\e852'; } /* '' */
-.sky-i-link-line:before { content: '\e853'; } /* '' */
+.sky-i-attach-line:before { content: '\e853'; } /* '' */
 .sky-i-tile-drag:before { content: '\e854'; } /* '' */
 .sky-i-trash:before { content: '\e855'; } /* '' */
 .sky-i-cloud-line:before { content: '\e856'; } /* '' */
@@ -116,7 +116,7 @@
 .sky-i-phone-line:before { content: '\e872'; } /* '' */
 .sky-i-headline-chart-line:before { content: '\e873'; } /* '' */
 .sky-i-table-line:before { content: '\e874'; } /* '' */
-.sky-i-bar-chart-line-1:before { content: '\e875'; } /* '' */
+.sky-i-link-line:before { content: '\e875'; } /* '' */
 .sky-i-horizontal-bar-chart-line:before { content: '\e876'; } /* '' */
 .sky-i-line-chart-line:before { content: '\e877'; } /* '' */
 .sky-i-bullet-chart-line:before { content: '\e878'; } /* '' */
@@ -129,7 +129,4 @@
 .sky-i-indent-line:before { content: '\e880'; } /* '' */
 .sky-i-outdent-line:before { content: '\e881'; } /* '' */
 .sky-i-download-line:before { content: '\e882'; } /* '' */
-.sky-i-bb-diamond:before { content: '\e883'; } /* '' */
-.sky-i-hide:before { content: '\e97d'; } /* '' */
-.sky-i-show:before { content: '\e97e'; } /* '' */
 .sky-i-__do_not_delete:before { content: '\e999'; } /* '' */
