@@ -415,6 +415,10 @@
     {
       "name": "show",
       "usage": ["Show input"]
+    },
+    {
+      "name": "bb-brand-accent-line",
+      "usage": ["Blackbaud brand accent"]
     }
   ]
 }
