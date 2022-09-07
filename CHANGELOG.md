@@ -1,3 +1,7 @@
+# 5.1.1 (2022-09-07)
+
+- Replaced link glyph with correct glyph and added attach icon. [#38](https://github.com/blackbaud/skyux-icons/pull/38)
+
 # 5.1.0 (2022-04-27)
 
 - Added Blackbaud brandmark and download icons. [#34](https://github.com/blackbaud/skyux-icons/pull/34)
