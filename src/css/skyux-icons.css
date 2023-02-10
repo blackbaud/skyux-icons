@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'skyux-icons';
-  src: url('../font/skyux-icons.eot?12561902');
-  src: url('../font/skyux-icons.eot?12561902#iefix') format('embedded-opentype'),
-       url('../font/skyux-icons.woff2?12561902') format('woff2'),
-       url('../font/skyux-icons.woff?12561902') format('woff'),
-       url('../font/skyux-icons.ttf?12561902') format('truetype'),
-       url('../font/skyux-icons.svg?12561902#skyux-icons') format('svg');
+  src: url('../font/skyux-icons.eot?74355727');
+  src: url('../font/skyux-icons.eot?74355727#iefix') format('embedded-opentype'),
+       url('../font/skyux-icons.woff2?74355727') format('woff2'),
+       url('../font/skyux-icons.woff?74355727') format('woff'),
+       url('../font/skyux-icons.ttf?74355727') format('truetype'),
+       url('../font/skyux-icons.svg?74355727#skyux-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'skyux-icons';
-    src: url('../font/skyux-icons.svg?12561902#skyux-icons') format('svg');
+    src: url('../font/skyux-icons.svg?74355727#skyux-icons') format('svg');
   }
 }
 */
@@ -186,6 +186,21 @@
 .sky-i-download-line:before { content: '\e882'; } /* '' */
 .sky-i-bb-diamond:before { content: '\e883'; } /* '' */
 .sky-i-attach-line:before { content: '\e886'; } /* '' */
+.sky-i-bars-2-line:before { content: '\e887'; } /* '' */
+.sky-i-cog-2-line:before { content: '\e888'; } /* '' */
+.sky-i-cog-2-solid:before { content: '\e889'; } /* '' */
+.sky-i-collapse-2-line:before { content: '\e88a'; } /* '' */
+.sky-i-database-2-line:before { content: '\e88b'; } /* '' */
+.sky-i-database-2-solid:before { content: '\e88c'; } /* '' */
+.sky-i-form-2-solid:before { content: '\e88d'; } /* '' */
+.sky-i-expand-2-line:before { content: '\e88e'; } /* '' */
+.sky-i-form-2-line:before { content: '\e88f'; } /* '' */
+.sky-i-lock-2-line:before { content: '\e890'; } /* '' */
+.sky-i-lock-2-solid:before { content: '\e891'; } /* '' */
+.sky-i-money-2-line:before { content: '\e892'; } /* '' */
+.sky-i-money-2-solid:before { content: '\e893'; } /* '' */
+.sky-i-notifications-2-line:before { content: '\e894'; } /* '' */
+.sky-i-notifications-2-solid:before { content: '\e895'; } /* '' */
 .sky-i-hide:before { content: '\e97d'; } /* '' */
 .sky-i-show:before { content: '\e97e'; } /* '' */
 .sky-i-__do_not_delete:before { content: '\e999'; } /* '' */
