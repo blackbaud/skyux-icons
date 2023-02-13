@@ -417,6 +417,10 @@
       "usage": ["Hide input"]
     },
     {
+      "name": "show",
+      "usage": ["Show input"]
+    },
+    {
       "name": "bars-2-line",
       "usage": ["Menu"]
     },
