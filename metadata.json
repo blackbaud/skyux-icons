@@ -479,6 +479,14 @@
     {
       "name": "notifications-2-solid",
       "usage": ["Notifications"]
+    },
+    {
+      "name": "bb-diamond-2-line",
+      "usage": ["Blackbaud brand glyph"]
+    },
+    {
+      "name": "bb-diamond-2-solid",
+      "usage": ["Blackbaud brand glyph"]
     }
   ]
 }
