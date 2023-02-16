@@ -225,7 +225,7 @@
       "usage": ["Note"]
     },
     {
-      "name": "attach-line",
+      "name": "attach-line", 
       "usage": ["Attach"]
     },
     {
@@ -419,6 +419,74 @@
     {
       "name": "show",
       "usage": ["Show input"]
+    },
+    {
+      "name": "bars-2-line",
+      "usage": ["Menu"]
+    },
+    {
+      "name": "cog-2-line",
+      "usage": ["Settings"]
+    },
+    {
+      "name": "cog-2-solid",
+      "usage": ["Settings"]
+    },
+    {
+      "name": "collapse-2-line",
+      "usage": ["Collapse nav"]
+    },
+    {
+      "name": "expand-2-line",
+      "usage": ["Expand nav"]
+    },
+    {
+      "name": "database-2-line",
+      "usage": ["Database"]
+    },
+    {
+      "name": "database-2-solid",
+      "usage": ["Database"]
+    },
+    {
+      "name": "form-2-solid",
+      "usage": ["Form"]
+    },
+    {
+      "name": "form-2-line",
+      "usage": ["Form"]
+    },
+    {
+      "name": "lock-2-line",
+      "usage": ["Lock"]
+    },
+    {
+      "name": "lock-2-solid",
+      "usage": ["Lock"]
+    },
+    {
+      "name": "money-2-solid",
+      "usage": ["Money"]
+    },
+    {
+      "name": "money-2-line",
+      "usage": ["Money"]
+    },
+    {
+      "name": "notifications-2-line",
+      "usage": ["Notifications"]
+    },
+    {
+      "name": "notifications-2-solid",
+      "usage": ["Notifications"]
+    },
+    {
+      "name": "bb-diamond-2-line",
+      "usage": ["Blackbaud brand glyph"]
+    },
+    {
+      "name": "bb-diamond-2-solid",
+      "usage": ["Blackbaud brand glyph"]
     }
   ]
 }
