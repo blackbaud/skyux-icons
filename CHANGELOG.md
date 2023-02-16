@@ -1,3 +1,7 @@
+# 5.2.0 (2023-02-16)
+
+- Added new line and solid icons for left nav and modern omnibar. [#41](https://github.com/blackbaud/skyux-icons/pull/41)
+
 # 5.1.1 (2022-09-07)
 
 - Replaced link glyph with correct glyph and added attach icon. [#38](https://github.com/blackbaud/skyux-icons/pull/38)
