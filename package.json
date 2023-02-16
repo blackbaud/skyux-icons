@@ -1,6 +1,6 @@
 {
   "name": "@skyux/icons",
-  "version": "5.1.1",
+  "version": "5.2.0",
   "description": "A glyph font and stylesheet for displaying SKY UX icons.",
   "scripts": {
     "build": "node ./scripts/prepare-package.js",
