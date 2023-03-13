@@ -98,7 +98,7 @@ async function createManifest() {
   });
 
   await fs.writeFile(
-    path.join(distAssetsPath, 'manifest.js'),
+    path.join(distAssetsPath, 'manifest.ts'),
     `const manifest = ${JSON.stringify(manifest)};
 export default manifest;
 `

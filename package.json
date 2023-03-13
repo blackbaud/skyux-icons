@@ -3,8 +3,18 @@
   "version": "5.2.0",
   "type": "module",
   "description": "A glyph font and stylesheet for displaying SKY UX icons.",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    "./manifest": {
+      "types": "./assets/manifest.d.ts",
+      "default": "./assets/manifest.js"
+    }
+  },
   "scripts": {
     "build": "node ./scripts/prepare-package.js",
+    "postbuild": "tsc ./dist/assets/manifest.ts --declaration --module NodeNext --moduleResolution NodeNext --target ES2022 && rimraf ./dist/assets/manifest.ts",
     "test": "echo \"No tests found. Skipping.\""
   },
   "repository": {
@@ -25,6 +35,8 @@
     "clean-css": "4.2.3",
     "eslint": "8.36.0",
     "fs-extra": "9.1.0",
-    "prettier": "2.8.4"
+    "prettier": "2.8.4",
+    "rimraf": "4.4.0",
+    "typescript": "4.9.5"
   }
 }
