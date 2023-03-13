@@ -1,7 +1,9 @@
-const CleanCSS = require('clean-css');
-const fs = require('fs-extra');
-const path = require('path');
+import path from 'path';
+import { fileURLToPath } from 'url';
+import fs from 'fs-extra';
+import CleanCSS from 'clean-css';
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectPath = path.join(__dirname, '..');
 const srcPath = path.join(projectPath, 'src');
 const distPath = path.join(projectPath, 'dist');
@@ -94,15 +96,20 @@ async function createManifest() {
   await fs.writeJSON(manifestDistPath, manifest, {
     spaces: 2,
   });
+
+  await fs.writeFile(
+    path.join(distAssetsPath, 'manifest.js'),
+    `const manifest = ${JSON.stringify(manifest)};
+export default manifest;
+`
+  );
 }
 
-(async () => {
-  try {
-    await copyToDist();
-    await processCss();
-    await createManifest();
-  } catch (err) {
-    console.error(err);
-    process.exit(1);
-  }
-})();
+try {
+  await copyToDist();
+  await processCss();
+  await createManifest();
+} catch (err) {
+  console.error(err);
+  process.exit(1);
+}
