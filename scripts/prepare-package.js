@@ -103,7 +103,9 @@ async function compileTypeScriptModule(manifest) {
   // Run the transpiler.
   crossSpawn.sync('tsc', ['--project', 'tsconfig.json'], { stdio: 'inherit' });
 
-  const manifestFunctionPath = path.normalize('dist/module/__manifest.js');
+  const manifestFunctionPath = path.normalize(
+    'dist/module/__get-icon-manifest.js'
+  );
   const manifestFunctionContents = await fs.readFile(manifestFunctionPath, {
     encoding: 'utf-8',
   });
