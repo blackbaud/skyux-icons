@@ -1,4 +1,5 @@
 const CleanCSS = require('clean-css');
+const crossSpawn = require('cross-spawn');
 const fs = require('fs-extra');
 const path = require('path');
 
@@ -94,13 +95,37 @@ async function createManifest() {
   await fs.writeJSON(manifestDistPath, manifest, {
     spaces: 2,
   });
+
+  return manifest;
+}
+
+async function compileTypeScriptModule(manifest) {
+  // Run the transpiler.
+  crossSpawn.sync('tsc', ['--project', 'tsconfig.json'], { stdio: 'inherit' });
+
+  const manifestFunctionPath = path.normalize(
+    'dist/module/__get-icon-manifest.js'
+  );
+  const manifestFunctionContents = await fs.readFile(manifestFunctionPath, {
+    encoding: 'utf-8',
+  });
+
+  // Convert the manifest.json contents into a JavaScript object.
+  await fs.writeFile(
+    manifestFunctionPath,
+    manifestFunctionContents.replace(
+      'return {};',
+      `return ${JSON.stringify(manifest)};`
+    )
+  );
 }
 
 (async () => {
   try {
     await copyToDist();
     await processCss();
-    await createManifest();
+    const manifest = await createManifest();
+    await compileTypeScriptModule(manifest);
   } catch (err) {
     console.error(err);
     process.exit(1);

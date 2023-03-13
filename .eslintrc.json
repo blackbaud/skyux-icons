@@ -1,26 +1,17 @@
 {
+  "root": true,
   "env": {
-    "es6": true,
-    "jasmine": true,
     "node": true
   },
-  "extends": "eslint:recommended",
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 2017
+    "project": "./tsconfig.json"
   },
-  "rules": {
-    "indent": [
-      "error",
-      2,
-      {
-        "SwitchCase": 1
-      }
-    ],
-    "linebreak-style": ["error", "unix"],
-    "no-var": ["error"],
-    "prefer-const": ["error"],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"]
-  }
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "ignorePatterns": ["**/scripts/*.js"]
 }
