@@ -1,5 +1,6 @@
 /* SKY UX icon style overrides */
-[class^="sky-i-"]:before, [class*=" sky-i-"]:before {
+[class^='sky-i-']:before,
+[class*=' sky-i-']:before {
   margin-left: 0;
   margin-right: 0;
 }
