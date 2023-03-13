@@ -13,7 +13,7 @@ async function readUtf8(filePath) {
 }
 
 async function writeUtf8(filePath, contents) {
-  return fs.writeFile(filePath, contents, { encoding: 'utf-8'} );
+  return fs.writeFile(filePath, contents, { encoding: 'utf-8' });
 }
 
 async function copyToDist() {
@@ -21,22 +21,13 @@ async function copyToDist() {
     await fs.emptyDir(distPath);
   }
 
-  await fs.copy(
-    path.join(srcPath, 'css'),
-    distAssetsCssPath
-  );
+  await fs.copy(path.join(srcPath, 'css'), distAssetsCssPath);
 
-  await fs.copy(
-    path.join(srcPath, 'font'),
-    path.join(distAssetsPath, 'font')
-  );
+  await fs.copy(path.join(srcPath, 'font'), path.join(distAssetsPath, 'font'));
 }
 
 async function processCss() {
-  const cssOverridesFileNames = [
-    'skyux-icons-embedded.css',
-    'skyux-icons.css'
-  ];
+  const cssOverridesFileNames = ['skyux-icons-embedded.css', 'skyux-icons.css'];
 
   const cssOverrides = await readUtf8(path.join(projectPath, 'overrides.css'));
 
@@ -54,14 +45,12 @@ async function processCss() {
       await writeUtf8(cssFilePath, css);
     }
 
-    const minifier = new CleanCSS(
-      {
-        compatibility: cssFileParsedPath.name.indexOf('-ie7') ? 'ie7' : '*',
-        inline: false,
-        level: 1,
-        returnPromise: true
-      }
-    );
+    const minifier = new CleanCSS({
+      compatibility: cssFileParsedPath.name.indexOf('-ie7') ? 'ie7' : '*',
+      inline: false,
+      level: 1,
+      returnPromise: true,
+    });
 
     const cssMinified = (await minifier.minify(css)).styles;
 
@@ -84,21 +73,17 @@ async function createManifest() {
   const manifest = {
     name: config.name,
     cssPrefix: config.css_prefix_text,
-    glyphs: []
+    glyphs: [],
   };
 
   for (const glyph of metadata.glyphs) {
-    const matchingGlyph = config.glyphs.find(item => item.css === glyph.name);
+    const matchingGlyph = config.glyphs.find((item) => item.css === glyph.name);
 
     if (matchingGlyph) {
-      const manifestGlyph = Object.assign(
-        {},
-        glyph,
-        {
-          name: matchingGlyph.css,
-          code: matchingGlyph.code
-        }
-      );
+      const manifestGlyph = Object.assign({}, glyph, {
+        name: matchingGlyph.css,
+        code: matchingGlyph.code,
+      });
 
       manifest.glyphs.push(manifestGlyph);
     }
@@ -106,13 +91,9 @@ async function createManifest() {
 
   const manifestDistPath = path.join(distAssetsPath, 'manifest.json');
 
-  await fs.writeJSON(
-    manifestDistPath,
-    manifest,
-    {
-      spaces: 2
-    }
-  );
+  await fs.writeJSON(manifestDistPath, manifest, {
+    spaces: 2,
+  });
 }
 
 (async () => {
