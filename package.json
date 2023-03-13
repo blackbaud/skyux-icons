@@ -1,17 +1,7 @@
 {
   "name": "@skyux/icons",
   "version": "5.2.0",
-  "type": "module",
   "description": "A glyph font and stylesheet for displaying SKY UX icons.",
-  "exports": {
-    "./package.json": {
-      "default": "./package.json"
-    },
-    "./assets/manifest": {
-      "types": "./assets/manifest.d.ts",
-      "default": "./assets/manifest.js"
-    }
-  },
   "scripts": {
     "build": "node ./scripts/prepare-package.js",
     "postbuild": "tsc ./dist/assets/manifest.ts --declaration --module NodeNext --moduleResolution NodeNext --target ES2022 && rimraf ./dist/assets/manifest.ts",

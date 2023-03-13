@@ -1,9 +1,7 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
-import fs from 'fs-extra';
-import CleanCSS from 'clean-css';
+const CleanCSS = require('clean-css');
+const fs = require('fs-extra');
+const path = require('path');
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectPath = path.join(__dirname, '..');
 const srcPath = path.join(projectPath, 'src');
 const distPath = path.join(projectPath, 'dist');
@@ -105,11 +103,13 @@ export default manifest;
   );
 }
 
-try {
-  await copyToDist();
-  await processCss();
-  await createManifest();
-} catch (err) {
-  console.error(err);
-  process.exit(1);
-}
+(async () => {
+  try {
+    await copyToDist();
+    await processCss();
+    await createManifest();
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+})();
