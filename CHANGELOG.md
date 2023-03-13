@@ -1,3 +1,7 @@
+# 5.3.0 (2023-03-13)
+
+- Added a JavaScript module to the public exports API. [#45](https://github.com/blackbaud/skyux-icons/pull/45)
+
 # 5.2.0 (2023-02-16)
 
 - Added new line and solid icons for left nav and modern omnibar. [#41](https://github.com/blackbaud/skyux-icons/pull/41)
