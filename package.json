@@ -7,7 +7,7 @@
     "./package.json": {
       "default": "./package.json"
     },
-    "./manifest": {
+    "./assets/manifest": {
       "types": "./assets/manifest.d.ts",
       "default": "./assets/manifest.js"
     }
