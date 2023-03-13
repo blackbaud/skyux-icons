@@ -1,3 +1,7 @@
+# 5.3.1 (2023-03-13)
+
+- Set TypeScript module from `ES2022` to `CommonJs`. [#46](https://github.com/blackbaud/skyux-icons/pull/46)
+
 # 5.3.0 (2023-03-13)
 
 - Added a JavaScript module to the public exports API. [#45](https://github.com/blackbaud/skyux-icons/pull/45)
