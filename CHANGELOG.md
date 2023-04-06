@@ -1,3 +1,7 @@
+# 5.4.0 (2023-04-06)
+
+- Added alternate Font Awesome icons for use in SKY UX default theme. [#47](https://github.com/blackbaud/skyux-icons/pull/47)
+
 # 5.3.1 (2023-03-13)
 
 - Set TypeScript module from `ES2022` to `CommonJs`. [#46](https://github.com/blackbaud/skyux-icons/pull/46)
