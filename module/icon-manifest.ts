@@ -1,9 +1,9 @@
-import type { SkyThemeIconManifestGlyph } from './icon-manifest-glyph';
+import type { SkyIconManifestGlyph } from './icon-manifest-glyph';
 
 /**
  * Metadata about the SKY UX icon font.
  */
-export interface SkyThemeIconManifest {
+export interface SkyIconManifest {
   /**
    * The prefix of the CSS class for each glyph.
    */
@@ -12,7 +12,7 @@ export interface SkyThemeIconManifest {
   /**
    * A list of available glyphs.
    */
-  glyphs: SkyThemeIconManifestGlyph[];
+  glyphs: SkyIconManifestGlyph[];
 
   /**
    * The name of the font as it is registered with the SKY UX stylesheet.

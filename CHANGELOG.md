@@ -1,6 +1,7 @@
-# 5.4.0 (2023-04-06)
+# 6.0.0 (2023-04-07)
 
 - Added alternate Font Awesome icons for use in SKY UX default theme. [#47](https://github.com/blackbaud/skyux-icons/pull/47)
+- Removed `Theme` from TypeScript type names. [#48](https://github.com/blackbaud/skyux-icons/pull/48)
 
 # 5.3.1 (2023-03-13)
 
