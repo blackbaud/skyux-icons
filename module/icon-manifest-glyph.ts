@@ -1,7 +1,7 @@
 /**
  * Metadata about a SKY UX icon glyph.
  */
-export interface SkyThemeIconManifestGlyph {
+export interface SkyIconManifestGlyph {
   /**
    * The character code of the glyph.
    */
@@ -16,4 +16,9 @@ export interface SkyThemeIconManifestGlyph {
    * A list of descriptions of how the glyph should be used to adhere to SKY UX design patterns.
    */
   usage: string[];
+
+  /**
+   * An alternate Font Awesome icon for themes that do not use the SKY UX icon font.
+   */
+  faName?: string;
 }
