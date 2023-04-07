@@ -107,7 +107,8 @@
     },
     {
       "name": "filter",
-      "usage": ["Filter"]
+      "usage": ["Filter"],
+      "faName": "filter"
     },
     {
       "name": "filter-line",
