@@ -56,14 +56,19 @@
       "faName": "chevron-left"
     },
     {
-      "name": "double-chevron-left",
-      "usage": ["Collapse navigation"],
-      "faName": "angle-double-left"
-    },
-    {
       "name": "double-chevron-right",
       "usage": ["Expand navigation"],
       "faName": "angle-double-right"
+    },
+    {
+      "name": "double-chevron-up",
+      "usage": ["Collapse all"],
+      "faName": "angle-double-up"
+    },
+    {
+      "name": "double-chevron-down",
+      "usage": ["Expand all"],
+      "faName": "angle-double-down"
     },
     {
       "name": "ellipsis",
@@ -536,11 +541,6 @@
       "name": "collapse-2-line",
       "usage": ["Collapse nav"],
       "faName": "angle-double-left"
-    },
-    {
-      "name": "expand-2-line",
-      "usage": ["Expand nav"],
-      "faName": "angle-double-right"
     },
     {
       "name": "database-2-line",
