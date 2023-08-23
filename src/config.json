@@ -2136,7 +2136,7 @@
     },
     {
       "uid": "acd120c2757fc72f3d0aae4138614912",
-      "css": "angle-double-line",
+      "css": "double-chevron-up",
       "code": 59550,
       "src": "custom_icons",
       "selected": true,
@@ -2145,7 +2145,7 @@
         "width": 1000
       },
       "search": [
-        "angle-double-line"
+        "double-chevron-up"
       ]
     },
     {
