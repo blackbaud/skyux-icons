@@ -66,8 +66,8 @@
       "faName": "angle-double-right"
     },
     {
-      "name": "double-chevron-right",
-      "usage": ["Expand navigation"],
+      "name": "double-chevron-down",
+      "usage": ["Expand all"],
       "faName": "angle-double-right"
     },
     {
