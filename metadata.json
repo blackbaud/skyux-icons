@@ -68,7 +68,7 @@
     {
       "name": "double-chevron-down",
       "usage": ["Expand all"],
-      "faName": "angle-double-right"
+      "faName": "angle-double-down"
     },
     {
       "name": "double-chevron-up",
