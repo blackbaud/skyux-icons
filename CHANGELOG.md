@@ -1,6 +1,7 @@
 # 6.1.0 (2023-08-24)
 
-- Added support for aliases to icons. [#49](https://github.com/blackbaud/skyux-icons/pull/49)
+- Added up and down chevron icons. [#49](https://github.com/blackbaud/skyux-icons/pull/49)
+- Added support for aliases to icons. [#50](https://github.com/blackbaud/skyux-icons/pull/50)
 
 # 6.0.0 (2023-04-07)
 
