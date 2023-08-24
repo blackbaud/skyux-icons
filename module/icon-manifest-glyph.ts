@@ -18,7 +18,17 @@ export interface SkyIconManifestGlyph {
   usage: string[];
 
   /**
+   * A list of additional names the glyph could be referenced by.
+   */
+  aliases?: string[];
+
+  /**
    * An alternate Font Awesome icon for themes that do not use the SKY UX icon font.
    */
   faName?: string;
+
+  /**
+   * A flag indicating the glyph is not actively supported or documented.
+   */
+  deprecated?: boolean;
 }

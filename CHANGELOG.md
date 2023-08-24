@@ -1,3 +1,8 @@
+# 6.1.0 (2023-08-24)
+
+- Added up and down chevron icons. [#49](https://github.com/blackbaud/skyux-icons/pull/49)
+- Added support for aliases to icons. [#50](https://github.com/blackbaud/skyux-icons/pull/50)
+
 # 6.0.0 (2023-04-07)
 
 - Added alternate Font Awesome icons for use in SKY UX default theme. [#47](https://github.com/blackbaud/skyux-icons/pull/47)

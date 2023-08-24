@@ -3,7 +3,7 @@
     {
       "name": "add",
       "usage": ["Add"],
-      "faName": "plus"
+      "faName": "plus-circle"
     },
     {
       "name": "edit",
@@ -28,6 +28,7 @@
     {
       "name": "close",
       "usage": ["Cancel", "Close"],
+      "aliases": ["remove"],
       "faName": "times"
     },
     {
@@ -83,6 +84,7 @@
     {
       "name": "menu",
       "usage": ["Navigation menu"],
+      "aliases": ["navicon", "reorder"],
       "faName": "bars"
     },
     {
@@ -128,6 +130,7 @@
     {
       "name": "sort",
       "usage": ["Sort"],
+      "aliases": ["unsorted"],
       "faName": "sort"
     },
     {
@@ -153,7 +156,7 @@
     {
       "name": "bell-line",
       "usage": ["Notifications"],
-      "faName": "bell"
+      "faName": "bell-o"
     },
     {
       "name": "bell-solid",
@@ -161,22 +164,24 @@
       "faName": "bell"
     },
     {
-      "name": "cog-solid",
-      "usage": ["Settings"],
-      "faName": "gear"
-    },
-    {
       "name": "cog-line",
       "usage": ["Settings"],
-      "faName": "gear"
+      "aliases": ["gear"],
+      "faName": "cog"
     },
     {
-      "name": "dollar-bill-solid",
+      "name": "cog-solid",
+      "usage": ["Settings"],
+      "aliases": ["gear"],
+      "faName": "cog"
+    },
+    {
+      "name": "dollar-bill-line",
       "usage": ["Financial"],
       "faName": "money"
     },
     {
-      "name": "dollar-bill-line",
+      "name": "dollar-bill-solid",
       "usage": ["Financial"],
       "faName": "money"
     },
@@ -188,11 +193,13 @@
     {
       "name": "users-line",
       "usage": ["User group"],
+      "aliases": ["group"],
       "faName": "users"
     },
     {
       "name": "users-solid",
       "usage": ["User group"],
+      "aliases": ["group"],
       "faName": "users"
     },
     {
@@ -213,7 +220,7 @@
     {
       "name": "notification-line",
       "usage": ["Notifications"],
-      "faName": "bell"
+      "faName": "bell-o"
     },
     {
       "name": "notification-solid",
@@ -221,22 +228,24 @@
       "faName": "bell"
     },
     {
-      "name": "settings-solid",
-      "usage": ["Settings"],
-      "faName": "gear"
-    },
-    {
       "name": "settings-line",
       "usage": ["Settings"],
-      "faName": "gear"
+      "aliases": ["gear"],
+      "faName": "cog"
     },
     {
-      "name": "money-solid",
+      "name": "settings-solid",
+      "usage": ["Settings"],
+      "aliases": ["gear"],
+      "faName": "cog"
+    },
+    {
+      "name": "money-line",
       "usage": ["Financial"],
       "faName": "money"
     },
     {
-      "name": "money-line",
+      "name": "money-solid",
       "usage": ["Financial"],
       "faName": "money"
     },
@@ -258,6 +267,7 @@
     {
       "name": "bar-chart-line",
       "usage": ["Data visualization"],
+      "aliases": ["bar-chart-o"],
       "faName": "bar-chart"
     },
     {
@@ -298,6 +308,7 @@
     {
       "name": "link-line",
       "usage": ["Hyperlink"],
+      "aliases": ["chain"],
       "faName": "link"
     },
     {
@@ -343,12 +354,12 @@
     {
       "name": "upload-line",
       "usage": ["Upload"],
-      "faName": "upload"
+      "faName": "cloud-upload"
     },
     {
       "name": "download-line",
       "usage": ["Download"],
-      "faName": "download"
+      "faName": "cloud-download"
     },
     {
       "name": "zoom-out-line",
@@ -363,6 +374,7 @@
     {
       "name": "image-line",
       "usage": ["Image"],
+      "aliases": ["photo"],
       "faName": "picture-o"
     },
     {
@@ -463,6 +475,7 @@
     {
       "name": "bar-chart-line",
       "usage": ["Bar chart"],
+      "aliases": ["bar-chart-o"],
       "faName": "bar-chart"
     },
     {
@@ -475,22 +488,15 @@
       "faName": "line-chart"
     },
     {
-      "name": "pie-chart-line",
-      "usage": ["Pie chart"],
-      "faName": "pie-chart"
-    },
-    {
-      "name": "donut-chart-line",
-      "usage": ["Donut chart"]
-    },
-    {
       "name": "undo-line",
       "usage": ["Undo"],
+      "aliases": ["rotate-left"],
       "faName": "undo"
     },
     {
       "name": "redo-line",
       "usage": ["Redo"],
+      "aliases": ["rotate-right"],
       "faName": "repeat"
     },
     {
@@ -501,6 +507,7 @@
     {
       "name": "outdent-line",
       "usage": ["Outdent"],
+      "aliases": ["dedent"],
       "faName": "outdent"
     },
     {
@@ -511,11 +518,6 @@
     {
       "name": "bb-brand-accent-line",
       "usage": ["Blackbaud brand accent"]
-    },
-    {
-      "name": "download-line",
-      "usage": ["Download"],
-      "faName": "download"
     },
     {
       "name": "hide",
@@ -530,16 +532,19 @@
     {
       "name": "bars-2-line",
       "usage": ["Menu"],
+      "aliases": ["navicon", "reorder"],
       "faName": "bars"
     },
     {
       "name": "cog-2-line",
       "usage": ["Settings"],
+      "aliases": ["gear"],
       "faName": "cog"
     },
     {
       "name": "cog-2-solid",
       "usage": ["Settings"],
+      "aliases": ["gear"],
       "faName": "cog"
     },
     {
@@ -564,7 +569,8 @@
     },
     {
       "name": "form-2-solid",
-      "usage": ["Form"]
+      "usage": ["Form"],
+      "faName": "pencil-square-o"
     },
     {
       "name": "form-2-line",
@@ -582,19 +588,19 @@
       "faName": "lock"
     },
     {
-      "name": "money-2-solid",
+      "name": "money-2-line",
       "usage": ["Money"],
       "faName": "money"
     },
     {
-      "name": "money-2-line",
+      "name": "money-2-solid",
       "usage": ["Money"],
       "faName": "money"
     },
     {
       "name": "notifications-2-line",
       "usage": ["Notifications"],
-      "faName": "bell"
+      "faName": "bell-o"
     },
     {
       "name": "notifications-2-solid",
