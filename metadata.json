@@ -67,6 +67,16 @@
       "faName": "angle-double-right"
     },
     {
+      "name": "double-chevron-down",
+      "usage": ["Expand all"],
+      "faName": "angle-double-down"
+    },
+    {
+      "name": "double-chevron-up",
+      "usage": ["Collapse all"],
+      "faName": "angle-double-up"
+    },
+    {
       "name": "ellipsis",
       "usage": ["More actions"],
       "faName": "ellipsis-h"
