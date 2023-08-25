@@ -614,6 +614,22 @@
     {
       "name": "bb-diamond-2-solid",
       "usage": ["Blackbaud brand glyph"]
+    },
+    {
+      "name": "circle-solid",
+      "deprecated": true
+    },
+    {
+      "name": "triangle-solid",
+      "deprecated": true
+    },
+    {
+      "name": "exclamation",
+      "deprecated": true
+    },
+    {
+      "name": "help-i",
+      "deprecated": true
     }
   ]
 }

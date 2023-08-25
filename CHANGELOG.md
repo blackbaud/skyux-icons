@@ -1,7 +1,6 @@
-# 6.1.0 (2023-08-24)
+# 6.1.1 (2023-08-25)
 
-- Added up and down chevron icons. [#49](https://github.com/blackbaud/skyux-icons/pull/49)
-- Added support for aliases to icons. [#50](https://github.com/blackbaud/skyux-icons/pull/50)
+- Added stack icons to manifest. [#51](https://github.com/blackbaud/skyux-icons/pull/51)
 
 # 6.0.0 (2023-04-07)
 
