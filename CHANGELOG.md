@@ -1,3 +1,7 @@
+# 6.1.2 (2023-09-01)
+
+- Revert Font Awesome alias for star icon to current common usage. [#52](https://github.com/blackbaud/skyux-icons/pull/52)
+
 # 6.1.1 (2023-08-25)
 
 - Added stack icons to manifest. [#51](https://github.com/blackbaud/skyux-icons/pull/51)
