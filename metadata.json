@@ -339,7 +339,7 @@
     {
       "name": "star-line",
       "usage": ["Favorite"],
-      "faName": "star-o"
+      "faName": "star"
     },
     {
       "name": "tag-line",
@@ -437,18 +437,15 @@
     },
     {
       "name": "xls-file-line",
-      "usage": ["Excel file type"],
-      "faName": "file-excel-o"
+      "usage": ["Excel file type"]
     },
     {
       "name": "pdf-file-line",
-      "usage": ["PDF file type"],
-      "faName": "file-pdf-o"
+      "usage": ["PDF file type"]
     },
     {
       "name": "doc-file-line",
-      "usage": ["Word file type"],
-      "faName": "file-word-o"
+      "usage": ["Word file type"]
     },
     {
       "name": "bullet-chart-line",
