@@ -154,6 +154,9 @@
 .sky-i-video-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe89d;&nbsp;'); }
 .sky-i-double-chevron-up { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe89e;&nbsp;'); }
 .sky-i-double-chevron-down { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe89f;&nbsp;'); }
+.sky-i-__do_not_delete { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a0;&nbsp;'); }
 .sky-i-hide { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe97d;&nbsp;'); }
 .sky-i-show { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe97e;&nbsp;'); }
-.sky-i-__do_not_delete { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe999;&nbsp;'); }
+.sky-i-xls-file-line-depricated { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe997;&nbsp;'); }
+.sky-i-doc-file-line-depreciated { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe998;&nbsp;'); }
+.sky-i-pdf-file-line-deprecated { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe999;&nbsp;'); }

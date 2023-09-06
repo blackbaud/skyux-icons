@@ -154,6 +154,9 @@
 .sky-i-video-file-line:before { content: '\e89d'; } /* '' */
 .sky-i-double-chevron-up:before { content: '\e89e'; } /* '' */
 .sky-i-double-chevron-down:before { content: '\e89f'; } /* '' */
+.sky-i-__do_not_delete:before { content: '\e8a0'; } /* '' */
 .sky-i-hide:before { content: '\e97d'; } /* '' */
 .sky-i-show:before { content: '\e97e'; } /* '' */
-.sky-i-__do_not_delete:before { content: '\e999'; } /* '' */
+.sky-i-xls-file-line-depricated:before { content: '\e997'; } /* '' */
+.sky-i-doc-file-line-depreciated:before { content: '\e998'; } /* '' */
+.sky-i-pdf-file-line-deprecated:before { content: '\e999'; } /* '' */
