@@ -148,6 +148,10 @@
 .sky-i-notifications-2-solid:before { content: '\e895'; } /* '' */
 .sky-i-bb-diamond-2-line:before { content: '\e896'; } /* '' */
 .sky-i-bb-diamond-2-solid:before { content: '\e897'; } /* '' */
+.sky-i-star-solid:before { content: '\e89a'; } /* '' */
+.sky-i-image-file-line:before { content: '\e89b'; } /* '' */
+.sky-i-text-file-line:before { content: '\e89c'; } /* '' */
+.sky-i-video-file-line:before { content: '\e89d'; } /* '' */
 .sky-i-double-chevron-up:before { content: '\e89e'; } /* '' */
 .sky-i-double-chevron-down:before { content: '\e89f'; } /* '' */
 .sky-i-hide:before { content: '\e97d'; } /* '' */

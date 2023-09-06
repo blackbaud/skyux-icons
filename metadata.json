@@ -342,6 +342,11 @@
       "faName": "star-o"
     },
     {
+      "name": "star-solid",
+      "usage": ["Favorite"],
+      "faName": "star-o"
+    },
+    {
       "name": "tag-line",
       "usage": ["Tag"],
       "faName": "tag"
@@ -449,6 +454,21 @@
       "name": "doc-file-line",
       "usage": ["Word file type"],
       "faName": "file-word-o"
+    },
+    {
+      "name": "text-file-line",
+      "usage": ["Text file type"],
+      "faName": "file-text-o"
+    },
+    {
+      "name": "image-file-line",
+      "usage": ["Image file type"],
+      "faName": "file-image-o"
+    },
+    {
+      "name": "video-file-line",
+      "usage": ["Video file type"],
+      "faName": "file-video-o"
     },
     {
       "name": "bullet-chart-line",
