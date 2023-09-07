@@ -339,7 +339,7 @@
     {
       "name": "star",
       "usage": ["Favorite"],
-      "faName": "star-o"
+      "faName": "star"
     },
     {
       "name": "tag-line",
