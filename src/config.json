@@ -2248,7 +2248,7 @@
     },
     {
       "uid": "e4bc38c3051485f1d24f372c782a56f4",
-      "css": "file-audio-line",
+      "css": "audio-file-line",
       "code": 59553,
       "src": "custom_icons",
       "selected": true,
@@ -2257,12 +2257,12 @@
         "width": 1000
       },
       "search": [
-        "file-audio-line"
+        "audio-file-line"
       ]
     },
     {
       "uid": "2d6225d4c7cf9fd2770c280b687f0d63",
-      "css": "file-code-line",
+      "css": "code-file-line",
       "code": 59554,
       "src": "custom_icons",
       "selected": true,
@@ -2271,12 +2271,12 @@
         "width": 1000
       },
       "search": [
-        "file-code-line"
+        "code-file-line"
       ]
     },
     {
       "uid": "26192a03253d9daa401d58b7d858a61e",
-      "css": "file-archive-line",
+      "css": "archive-file-line",
       "code": 59555,
       "src": "custom_icons",
       "selected": true,
@@ -2285,7 +2285,7 @@
         "width": 1000
       },
       "search": [
-        "file-archive-line"
+        "archive-file-line"
       ]
     },
     {

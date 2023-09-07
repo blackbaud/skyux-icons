@@ -154,9 +154,9 @@
 .sky-i-double-chevron-up { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe89e;&nbsp;'); }
 .sky-i-double-chevron-down { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe89f;&nbsp;'); }
 .sky-i-__do_not_delete { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a0;&nbsp;'); }
-.sky-i-file-audio-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a1;&nbsp;'); }
-.sky-i-file-code-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a2;&nbsp;'); }
-.sky-i-file-archive-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a3;&nbsp;'); }
+.sky-i-audio-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a1;&nbsp;'); }
+.sky-i-code-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a2;&nbsp;'); }
+.sky-i-archive-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a3;&nbsp;'); }
 .sky-i-ppt-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a4;&nbsp;'); }
 .sky-i-hide { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe97d;&nbsp;'); }
 .sky-i-show { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe97e;&nbsp;'); }
