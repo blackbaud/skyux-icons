@@ -1,3 +1,7 @@
+ # 6.2.1 (2023-09-08)
+
+- Included unknown file type icon. [#54](https://github.com/blackbaud/skyux-icons/pull/54)
+
 # 6.2.0 (2023-09-06)
 
 - Added additional file type icons and updated star icon. [#53](https://github.com/blackbaud/skyux-icons/pull/53)
