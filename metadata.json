@@ -436,6 +436,11 @@
       "faName": "align-justify"
     },
     {
+      "name": "file-line",
+      "usage": ["Unknown file type"],
+      "faName": "file-o"
+    },
+    {
       "name": "xls-file-line",
       "usage": ["Excel file type"],
       "faName": "file-excel-o"
