@@ -1,3 +1,7 @@
+# 6.2.0 (2023-09-06)
+
+- Added additional file type icons and updated star icon. [#53](https://github.com/blackbaud/skyux-icons/pull/53)
+
 # 6.1.2 (2023-09-05)
 
 - Revert Font Awesome alias for star icon to current common usage and decouple file type icons until all of them are completed. [#52](https://github.com/blackbaud/skyux-icons/pull/52)

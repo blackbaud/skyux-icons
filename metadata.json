@@ -337,7 +337,7 @@
       "faName": "th-large"
     },
     {
-      "name": "star-line",
+      "name": "star",
       "usage": ["Favorite"],
       "faName": "star"
     },
@@ -437,15 +437,54 @@
     },
     {
       "name": "xls-file-line",
-      "usage": ["Excel file type"]
+      "usage": ["Excel file type"],
+      "faName": "file-excel-o"
     },
     {
       "name": "pdf-file-line",
-      "usage": ["PDF file type"]
+      "usage": ["PDF file type"],
+      "faName": "file-pdf-o"
     },
     {
       "name": "doc-file-line",
-      "usage": ["Word file type"]
+      "usage": ["Word file type"],
+      "faName": "file-word-o"
+    },
+    {
+      "name": "ppt-file-line",
+      "usage": ["PowerPoint file type"],
+      "faName": "file-powerpoint-o"
+    },
+    {
+      "name": "text-file-line",
+      "usage": ["Text file type"],
+      "faName": "file-text-o"
+    },
+    {
+      "name": "image-file-line",
+      "usage": ["Image file type"],
+      "faName": "file-image-o"
+    },
+    {
+      "name": "video-file-line",
+      "usage": ["Video file type"],
+      "faName": "file-video-o"
+    },
+    {
+      "name": "audio-file-line",
+      "usage": ["Audio file type"],
+      "faName": "file-audio-o"
+    },
+  
+    {
+      "name": "code-file-line",
+      "usage": ["Code file type"],
+      "faName": "file-code-o"
+    },
+    {
+      "name": "archive-file-line",
+      "usage": ["Archive file type"],
+      "faName": "file-archive-o"
     },
     {
       "name": "bullet-chart-line",
