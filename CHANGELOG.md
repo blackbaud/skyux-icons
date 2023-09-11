@@ -1,4 +1,8 @@
- # 6.2.1 (2023-09-08)
+# 6.2.2 (2023-09-11)
+
+- Resolved publishing issue in 6.2.1. [#55](https://github.com/blackbaud/skyux-icons/pull/55)
+
+# 6.2.1 (2023-09-08)
 
 - Included unknown file type icon. [#54](https://github.com/blackbaud/skyux-icons/pull/54)
 
