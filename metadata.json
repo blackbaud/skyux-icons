@@ -269,6 +269,16 @@
       "faName": "home"
     },
     {
+      "name": "credit-card-line",
+      "usage": ["Credit card"],
+      "faName": "credit-card-o"
+    },
+    {
+      "name": "credit-card-solid",
+      "usage": ["Credit card"],
+      "faName": "credit-card"
+    },
+    {
       "name": "money-line",
       "usage": ["Financial"],
       "faName": "money"
@@ -549,11 +559,6 @@
       "faName": "line-chart"
     },
     {
-      "name": "talk-bubbles-line",
-      "usage": ["Talk bubbles"],
-      "faName": "comments-o"
-    },
-    {
       "name": "coin-bag-line",
       "usage": ["Onboarding"],
       "faName": "money"
@@ -562,6 +567,31 @@
       "name": "book-line",
       "usage": ["Onboarding"],
       "faName": "book"
+    },
+    {
+      "name": "envelope-line",
+      "usage": ["Email"],
+      "faName": "envelope-o"
+    },
+    {
+      "name": "envelope-solid",
+      "usage": ["Email"],
+      "faName": "envelope"
+    },
+    {
+      "name": "printer-line",
+      "usage": ["Print"],
+      "faName": "print-o"
+    },
+    {
+      "name": "printer-solid",
+      "usage": ["Print"],
+      "faName": "print"
+    },
+    {
+      "name": "talk-bubbles-line",
+      "usage": ["Talk bubbles"],
+      "faName": "comments-o"
     },
     {
       "name": "wand-line",
