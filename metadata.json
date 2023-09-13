@@ -311,6 +311,11 @@
       "faName": "align-center"
     },
     {
+      "name": "justify-text-line",
+      "usage": ["Justify text"],
+      "faName": "align-justify"
+    },
+    {
       "name": "note-line",
       "usage": ["Note"],
       "faName": "pencil-square-o"
@@ -367,12 +372,6 @@
       "faName": "tag"
     },
     {
-      "name": "image-line",
-      "usage": ["Image"],
-      "aliases": ["photo"],
-      "faName": "picture-o"
-    },
-    {
       "name": "bullet-list-line",
       "usage": ["Bulleted list"],
       "faName": "list-ul"
@@ -425,11 +424,7 @@
       "usage": ["Underline text"],
       "faName": "underline"
     },
-    {
-      "name": "justify-text-line",
-      "usage": ["Justify text"],
-      "faName": "align-justify"
-    },
+  
     {
       "name": "undo-line",
       "usage": ["Undo"],
@@ -452,6 +447,12 @@
       "usage": ["Outdent"],
       "aliases": ["dedent"],
       "faName": "outdent"
+    },
+    {
+      "name": "image-line",
+      "usage": ["Image"],
+      "aliases": ["photo"],
+      "faName": "picture-o"
     },
     {
       "name": "file-line",
