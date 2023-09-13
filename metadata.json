@@ -17,12 +17,12 @@
     },
     {
       "name": "trash",
-      "usage": ["Delete"],
+      "usage": ["Delete", "Remove"],
       "faName": "trash-o"
     },
     {
       "name": "trash-solid",
-      "usage": ["Delete"],
+      "usage": ["Delete", "Remove"],
       "faName": "trash"
     },
     {
@@ -35,6 +35,72 @@
       "name": "open",
       "usage": ["Open file"],
       "faName": "folder-open-o"
+    },
+    {
+      "name": "folder-open-solid",
+      "usage": ["Open"],
+      "faName": "folder-open"
+    },
+    {
+      "name": "save-line",
+      "usage": ["Save"],
+      "faName": "floppy-o"
+    },
+    {
+      "name": "upload-line",
+      "usage": ["Upload"],
+      "faName": "cloud-upload"
+    },
+    {
+      "name": "download-line",
+      "usage": ["Download"],
+      "faName": "cloud-download"
+    },
+    {
+      "name": "zoom-out-line",
+      "usage": ["Zoom out"],
+      "faName": "search-minus"
+    },
+    {
+      "name": "zoom-in-line",
+      "usage": ["Zoom in"],
+      "faName": "search-plus"
+    },
+    {
+      "name": "hide",
+      "usage": ["Hide input"],
+      "faName": "eye-slash"
+    },
+    {
+      "name": "show",
+      "usage": ["Show input"],
+      "faName": "eye"
+    },
+    {
+      "name": "search",
+      "usage": ["Search"],
+      "faName": "search"
+    },
+    {
+      "name": "filter",
+      "usage": ["Filter"],
+      "faName": "filter"
+    },
+    {
+      "name": "filter-line",
+      "usage": ["Filter"],
+      "faName": "filter"
+    },
+    {
+      "name": "sort",
+      "usage": ["Sort"],
+      "aliases": ["unsorted"],
+      "faName": "sort"
+    },
+    {
+      "name": "columns",
+      "usage": ["Column layout"],
+      "faName": "columns"
     },
     {
       "name": "chevron-down",
@@ -113,32 +179,6 @@
       "faName": "clock-o"
     },
     {
-      "name": "search",
-      "usage": ["Search"],
-      "faName": "search"
-    },
-    {
-      "name": "filter",
-      "usage": ["Filter"],
-      "faName": "filter"
-    },
-    {
-      "name": "filter-line",
-      "usage": ["Filter"],
-      "faName": "filter"
-    },
-    {
-      "name": "sort",
-      "usage": ["Sort"],
-      "aliases": ["unsorted"],
-      "faName": "sort"
-    },
-    {
-      "name": "columns",
-      "usage": ["Column layout"],
-      "faName": "columns"
-    },
-    {
       "name": "check",
       "usage": ["Complete", "Success"],
       "faName": "check"
@@ -155,35 +195,51 @@
     },
     {
       "name": "bell-line",
-      "usage": ["Notifications"],
+      "usage": ["Notification"],
       "faName": "bell-o"
     },
     {
       "name": "bell-solid",
-      "usage": ["Notifications"],
+      "usage": ["Notification"],
       "faName": "bell"
+    },
+    {
+      "name": "notification-line",
+      "usage": ["Notification"],
+      "faName": "bell-o",
+      "deprecated": "true"
+    },
+    {
+      "name": "notification-solid",
+      "usage": ["Notification"],
+      "faName": "bell",
+      "deprecated": "true"
     },
     {
       "name": "cog-line",
       "usage": ["Settings"],
       "aliases": ["gear"],
-      "faName": "cog"
+      "faName": "cog",
+      "deprecated": "true"
     },
     {
       "name": "cog-solid",
       "usage": ["Settings"],
       "aliases": ["gear"],
+      "faName": "cog",
+      "deprecated": "true"
+    },
+    {
+      "name": "settings-line",
+      "usage": ["Settings"],
+      "aliases": ["gear"],
       "faName": "cog"
     },
     {
-      "name": "dollar-bill-line",
-      "usage": ["Financial"],
-      "faName": "money"
-    },
-    {
-      "name": "dollar-bill-solid",
-      "usage": ["Financial"],
-      "faName": "money"
+      "name": "settings-solid",
+      "usage": ["Settings"],
+      "aliases": ["gear"],
+      "faName": "cog"
     },
     {
       "name": "form-line",
@@ -213,31 +269,14 @@
       "faName": "home"
     },
     {
-      "name": "folder-open-solid",
-      "usage": ["Open"],
-      "faName": "folder-open"
+      "name": "credit-card-line",
+      "usage": ["Credit card"],
+      "faName": "credit-card-o"
     },
     {
-      "name": "notification-line",
-      "usage": ["Notifications"],
-      "faName": "bell-o"
-    },
-    {
-      "name": "notification-solid",
-      "usage": ["Notifications"],
-      "faName": "bell"
-    },
-    {
-      "name": "settings-line",
-      "usage": ["Settings"],
-      "aliases": ["gear"],
-      "faName": "cog"
-    },
-    {
-      "name": "settings-solid",
-      "usage": ["Settings"],
-      "aliases": ["gear"],
-      "faName": "cog"
+      "name": "credit-card-solid",
+      "usage": ["Credit card"],
+      "faName": "credit-card"
     },
     {
       "name": "money-line",
@@ -250,25 +289,16 @@
       "faName": "money"
     },
     {
-      "name": "book-line",
-      "usage": ["Onboarding"],
-      "faName": "book"
-    },
-    {
-      "name": "coin-bag-line",
+      "name": "dollar-bill-solid",
       "usage": ["Financial"],
-      "faName": "money"
+      "faName": "money",
+      "deprecated": "true"
     },
     {
-      "name": "wand-line",
-      "usage": ["Onboarding"],
-      "faName": "magic"
-    },
-    {
-      "name": "bar-chart-line",
-      "usage": ["Data visualization"],
-      "aliases": ["bar-chart-o"],
-      "faName": "bar-chart"
+      "name": "dollar-bill-line",
+      "usage": ["Financial"],
+      "faName": "money", 
+      "deprecated": "true"
     },
     {
       "name": "user-line",
@@ -291,9 +321,9 @@
       "faName": "align-center"
     },
     {
-      "name": "list-line",
-      "usage": ["List"],
-      "faName": "list"
+      "name": "justify-text-line",
+      "usage": ["Justify text"],
+      "faName": "align-justify"
     },
     {
       "name": "note-line",
@@ -337,6 +367,11 @@
       "faName": "th-large"
     },
     {
+      "name": "list-line",
+      "usage": ["List"],
+      "faName": "list"
+    },
+    {
       "name": "star",
       "usage": ["Favorite"],
       "faName": "star"
@@ -345,37 +380,6 @@
       "name": "tag-line",
       "usage": ["Tag"],
       "faName": "tag"
-    },
-    {
-      "name": "save-line",
-      "usage": ["Save"],
-      "faName": "floppy-o"
-    },
-    {
-      "name": "upload-line",
-      "usage": ["Upload"],
-      "faName": "cloud-upload"
-    },
-    {
-      "name": "download-line",
-      "usage": ["Download"],
-      "faName": "cloud-download"
-    },
-    {
-      "name": "zoom-out-line",
-      "usage": ["Zoom out"],
-      "faName": "search-minus"
-    },
-    {
-      "name": "zoom-in-line",
-      "usage": ["Zoom in"],
-      "faName": "search-plus"
-    },
-    {
-      "name": "image-line",
-      "usage": ["Image"],
-      "aliases": ["photo"],
-      "faName": "picture-o"
     },
     {
       "name": "bullet-list-line",
@@ -430,104 +434,7 @@
       "usage": ["Underline text"],
       "faName": "underline"
     },
-    {
-      "name": "justify-text-line",
-      "usage": ["Justify text"],
-      "faName": "align-justify"
-    },
-    {
-      "name": "file-line",
-      "usage": ["Unknown file type"],
-      "faName": "file-o"
-    },
-    {
-      "name": "xls-file-line",
-      "usage": ["Excel file type"],
-      "faName": "file-excel-o"
-    },
-    {
-      "name": "pdf-file-line",
-      "usage": ["PDF file type"],
-      "faName": "file-pdf-o"
-    },
-    {
-      "name": "doc-file-line",
-      "usage": ["Word file type"],
-      "faName": "file-word-o"
-    },
-    {
-      "name": "ppt-file-line",
-      "usage": ["PowerPoint file type"],
-      "faName": "file-powerpoint-o"
-    },
-    {
-      "name": "text-file-line",
-      "usage": ["Text file type"],
-      "faName": "file-text-o"
-    },
-    {
-      "name": "image-file-line",
-      "usage": ["Image file type"],
-      "faName": "file-image-o"
-    },
-    {
-      "name": "video-file-line",
-      "usage": ["Video file type"],
-      "faName": "file-video-o"
-    },
-    {
-      "name": "audio-file-line",
-      "usage": ["Audio file type"],
-      "faName": "file-audio-o"
-    },
   
-    {
-      "name": "code-file-line",
-      "usage": ["Code file type"],
-      "faName": "file-code-o"
-    },
-    {
-      "name": "archive-file-line",
-      "usage": ["Archive file type"],
-      "faName": "file-archive-o"
-    },
-    {
-      "name": "bullet-chart-line",
-      "usage": ["Bullet chart"]
-    },
-    {
-      "name": "donut-chart-line",
-      "usage": ["Donut chart"]
-    },
-    {
-      "name": "pie-chart-line",
-      "usage": ["Pie chart"],
-      "faName": "pie-chart"
-    },
-    {
-      "name": "headline-chart-line",
-      "usage": ["Headline chart"]
-    },
-    {
-      "name": "table-line",
-      "usage": ["Table"],
-      "faName": "table"
-    },
-    {
-      "name": "bar-chart-line",
-      "usage": ["Bar chart"],
-      "aliases": ["bar-chart-o"],
-      "faName": "bar-chart"
-    },
-    {
-      "name": "horizontal-bar-chart-line",
-      "usage": ["Horizontal bar chart"]
-    },
-    {
-      "name": "line-chart-line",
-      "usage": ["Line chart"],
-      "faName": "line-chart"
-    },
     {
       "name": "undo-line",
       "usage": ["Undo"],
@@ -552,23 +459,148 @@
       "faName": "outdent"
     },
     {
+      "name": "image-line",
+      "usage": ["Image"],
+      "aliases": ["photo"],
+      "faName": "picture-o"
+    },
+    {
+      "name": "file-line",
+      "usage": ["Unknown file type"],
+      "faName": "file-o"
+    },
+    {
+      "name": "audio-file-line",
+      "usage": ["Audio file type"],
+      "faName": "file-audio-o"
+    },
+    {
+      "name": "archive-file-line",
+      "usage": ["Archive file type"],
+      "faName": "file-archive-o"
+    },
+    {
+      "name": "code-file-line",
+      "usage": ["Code file type"],
+      "faName": "file-code-o"
+    },
+    {
+      "name": "doc-file-line",
+      "usage": ["Word file type"],
+      "faName": "file-word-o"
+    },
+    {
+      "name": "image-file-line",
+      "usage": ["Image file type"],
+      "faName": "file-image-o"
+    },
+    {
+      "name": "pdf-file-line",
+      "usage": ["PDF file type"],
+      "faName": "file-pdf-o"
+    },
+    {
+      "name": "ppt-file-line",
+      "usage": ["PowerPoint file type"],
+      "faName": "file-powerpoint-o"
+    },
+    {
+      "name": "text-file-line",
+      "usage": ["Text file type"],
+      "faName": "file-text-o"
+    },
+    {
+      "name": "video-file-line",
+      "usage": ["Video file type"],
+      "faName": "file-video-o"
+    },  
+    {
+      "name": "xls-file-line",
+      "usage": ["Excel file type"],
+      "faName": "file-excel-o"
+    },
+    {
+      "name": "bullet-chart-line",
+      "usage": ["Bullet chart"]
+    },
+    {
+      "name": "donut-chart-line",
+      "usage": ["Donut chart"]
+    },
+    {
+      "name": "pie-chart-line",
+      "usage": ["Pie chart"],
+      "faName": "pie-chart"
+    },
+    {
+      "name": "headline-chart-line",
+      "usage": ["Headline chart"]
+    },
+    {
+      "name": "bar-chart-line",
+      "usage": ["Bar chart"],
+      "aliases": ["bar-chart-o"],
+      "faName": "bar-chart"
+    },
+    {
+      "name": "bar-chart-line",
+      "usage": ["Data visualization"],
+      "aliases": ["bar-chart-o"],
+      "faName": "bar-chart",
+      "deprecated": "true"
+    },
+    {
+      "name": "horizontal-bar-chart-line",
+      "usage": ["Horizontal bar chart"]
+    },
+    {
+      "name": "line-chart-line",
+      "usage": ["Line chart"],
+      "faName": "line-chart"
+    },
+    {
+      "name": "coin-bag-line",
+      "usage": ["Onboarding"],
+      "faName": "money"
+    },
+    {
+      "name": "book-line",
+      "usage": ["Onboarding"],
+      "faName": "book"
+    },
+    {
+      "name": "envelope-line",
+      "usage": ["Email"],
+      "faName": "envelope-o"
+    },
+    {
+      "name": "envelope-solid",
+      "usage": ["Email"],
+      "faName": "envelope"
+    },
+    {
+      "name": "printer-line",
+      "usage": ["Print"],
+      "faName": "print-o"
+    },
+    {
+      "name": "printer-solid",
+      "usage": ["Print"],
+      "faName": "print"
+    },
+    {
       "name": "talk-bubbles-line",
       "usage": ["Talk bubbles"],
       "faName": "comments-o"
     },
     {
+      "name": "wand-line",
+      "usage": ["Onboarding"],
+      "faName": "magic"
+    },
+    {
       "name": "bb-brand-accent-line",
       "usage": ["Blackbaud brand accent"]
-    },
-    {
-      "name": "hide",
-      "usage": ["Hide input"],
-      "faName": "eye-slash"
-    },
-    {
-      "name": "show",
-      "usage": ["Show input"],
-      "faName": "eye"
     },
     {
       "name": "bars-2-line",
