@@ -37,6 +37,11 @@
       "faName": "folder-open-o"
     },
     {
+      "name": "folder-open-solid",
+      "usage": ["Open"],
+      "faName": "folder-open"
+    },
+    {
       "name": "save-line",
       "usage": ["Save"],
       "faName": "floppy-o"
@@ -264,11 +269,6 @@
       "faName": "home"
     },
     {
-      "name": "folder-open-solid",
-      "usage": ["Open"],
-      "faName": "folder-open"
-    },
-    {
       "name": "money-line",
       "usage": ["Financial"],
       "faName": "money"
@@ -350,6 +350,11 @@
       "name": "grid-view-line",
       "usage": ["Grid view"],
       "faName": "th-large"
+    },
+    {
+      "name": "list-line",
+      "usage": ["List"],
+      "faName": "list"
     },
     {
       "name": "star",
