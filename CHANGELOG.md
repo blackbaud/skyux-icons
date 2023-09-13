@@ -1,3 +1,7 @@
+# 6.2.3 (2023-09-12)
+
+- Removed duplicates and grouped icons categorically [#57](https://github.com/blackbaud/skyux-icons/pull/57)
+
 # 6.2.2 (2023-09-11)
 
 - Resolved publishing issue in 6.2.1. [#55](https://github.com/blackbaud/skyux-icons/pull/55)
