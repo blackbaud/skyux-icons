@@ -434,7 +434,6 @@
       "usage": ["Underline text"],
       "faName": "underline"
     },
-
     {
       "name": "undo-line",
       "usage": ["Undo"],
