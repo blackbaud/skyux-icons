@@ -289,15 +289,15 @@
       "faName": "money"
     },
     {
-      "name": "dollar-bill-solid",
+      "name": "dollar-bill-line",
       "usage": ["Financial"],
       "faName": "money",
       "deprecated": "true"
     },
     {
-      "name": "dollar-bill-line",
+      "name": "dollar-bill-solid",
       "usage": ["Financial"],
-      "faName": "money", 
+      "faName": "money",
       "deprecated": "true"
     },
     {
@@ -434,7 +434,7 @@
       "usage": ["Underline text"],
       "faName": "underline"
     },
-  
+
     {
       "name": "undo-line",
       "usage": ["Undo"],
@@ -513,11 +513,16 @@
       "name": "video-file-line",
       "usage": ["Video file type"],
       "faName": "file-video-o"
-    },  
+    },
     {
       "name": "xls-file-line",
       "usage": ["Excel file type"],
       "faName": "file-excel-o"
+    },
+    {
+      "name": "table-line",
+      "usage": ["Table"],
+      "faName": "table"
     },
     {
       "name": "bullet-chart-line",

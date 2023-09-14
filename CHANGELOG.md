@@ -1,3 +1,7 @@
+# 6.2.4 (2023-09-14)
+
+- Restored table icon [#58](https://github.com/blackbaud/skyux-icons/pull/58)
+
 # 6.2.3 (2023-09-12)
 
 - Removed duplicates and grouped icons categorically [#57](https://github.com/blackbaud/skyux-icons/pull/57)
