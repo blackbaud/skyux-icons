@@ -1,3 +1,7 @@
+# 6.3.0 (2023-09-19)
+
+- Added a `VERSION` object to the public exports API. [#59](https://github.com/blackbaud/skyux-icons/pull/59)
+
 # 6.2.4 (2023-09-14)
 
 - Restored table icon [#58](https://github.com/blackbaud/skyux-icons/pull/58)
