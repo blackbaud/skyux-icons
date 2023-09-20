@@ -1,3 +1,7 @@
+# 6.3.1 (2023-09-20)
+
+- Fixed Font Awesome aliases for `credit-card-line` and `credit-card-solid`. [#60](https://github.com/blackbaud/skyux-icons/pull/60)
+
 # 6.3.0 (2023-09-19)
 
 - Added a `VERSION` object to the public exports API. [#59](https://github.com/blackbaud/skyux-icons/pull/59)

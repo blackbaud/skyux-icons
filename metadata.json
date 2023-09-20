@@ -271,12 +271,12 @@
     {
       "name": "credit-card-line",
       "usage": ["Credit card"],
-      "faName": "credit-card-o"
+      "faName": "credit-card"
     },
     {
       "name": "credit-card-solid",
       "usage": ["Credit card"],
-      "faName": "credit-card"
+      "faName": "credit-card-alt"
     },
     {
       "name": "money-line",
