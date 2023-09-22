@@ -1,3 +1,7 @@
+# 6.4.0 (2023-09-22)
+
+- Added `faNames` property to manifest and deprecated `faName` [#60](https://github.com/blackbaud/skyux-icons/pull/60)
+
 # 6.3.0 (2023-09-19)
 
 - Added a `VERSION` object to the public exports API. [#59](https://github.com/blackbaud/skyux-icons/pull/59)
