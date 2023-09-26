@@ -24,11 +24,22 @@ export interface SkyIconManifestGlyph {
 
   /**
    * An alternate Font Awesome icon for themes that do not use the SKY UX icon font.
+   * @deprecated
    */
   faName?: string;
 
   /**
-   * A flag indicating the glyph is not actively supported or documented.
+   * A collection of alternate Font Awesome icons for themes that do not use the SKY UX icon font.
+   */
+  faNames?: string[];
+
+  /**
+   * A flag indicating the glyph is not intended to be used by consumers or documented.
+   */
+  hidden?: boolean;
+
+  /**
+   * A flag indicating the glyph is not actively supported.
    */
   deprecated?: boolean;
 }
