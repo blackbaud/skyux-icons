@@ -1,4 +1,4 @@
-# 6.4.0 (2023-09-22)
+# 6.4.0 (2023-09-26)
 
 - Added `faNames` property to manifest and deprecated `faName` [#61](https://github.com/blackbaud/skyux-icons/pull/61)
 
