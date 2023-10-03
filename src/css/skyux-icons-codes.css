@@ -158,6 +158,7 @@
 .sky-i-code-file-line:before { content: '\e8a2'; } /* '' */
 .sky-i-archive-file-line:before { content: '\e8a3'; } /* '' */
 .sky-i-ppt-file-line:before { content: '\e8a4'; } /* '' */
+.sky-i-arrow-up-line:before { content: '\e8a5'; } /* '' */
 .sky-i-hide:before { content: '\e97d'; } /* '' */
 .sky-i-show:before { content: '\e97e'; } /* '' */
 .sky-i-xls-file-line-depricated:before { content: '\e997'; } /* '' */

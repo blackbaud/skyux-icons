@@ -143,6 +143,11 @@
       "faName": "angle-double-up"
     },
     {
+      "name": "arrow-up-line",
+      "usage": ["Move to top"],
+      "faName": "fa-arrow-up"
+    },
+    {
       "name": "ellipsis",
       "usage": ["More actions"],
       "faName": "ellipsis-h"
