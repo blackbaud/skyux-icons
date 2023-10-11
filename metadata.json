@@ -505,6 +505,14 @@
       "faNames": ["file-excel-o"]
     },
     {
+      "name": "bluetooth-on-line",
+      "usage": ["Bluetooth connection"]
+    },
+    {
+      "name": "phone-action-credit-card",
+      "usage": ["Mobile payment"]
+    },
+    {
       "name": "table-line",
       "usage": ["Table"],
       "faNames": ["table"]
@@ -541,16 +549,6 @@
       "faNames": ["line-chart"]
     },
     {
-      "name": "coin-bag-line",
-      "usage": ["Onboarding"],
-      "faNames": ["money"]
-    },
-    {
-      "name": "book-line",
-      "usage": ["Onboarding"],
-      "faNames": ["book"]
-    },
-    {
       "name": "envelope-line",
       "usage": ["Email"],
       "faNames": ["envelope", "envelope-o"]
@@ -576,9 +574,22 @@
       "faNames": ["comments", "comments-o"]
     },
     {
+      "name": "coin-bag-line",
+      "usage": ["Onboarding"],
+      "faNames": ["money"],
+      "deprecated": true
+    },
+    {
+      "name": "book-line",
+      "usage": ["Onboarding"],
+      "faNames": ["book"],
+      "deprecated": true
+    },
+    {
       "name": "wand-line",
       "usage": ["Onboarding"],
-      "faNames": ["magic"]
+      "faNames": ["magic"],
+      "deprecated": true
     },
     {
       "name": "bb-brand-accent-line",

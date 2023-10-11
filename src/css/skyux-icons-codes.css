@@ -73,8 +73,6 @@
 .sky-i-money-solid:before { content: '\e847'; } /* '' */
 .sky-i-money-line:before { content: '\e848'; } /* '' */
 .sky-i-book-line:before { content: '\e849'; } /* '' */
-.sky-i-coin-bag-line:before { content: '\e84a'; } /* '' */
-.sky-i-wand-line:before { content: '\e84b'; } /* '' */
 .sky-i-bar-chart-line:before { content: '\e84c'; } /* '' */
 .sky-i-user-line:before { content: '\e84d'; } /* '' */
 .sky-i-align-left-text-line:before { content: '\e84e'; } /* '' */
@@ -158,6 +156,8 @@
 .sky-i-code-file-line:before { content: '\e8a2'; } /* '' */
 .sky-i-archive-file-line:before { content: '\e8a3'; } /* '' */
 .sky-i-ppt-file-line:before { content: '\e8a4'; } /* '' */
+.sky-i-bluetooth-on-line:before { content: '\e8a5'; } /* '' */
+.sky-i-phone-action-credit-card-line:before { content: '\e8a6'; } /* '' */
 .sky-i-hide:before { content: '\e97d'; } /* '' */
 .sky-i-show:before { content: '\e97e'; } /* '' */
 .sky-i-xls-file-line-depricated:before { content: '\e997'; } /* '' */
