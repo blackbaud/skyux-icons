@@ -1,6 +1,6 @@
 {
   "name": "@skyux/icons",
-  "version": "6.2.4",
+  "version": "6.4.0",
   "main": "./index.js",
   "types": "./index.d.ts",
   "description": "A glyph font and stylesheet for displaying SKY UX icons.",

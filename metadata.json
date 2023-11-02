@@ -3,144 +3,142 @@
     {
       "name": "add",
       "usage": ["Add"],
-      "faName": "plus-circle"
+      "faNames": ["plus-circle"]
     },
     {
       "name": "edit",
       "usage": ["Edit"],
-      "faName": "pencil"
+      "faNames": ["pencil"]
     },
     {
       "name": "pencil-solid",
       "usage": ["Edit"],
-      "faName": "pencil"
+      "faNames": ["pencil"]
     },
     {
       "name": "trash",
       "usage": ["Delete", "Remove"],
-      "faName": "trash-o"
+      "faNames": ["trash", "trash-o"]
     },
     {
       "name": "trash-solid",
       "usage": ["Delete", "Remove"],
-      "faName": "trash"
+      "faNames": ["trash", "trash-o"]
     },
     {
       "name": "close",
       "usage": ["Cancel", "Close"],
-      "aliases": ["remove"],
-      "faName": "times"
+      "faNames": ["times", "close", "remove"]
     },
     {
       "name": "open",
       "usage": ["Open file"],
-      "faName": "folder-open-o"
+      "faNames": ["folder-open-o"]
     },
     {
       "name": "folder-open-solid",
       "usage": ["Open"],
-      "faName": "folder-open"
+      "faNames": ["folder-open"]
     },
     {
       "name": "save-line",
       "usage": ["Save"],
-      "faName": "floppy-o"
+      "faNames": ["floppy-o"]
     },
     {
       "name": "upload-line",
       "usage": ["Upload"],
-      "faName": "cloud-upload"
+      "faNames": ["upload", "cloud-upload"]
     },
     {
       "name": "download-line",
       "usage": ["Download"],
-      "faName": "cloud-download"
+      "faNames": ["download", "cloud-download"]
     },
     {
       "name": "zoom-out-line",
       "usage": ["Zoom out"],
-      "faName": "search-minus"
+      "faNames": ["search-minus"]
     },
     {
       "name": "zoom-in-line",
       "usage": ["Zoom in"],
-      "faName": "search-plus"
+      "faNames": ["search-plus"]
     },
     {
       "name": "hide",
       "usage": ["Hide input"],
-      "faName": "eye-slash"
+      "faNames": ["eye-slash"]
     },
     {
       "name": "show",
       "usage": ["Show input"],
-      "faName": "eye"
+      "faNames": ["eye"]
     },
     {
       "name": "search",
       "usage": ["Search"],
-      "faName": "search"
+      "faNames": ["search"]
     },
     {
       "name": "filter",
       "usage": ["Filter"],
-      "faName": "filter"
+      "faNames": ["filter"]
     },
     {
       "name": "filter-line",
       "usage": ["Filter"],
-      "faName": "filter"
+      "faNames": ["filter"]
     },
     {
       "name": "sort",
       "usage": ["Sort"],
-      "aliases": ["unsorted"],
-      "faName": "sort"
+      "faNames": ["sort", "unsorted"]
     },
     {
       "name": "columns",
       "usage": ["Column layout"],
-      "faName": "columns"
+      "faNames": ["columns"]
     },
     {
       "name": "chevron-down",
       "usage": ["Expand"],
-      "faName": "chevron-down"
+      "faNames": ["chevron-down", "caret-down"]
     },
     {
       "name": "chevron-up",
       "usage": ["Collapse"],
-      "faName": "chevron-up"
+      "faNames": ["chevron-up", "caret-up"]
     },
     {
       "name": "chevron-right",
       "usage": ["Navigate to"],
-      "faName": "chevron-right"
+      "faNames": ["chevron-right", "caret-right"]
     },
     {
       "name": "chevron-left",
       "usage": ["Back to"],
-      "faName": "chevron-left"
+      "faNames": ["chevron-left", "caret-left"]
     },
     {
       "name": "double-chevron-left",
       "usage": ["Collapse navigation"],
-      "faName": "angle-double-left"
+      "faNames": ["angle-double-left"]
     },
     {
       "name": "double-chevron-right",
       "usage": ["Expand navigation"],
-      "faName": "angle-double-right"
+      "faNames": ["angle-double-right"]
     },
     {
       "name": "double-chevron-down",
       "usage": ["Expand all"],
-      "faName": "angle-double-down"
+      "faNames": ["angle-double-down"]
     },
     {
       "name": "double-chevron-up",
       "usage": ["Collapse all"],
-      "faName": "angle-double-up"
+      "faNames": ["angle-double-up"]
     },
     {
       "name": "arrow-up-line",
@@ -150,261 +148,253 @@
     {
       "name": "ellipsis",
       "usage": ["More actions"],
-      "faName": "ellipsis-h"
+      "faNames": ["ellipsis-h"]
     },
     {
       "name": "menu",
       "usage": ["Navigation menu"],
-      "aliases": ["navicon", "reorder"],
-      "faName": "bars"
+      "faNames": ["bars", "navicon", "reorder"]
     },
     {
       "name": "tile-drag",
       "usage": ["Drag and drop handle"],
-      "faName": "th"
+      "faNames": ["th"]
     },
     {
       "name": "calendar",
       "usage": ["Calendar", "Date"],
-      "faName": "calendar"
+      "faNames": ["calendar"]
     },
     {
       "name": "calendar-solid",
       "usage": ["Calendar", "Date"],
-      "faName": "calendar"
+      "faNames": ["calendar"]
     },
     {
       "name": "clock",
       "usage": ["Time", "Timepicker"],
-      "faName": "clock-o"
+      "faNames": ["clock-o"]
     },
     {
       "name": "clock-solid",
       "usage": ["Time", "Timepicker"],
-      "faName": "clock-o"
+      "faNames": ["clock-o"]
     },
     {
       "name": "check",
       "usage": ["Complete", "Success"],
-      "faName": "check"
+      "faNames": ["check"]
     },
     {
       "name": "help-line",
       "usage": ["Help"],
-      "faName": "question-circle"
+      "faNames": ["question-circle", "question-circle-o"]
     },
     {
       "name": "help-solid",
       "usage": ["Help"],
-      "faName": "question-circle"
+      "faNames": ["question-circle", "question-circle-o"]
     },
     {
       "name": "bell-line",
       "usage": ["Notification"],
-      "faName": "bell-o"
+      "faNames": ["bell", "bell-o"]
     },
     {
       "name": "bell-solid",
       "usage": ["Notification"],
-      "faName": "bell"
+      "faNames": ["bell", "bell-o"]
     },
     {
       "name": "notification-line",
       "usage": ["Notification"],
-      "faName": "bell-o",
+      "faNames": ["bell", "bell-o"],
       "deprecated": "true"
     },
     {
       "name": "notification-solid",
       "usage": ["Notification"],
-      "faName": "bell",
+      "faNames": ["bell", "bell-o"],
       "deprecated": "true"
     },
     {
       "name": "cog-line",
       "usage": ["Settings"],
-      "aliases": ["gear"],
-      "faName": "cog",
+      "faNames": ["cog", "gear"],
       "deprecated": "true"
     },
     {
       "name": "cog-solid",
       "usage": ["Settings"],
-      "aliases": ["gear"],
-      "faName": "cog",
+      "faNames": ["cog", "gear"],
       "deprecated": "true"
     },
     {
       "name": "settings-line",
       "usage": ["Settings"],
-      "aliases": ["gear"],
-      "faName": "cog"
+      "faNames": ["cog", "gear"]
     },
     {
       "name": "settings-solid",
       "usage": ["Settings"],
-      "aliases": ["gear"],
-      "faName": "cog"
+      "faNames": ["cog", "gear"]
     },
     {
       "name": "form-line",
       "usage": ["Form"],
-      "faName": "pencil-square-o"
+      "faNames": ["pencil-square-o"]
     },
     {
       "name": "users-line",
       "usage": ["User group"],
-      "aliases": ["group"],
-      "faName": "users"
+      "faNames": ["users", "group"]
     },
     {
       "name": "users-solid",
       "usage": ["User group"],
-      "aliases": ["group"],
-      "faName": "users"
+      "faNames": ["users", "group"]
     },
     {
       "name": "house-line",
       "usage": ["Home"],
-      "faName": "home"
+      "faNames": ["home"]
     },
     {
       "name": "house-solid",
       "usage": ["Home"],
-      "faName": "home"
+      "faNames": ["home"]
     },
     {
       "name": "credit-card-line",
       "usage": ["Credit card"],
-      "faName": "credit-card-o"
+      "faNames": ["credit-card", "credit-card-alt"]
     },
     {
       "name": "credit-card-solid",
       "usage": ["Credit card"],
-      "faName": "credit-card"
+      "faNames": ["credit-card", "credit-card-alt"]
     },
     {
       "name": "money-line",
       "usage": ["Financial"],
-      "faName": "money"
+      "faNames": ["money"]
     },
     {
       "name": "money-solid",
       "usage": ["Financial"],
-      "faName": "money"
+      "faNames": ["money"]
     },
     {
       "name": "dollar-bill-line",
       "usage": ["Financial"],
-      "faName": "money",
+      "faNames": ["money"],
       "deprecated": "true"
     },
     {
       "name": "dollar-bill-solid",
       "usage": ["Financial"],
-      "faName": "money",
+      "faNames": ["money"],
       "deprecated": "true"
     },
     {
       "name": "user-line",
       "usage": ["User single"],
-      "faName": "user-o"
+      "faNames": ["user-o"]
     },
     {
       "name": "align-left-text-line",
       "usage": ["Left align text"],
-      "faName": "align-left"
+      "faNames": ["align-left"]
     },
     {
       "name": "align-right-text-line",
       "usage": ["Right align text"],
-      "faName": "align-right"
+      "faNames": ["align-right"]
     },
     {
       "name": "center-text-line",
       "usage": ["Center align text"],
-      "faName": "align-center"
+      "faNames": ["align-center"]
     },
     {
       "name": "justify-text-line",
       "usage": ["Justify text"],
-      "faName": "align-justify"
+      "faNames": ["align-justify"]
     },
     {
       "name": "note-line",
       "usage": ["Note"],
-      "faName": "pencil-square-o"
+      "faNames": ["pencil-square-o"]
     },
     {
       "name": "attach-line",
       "usage": ["Attach"],
-      "faName": "paperclip"
+      "faNames": ["paperclip"]
     },
     {
       "name": "link-line",
       "usage": ["Hyperlink"],
-      "aliases": ["chain"],
-      "faName": "link"
+      "faNames": ["link", "chain"]
     },
     {
       "name": "unlink-line",
       "usage": ["Remove hyperlink"],
-      "faName": "chain-broken"
+      "faNames": ["unlink", "chain-broken"]
     },
     {
       "name": "ban-line",
       "usage": ["Ban"],
-      "faName": "ban"
+      "faNames": ["ban"]
     },
     {
       "name": "business-line",
       "usage": ["Building"],
-      "faName": "building-o"
+      "faNames": ["building-o", "building"]
     },
     {
       "name": "cloud-line",
       "usage": ["Cloud"],
-      "faName": "cloud"
+      "faNames": ["cloud"]
     },
     {
       "name": "grid-view-line",
       "usage": ["Grid view"],
-      "faName": "th-large"
+      "faNames": ["th-large"]
     },
     {
       "name": "list-line",
       "usage": ["List"],
-      "faName": "list"
+      "faNames": ["list"]
     },
     {
       "name": "star",
       "usage": ["Favorite"],
-      "faName": "star"
+      "faNames": ["star", "star-o"]
     },
     {
       "name": "tag-line",
       "usage": ["Tag"],
-      "faName": "tag"
+      "faNames": ["tag"]
     },
     {
       "name": "bullet-list-line",
       "usage": ["Bulleted list"],
-      "faName": "list-ul"
+      "faNames": ["list-ul"]
     },
     {
       "name": "number-list-line",
       "usage": ["Numbered list"],
-      "faName": "list-ol"
+      "faNames": ["list-ol"]
     },
     {
       "name": "bold-line",
       "usage": ["Bold text"],
-      "faName": "bold"
+      "faNames": ["bold"]
     },
     {
       "name": "font-size-line",
       "usage": ["Font size"],
-      "faName": "text-height"
+      "faNames": ["text-height"]
     },
     {
       "name": "highlighter-line",
@@ -417,116 +407,112 @@
     {
       "name": "subscript-line",
       "usage": ["Subscript text"],
-      "faName": "subscript"
+      "faNames": ["subscript"]
     },
     {
       "name": "superscript-line",
       "usage": ["Superscript text"],
-      "faName": "superscript"
+      "faNames": ["superscript"]
     },
     {
       "name": "italic-line",
       "usage": ["Italicize text"],
-      "faName": "italic"
+      "faNames": ["italic"]
     },
     {
       "name": "strikethrough-line",
       "usage": ["Strikethrough text"],
-      "faName": "strikethrough"
+      "faNames": ["strikethrough"]
     },
     {
       "name": "underline-line",
       "usage": ["Underline text"],
-      "faName": "underline"
+      "faNames": ["underline"]
     },
     {
       "name": "undo-line",
       "usage": ["Undo"],
-      "aliases": ["rotate-left"],
-      "faName": "undo"
+      "faNames": ["undo", "rotate-left"]
     },
     {
       "name": "redo-line",
       "usage": ["Redo"],
-      "aliases": ["rotate-right"],
-      "faName": "repeat"
+      "faNames": ["repeat", "rotate-right"]
     },
     {
       "name": "indent-line",
       "usage": ["Indent"],
-      "faName": "indent"
+      "faNames": ["indent"]
     },
     {
       "name": "outdent-line",
       "usage": ["Outdent"],
-      "aliases": ["dedent"],
-      "faName": "outdent"
+      "faNames": ["outdent", "dedent"]
     },
     {
       "name": "image-line",
       "usage": ["Image"],
-      "aliases": ["photo"],
-      "faName": "picture-o"
+      "faNames": ["picture-o", "photo", "image"]
     },
     {
       "name": "file-line",
       "usage": ["Unknown file type"],
-      "faName": "file-o"
+      "faNames": ["file", "file-o"]
     },
     {
       "name": "audio-file-line",
       "usage": ["Audio file type"],
-      "faName": "file-audio-o"
+      "faNames": ["file-audio-o"]
     },
     {
       "name": "archive-file-line",
       "usage": ["Archive file type"],
-      "faName": "file-archive-o"
+      "faNames": ["file-archive-o"]
     },
     {
       "name": "code-file-line",
       "usage": ["Code file type"],
-      "faName": "file-code-o"
+      "faNames": ["file-code-o"]
     },
     {
       "name": "doc-file-line",
       "usage": ["Word file type"],
-      "faName": "file-word-o"
+      "faNames": ["file-word-o"]
     },
     {
       "name": "image-file-line",
       "usage": ["Image file type"],
-      "faName": "file-image-o"
+      "faNames": ["file-image-o"]
     },
     {
       "name": "pdf-file-line",
       "usage": ["PDF file type"],
-      "faName": "file-pdf-o"
+      "faNames": ["file-pdf-o"]
     },
     {
       "name": "ppt-file-line",
       "usage": ["PowerPoint file type"],
-      "faName": "file-powerpoint-o"
+      "faNames": ["file-powerpoint-o"]
     },
     {
       "name": "text-file-line",
       "usage": ["Text file type"],
-      "faName": "file-text-o"
+      "faNames": ["file-text-o"]
     },
     {
       "name": "video-file-line",
       "usage": ["Video file type"],
-      "faName": "file-video-o"
+      "faNames": ["file-video-o"]
     },
     {
       "name": "xls-file-line",
       "usage": ["Excel file type"],
-      "faName": "file-excel-o"
+      "faNames": ["file-excel-o"]
     },
     {
       "name": "table-line",
       "usage": ["Table"],
-      "faName": "table"
+      "faNames": ["table"]
     },
     {
       "name": "bullet-chart-line",
@@ -539,7 +525,7 @@
     {
       "name": "pie-chart-line",
       "usage": ["Pie chart"],
-      "faName": "pie-chart"
+      "faNames": ["pie-chart"]
     },
     {
       "name": "headline-chart-line",
@@ -548,15 +534,7 @@
     {
       "name": "bar-chart-line",
       "usage": ["Bar chart"],
-      "aliases": ["bar-chart-o"],
-      "faName": "bar-chart"
-    },
-    {
-      "name": "bar-chart-line",
-      "usage": ["Data visualization"],
-      "aliases": ["bar-chart-o"],
-      "faName": "bar-chart",
-      "deprecated": "true"
+      "faNames": ["bar-chart", "bar-chart-o"]
     },
     {
       "name": "horizontal-bar-chart-line",
@@ -565,47 +543,47 @@
     {
       "name": "line-chart-line",
       "usage": ["Line chart"],
-      "faName": "line-chart"
+      "faNames": ["line-chart"]
     },
     {
       "name": "coin-bag-line",
       "usage": ["Onboarding"],
-      "faName": "money"
+      "faNames": ["money"]
     },
     {
       "name": "book-line",
       "usage": ["Onboarding"],
-      "faName": "book"
+      "faNames": ["book"]
     },
     {
       "name": "envelope-line",
       "usage": ["Email"],
-      "faName": "envelope-o"
+      "faNames": ["envelope", "envelope-o"]
     },
     {
       "name": "envelope-solid",
       "usage": ["Email"],
-      "faName": "envelope"
+      "faNames": ["envelope", "envelope-o"]
     },
     {
       "name": "printer-line",
       "usage": ["Print"],
-      "faName": "print-o"
+      "faNames": ["print"]
     },
     {
       "name": "printer-solid",
       "usage": ["Print"],
-      "faName": "print"
+      "faNames": ["print"]
     },
     {
       "name": "talk-bubbles-line",
       "usage": ["Talk bubbles"],
-      "faName": "comments-o"
+      "faNames": ["comments", "comments-o"]
     },
     {
       "name": "wand-line",
       "usage": ["Onboarding"],
-      "faName": "magic"
+      "faNames": ["magic"]
     },
     {
       "name": "bb-brand-accent-line",
@@ -614,80 +592,77 @@
     {
       "name": "bars-2-line",
       "usage": ["Menu"],
-      "aliases": ["navicon", "reorder"],
-      "faName": "bars"
+      "faNames": ["bars", "navicon", "reorder"]
     },
     {
       "name": "cog-2-line",
       "usage": ["Settings"],
-      "aliases": ["gear"],
-      "faName": "cog"
+      "faNames": ["cog", "gear"]
     },
     {
       "name": "cog-2-solid",
       "usage": ["Settings"],
-      "aliases": ["gear"],
-      "faName": "cog"
+      "faNames": ["cog", "gear"]
     },
     {
       "name": "collapse-2-line",
       "usage": ["Collapse nav"],
-      "faName": "angle-double-left"
+      "faNames": ["angle-double-left"]
     },
     {
       "name": "expand-2-line",
       "usage": ["Expand nav"],
-      "faName": "angle-double-right"
+      "faNames": ["angle-double-right"]
     },
     {
       "name": "database-2-line",
       "usage": ["Database"],
-      "faName": "database"
+      "faNames": ["database"]
     },
     {
       "name": "database-2-solid",
       "usage": ["Database"],
-      "faName": "database"
+      "faNames": ["database"]
     },
     {
       "name": "form-2-solid",
       "usage": ["Form"],
-      "faName": "pencil-square-o"
+      "faNames": ["pencil-square-o"]
     },
     {
       "name": "form-2-line",
       "usage": ["Form"],
-      "faName": "pencil-square-o"
+      "faNames": ["pencil-square-o"]
     },
     {
       "name": "lock-2-line",
       "usage": ["Lock"],
-      "faName": "lock"
+      "faNames": ["lock"]
     },
     {
       "name": "lock-2-solid",
       "usage": ["Lock"],
-      "faName": "lock"
+      "faNames": ["lock"]
     },
     {
       "name": "money-2-line",
       "usage": ["Money"],
-      "faName": "money"
+      "faNames": ["money"]
     },
     {
       "name": "money-2-solid",
       "usage": ["Money"],
-      "faName": "money"
+      "faNames": ["money"]
     },
     {
       "name": "notifications-2-line",
       "usage": ["Notifications"],
-      "faName": "bell-o"
+      "faNames": ["bell", "bell-o"]
     },
     {
       "name": "notifications-2-solid",
       "usage": ["Notifications"],
-      "faName": "bell"
+      "faNames": ["bell", "bell-o"]
     },
     {
       "name": "bb-diamond-2-line",
@@ -699,19 +674,19 @@
     },
     {
       "name": "circle-solid",
-      "deprecated": true
+      "hidden": true
     },
     {
       "name": "triangle-solid",
-      "deprecated": true
+      "hidden": true
     },
     {
       "name": "exclamation",
-      "deprecated": true
+      "hidden": true
     },
     {
       "name": "help-i",
-      "deprecated": true
+      "hidden": true
     }
   ]
 }

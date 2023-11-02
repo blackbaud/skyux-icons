@@ -120,12 +120,25 @@ async function compileTypeScriptModule(manifest) {
   );
 }
 
+async function setVersion() {
+  const packageJson = await fs.readJson('package.json');
+
+  const versionFilePath = path.normalize('dist/module/version.js');
+  const versionFileContents = (await fs.readFile(versionFilePath)).toString();
+
+  await fs.writeFile(
+    versionFilePath,
+    versionFileContents.replace('0.0.0-PLACEHOLDER', packageJson.version)
+  );
+}
+
 (async () => {
   try {
     await copyToDist();
     await processCss();
     const manifest = await createManifest();
     await compileTypeScriptModule(manifest);
+    await setVersion();
   } catch (err) {
     console.error(err);
     process.exit(1);
