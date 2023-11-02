@@ -668,6 +668,18 @@
       "usage": ["Blackbaud brand glyph"]
     },
     {
+      "name": "online-learning-2",
+      "usage": ["Online learning"]
+    },
+    {
+      "name": "donation-charity-hand-heart-2",
+      "usage": ["Giving"]
+    },
+    {
+      "name": "workflow-teamwork-user-2",
+      "usage": ["Volunteering"]
+    },
+    {
       "name": "circle-solid",
       "hidden": true
     },
