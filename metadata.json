@@ -292,6 +292,14 @@
       "deprecated": "true"
     },
     {
+      "name": "phone-action-credit-card-line",
+      "usage": ["Payments"]
+    },
+    {
+      "name": "bluetooth-on-line",
+      "usage": ["Payments"]
+    },
+    {
       "name": "user-line",
       "usage": ["User single"],
       "faNames": ["user-o"]
@@ -509,7 +517,7 @@
       "usage": ["Bluetooth connection"]
     },
     {
-      "name": "phone-action-credit-card",
+      "name": "phone-action-credit-card-line",
       "usage": ["Mobile payment"]
     },
     {
@@ -659,6 +667,18 @@
       "name": "money-2-solid",
       "usage": ["Money"],
       "faNames": ["money"]
+    },
+    {
+      "name": "online-learning-line-2",
+      "usage": ["Online learning"]
+    },
+    {
+      "name": "donation-charity-hand-heart-line-2",
+      "usage": ["Donation heart"]
+    },
+    {
+      "name": "workflow-teamwork-user-line-2",
+      "usage": ["Volunteering"]
     },
     {
       "name": "notifications-2-line",
