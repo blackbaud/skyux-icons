@@ -158,6 +158,13 @@
 .sky-i-code-file-line:before { content: '\e8a2'; } /* '' */
 .sky-i-archive-file-line:before { content: '\e8a3'; } /* '' */
 .sky-i-ppt-file-line:before { content: '\e8a4'; } /* '' */
+.sky-i-bluetooth-on-line-1:before { content: '\e8a5'; } /* '' */
+.sky-i-phone-action-credit-card-line-1:before { content: '\e8a6'; } /* '' */
+.sky-i-online-learning-line-2:before { content: '\e8a7'; } /* '' */
+.sky-i-donation-charity-hand-heart-line-2:before { content: '\e8a8'; } /* '' */
+.sky-i-workflow-teamwork-user-line-2:before { content: '\e8a9'; } /* '' */
+.sky-i-phone-action-credit-card-line:before { content: '\e8aa'; } /* '' */
+.sky-i-bluetooth-on-line:before { content: '\e8ab'; } /* '' */
 .sky-i-hide:before { content: '\e97d'; } /* '' */
 .sky-i-show:before { content: '\e97e'; } /* '' */
 .sky-i-xls-file-line-depricated:before { content: '\e997'; } /* '' */
