@@ -1,3 +1,7 @@
+# 6.6.0 (2023-11-28)
+
+- Added variant icons for Online learning, Donations, and Volunteering. [#66](https://github.com/blackbaud/skyux-icons/pull/66)
+
 # 6.5.0 (2023-11-03)
 
 - Added MobilePay icons. [#63](https://github.com/blackbaud/skyux-icons/pull/63)
