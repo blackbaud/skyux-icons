@@ -1,3 +1,7 @@
+# 6.6.1 (2023-12-04)
+
+- Update variant names for Online learning, Donations, and Volunteering. [#67](https://github.com/blackbaud/skyux-icons/pull/67)
+
 # 6.6.0 (2023-11-28)
 
 - Added variant icons for Online learning, Donations, and Volunteering. [#66](https://github.com/blackbaud/skyux-icons/pull/66)
