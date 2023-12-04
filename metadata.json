@@ -671,56 +671,32 @@
     {
       "name": "online-learning-line-2",
       "usage": ["Online learning"],
-      "deprecated": "true"
-    },
-    {
-      "name": "online-learning-2-line",
-      "usage": ["Online learning"]
+      "aliases": ["online-learning-2-line"]
     },
     {
       "name": "online-learning-solid-2",
       "usage": ["Online learning"],
-      "deprecated": "true"
-    },
-    {
-      "name": "online-learning-2-solid",
-      "usage": ["Online learning"]
+      "aliases": ["online-learning-2-solid"]
     },
     {
       "name": "donation-charity-hand-heart-line-2",
       "usage": ["Donation heart"],
-      "deprecated": "true"
-    },
-    {
-      "name": "donation-charity-hand-heart-2-line",
-      "usage": ["Donation heart"]
+      "aliases": ["donation-charity-hand-heart-2-line"]
     },
     {
       "name": "donation-charity-hand-heart-solid-2",
       "usage": ["Donation heart"],
-      "deprecated": "true"
-    },
-    {
-      "name": "donation-charity-hand-heart-2-solid",
-      "usage": ["Donation heart"]
+      "aliases": ["donation-charity-hand-heart-2-solid"]
     },
     {
       "name": "workflow-teamwork-user-line-2",
       "usage": ["Volunteering"],
-      "deprecated": "true"
-    },
-    {
-      "name": "workflow-teamwork-user-2-line",
-      "usage": ["Volunteering"]
+      "aliases": ["workflow-teamwork-user-2-line"]
     },
     {
       "name": "workflow-teamwork-user-solid-2",
       "usage": ["Volunteering"],
-      "deprecated": "true"
-    },
-    {
-      "name": "workflow-teamwork-user-2-solid",
-      "usage": ["Volunteering"]
+      "aliases": ["workflow-teamwork-user-2-solid"]
     },
     {
       "name": "notifications-2-line",
