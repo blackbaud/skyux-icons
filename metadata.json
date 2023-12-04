@@ -670,27 +670,33 @@
     },
     {
       "name": "online-learning-line-2",
-      "usage": ["Online learning"]
+      "usage": ["Online learning"],
+      "aliases": ["online-learning-2-line"]
     },
     {
       "name": "online-learning-solid-2",
-      "usage": ["Online learning"]
+      "usage": ["Online learning"],
+      "aliases": ["online-learning-2-solid"]
     },
     {
       "name": "donation-charity-hand-heart-line-2",
-      "usage": ["Donation heart"]
+      "usage": ["Donation heart"],
+      "aliases": ["donation-charity-hand-heart-2-line"]
     },
     {
       "name": "donation-charity-hand-heart-solid-2",
-      "usage": ["Donation heart"]
+      "usage": ["Donation heart"],
+      "aliases": ["donation-charity-hand-heart-2-solid"]
     },
     {
       "name": "workflow-teamwork-user-line-2",
-      "usage": ["Volunteering"]
+      "usage": ["Volunteering"],
+      "aliases": ["workflow-teamwork-user-2-line"]
     },
     {
       "name": "workflow-teamwork-user-solid-2",
-      "usage": ["Volunteering"]
+      "usage": ["Volunteering"],
+      "aliases": ["workflow-teamwork-user-2-solid"]
     },
     {
       "name": "notifications-2-line",
