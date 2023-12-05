@@ -2360,7 +2360,7 @@
     },
     {
       "uid": "ccd44196fca5dca5e90e3651ed8de096",
-      "css": "workflow-teamwork-user-line-2",
+      "css": "workflow-teamwork-user-2-line",
       "code": 59561,
       "src": "custom_icons",
       "selected": true,
@@ -2369,12 +2369,12 @@
         "width": 1000
       },
       "search": [
-        "workflow-teamwork-user-line-2"
+        "workflow-teamwork-user-2-line"
       ]
     },
     {
       "uid": "d40120ddf0971ec0e8022c32caf222e7",
-      "css": "online-learning-line-2",
+      "css": "online-learning-2-line",
       "code": 59559,
       "src": "custom_icons",
       "selected": true,
@@ -2383,12 +2383,12 @@
         "width": 1000
       },
       "search": [
-        "online-learning-line-2"
+        "online-learning-2-line"
       ]
     },
     {
       "uid": "489690abb2a26e7b81535aa9af73ad66",
-      "css": "donation-charity-hand-heart-line-2",
+      "css": "donation-charity-hand-heart-2-line",
       "code": 59560,
       "src": "custom_icons",
       "selected": true,
@@ -2397,12 +2397,12 @@
         "width": 1000
       },
       "search": [
-        "donation-charity-hand-heart-line-2"
+        "donation-charity-hand-heart-2-line"
       ]
     },
     {
       "uid": "6d13ca32d47c3275019c8ce8a7ea22ea",
-      "css": "workflow-teamwork-user-solid-2",
+      "css": "workflow-teamwork-user-2-solid",
       "code": 59569,
       "src": "custom_icons",
       "selected": true,
@@ -2411,12 +2411,12 @@
         "width": 1000
       },
       "search": [
-        "workflow-teamwork-user-solid-2"
+        "workflow-teamwork-user-2-solid"
       ]
     },
     {
       "uid": "147cbf56424e017cfd7a8d57e6ab3141",
-      "css": "online-learning-solid-2",
+      "css": "online-learning-2-solid",
       "code": 59568,
       "src": "custom_icons",
       "selected": true,
@@ -2425,12 +2425,12 @@
         "width": 1000
       },
       "search": [
-        "online-learning-solid-2"
+        "online-learning-2-solid"
       ]
     },
     {
       "uid": "f7b23436f8bc826afbcb028b639bd23f",
-      "css": "donation-charity-hand-heart-solid-2",
+      "css": "donation-charity-hand-heart-2-solid",
       "code": 59567,
       "src": "custom_icons",
       "selected": true,
@@ -2439,7 +2439,7 @@
         "width": 1000
       },
       "search": [
-        "donation-charity-hand-heart-solid-2"
+        "donation-charity-hand-heart-2-solid"
       ]
     },
     {
