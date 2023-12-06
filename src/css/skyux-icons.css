@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'skyux-icons';
-  src: url('../font/skyux-icons.eot?37862867');
-  src: url('../font/skyux-icons.eot?37862867#iefix') format('embedded-opentype'),
-       url('../font/skyux-icons.woff2?37862867') format('woff2'),
-       url('../font/skyux-icons.woff?37862867') format('woff'),
-       url('../font/skyux-icons.ttf?37862867') format('truetype'),
-       url('../font/skyux-icons.svg?37862867#skyux-icons') format('svg');
+  src: url('../font/skyux-icons.eot?59645940');
+  src: url('../font/skyux-icons.eot?59645940#iefix') format('embedded-opentype'),
+       url('../font/skyux-icons.woff2?59645940') format('woff2'),
+       url('../font/skyux-icons.woff?59645940') format('woff'),
+       url('../font/skyux-icons.ttf?59645940') format('truetype'),
+       url('../font/skyux-icons.svg?59645940#skyux-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'skyux-icons';
-    src: url('../font/skyux-icons.svg?37862867#skyux-icons') format('svg');
+    src: url('../font/skyux-icons.svg?59645940#skyux-icons') format('svg');
   }
 }
 */
@@ -215,14 +215,14 @@
 .sky-i-ppt-file-line:before { content: '\e8a4'; } /* '' */
 .sky-i-bluetooth-on-line-1:before { content: '\e8a5'; } /* '' */
 .sky-i-phone-action-credit-card-line-1:before { content: '\e8a6'; } /* '' */
-.sky-i-online-learning-line-2:before { content: '\e8a7'; } /* '' */
-.sky-i-donation-charity-hand-heart-line-2:before { content: '\e8a8'; } /* '' */
-.sky-i-workflow-teamwork-user-line-2:before { content: '\e8a9'; } /* '' */
+.sky-i-online-learning-2-line:before { content: '\e8a7'; } /* '' */
+.sky-i-donation-charity-hand-heart-2-line:before { content: '\e8a8'; } /* '' */
+.sky-i-workflow-teamwork-user-2-line:before { content: '\e8a9'; } /* '' */
 .sky-i-phone-action-credit-card-line:before { content: '\e8aa'; } /* '' */
 .sky-i-bluetooth-on-line:before { content: '\e8ab'; } /* '' */
-.sky-i-donation-charity-hand-heart-solid-2:before { content: '\e8af'; } /* '' */
-.sky-i-online-learning-solid-2:before { content: '\e8b0'; } /* '' */
-.sky-i-workflow-teamwork-user-solid-2:before { content: '\e8b1'; } /* '' */
+.sky-i-donation-charity-hand-heart-2-solid:before { content: '\e8af'; } /* '' */
+.sky-i-online-learning-2-solid:before { content: '\e8b0'; } /* '' */
+.sky-i-workflow-teamwork-user-2-solid:before { content: '\e8b1'; } /* '' */
 .sky-i-hide:before { content: '\e97d'; } /* '' */
 .sky-i-show:before { content: '\e97e'; } /* '' */
 .sky-i-xls-file-line-depricated:before { content: '\e997'; } /* '' */

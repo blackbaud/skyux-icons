@@ -669,34 +669,34 @@
       "faNames": ["money"]
     },
     {
-      "name": "online-learning-line-2",
+      "name": "online-learning-2-line",
       "usage": ["Online learning"],
-      "aliases": ["online-learning-2-line"]
+      "aliases": ["online-learning-line-2"]
     },
     {
-      "name": "online-learning-solid-2",
+      "name": "online-learning-2-solid",
       "usage": ["Online learning"],
-      "aliases": ["online-learning-2-solid"]
+      "aliases": ["online-learning-solid-2"]
     },
     {
-      "name": "donation-charity-hand-heart-line-2",
+      "name": "donation-charity-hand-heart-2-line",
       "usage": ["Donation heart"],
-      "aliases": ["donation-charity-hand-heart-2-line"]
+      "aliases": ["donation-charity-hand-heart-line-2"]
     },
     {
-      "name": "donation-charity-hand-heart-solid-2",
+      "name": "donation-charity-hand-heart-2-solid",
       "usage": ["Donation heart"],
-      "aliases": ["donation-charity-hand-heart-2-solid"]
+      "aliases": ["donation-charity-hand-heart-solid-2"]
     },
     {
-      "name": "workflow-teamwork-user-line-2",
+      "name": "workflow-teamwork-user-2-line",
       "usage": ["Volunteering"],
-      "aliases": ["workflow-teamwork-user-2-line"]
+      "aliases": ["workflow-teamwork-user-line-2"]
     },
     {
-      "name": "workflow-teamwork-user-solid-2",
+      "name": "workflow-teamwork-user-2-solid",
       "usage": ["Volunteering"],
-      "aliases": ["workflow-teamwork-user-2-solid"]
+      "aliases": ["workflow-teamwork-user-solid-2"]
     },
     {
       "name": "notifications-2-line",
