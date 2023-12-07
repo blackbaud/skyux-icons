@@ -1,3 +1,7 @@
+# 6.7.0 (2023-12-07)
+
+- Added Copilot icons. [#70](https://github.com/blackbaud/skyux-icons/pull/70)
+
 # 6.6.2 (2023-12-05)
 
 - Swapped names and aliases for Online learning, Donations, and Volunteering. [#68](https://github.com/blackbaud/skyux-icons/pull/68)
