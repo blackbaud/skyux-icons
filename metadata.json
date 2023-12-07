@@ -699,6 +699,14 @@
       "aliases": ["workflow-teamwork-user-solid-2"]
     },
     {
+      "name": "sparkles-2-line",
+      "usage": ["AI"]
+    },
+    {
+      "name": "sparkles-2-solid",
+      "usage": ["AI"]
+    },
+    {
       "name": "notifications-2-line",
       "usage": ["Notifications"],
       "faNames": ["bell", "bell-o"]
