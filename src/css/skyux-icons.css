@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'skyux-icons';
-  src: url('../font/skyux-icons.eot?59645940');
-  src: url('../font/skyux-icons.eot?59645940#iefix') format('embedded-opentype'),
-       url('../font/skyux-icons.woff2?59645940') format('woff2'),
-       url('../font/skyux-icons.woff?59645940') format('woff'),
-       url('../font/skyux-icons.ttf?59645940') format('truetype'),
-       url('../font/skyux-icons.svg?59645940#skyux-icons') format('svg');
+  src: url('../font/skyux-icons.eot?18487058');
+  src: url('../font/skyux-icons.eot?18487058#iefix') format('embedded-opentype'),
+       url('../font/skyux-icons.woff2?18487058') format('woff2'),
+       url('../font/skyux-icons.woff?18487058') format('woff'),
+       url('../font/skyux-icons.ttf?18487058') format('truetype'),
+       url('../font/skyux-icons.svg?18487058#skyux-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'skyux-icons';
-    src: url('../font/skyux-icons.svg?59645940#skyux-icons') format('svg');
+    src: url('../font/skyux-icons.svg?18487058#skyux-icons') format('svg');
   }
 }
 */
@@ -223,6 +223,8 @@
 .sky-i-donation-charity-hand-heart-2-solid:before { content: '\e8af'; } /* '' */
 .sky-i-online-learning-2-solid:before { content: '\e8b0'; } /* '' */
 .sky-i-workflow-teamwork-user-2-solid:before { content: '\e8b1'; } /* '' */
+.sky-i-sparkles-2-solid:before { content: '\e958'; } /* '' */
+.sky-i-sparkles-2-line:before { content: '\e959'; } /* '' */
 .sky-i-hide:before { content: '\e97d'; } /* '' */
 .sky-i-show:before { content: '\e97e'; } /* '' */
 .sky-i-xls-file-line-depricated:before { content: '\e997'; } /* '' */
