@@ -55,3 +55,7 @@ The SKY UX icon font is generated using [Fontello](http://fontello.com/). To add
 - Commit your changes to your branch and push them to GitHub, then create a pull request so they can be reviewed.
 
 - Your work is now done. The owners of this repo will handle reviewing, merging and releasing your changes.
+
+## Legal
+
+These icons are property of Webalys LLC.
