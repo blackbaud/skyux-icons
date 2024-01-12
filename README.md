@@ -58,4 +58,6 @@ The SKY UX icon font is generated using [Fontello](http://fontello.com/). To add
 
 ## Legal
 
-These icons are property of Webalys LLC.
+Icons which have an `owner` property in the `metadata.json` file are the property of the listed organization.
+
+Icons owned by `Webalys, LLC` must only be used within the context of the SKY UX user experience framework.
