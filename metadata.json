@@ -669,6 +669,46 @@
       "faNames": ["money"]
     },
     {
+      "name": "saving-bank-2-line",
+      "usage": ["Bank"]
+    },
+    {
+      "name": "saving-bank-2-solid",
+      "usage": ["Bank"]
+    },
+    {
+      "name": "accounting-invoice-mail-2-line",
+      "usage": ["Invoice"]
+    },
+    {
+      "name": "accounting-invoice-mail-2-solid",
+      "usage": ["Invoice"]
+    },
+    {
+      "name": "cash-payment-bill-2-line",
+      "usage": ["Payment"]
+    },
+    {
+      "name": "cash-payment-bill-2-solid",
+      "usage": ["Payment"]
+    },
+    {
+      "name": "general-ledger-2-line",
+      "usage": ["General ledger"]
+    },
+    {
+      "name": "general-ledger-2-solid",
+      "usage": ["General ledger"]
+    },
+    {
+      "name": "hammer-wrench-2-line",
+      "usage": ["Tools"]
+    },
+    {
+      "name": "hammer-wrench-2-solid",
+      "usage": ["Tools"]
+    },
+    {
       "name": "online-learning-2-line",
       "usage": ["Online learning"],
       "aliases": ["online-learning-line-2"]
