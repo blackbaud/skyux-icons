@@ -42,4 +42,9 @@ export interface SkyIconManifestGlyph {
    * A flag indicating the glyph is not actively supported.
    */
   deprecated?: boolean;
+
+  /**
+   * The legal owner of the glyph
+   */
+  owner?: string;
 }
