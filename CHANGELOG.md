@@ -1,3 +1,7 @@
+# 6.8.0 (2024-01-17)
+
+- Added icons for FE RE IA. [#72](https://github.com/blackbaud/skyux-icons/pull/72)
+
 # 6.7.0 (2023-12-07)
 
 - Added Copilot icons. [#70](https://github.com/blackbaud/skyux-icons/pull/70)
