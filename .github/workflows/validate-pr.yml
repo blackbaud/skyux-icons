@@ -7,9 +7,6 @@ on:
       - reopened
       - synchronize
 
-env:
-  GITHUB_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
-
 jobs:
   conventional-title:
     runs-on: ubuntu-latest

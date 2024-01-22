@@ -9,9 +9,11 @@ on:
       - master
 
 env:
-  # Needed by the 'publish-to-github' script.
-  GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
   PRERELEASE: 'false'
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   release:
@@ -31,4 +33,3 @@ jobs:
           prerelease: ${{ env.PRERELEASE == 'true' }}
           draft-pull-request: true
           include-v-in-tag: false
-          token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
