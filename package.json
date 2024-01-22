@@ -6,7 +6,8 @@
   "description": "A glyph font and stylesheet for displaying SKY UX icons.",
   "scripts": {
     "build": "rimraf dist && node ./scripts/prepare-package.js",
-    "test": "eslint module --ext .ts"
+    "test": "eslint module --ext .ts",
+    "dev:pristine": "skyux-dev pristine-commit"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "publishToNPM": true
   },
   "devDependencies": {
+    "@skyux/dev-infra-private": "github:blackbaud/skyux-dev-infra-private-builds#9.0.0-alpha.19",
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
     "@typescript-eslint/eslint-plugin": "5.52.0",
     "@typescript-eslint/parser": "5.52.0",
