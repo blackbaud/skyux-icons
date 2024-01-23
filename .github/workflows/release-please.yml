@@ -29,7 +29,6 @@ jobs:
           pull-request-title-pattern: 'chore: release ${version}'
           labels: 'autorelease ${{ github.ref_name }}: pending'
           release-labels: 'autorelease ${{ github.ref_name }}: tagged'
-          last-release-sha: 'f11c397f0600c3071c91592b5c556175ec52cb2d'
           prerelease: ${{ env.PRERELEASE == 'true' }}
           draft-pull-request: true
           include-v-in-tag: false
