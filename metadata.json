@@ -606,155 +606,188 @@
     {
       "name": "bars-2-line",
       "usage": ["Menu"],
-      "faNames": ["bars", "navicon", "reorder"]
+      "faNames": ["bars", "navicon", "reorder"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "cog-2-line",
       "usage": ["Settings"],
-      "faNames": ["cog", "gear"]
+      "faNames": ["cog", "gear"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "cog-2-solid",
       "usage": ["Settings"],
-      "faNames": ["cog", "gear"]
+      "faNames": ["cog", "gear"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "collapse-2-line",
       "usage": ["Collapse nav"],
-      "faNames": ["angle-double-left"]
+      "faNames": ["angle-double-left"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "expand-2-line",
       "usage": ["Expand nav"],
-      "faNames": ["angle-double-right"]
+      "faNames": ["angle-double-right"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "database-2-line",
       "usage": ["Database"],
-      "faNames": ["database"]
+      "faNames": ["database"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "database-2-solid",
       "usage": ["Database"],
-      "faNames": ["database"]
+      "faNames": ["database"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "form-2-solid",
       "usage": ["Form"],
-      "faNames": ["pencil-square-o"]
+      "faNames": ["pencil-square-o"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "form-2-line",
       "usage": ["Form"],
-      "faNames": ["pencil-square-o"]
+      "faNames": ["pencil-square-o"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "lock-2-line",
       "usage": ["Lock"],
-      "faNames": ["lock"]
+      "faNames": ["lock"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "lock-2-solid",
       "usage": ["Lock"],
-      "faNames": ["lock"]
+      "faNames": ["lock"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "money-2-line",
       "usage": ["Money"],
-      "faNames": ["money"]
+      "faNames": ["money"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "money-2-solid",
       "usage": ["Money"],
-      "faNames": ["money"]
+      "faNames": ["money"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "saving-bank-2-line",
-      "usage": ["Bank"]
+      "usage": ["Bank"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "saving-bank-2-solid",
-      "usage": ["Bank"]
+      "usage": ["Bank"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "accounting-invoice-mail-2-line",
-      "usage": ["Invoice"]
+      "usage": ["Invoice"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "accounting-invoice-mail-2-solid",
-      "usage": ["Invoice"]
+      "usage": ["Invoice"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "cash-payment-bill-2-line",
-      "usage": ["Payment"]
+      "usage": ["Payment"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "cash-payment-bill-2-solid",
-      "usage": ["Payment"]
+      "usage": ["Payment"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "general-ledger-2-line",
-      "usage": ["General ledger"]
+      "usage": ["General ledger"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "general-ledger-2-solid",
-      "usage": ["General ledger"]
+      "usage": ["General ledger"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "hammer-wrench-2-line",
-      "usage": ["Tools"]
+      "usage": ["Tools"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "hammer-wrench-2-solid",
-      "usage": ["Tools"]
+      "usage": ["Tools"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "online-learning-2-line",
       "usage": ["Online learning"],
-      "aliases": ["online-learning-line-2"]
+      "aliases": ["online-learning-line-2"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "online-learning-2-solid",
       "usage": ["Online learning"],
-      "aliases": ["online-learning-solid-2"]
+      "aliases": ["online-learning-solid-2"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "donation-charity-hand-heart-2-line",
       "usage": ["Donation heart"],
-      "aliases": ["donation-charity-hand-heart-line-2"]
+      "aliases": ["donation-charity-hand-heart-line-2"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "donation-charity-hand-heart-2-solid",
       "usage": ["Donation heart"],
-      "aliases": ["donation-charity-hand-heart-solid-2"]
+      "aliases": ["donation-charity-hand-heart-solid-2"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "workflow-teamwork-user-2-line",
       "usage": ["Volunteering"],
-      "aliases": ["workflow-teamwork-user-line-2"]
+      "aliases": ["workflow-teamwork-user-line-2"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "workflow-teamwork-user-2-solid",
       "usage": ["Volunteering"],
-      "aliases": ["workflow-teamwork-user-solid-2"]
+      "aliases": ["workflow-teamwork-user-solid-2"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "sparkles-2-line",
-      "usage": ["AI"]
+      "usage": ["AI"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "sparkles-2-solid",
-      "usage": ["AI"]
+      "usage": ["AI"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "notifications-2-line",
       "usage": ["Notifications"],
-      "faNames": ["bell", "bell-o"]
+      "faNames": ["bell", "bell-o"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "notifications-2-solid",
       "usage": ["Notifications"],
-      "faNames": ["bell", "bell-o"]
+      "faNames": ["bell", "bell-o"],
+      "owner": ["Webalys, LLC"]
     },
     {
       "name": "bb-diamond-2-line",
