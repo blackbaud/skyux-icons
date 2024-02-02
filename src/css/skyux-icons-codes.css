@@ -87,6 +87,7 @@
 .sky-i-trash:before { content: '\e855'; } /* '' */
 .sky-i-cloud-line:before { content: '\e856'; } /* '' */
 .sky-i-grid-view-line:before { content: '\e857'; } /* '' */
+.sky-i-map-marker-line:before { content: '\e858'; } /* '' */
 .sky-i-tag-line:before { content: '\e859'; } /* '' */
 .sky-i-save-line:before { content: '\e85a'; } /* '' */
 .sky-i-upload-line:before { content: '\e85b'; } /* '' */

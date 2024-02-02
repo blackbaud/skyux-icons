@@ -370,6 +370,11 @@
       "faNames": ["list"]
     },
     {
+      "name": "map-marker-line",
+      "usage": ["Map view"],
+      "faNames": ["map-marker"]
+    },
+    {
       "name": "star",
       "usage": ["Favorite"],
       "faNames": ["star", "star-o"]
