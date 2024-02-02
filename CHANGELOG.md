@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.9.0](https://github.com/blackbaud/skyux-icons/compare/6.8.1...6.9.0) (2024-02-02)
+
+
+### Features
+
+* add map marker ([#79](https://github.com/blackbaud/skyux-icons/issues/79)) ([10dc898](https://github.com/blackbaud/skyux-icons/commit/10dc89849d726814e70e2ae4b382c1f39e5ff8ee))
+
 ## [6.8.1](https://github.com/blackbaud/skyux-icons/compare/6.8.0...6.8.1) (2024-01-23)
 
 
