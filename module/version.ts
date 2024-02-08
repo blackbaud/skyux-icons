@@ -1,4 +1,4 @@
-// Taken from Angular's version.ts file.
+// Taken from Angular's version.ts file
 // See: https://github.com/angular/angular/blob/16.2.x/packages/core/src/version.ts
 
 /**
