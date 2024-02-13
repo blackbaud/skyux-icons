@@ -121,6 +121,7 @@
 .sky-i-line-chart-line:before { content: '\e877'; } /* '' */
 .sky-i-bullet-chart-line:before { content: '\e878'; } /* '' */
 .sky-i-redo-line:before { content: '\e879'; } /* '' */
+.sky-i-arrow-up-line:before { content: '\e87a'; } /* '' */
 .sky-i-align-image-center-line:before { content: '\e87b'; } /* '' */
 .sky-i-align-image-left-line:before { content: '\e87c'; } /* '' */
 .sky-i-align-image-right-line:before { content: '\e87d'; } /* '' */

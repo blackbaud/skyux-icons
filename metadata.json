@@ -36,6 +36,16 @@
       "faNames": ["folder-open-o"]
     },
     {
+      "name": "copy-to-clipboard-line",
+      "usage": ["Copy to clipboard"],
+      "faNames": ["folder-open-o"]
+    },
+    {
+      "name": "copy-line",
+      "usage": ["Duplicate"],
+      "faNames": ["copy"]
+    },
+    {
       "name": "folder-open-solid",
       "usage": ["Open"],
       "faNames": ["folder-open"]
@@ -54,6 +64,11 @@
       "name": "download-line",
       "usage": ["Download"],
       "faNames": ["download", "cloud-download"]
+    },
+    {
+      "name": "phone-line",
+      "usage": ["Phone"],
+      "faNames": ["phone"]
     },
     {
       "name": "zoom-out-line",
@@ -139,6 +154,11 @@
       "name": "double-chevron-up",
       "usage": ["Collapse all"],
       "faNames": ["angle-double-up"]
+    },
+    {
+      "name": "arrow-up",
+      "usage": ["Arrow up"],
+      "faNames": ["fa-arrow-up"]
     },
     {
       "name": "ellipsis",
@@ -240,6 +260,11 @@
       "faNames": ["pencil-square-o"]
     },
     {
+      "name": "tile-view-line",
+      "usage": ["Tile view"],
+      "faNames": ["pencil-square-o"]
+    },
+    {
       "name": "users-line",
       "usage": ["User group"],
       "faNames": ["users", "group"]
@@ -325,6 +350,10 @@
       "faNames": ["align-justify"]
     },
     {
+      "name": "divider-line",
+      "usage": ["Divider"],
+    },
+    {
       "name": "note-line",
       "usage": ["Note"],
       "faNames": ["pencil-square-o"]
@@ -358,11 +387,6 @@
       "name": "cloud-line",
       "usage": ["Cloud"],
       "faNames": ["cloud"]
-    },
-    {
-      "name": "grid-view-line",
-      "usage": ["Grid view"],
-      "faNames": ["th-large"]
     },
     {
       "name": "list-line",
@@ -456,6 +480,18 @@
       "name": "outdent-line",
       "usage": ["Outdent"],
       "faNames": ["outdent", "dedent"]
+    },
+    {
+      "name": "align-image-center-line",
+      "usage": ["Image align center"]
+    },
+    {
+      "name": "align-image-right-line",
+      "usage": ["Image align right"]
+    },
+    {
+      "name": "align-image-left-line",
+      "usage": ["Image align left"]
     },
     {
       "name": "image-line",
@@ -580,6 +616,16 @@
       "name": "printer-solid",
       "usage": ["Print"],
       "faNames": ["print"]
+    },
+    {
+      "name": "social-share-line",
+      "usage": ["Social share"],
+      "faNames": ["fa-share-alt"]
+    },
+    {
+      "name": "share-line",
+      "usage": ["Share"],
+      "faNames": ["fa-share"]
     },
     {
       "name": "talk-bubbles-line",
