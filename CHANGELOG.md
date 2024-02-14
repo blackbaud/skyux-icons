@@ -1,5 +1,17 @@
 # Changelog
 
+## [6.10.0](https://github.com/blackbaud/skyux-icons/compare/6.9.0...6.10.0) (2024-02-14)
+
+
+### Features
+
+* add up arrow ([#82](https://github.com/blackbaud/skyux-icons/issues/82)) ([e132990](https://github.com/blackbaud/skyux-icons/commit/e132990e6132f6228454d64c2998486fb96dba1f))
+
+
+### Bug Fixes
+
+* add missing icon metadata ([#82](https://github.com/blackbaud/skyux-icons/issues/82)) ([e132990](https://github.com/blackbaud/skyux-icons/commit/e132990e6132f6228454d64c2998486fb96dba1f))
+
 ## [6.9.0](https://github.com/blackbaud/skyux-icons/compare/6.8.1...6.9.0) (2024-02-02)
 
 
