@@ -156,7 +156,7 @@
       "faNames": ["angle-double-up"]
     },
     {
-      "name": "arrow-up",
+      "name": "arrow-up-line",
       "usage": ["Arrow up"],
       "faNames": ["fa-arrow-up"]
     },
@@ -260,9 +260,8 @@
       "faNames": ["pencil-square-o"]
     },
     {
-      "name": "tile-view-line",
-      "usage": ["Tile view"],
-      "faNames": ["pencil-square-o"]
+      "name": "grid-view-line",
+      "usage": ["Tiled view"]
     },
     {
       "name": "users-line",
