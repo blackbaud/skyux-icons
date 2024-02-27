@@ -158,7 +158,7 @@
     {
       "name": "arrow-up-line",
       "usage": ["Arrow up"],
-      "faNames": ["fa-arrow-up"]
+      "faNames": ["arrow-up"]
     },
     {
       "name": "ellipsis",
@@ -619,12 +619,12 @@
     {
       "name": "social-share-line",
       "usage": ["Social share"],
-      "faNames": ["fa-share-alt"]
+      "faNames": ["share-alt"]
     },
     {
       "name": "share-line",
       "usage": ["Share"],
-      "faNames": ["fa-share"]
+      "faNames": ["share"]
     },
     {
       "name": "talk-bubbles-line",
