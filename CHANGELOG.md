@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.10.1](https://github.com/blackbaud/skyux-icons/compare/6.10.0...6.10.1) (2024-02-29)
+
+
+### Bug Fixes
+
+* align metadata names with icon selectors ([#85](https://github.com/blackbaud/skyux-icons/issues/85)) ([bf3f8f3](https://github.com/blackbaud/skyux-icons/commit/bf3f8f3e62d36fdfa5439d82df89409bebbc127b))
+* share, social-share, and arrow-up icons use correct Font Awesome fallback ([#86](https://github.com/blackbaud/skyux-icons/issues/86)) ([ce20d4e](https://github.com/blackbaud/skyux-icons/commit/ce20d4e4a1e9792e9c8c2c5b2c67dbe0e5917501))
+
 ## [6.10.0](https://github.com/blackbaud/skyux-icons/compare/6.9.0...6.10.0) (2024-02-14)
 
 
