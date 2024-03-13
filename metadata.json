@@ -38,7 +38,7 @@
     {
       "name": "copy-to-clipboard-line",
       "usage": ["Copy to clipboard"],
-      "faNames": ["folder-open-o"]
+      "faNames": ["clipboard"]
     },
     {
       "name": "copy-line",
