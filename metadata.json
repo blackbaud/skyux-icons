@@ -500,7 +500,7 @@
     {
       "name": "file-line",
       "usage": ["Unknown file type"],
-      "faNames": ["file", "file-o"]
+      "faNames": ["file-o"]
     },
     {
       "name": "audio-file-line",
