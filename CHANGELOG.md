@@ -1,5 +1,16 @@
 # Changelog
 
+## [7.0.0](https://github.com/blackbaud/skyux-icons/compare/6.10.2...7.0.0) (2024-03-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* The file icon fallback aliases have been updated to use the desired version of the corresponding Font Awesome icons. The alternate version will no longer be accessible when used as part of a SKY UX icon component.
+
+### Features
+
+* update file icon fallback to align with design guidance ([5cd1781](https://github.com/blackbaud/skyux-icons/commit/5cd1781afd64e4c5d666b70a018148c27d961ffe))
+
 ## [6.10.2](https://github.com/blackbaud/skyux-icons/compare/6.10.1...6.10.2) (2024-03-13)
 
 
