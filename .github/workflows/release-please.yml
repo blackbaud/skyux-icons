@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - 6.x.x
 
 env:
   PRERELEASE: 'false'
