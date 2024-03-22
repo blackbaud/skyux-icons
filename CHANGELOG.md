@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.10.2](https://github.com/blackbaud/skyux-icons/compare/6.10.1...6.10.2) (2024-03-13)
+
+
+### Bug Fixes
+
+* copy-to-clipboard uses correct Font Awesome fallback ([#88](https://github.com/blackbaud/skyux-icons/issues/88)) ([562d36c](https://github.com/blackbaud/skyux-icons/commit/562d36cd85d12d9f733ea6f34a45a2e3dfdebf51))
+
 ## [6.10.1](https://github.com/blackbaud/skyux-icons/compare/6.10.0...6.10.1) (2024-02-29)
 
 
