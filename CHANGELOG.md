@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.1.0](https://github.com/blackbaud/skyux-icons/compare/7.0.0...7.1.0) (2024-04-12)
+
+
+### Features
+
+* add icon for CI ([#94](https://github.com/blackbaud/skyux-icons/issues/94)) ([569d548](https://github.com/blackbaud/skyux-icons/commit/569d5487d8b0e095ace7b8f6ab7775621aa65398))
+
 ## [7.0.0](https://github.com/blackbaud/skyux-icons/compare/6.10.2...7.0.0) (2024-03-22)
 
 
