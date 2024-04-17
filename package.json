@@ -81,16 +81,16 @@
   "devDependencies": {
     "@ryansonshine/commitizen": "4.2.8",
     "@ryansonshine/cz-conventional-changelog": "3.3.4",
-    "@skyux/dev-infra-private": "github:blackbaud/skyux-dev-infra-private-builds#9.0.0-alpha.19",
-    "@trivago/prettier-plugin-sort-imports": "4.1.1",
-    "@typescript-eslint/eslint-plugin": "5.52.0",
-    "@typescript-eslint/parser": "5.52.0",
+    "@skyux/dev-infra-private": "github:blackbaud/skyux-dev-infra-private-builds#10.0.0-alpha.2",
+    "@trivago/prettier-plugin-sort-imports": "4.3.0",
+    "@typescript-eslint/eslint-plugin": "6.20.0",
+    "@typescript-eslint/parser": "6.20.0",
     "clean-css": "4.2.3",
     "cross-spawn": "7.0.3",
-    "eslint": "8.34.0",
-    "eslint-config-prettier": "8.6.0",
-    "fs-extra": "11.1.1",
-    "prettier": "2.8.4",
-    "typescript": "4.9.5"
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "fs-extra": "11.2.0",
+    "prettier": "3.2.5",
+    "typescript": "5.3.3"
   }
 }
