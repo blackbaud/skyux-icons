@@ -1,208 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <!--[if lt IE 9
-      ]><script
-        language="javascript"
-        type="text/javascript"
-        src="//html5shim.googlecode.com/svn/trunk/html5.js"
-      ></script
-    ><![endif]-->
-    <meta charset="UTF-8" />
-    <style>
-      html {
-        font-size: 100%;
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-      }
-      a:focus {
-        outline: thin dotted #333;
-        outline: 5px auto -webkit-focus-ring-color;
-        outline-offset: -2px;
-      }
-      a:hover,
-      a:active {
-        outline: 0;
-      }
-      input {
-        margin: 0;
-        font-size: 100%;
-        vertical-align: middle;
-        *overflow: visible;
-        line-height: normal;
-      }
-      input::-moz-focus-inner {
-        padding: 0;
-        border: 0;
-      }
-      body {
-        margin: 0;
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        line-height: 20px;
-        color: #333;
-        background-color: #fff;
-      }
-      a {
-        color: #08c;
-        text-decoration: none;
-      }
-      a:hover {
-        color: #005580;
-        text-decoration: underline;
-      }
-      .row {
-        margin-left: -20px;
-        *zoom: 1;
-      }
-      .row:before,
-      .row:after {
-        display: table;
-        content: '';
-        line-height: 0;
-      }
-      .row:after {
-        clear: both;
-      }
-      .span3 {
-        float: left;
-        min-height: 1px;
-        margin-left: 20px;
-        width: 220px;
-      }
-      .container {
-        width: 940px;
-        margin-right: auto;
-        margin-left: auto;
-        *zoom: 1;
-      }
-      .container:before,
-      .container:after {
-        display: table;
-        content: '';
-        line-height: 0;
-      }
-      .container:after {
-        clear: both;
-      }
-      small {
-        font-size: 85%;
-      }
-      h1 {
-        margin: 10px 0;
-        font-family: inherit;
-        font-weight: bold;
-        line-height: 20px;
-        color: inherit;
-        text-rendering: optimizelegibility;
-        line-height: 40px;
-        font-size: 38.5px;
-      }
-      h1 small {
-        font-weight: normal;
-        line-height: 1;
-        color: #999;
-        font-size: 24.5px;
-      }
+  <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <meta charset="UTF-8">
+  <style>
+    html {
+      font-size: 100%;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    a:focus {
+      outline: thin dotted #333;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+    }
+    a:hover,
+    a:active {
+      outline: 0;
+    }
+    input {
+      margin: 0;
+      font-size: 100%;
+      vertical-align: middle;
+      *overflow: visible;
+      line-height: normal;
+    }
+    input::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333;
+      background-color: #fff;
+    }
+    a {
+      color: #08c;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #005580;
+      text-decoration: underline;
+    }
+    .row {
+      margin-left: -20px;
+      *zoom: 1;
+    }
+    .row:before,
+    .row:after {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+    .row:after {
+      clear: both;
+    }
+    .span3 {
+      float: left;
+      min-height: 1px;
+      margin-left: 20px;
+      width: 220px;
+    }
+    .container {
+      width: 940px;
+      margin-right: auto;
+      margin-left: auto;
+      *zoom: 1;
+    }
+    .container:before,
+    .container:after {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+    .container:after {
+      clear: both;
+    }
+    small {
+      font-size: 85%;
+    }
+    h1 {
+      margin: 10px 0;
+      font-family: inherit;
+      font-weight: bold;
+      line-height: 20px;
+      color: inherit;
+      text-rendering: optimizelegibility;
+      line-height: 40px;
+      font-size: 38.5px;
+    }
+    h1 small {
+      font-weight: normal;
+      line-height: 1;
+      color: #999;
+      font-size: 24.5px;
+    }
 
-      body {
-        margin-top: 90px;
-      }
-      .header {
-        position: fixed;
-        top: 0;
-        left: 50%;
-        margin-left: -480px;
-        background-color: #fff;
-        border-bottom: 1px solid #ddd;
-        padding-top: 10px;
-        z-index: 10;
-      }
-      .footer {
-        color: #ddd;
-        font-size: 12px;
-        text-align: center;
-        margin-top: 20px;
-      }
-      .footer a {
-        color: #ccc;
-        text-decoration: underline;
-      }
-      .the-icons {
-        font-size: 14px;
-        line-height: 24px;
-      }
-      .switch {
-        position: absolute;
-        right: 0;
-        bottom: 10px;
-        color: #666;
-      }
-      .switch input {
-        margin-right: 0.3em;
-      }
-      .codesOn .i-name {
-        display: none;
-      }
-      .codesOn .i-code {
-        display: inline;
-      }
-      .i-code {
-        display: none;
-      }
-      @font-face {
-        font-family: 'skyux-icons';
-        src: url('./font/skyux-icons.eot?21060456');
-        src:
-          url('./font/skyux-icons.eot?21060456#iefix')
-            format('embedded-opentype'),
-          url('./font/skyux-icons.woff?21060456') format('woff'),
-          url('./font/skyux-icons.ttf?21060456') format('truetype'),
-          url('./font/skyux-icons.svg?21060456#skyux-icons') format('svg');
-        font-weight: normal;
-        font-style: normal;
-      }
-      .demo-icon {
-        font-family: 'skyux-icons';
-        font-style: normal;
-        font-weight: normal;
-        speak: never;
-
-        display: inline-block;
-        text-decoration: inherit;
-        width: 1em;
-        margin-right: 0.2em;
-        text-align: center;
-        /* opacity: .8; */
-
-        /* For safety - reset parent styles, that can break glyph codes*/
-        font-variant: normal;
-        text-transform: none;
-
-        /* fix buttons height, for twitter bootstrap */
-        line-height: 1em;
-
-        /* Animation center compensation - margins should be symmetric */
-        /* remove if not needed */
-        margin-left: 0.2em;
-
-        /* You can be more comfortable with increased icons size */
-        /* font-size: 120%; */
-
-        /* Font smoothing. That was taken from TWBS */
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-
-        /* Uncomment for 3D effect */
-        /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-      }
+    body {
+      margin-top: 90px;
+    }
+    .header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      margin-left: -480px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      padding-top: 10px;
+      z-index: 10;
+    }
+    .footer {
+      color: #ddd;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .footer a {
+      color: #ccc;
+      text-decoration: underline;
+    }
+    .the-icons {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .switch {
+      position: absolute;
+      right: 0;
+      bottom: 10px;
+      color: #666;
+    }
+    .switch input {
+      margin-right: 0.3em;
+    }
+    .codesOn .i-name {
+      display: none;
+    }
+    .codesOn .i-code {
+      display: inline;
+    }
+    .i-code {
+      display: none;
+    }
+    @font-face {
+      font-family: 'skyux-icons';
+      src: url('./font/skyux-icons.eot?21060456');
+      src: url('./font/skyux-icons.eot?21060456#iefix') format('embedded-opentype'),
+           url('./font/skyux-icons.woff?21060456') format('woff'),
+           url('./font/skyux-icons.ttf?21060456') format('truetype'),
+           url('./font/skyux-icons.svg?21060456#skyux-icons') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+    .demo-icon {
+      font-family: "skyux-icons";
+      font-style: normal;
+      font-weight: normal;
+      speak: never;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
     </style>
-    <link rel="stylesheet" href="css/animation.css" />
-    <!--[if IE 7]><link rel="stylesheet" href="css/" + font.fontname + "-ie7.css"><![endif]-->
+    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/" + font.fontname + "-ie7.css"><![endif]-->
     <script>
       function toggleCodes(on) {
         var obj = document.getElementById('icons');
-
+      
         if (on) {
           obj.className += ' codesOn';
         } else {
@@ -215,1071 +206,677 @@
     <div class="container header">
       <h1>skyux-icons <small>font demo</small></h1>
       <label class="switch">
-        <input type="checkbox" onclick="toggleCodes(this.checked)" />show codes
+        <input type="checkbox" onclick="toggleCodes(this.checked)">show codes
       </label>
     </div>
     <div class="container" id="icons">
       <div class="row">
         <div class="span3" title="Code: 0xe800">
-          <i class="demo-icon sky-i-house-solid">&#xe800;</i>
-          <span class="i-name">sky-i-house-solid</span
-          ><span class="i-code">0xe800</span>
+          <i class="demo-icon sky-i-house-solid">&#xe800;</i> <span class="i-name">sky-i-house-solid</span><span class="i-code">0xe800</span>
         </div>
         <div class="span3" title="Code: 0xe801">
-          <i class="demo-icon sky-i-calendar">&#xe801;</i>
-          <span class="i-name">sky-i-calendar</span
-          ><span class="i-code">0xe801</span>
+          <i class="demo-icon sky-i-calendar">&#xe801;</i> <span class="i-name">sky-i-calendar</span><span class="i-code">0xe801</span>
         </div>
         <div class="span3" title="Code: 0xe802">
-          <i class="demo-icon sky-i-form-line">&#xe802;</i>
-          <span class="i-name">sky-i-form-line</span
-          ><span class="i-code">0xe802</span>
+          <i class="demo-icon sky-i-form-line">&#xe802;</i> <span class="i-name">sky-i-form-line</span><span class="i-code">0xe802</span>
         </div>
         <div class="span3" title="Code: 0xe803">
-          <i class="demo-icon sky-i-clock">&#xe803;</i>
-          <span class="i-name">sky-i-clock</span
-          ><span class="i-code">0xe803</span>
+          <i class="demo-icon sky-i-clock">&#xe803;</i> <span class="i-name">sky-i-clock</span><span class="i-code">0xe803</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe804">
-          <i class="demo-icon sky-i-filter-solid">&#xe804;</i>
-          <span class="i-name">sky-i-filter-solid</span
-          ><span class="i-code">0xe804</span>
+          <i class="demo-icon sky-i-filter-solid">&#xe804;</i> <span class="i-name">sky-i-filter-solid</span><span class="i-code">0xe804</span>
         </div>
         <div class="span3" title="Code: 0xe805">
-          <i class="demo-icon sky-i-sort">&#xe805;</i>
-          <span class="i-name">sky-i-sort</span
-          ><span class="i-code">0xe805</span>
+          <i class="demo-icon sky-i-sort">&#xe805;</i> <span class="i-name">sky-i-sort</span><span class="i-code">0xe805</span>
         </div>
         <div class="span3" title="Code: 0xe806">
-          <i class="demo-icon sky-i-columns">&#xe806;</i>
-          <span class="i-name">sky-i-columns</span
-          ><span class="i-code">0xe806</span>
+          <i class="demo-icon sky-i-columns">&#xe806;</i> <span class="i-name">sky-i-columns</span><span class="i-code">0xe806</span>
         </div>
         <div class="span3" title="Code: 0xe807">
-          <i class="demo-icon sky-i-help-solid">&#xe807;</i>
-          <span class="i-name">sky-i-help-solid</span
-          ><span class="i-code">0xe807</span>
+          <i class="demo-icon sky-i-help-solid">&#xe807;</i> <span class="i-name">sky-i-help-solid</span><span class="i-code">0xe807</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe808">
-          <i class="demo-icon sky-i-copy-to-clipboard-line">&#xe808;</i>
-          <span class="i-name">sky-i-copy-to-clipboard-line</span
-          ><span class="i-code">0xe808</span>
+          <i class="demo-icon sky-i-copy-to-clipboard-line">&#xe808;</i> <span class="i-name">sky-i-copy-to-clipboard-line</span><span class="i-code">0xe808</span>
         </div>
         <div class="span3" title="Code: 0xe809">
-          <i class="demo-icon sky-i-edit-solid">&#xe809;</i>
-          <span class="i-name">sky-i-edit-solid</span
-          ><span class="i-code">0xe809</span>
+          <i class="demo-icon sky-i-edit-solid">&#xe809;</i> <span class="i-name">sky-i-edit-solid</span><span class="i-code">0xe809</span>
         </div>
         <div class="span3" title="Code: 0xe80a">
-          <i class="demo-icon sky-i-check">&#xe80a;</i>
-          <span class="i-name">sky-i-check</span
-          ><span class="i-code">0xe80a</span>
+          <i class="demo-icon sky-i-check">&#xe80a;</i> <span class="i-name">sky-i-check</span><span class="i-code">0xe80a</span>
         </div>
         <div class="span3" title="Code: 0xe80b">
-          <i class="demo-icon sky-i-chevron-right">&#xe80b;</i>
-          <span class="i-name">sky-i-chevron-right</span
-          ><span class="i-code">0xe80b</span>
+          <i class="demo-icon sky-i-chevron-right">&#xe80b;</i> <span class="i-name">sky-i-chevron-right</span><span class="i-code">0xe80b</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe80c">
-          <i class="demo-icon sky-i-chevron-up">&#xe80c;</i>
-          <span class="i-name">sky-i-chevron-up</span
-          ><span class="i-code">0xe80c</span>
+          <i class="demo-icon sky-i-chevron-up">&#xe80c;</i> <span class="i-name">sky-i-chevron-up</span><span class="i-code">0xe80c</span>
         </div>
         <div class="span3" title="Code: 0xe80d">
-          <i class="demo-icon sky-i-ban-line">&#xe80d;</i>
-          <span class="i-name">sky-i-ban-line</span
-          ><span class="i-code">0xe80d</span>
+          <i class="demo-icon sky-i-ban-line">&#xe80d;</i> <span class="i-name">sky-i-ban-line</span><span class="i-code">0xe80d</span>
         </div>
         <div class="span3" title="Code: 0xe80e">
-          <i class="demo-icon sky-i-business-line">&#xe80e;</i>
-          <span class="i-name">sky-i-business-line</span
-          ><span class="i-code">0xe80e</span>
+          <i class="demo-icon sky-i-business-line">&#xe80e;</i> <span class="i-name">sky-i-business-line</span><span class="i-code">0xe80e</span>
         </div>
         <div class="span3" title="Code: 0xe80f">
-          <i class="demo-icon sky-i-chevron-down">&#xe80f;</i>
-          <span class="i-name">sky-i-chevron-down</span
-          ><span class="i-code">0xe80f</span>
+          <i class="demo-icon sky-i-chevron-down">&#xe80f;</i> <span class="i-name">sky-i-chevron-down</span><span class="i-code">0xe80f</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe810">
-          <i class="demo-icon sky-i-number-list-line">&#xe810;</i>
-          <span class="i-name">sky-i-number-list-line</span
-          ><span class="i-code">0xe810</span>
+          <i class="demo-icon sky-i-number-list-line">&#xe810;</i> <span class="i-name">sky-i-number-list-line</span><span class="i-code">0xe810</span>
         </div>
         <div class="span3" title="Code: 0xe811">
-          <i class="demo-icon sky-i-font-size-line">&#xe811;</i>
-          <span class="i-name">sky-i-font-size-line</span
-          ><span class="i-code">0xe811</span>
+          <i class="demo-icon sky-i-font-size-line">&#xe811;</i> <span class="i-name">sky-i-font-size-line</span><span class="i-code">0xe811</span>
         </div>
         <div class="span3" title="Code: 0xe812">
-          <i class="demo-icon sky-i-add">&#xe812;</i>
-          <span class="i-name">sky-i-add</span
-          ><span class="i-code">0xe812</span>
+          <i class="demo-icon sky-i-add">&#xe812;</i> <span class="i-name">sky-i-add</span><span class="i-code">0xe812</span>
         </div>
         <div class="span3" title="Code: 0xe813">
-          <i class="demo-icon sky-i-chevron-left">&#xe813;</i>
-          <span class="i-name">sky-i-chevron-left</span
-          ><span class="i-code">0xe813</span>
+          <i class="demo-icon sky-i-chevron-left">&#xe813;</i> <span class="i-name">sky-i-chevron-left</span><span class="i-code">0xe813</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe814">
-          <i class="demo-icon sky-i-search">&#xe814;</i>
-          <span class="i-name">sky-i-search</span
-          ><span class="i-code">0xe814</span>
+          <i class="demo-icon sky-i-search">&#xe814;</i> <span class="i-name">sky-i-search</span><span class="i-code">0xe814</span>
         </div>
         <div class="span3" title="Code: 0xe815">
-          <i class="demo-icon sky-i-highlighter-line">&#xe815;</i>
-          <span class="i-name">sky-i-highlighter-line</span
-          ><span class="i-code">0xe815</span>
+          <i class="demo-icon sky-i-highlighter-line">&#xe815;</i> <span class="i-name">sky-i-highlighter-line</span><span class="i-code">0xe815</span>
         </div>
         <div class="span3" title="Code: 0xe816">
-          <i class="demo-icon sky-i-subscript-line">&#xe816;</i>
-          <span class="i-name">sky-i-subscript-line</span
-          ><span class="i-code">0xe816</span>
+          <i class="demo-icon sky-i-subscript-line">&#xe816;</i> <span class="i-name">sky-i-subscript-line</span><span class="i-code">0xe816</span>
         </div>
         <div class="span3" title="Code: 0xe817">
-          <i class="demo-icon sky-i-xls-file-line">&#xe817;</i>
-          <span class="i-name">sky-i-xls-file-line</span
-          ><span class="i-code">0xe817</span>
+          <i class="demo-icon sky-i-xls-file-line">&#xe817;</i> <span class="i-name">sky-i-xls-file-line</span><span class="i-code">0xe817</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe818">
-          <i class="demo-icon sky-i-close">&#xe818;</i>
-          <span class="i-name">sky-i-close</span
-          ><span class="i-code">0xe818</span>
+          <i class="demo-icon sky-i-close">&#xe818;</i> <span class="i-name">sky-i-close</span><span class="i-code">0xe818</span>
         </div>
         <div class="span3" title="Code: 0xe819">
-          <i class="demo-icon sky-i-folder-open-solid">&#xe819;</i>
-          <span class="i-name">sky-i-folder-open-solid</span
-          ><span class="i-code">0xe819</span>
+          <i class="demo-icon sky-i-folder-open-solid">&#xe819;</i> <span class="i-name">sky-i-folder-open-solid</span><span class="i-code">0xe819</span>
         </div>
         <div class="span3" title="Code: 0xe81a">
-          <i class="demo-icon sky-i-pdf-file-line">&#xe81a;</i>
-          <span class="i-name">sky-i-pdf-file-line</span
-          ><span class="i-code">0xe81a</span>
+          <i class="demo-icon sky-i-pdf-file-line">&#xe81a;</i> <span class="i-name">sky-i-pdf-file-line</span><span class="i-code">0xe81a</span>
         </div>
         <div class="span3" title="Code: 0xe81b">
-          <i class="demo-icon sky-i-calendar-solid">&#xe81b;</i>
-          <span class="i-name">sky-i-calendar-solid</span
-          ><span class="i-code">0xe81b</span>
+          <i class="demo-icon sky-i-calendar-solid">&#xe81b;</i> <span class="i-name">sky-i-calendar-solid</span><span class="i-code">0xe81b</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe81c">
-          <i class="demo-icon sky-i-clock-solid">&#xe81c;</i>
-          <span class="i-name">sky-i-clock-solid</span
-          ><span class="i-code">0xe81c</span>
+          <i class="demo-icon sky-i-clock-solid">&#xe81c;</i> <span class="i-name">sky-i-clock-solid</span><span class="i-code">0xe81c</span>
         </div>
         <div class="span3" title="Code: 0xe81d">
-          <i class="demo-icon sky-i-pencil-solid">&#xe81d;</i>
-          <span class="i-name">sky-i-pencil-solid</span
-          ><span class="i-code">0xe81d</span>
+          <i class="demo-icon sky-i-pencil-solid">&#xe81d;</i> <span class="i-name">sky-i-pencil-solid</span><span class="i-code">0xe81d</span>
         </div>
         <div class="span3" title="Code: 0xe81e">
-          <i class="demo-icon sky-i-trash-solid">&#xe81e;</i>
-          <span class="i-name">sky-i-trash-solid</span
-          ><span class="i-code">0xe81e</span>
+          <i class="demo-icon sky-i-trash-solid">&#xe81e;</i> <span class="i-name">sky-i-trash-solid</span><span class="i-code">0xe81e</span>
         </div>
         <div class="span3" title="Code: 0xe81f">
-          <i class="demo-icon sky-i-house-line">&#xe81f;</i>
-          <span class="i-name">sky-i-house-line</span
-          ><span class="i-code">0xe81f</span>
+          <i class="demo-icon sky-i-house-line">&#xe81f;</i> <span class="i-name">sky-i-house-line</span><span class="i-code">0xe81f</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe820">
-          <i class="demo-icon sky-i-edit">&#xe820;</i>
-          <span class="i-name">sky-i-edit</span
-          ><span class="i-code">0xe820</span>
+          <i class="demo-icon sky-i-edit">&#xe820;</i> <span class="i-name">sky-i-edit</span><span class="i-code">0xe820</span>
         </div>
         <div class="span3" title="Code: 0xe821">
-          <i class="demo-icon sky-i-users-line">&#xe821;</i>
-          <span class="i-name">sky-i-users-line</span
-          ><span class="i-code">0xe821</span>
+          <i class="demo-icon sky-i-users-line">&#xe821;</i> <span class="i-name">sky-i-users-line</span><span class="i-code">0xe821</span>
         </div>
         <div class="span3" title="Code: 0xe822">
-          <i class="demo-icon sky-i-users-solid">&#xe822;</i>
-          <span class="i-name">sky-i-users-solid</span
-          ><span class="i-code">0xe822</span>
+          <i class="demo-icon sky-i-users-solid">&#xe822;</i> <span class="i-name">sky-i-users-solid</span><span class="i-code">0xe822</span>
         </div>
         <div class="span3" title="Code: 0xe823">
-          <i class="demo-icon sky-i-ellipsis">&#xe823;</i>
-          <span class="i-name">sky-i-ellipsis</span
-          ><span class="i-code">0xe823</span>
+          <i class="demo-icon sky-i-ellipsis">&#xe823;</i> <span class="i-name">sky-i-ellipsis</span><span class="i-code">0xe823</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe824">
-          <i class="demo-icon sky-i-dollar-bill-line">&#xe824;</i>
-          <span class="i-name">sky-i-dollar-bill-line</span
-          ><span class="i-code">0xe824</span>
+          <i class="demo-icon sky-i-dollar-bill-line">&#xe824;</i> <span class="i-name">sky-i-dollar-bill-line</span><span class="i-code">0xe824</span>
         </div>
         <div class="span3" title="Code: 0xe825">
-          <i class="demo-icon sky-i-dollar-bill-solid">&#xe825;</i>
-          <span class="i-name">sky-i-dollar-bill-solid</span
-          ><span class="i-code">0xe825</span>
+          <i class="demo-icon sky-i-dollar-bill-solid">&#xe825;</i> <span class="i-name">sky-i-dollar-bill-solid</span><span class="i-code">0xe825</span>
         </div>
         <div class="span3" title="Code: 0xe826">
-          <i class="demo-icon sky-i-cog-line">&#xe826;</i>
-          <span class="i-name">sky-i-cog-line</span
-          ><span class="i-code">0xe826</span>
+          <i class="demo-icon sky-i-cog-line">&#xe826;</i> <span class="i-name">sky-i-cog-line</span><span class="i-code">0xe826</span>
         </div>
         <div class="span3" title="Code: 0xe827">
-          <i class="demo-icon sky-i-cog-solid">&#xe827;</i>
-          <span class="i-name">sky-i-cog-solid</span
-          ><span class="i-code">0xe827</span>
+          <i class="demo-icon sky-i-cog-solid">&#xe827;</i> <span class="i-name">sky-i-cog-solid</span><span class="i-code">0xe827</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe828">
-          <i class="demo-icon sky-i-bell-line">&#xe828;</i>
-          <span class="i-name">sky-i-bell-line</span
-          ><span class="i-code">0xe828</span>
+          <i class="demo-icon sky-i-bell-line">&#xe828;</i> <span class="i-name">sky-i-bell-line</span><span class="i-code">0xe828</span>
         </div>
         <div class="span3" title="Code: 0xe829">
-          <i class="demo-icon sky-i-bell-solid">&#xe829;</i>
-          <span class="i-name">sky-i-bell-solid</span
-          ><span class="i-code">0xe829</span>
+          <i class="demo-icon sky-i-bell-solid">&#xe829;</i> <span class="i-name">sky-i-bell-solid</span><span class="i-code">0xe829</span>
         </div>
         <div class="span3" title="Code: 0xe82a">
-          <i class="demo-icon sky-i-help-line">&#xe82a;</i>
-          <span class="i-name">sky-i-help-line</span
-          ><span class="i-code">0xe82a</span>
+          <i class="demo-icon sky-i-help-line">&#xe82a;</i> <span class="i-name">sky-i-help-line</span><span class="i-code">0xe82a</span>
         </div>
         <div class="span3" title="Code: 0xe82b">
-          <i class="demo-icon sky-i-filter">&#xe82b;</i>
-          <span class="i-name">sky-i-filter</span
-          ><span class="i-code">0xe82b</span>
+          <i class="demo-icon sky-i-filter">&#xe82b;</i> <span class="i-name">sky-i-filter</span><span class="i-code">0xe82b</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe82c">
-          <i class="demo-icon sky-i-double-chevron-left">&#xe82c;</i>
-          <span class="i-name">sky-i-double-chevron-left</span
-          ><span class="i-code">0xe82c</span>
+          <i class="demo-icon sky-i-double-chevron-left">&#xe82c;</i> <span class="i-name">sky-i-double-chevron-left</span><span class="i-code">0xe82c</span>
         </div>
         <div class="span3" title="Code: 0xe82d">
-          <i class="demo-icon sky-i-double-chevron-right">&#xe82d;</i>
-          <span class="i-name">sky-i-double-chevron-right</span
-          ><span class="i-code">0xe82d</span>
+          <i class="demo-icon sky-i-double-chevron-right">&#xe82d;</i> <span class="i-name">sky-i-double-chevron-right</span><span class="i-code">0xe82d</span>
         </div>
         <div class="span3" title="Code: 0xe82e">
-          <i class="demo-icon sky-i-doc-file-line">&#xe82e;</i>
-          <span class="i-name">sky-i-doc-file-line</span
-          ><span class="i-code">0xe82e</span>
+          <i class="demo-icon sky-i-doc-file-line">&#xe82e;</i> <span class="i-name">sky-i-doc-file-line</span><span class="i-code">0xe82e</span>
         </div>
         <div class="span3" title="Code: 0xe82f">
-          <i class="demo-icon sky-i-trash-line">&#xe82f;</i>
-          <span class="i-name">sky-i-trash-line</span
-          ><span class="i-code">0xe82f</span>
+          <i class="demo-icon sky-i-trash-line">&#xe82f;</i> <span class="i-name">sky-i-trash-line</span><span class="i-code">0xe82f</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe830">
-          <i class="demo-icon sky-i-pie-chart-line">&#xe830;</i>
-          <span class="i-name">sky-i-pie-chart-line</span
-          ><span class="i-code">0xe830</span>
+          <i class="demo-icon sky-i-pie-chart-line">&#xe830;</i> <span class="i-name">sky-i-pie-chart-line</span><span class="i-code">0xe830</span>
         </div>
         <div class="span3" title="Code: 0xe831">
-          <i class="demo-icon sky-i-donut-chart-line">&#xe831;</i>
-          <span class="i-name">sky-i-donut-chart-line</span
-          ><span class="i-code">0xe831</span>
+          <i class="demo-icon sky-i-donut-chart-line">&#xe831;</i> <span class="i-name">sky-i-donut-chart-line</span><span class="i-code">0xe831</span>
         </div>
         <div class="span3" title="Code: 0xe832">
-          <i class="demo-icon sky-i-share-line">&#xe832;</i>
-          <span class="i-name">sky-i-share-line</span
-          ><span class="i-code">0xe832</span>
+          <i class="demo-icon sky-i-share-line">&#xe832;</i> <span class="i-name">sky-i-share-line</span><span class="i-code">0xe832</span>
         </div>
         <div class="span3" title="Code: 0xe833">
-          <i class="demo-icon sky-i-envelope-line">&#xe833;</i>
-          <span class="i-name">sky-i-envelope-line</span
-          ><span class="i-code">0xe833</span>
+          <i class="demo-icon sky-i-envelope-line">&#xe833;</i> <span class="i-name">sky-i-envelope-line</span><span class="i-code">0xe833</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe834">
-          <i class="demo-icon sky-i-envelope-solid">&#xe834;</i>
-          <span class="i-name">sky-i-envelope-solid</span
-          ><span class="i-code">0xe834</span>
+          <i class="demo-icon sky-i-envelope-solid">&#xe834;</i> <span class="i-name">sky-i-envelope-solid</span><span class="i-code">0xe834</span>
         </div>
         <div class="span3" title="Code: 0xe835">
-          <i class="demo-icon sky-i-talk-bubbles-line">&#xe835;</i>
-          <span class="i-name">sky-i-talk-bubbles-line</span
-          ><span class="i-code">0xe835</span>
+          <i class="demo-icon sky-i-talk-bubbles-line">&#xe835;</i> <span class="i-name">sky-i-talk-bubbles-line</span><span class="i-code">0xe835</span>
         </div>
         <div class="span3" title="Code: 0xe836">
-          <i class="demo-icon sky-i-talk-bubbles-solid">&#xe836;</i>
-          <span class="i-name">sky-i-talk-bubbles-solid</span
-          ><span class="i-code">0xe836</span>
+          <i class="demo-icon sky-i-talk-bubbles-solid">&#xe836;</i> <span class="i-name">sky-i-talk-bubbles-solid</span><span class="i-code">0xe836</span>
         </div>
         <div class="span3" title="Code: 0xe837">
-          <i class="demo-icon sky-i-copy-line">&#xe837;</i>
-          <span class="i-name">sky-i-copy-line</span
-          ><span class="i-code">0xe837</span>
+          <i class="demo-icon sky-i-copy-line">&#xe837;</i> <span class="i-name">sky-i-copy-line</span><span class="i-code">0xe837</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe838">
-          <i class="demo-icon sky-i-menu">&#xe838;</i>
-          <span class="i-name">sky-i-menu</span
-          ><span class="i-code">0xe838</span>
+          <i class="demo-icon sky-i-menu">&#xe838;</i> <span class="i-name">sky-i-menu</span><span class="i-code">0xe838</span>
         </div>
         <div class="span3" title="Code: 0xe839">
-          <i class="demo-icon sky-i-printer-line">&#xe839;</i>
-          <span class="i-name">sky-i-printer-line</span
-          ><span class="i-code">0xe839</span>
+          <i class="demo-icon sky-i-printer-line">&#xe839;</i> <span class="i-name">sky-i-printer-line</span><span class="i-code">0xe839</span>
         </div>
         <div class="span3" title="Code: 0xe83a">
-          <i class="demo-icon sky-i-printer-solid">&#xe83a;</i>
-          <span class="i-name">sky-i-printer-solid</span
-          ><span class="i-code">0xe83a</span>
+          <i class="demo-icon sky-i-printer-solid">&#xe83a;</i> <span class="i-name">sky-i-printer-solid</span><span class="i-code">0xe83a</span>
         </div>
         <div class="span3" title="Code: 0xe83b">
-          <i class="demo-icon sky-i-credit-card-solid">&#xe83b;</i>
-          <span class="i-name">sky-i-credit-card-solid</span
-          ><span class="i-code">0xe83b</span>
+          <i class="demo-icon sky-i-credit-card-solid">&#xe83b;</i> <span class="i-name">sky-i-credit-card-solid</span><span class="i-code">0xe83b</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe83c">
-          <i class="demo-icon sky-i-credit-card-line">&#xe83c;</i>
-          <span class="i-name">sky-i-credit-card-line</span
-          ><span class="i-code">0xe83c</span>
+          <i class="demo-icon sky-i-credit-card-line">&#xe83c;</i> <span class="i-name">sky-i-credit-card-line</span><span class="i-code">0xe83c</span>
         </div>
         <div class="span3" title="Code: 0xe83d">
-          <i class="demo-icon sky-i-open">&#xe83d;</i>
-          <span class="i-name">sky-i-open</span
-          ><span class="i-code">0xe83d</span>
+          <i class="demo-icon sky-i-open">&#xe83d;</i> <span class="i-name">sky-i-open</span><span class="i-code">0xe83d</span>
         </div>
         <div class="span3" title="Code: 0xe83e">
-          <i class="demo-icon sky-i-pencil-line">&#xe83e;</i>
-          <span class="i-name">sky-i-pencil-line</span
-          ><span class="i-code">0xe83e</span>
+          <i class="demo-icon sky-i-pencil-line">&#xe83e;</i> <span class="i-name">sky-i-pencil-line</span><span class="i-code">0xe83e</span>
         </div>
         <div class="span3" title="Code: 0xe83f">
-          <i class="demo-icon sky-i-delete-line">&#xe83f;</i>
-          <span class="i-name">sky-i-delete-line</span
-          ><span class="i-code">0xe83f</span>
+          <i class="demo-icon sky-i-delete-line">&#xe83f;</i> <span class="i-name">sky-i-delete-line</span><span class="i-code">0xe83f</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe840">
-          <i class="demo-icon sky-i-delete-solid">&#xe840;</i>
-          <span class="i-name">sky-i-delete-solid</span
-          ><span class="i-code">0xe840</span>
+          <i class="demo-icon sky-i-delete-solid">&#xe840;</i> <span class="i-name">sky-i-delete-solid</span><span class="i-code">0xe840</span>
         </div>
         <div class="span3" title="Code: 0xe841">
-          <i class="demo-icon sky-i-open-line">&#xe841;</i>
-          <span class="i-name">sky-i-open-line</span
-          ><span class="i-code">0xe841</span>
+          <i class="demo-icon sky-i-open-line">&#xe841;</i> <span class="i-name">sky-i-open-line</span><span class="i-code">0xe841</span>
         </div>
         <div class="span3" title="Code: 0xe842">
-          <i class="demo-icon sky-i-open-solid">&#xe842;</i>
-          <span class="i-name">sky-i-open-solid</span
-          ><span class="i-code">0xe842</span>
+          <i class="demo-icon sky-i-open-solid">&#xe842;</i> <span class="i-name">sky-i-open-solid</span><span class="i-code">0xe842</span>
         </div>
         <div class="span3" title="Code: 0xe843">
-          <i class="demo-icon sky-i-notification-line">&#xe843;</i>
-          <span class="i-name">sky-i-notification-line</span
-          ><span class="i-code">0xe843</span>
+          <i class="demo-icon sky-i-notification-line">&#xe843;</i> <span class="i-name">sky-i-notification-line</span><span class="i-code">0xe843</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe844">
-          <i class="demo-icon sky-i-notification-solid">&#xe844;</i>
-          <span class="i-name">sky-i-notification-solid</span
-          ><span class="i-code">0xe844</span>
+          <i class="demo-icon sky-i-notification-solid">&#xe844;</i> <span class="i-name">sky-i-notification-solid</span><span class="i-code">0xe844</span>
         </div>
         <div class="span3" title="Code: 0xe845">
-          <i class="demo-icon sky-i-settings-solid">&#xe845;</i>
-          <span class="i-name">sky-i-settings-solid</span
-          ><span class="i-code">0xe845</span>
+          <i class="demo-icon sky-i-settings-solid">&#xe845;</i> <span class="i-name">sky-i-settings-solid</span><span class="i-code">0xe845</span>
         </div>
         <div class="span3" title="Code: 0xe846">
-          <i class="demo-icon sky-i-settings-line">&#xe846;</i>
-          <span class="i-name">sky-i-settings-line</span
-          ><span class="i-code">0xe846</span>
+          <i class="demo-icon sky-i-settings-line">&#xe846;</i> <span class="i-name">sky-i-settings-line</span><span class="i-code">0xe846</span>
         </div>
         <div class="span3" title="Code: 0xe847">
-          <i class="demo-icon sky-i-money-solid">&#xe847;</i>
-          <span class="i-name">sky-i-money-solid</span
-          ><span class="i-code">0xe847</span>
+          <i class="demo-icon sky-i-money-solid">&#xe847;</i> <span class="i-name">sky-i-money-solid</span><span class="i-code">0xe847</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe848">
-          <i class="demo-icon sky-i-money-line">&#xe848;</i>
-          <span class="i-name">sky-i-money-line</span
-          ><span class="i-code">0xe848</span>
+          <i class="demo-icon sky-i-money-line">&#xe848;</i> <span class="i-name">sky-i-money-line</span><span class="i-code">0xe848</span>
         </div>
         <div class="span3" title="Code: 0xe849">
-          <i class="demo-icon sky-i-book-line">&#xe849;</i>
-          <span class="i-name">sky-i-book-line</span
-          ><span class="i-code">0xe849</span>
+          <i class="demo-icon sky-i-book-line">&#xe849;</i> <span class="i-name">sky-i-book-line</span><span class="i-code">0xe849</span>
         </div>
         <div class="span3" title="Code: 0xe84a">
-          <i class="demo-icon sky-i-coin-bag-line">&#xe84a;</i>
-          <span class="i-name">sky-i-coin-bag-line</span
-          ><span class="i-code">0xe84a</span>
+          <i class="demo-icon sky-i-coin-bag-line">&#xe84a;</i> <span class="i-name">sky-i-coin-bag-line</span><span class="i-code">0xe84a</span>
         </div>
         <div class="span3" title="Code: 0xe84b">
-          <i class="demo-icon sky-i-wand-line">&#xe84b;</i>
-          <span class="i-name">sky-i-wand-line</span
-          ><span class="i-code">0xe84b</span>
+          <i class="demo-icon sky-i-wand-line">&#xe84b;</i> <span class="i-name">sky-i-wand-line</span><span class="i-code">0xe84b</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe84c">
-          <i class="demo-icon sky-i-bar-chart-line">&#xe84c;</i>
-          <span class="i-name">sky-i-bar-chart-line</span
-          ><span class="i-code">0xe84c</span>
+          <i class="demo-icon sky-i-bar-chart-line">&#xe84c;</i> <span class="i-name">sky-i-bar-chart-line</span><span class="i-code">0xe84c</span>
         </div>
         <div class="span3" title="Code: 0xe84d">
-          <i class="demo-icon sky-i-user-line">&#xe84d;</i>
-          <span class="i-name">sky-i-user-line</span
-          ><span class="i-code">0xe84d</span>
+          <i class="demo-icon sky-i-user-line">&#xe84d;</i> <span class="i-name">sky-i-user-line</span><span class="i-code">0xe84d</span>
         </div>
         <div class="span3" title="Code: 0xe84e">
-          <i class="demo-icon sky-i-align-left-text-line">&#xe84e;</i>
-          <span class="i-name">sky-i-align-left-text-line</span
-          ><span class="i-code">0xe84e</span>
+          <i class="demo-icon sky-i-align-left-text-line">&#xe84e;</i> <span class="i-name">sky-i-align-left-text-line</span><span class="i-code">0xe84e</span>
         </div>
         <div class="span3" title="Code: 0xe84f">
-          <i class="demo-icon sky-i-align-right-text-line">&#xe84f;</i>
-          <span class="i-name">sky-i-align-right-text-line</span
-          ><span class="i-code">0xe84f</span>
+          <i class="demo-icon sky-i-align-right-text-line">&#xe84f;</i> <span class="i-name">sky-i-align-right-text-line</span><span class="i-code">0xe84f</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe850">
-          <i class="demo-icon sky-i-center-text-line">&#xe850;</i>
-          <span class="i-name">sky-i-center-text-line</span
-          ><span class="i-code">0xe850</span>
+          <i class="demo-icon sky-i-center-text-line">&#xe850;</i> <span class="i-name">sky-i-center-text-line</span><span class="i-code">0xe850</span>
         </div>
         <div class="span3" title="Code: 0xe851">
-          <i class="demo-icon sky-i-list-line">&#xe851;</i>
-          <span class="i-name">sky-i-list-line</span
-          ><span class="i-code">0xe851</span>
+          <i class="demo-icon sky-i-list-line">&#xe851;</i> <span class="i-name">sky-i-list-line</span><span class="i-code">0xe851</span>
         </div>
         <div class="span3" title="Code: 0xe852">
-          <i class="demo-icon sky-i-note-line">&#xe852;</i>
-          <span class="i-name">sky-i-note-line</span
-          ><span class="i-code">0xe852</span>
+          <i class="demo-icon sky-i-note-line">&#xe852;</i> <span class="i-name">sky-i-note-line</span><span class="i-code">0xe852</span>
         </div>
         <div class="span3" title="Code: 0xe853">
-          <i class="demo-icon sky-i-link-line">&#xe853;</i>
-          <span class="i-name">sky-i-link-line</span
-          ><span class="i-code">0xe853</span>
+          <i class="demo-icon sky-i-link-line">&#xe853;</i> <span class="i-name">sky-i-link-line</span><span class="i-code">0xe853</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe854">
-          <i class="demo-icon sky-i-tile-drag">&#xe854;</i>
-          <span class="i-name">sky-i-tile-drag</span
-          ><span class="i-code">0xe854</span>
+          <i class="demo-icon sky-i-tile-drag">&#xe854;</i> <span class="i-name">sky-i-tile-drag</span><span class="i-code">0xe854</span>
         </div>
         <div class="span3" title="Code: 0xe855">
-          <i class="demo-icon sky-i-trash">&#xe855;</i>
-          <span class="i-name">sky-i-trash</span
-          ><span class="i-code">0xe855</span>
+          <i class="demo-icon sky-i-trash">&#xe855;</i> <span class="i-name">sky-i-trash</span><span class="i-code">0xe855</span>
         </div>
         <div class="span3" title="Code: 0xe856">
-          <i class="demo-icon sky-i-cloud-line">&#xe856;</i>
-          <span class="i-name">sky-i-cloud-line</span
-          ><span class="i-code">0xe856</span>
+          <i class="demo-icon sky-i-cloud-line">&#xe856;</i> <span class="i-name">sky-i-cloud-line</span><span class="i-code">0xe856</span>
         </div>
         <div class="span3" title="Code: 0xe857">
-          <i class="demo-icon sky-i-grid-view-line">&#xe857;</i>
-          <span class="i-name">sky-i-grid-view-line</span
-          ><span class="i-code">0xe857</span>
+          <i class="demo-icon sky-i-grid-view-line">&#xe857;</i> <span class="i-name">sky-i-grid-view-line</span><span class="i-code">0xe857</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe858">
-          <i class="demo-icon sky-i-map-marker-line">&#xe858;</i>
-          <span class="i-name">sky-i-map-marker-line</span
-          ><span class="i-code">0xe858</span>
+          <i class="demo-icon sky-i-map-marker-line">&#xe858;</i> <span class="i-name">sky-i-map-marker-line</span><span class="i-code">0xe858</span>
         </div>
         <div class="span3" title="Code: 0xe859">
-          <i class="demo-icon sky-i-tag-line">&#xe859;</i>
-          <span class="i-name">sky-i-tag-line</span
-          ><span class="i-code">0xe859</span>
+          <i class="demo-icon sky-i-tag-line">&#xe859;</i> <span class="i-name">sky-i-tag-line</span><span class="i-code">0xe859</span>
         </div>
         <div class="span3" title="Code: 0xe85a">
-          <i class="demo-icon sky-i-save-line">&#xe85a;</i>
-          <span class="i-name">sky-i-save-line</span
-          ><span class="i-code">0xe85a</span>
+          <i class="demo-icon sky-i-save-line">&#xe85a;</i> <span class="i-name">sky-i-save-line</span><span class="i-code">0xe85a</span>
         </div>
         <div class="span3" title="Code: 0xe85b">
-          <i class="demo-icon sky-i-upload-line">&#xe85b;</i>
-          <span class="i-name">sky-i-upload-line</span
-          ><span class="i-code">0xe85b</span>
+          <i class="demo-icon sky-i-upload-line">&#xe85b;</i> <span class="i-name">sky-i-upload-line</span><span class="i-code">0xe85b</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe85c">
-          <i class="demo-icon sky-i-zoom-out-line">&#xe85c;</i>
-          <span class="i-name">sky-i-zoom-out-line</span
-          ><span class="i-code">0xe85c</span>
+          <i class="demo-icon sky-i-zoom-out-line">&#xe85c;</i> <span class="i-name">sky-i-zoom-out-line</span><span class="i-code">0xe85c</span>
         </div>
         <div class="span3" title="Code: 0xe85d">
-          <i class="demo-icon sky-i-zoom-in-line">&#xe85d;</i>
-          <span class="i-name">sky-i-zoom-in-line</span
-          ><span class="i-code">0xe85d</span>
+          <i class="demo-icon sky-i-zoom-in-line">&#xe85d;</i> <span class="i-name">sky-i-zoom-in-line</span><span class="i-code">0xe85d</span>
         </div>
         <div class="span3" title="Code: 0xe85e">
-          <i class="demo-icon sky-i-image-line">&#xe85e;</i>
-          <span class="i-name">sky-i-image-line</span
-          ><span class="i-code">0xe85e</span>
+          <i class="demo-icon sky-i-image-line">&#xe85e;</i> <span class="i-name">sky-i-image-line</span><span class="i-code">0xe85e</span>
         </div>
         <div class="span3" title="Code: 0xe85f">
-          <i class="demo-icon sky-i-bullet-list-line">&#xe85f;</i>
-          <span class="i-name">sky-i-bullet-list-line</span
-          ><span class="i-code">0xe85f</span>
+          <i class="demo-icon sky-i-bullet-list-line">&#xe85f;</i> <span class="i-name">sky-i-bullet-list-line</span><span class="i-code">0xe85f</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe860">
-          <i class="demo-icon sky-i-help-i">&#xe860;</i>
-          <span class="i-name">sky-i-help-i</span
-          ><span class="i-code">0xe860</span>
+          <i class="demo-icon sky-i-help-i">&#xe860;</i> <span class="i-name">sky-i-help-i</span><span class="i-code">0xe860</span>
         </div>
         <div class="span3" title="Code: 0xe861">
-          <i class="demo-icon sky-i-bold-line">&#xe861;</i>
-          <span class="i-name">sky-i-bold-line</span
-          ><span class="i-code">0xe861</span>
+          <i class="demo-icon sky-i-bold-line">&#xe861;</i> <span class="i-name">sky-i-bold-line</span><span class="i-code">0xe861</span>
         </div>
         <div class="span3" title="Code: 0xe862">
-          <i class="demo-icon sky-i-triangle-solid">&#xe862;</i>
-          <span class="i-name">sky-i-triangle-solid</span
-          ><span class="i-code">0xe862</span>
+          <i class="demo-icon sky-i-triangle-solid">&#xe862;</i> <span class="i-name">sky-i-triangle-solid</span><span class="i-code">0xe862</span>
         </div>
         <div class="span3" title="Code: 0xe863">
-          <i class="demo-icon sky-i-exclamation">&#xe863;</i>
-          <span class="i-name">sky-i-exclamation</span
-          ><span class="i-code">0xe863</span>
+          <i class="demo-icon sky-i-exclamation">&#xe863;</i> <span class="i-name">sky-i-exclamation</span><span class="i-code">0xe863</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe864">
-          <i class="demo-icon sky-i-circle-solid">&#xe864;</i>
-          <span class="i-name">sky-i-circle-solid</span
-          ><span class="i-code">0xe864</span>
+          <i class="demo-icon sky-i-circle-solid">&#xe864;</i> <span class="i-name">sky-i-circle-solid</span><span class="i-code">0xe864</span>
         </div>
         <div class="span3" title="Code: 0xe865">
-          <i class="demo-icon sky-i-italic-line">&#xe865;</i>
-          <span class="i-name">sky-i-italic-line</span
-          ><span class="i-code">0xe865</span>
+          <i class="demo-icon sky-i-italic-line">&#xe865;</i> <span class="i-name">sky-i-italic-line</span><span class="i-code">0xe865</span>
         </div>
         <div class="span3" title="Code: 0xe866">
-          <i class="demo-icon sky-i-strikethrough-line">&#xe866;</i>
-          <span class="i-name">sky-i-strikethrough-line</span
-          ><span class="i-code">0xe866</span>
+          <i class="demo-icon sky-i-strikethrough-line">&#xe866;</i> <span class="i-name">sky-i-strikethrough-line</span><span class="i-code">0xe866</span>
         </div>
         <div class="span3" title="Code: 0xe867">
-          <i class="demo-icon sky-i-text-color-line">&#xe867;</i>
-          <span class="i-name">sky-i-text-color-line</span
-          ><span class="i-code">0xe867</span>
+          <i class="demo-icon sky-i-text-color-line">&#xe867;</i> <span class="i-name">sky-i-text-color-line</span><span class="i-code">0xe867</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe868">
-          <i class="demo-icon sky-i-superscript-line">&#xe868;</i>
-          <span class="i-name">sky-i-superscript-line</span
-          ><span class="i-code">0xe868</span>
+          <i class="demo-icon sky-i-superscript-line">&#xe868;</i> <span class="i-name">sky-i-superscript-line</span><span class="i-code">0xe868</span>
         </div>
         <div class="span3" title="Code: 0xe869">
-          <i class="demo-icon sky-i-undo-line">&#xe869;</i>
-          <span class="i-name">sky-i-undo-line</span
-          ><span class="i-code">0xe869</span>
+          <i class="demo-icon sky-i-undo-line">&#xe869;</i> <span class="i-name">sky-i-undo-line</span><span class="i-code">0xe869</span>
         </div>
         <div class="span3" title="Code: 0xe86a">
-          <i class="demo-icon sky-i-underline-line">&#xe86a;</i>
-          <span class="i-name">sky-i-underline-line</span
-          ><span class="i-code">0xe86a</span>
+          <i class="demo-icon sky-i-underline-line">&#xe86a;</i> <span class="i-name">sky-i-underline-line</span><span class="i-code">0xe86a</span>
         </div>
         <div class="span3" title="Code: 0xe86b">
-          <i class="demo-icon sky-i-justify-text-line">&#xe86b;</i>
-          <span class="i-name">sky-i-justify-text-line</span
-          ><span class="i-code">0xe86b</span>
+          <i class="demo-icon sky-i-justify-text-line">&#xe86b;</i> <span class="i-name">sky-i-justify-text-line</span><span class="i-code">0xe86b</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe86c">
-          <i class="demo-icon sky-i-unlink-line">&#xe86c;</i>
-          <span class="i-name">sky-i-unlink-line</span
-          ><span class="i-code">0xe86c</span>
+          <i class="demo-icon sky-i-unlink-line">&#xe86c;</i> <span class="i-name">sky-i-unlink-line</span><span class="i-code">0xe86c</span>
         </div>
         <div class="span3" title="Code: 0xe86d">
-          <i class="demo-icon sky-i-file-line">&#xe86d;</i>
-          <span class="i-name">sky-i-file-line</span
-          ><span class="i-code">0xe86d</span>
+          <i class="demo-icon sky-i-file-line">&#xe86d;</i> <span class="i-name">sky-i-file-line</span><span class="i-code">0xe86d</span>
         </div>
         <div class="span3" title="Code: 0xe86e">
-          <i class="demo-icon sky-i-file-solid">&#xe86e;</i>
-          <span class="i-name">sky-i-file-solid</span
-          ><span class="i-code">0xe86e</span>
+          <i class="demo-icon sky-i-file-solid">&#xe86e;</i> <span class="i-name">sky-i-file-solid</span><span class="i-code">0xe86e</span>
         </div>
         <div class="span3" title="Code: 0xe86f">
-          <i class="demo-icon sky-i-thumbs-up-solid">&#xe86f;</i>
-          <span class="i-name">sky-i-thumbs-up-solid</span
-          ><span class="i-code">0xe86f</span>
+          <i class="demo-icon sky-i-thumbs-up-solid">&#xe86f;</i> <span class="i-name">sky-i-thumbs-up-solid</span><span class="i-code">0xe86f</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe870">
-          <i class="demo-icon sky-i-thumbs-up-line">&#xe870;</i>
-          <span class="i-name">sky-i-thumbs-up-line</span
-          ><span class="i-code">0xe870</span>
+          <i class="demo-icon sky-i-thumbs-up-line">&#xe870;</i> <span class="i-name">sky-i-thumbs-up-line</span><span class="i-code">0xe870</span>
         </div>
         <div class="span3" title="Code: 0xe871">
-          <i class="demo-icon sky-i-phone-solid">&#xe871;</i>
-          <span class="i-name">sky-i-phone-solid</span
-          ><span class="i-code">0xe871</span>
+          <i class="demo-icon sky-i-phone-solid">&#xe871;</i> <span class="i-name">sky-i-phone-solid</span><span class="i-code">0xe871</span>
         </div>
         <div class="span3" title="Code: 0xe872">
-          <i class="demo-icon sky-i-phone-line">&#xe872;</i>
-          <span class="i-name">sky-i-phone-line</span
-          ><span class="i-code">0xe872</span>
+          <i class="demo-icon sky-i-phone-line">&#xe872;</i> <span class="i-name">sky-i-phone-line</span><span class="i-code">0xe872</span>
         </div>
         <div class="span3" title="Code: 0xe873">
-          <i class="demo-icon sky-i-headline-chart-line">&#xe873;</i>
-          <span class="i-name">sky-i-headline-chart-line</span
-          ><span class="i-code">0xe873</span>
+          <i class="demo-icon sky-i-headline-chart-line">&#xe873;</i> <span class="i-name">sky-i-headline-chart-line</span><span class="i-code">0xe873</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe874">
-          <i class="demo-icon sky-i-table-line">&#xe874;</i>
-          <span class="i-name">sky-i-table-line</span
-          ><span class="i-code">0xe874</span>
+          <i class="demo-icon sky-i-table-line">&#xe874;</i> <span class="i-name">sky-i-table-line</span><span class="i-code">0xe874</span>
         </div>
         <div class="span3" title="Code: 0xe875">
-          <i class="demo-icon sky-i-bar-chart-line-1">&#xe875;</i>
-          <span class="i-name">sky-i-bar-chart-line-1</span
-          ><span class="i-code">0xe875</span>
+          <i class="demo-icon sky-i-bar-chart-line-1">&#xe875;</i> <span class="i-name">sky-i-bar-chart-line-1</span><span class="i-code">0xe875</span>
         </div>
         <div class="span3" title="Code: 0xe876">
-          <i class="demo-icon sky-i-horizontal-bar-chart-line">&#xe876;</i>
-          <span class="i-name">sky-i-horizontal-bar-chart-line</span
-          ><span class="i-code">0xe876</span>
+          <i class="demo-icon sky-i-horizontal-bar-chart-line">&#xe876;</i> <span class="i-name">sky-i-horizontal-bar-chart-line</span><span class="i-code">0xe876</span>
         </div>
         <div class="span3" title="Code: 0xe877">
-          <i class="demo-icon sky-i-line-chart-line">&#xe877;</i>
-          <span class="i-name">sky-i-line-chart-line</span
-          ><span class="i-code">0xe877</span>
+          <i class="demo-icon sky-i-line-chart-line">&#xe877;</i> <span class="i-name">sky-i-line-chart-line</span><span class="i-code">0xe877</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe878">
-          <i class="demo-icon sky-i-bullet-chart-line">&#xe878;</i>
-          <span class="i-name">sky-i-bullet-chart-line</span
-          ><span class="i-code">0xe878</span>
+          <i class="demo-icon sky-i-bullet-chart-line">&#xe878;</i> <span class="i-name">sky-i-bullet-chart-line</span><span class="i-code">0xe878</span>
         </div>
         <div class="span3" title="Code: 0xe879">
-          <i class="demo-icon sky-i-redo-line">&#xe879;</i>
-          <span class="i-name">sky-i-redo-line</span
-          ><span class="i-code">0xe879</span>
+          <i class="demo-icon sky-i-redo-line">&#xe879;</i> <span class="i-name">sky-i-redo-line</span><span class="i-code">0xe879</span>
         </div>
         <div class="span3" title="Code: 0xe87a">
-          <i class="demo-icon sky-i-arrow-up-line">&#xe87a;</i>
-          <span class="i-name">sky-i-arrow-up-line</span
-          ><span class="i-code">0xe87a</span>
+          <i class="demo-icon sky-i-arrow-up-line">&#xe87a;</i> <span class="i-name">sky-i-arrow-up-line</span><span class="i-code">0xe87a</span>
         </div>
         <div class="span3" title="Code: 0xe87b">
-          <i class="demo-icon sky-i-align-image-center-line">&#xe87b;</i>
-          <span class="i-name">sky-i-align-image-center-line</span
-          ><span class="i-code">0xe87b</span>
+          <i class="demo-icon sky-i-align-image-center-line">&#xe87b;</i> <span class="i-name">sky-i-align-image-center-line</span><span class="i-code">0xe87b</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe87c">
-          <i class="demo-icon sky-i-align-image-left-line">&#xe87c;</i>
-          <span class="i-name">sky-i-align-image-left-line</span
-          ><span class="i-code">0xe87c</span>
+          <i class="demo-icon sky-i-align-image-left-line">&#xe87c;</i> <span class="i-name">sky-i-align-image-left-line</span><span class="i-code">0xe87c</span>
         </div>
         <div class="span3" title="Code: 0xe87d">
-          <i class="demo-icon sky-i-align-image-right-line">&#xe87d;</i>
-          <span class="i-name">sky-i-align-image-right-line</span
-          ><span class="i-code">0xe87d</span>
+          <i class="demo-icon sky-i-align-image-right-line">&#xe87d;</i> <span class="i-name">sky-i-align-image-right-line</span><span class="i-code">0xe87d</span>
         </div>
         <div class="span3" title="Code: 0xe87e">
-          <i class="demo-icon sky-i-divider-line">&#xe87e;</i>
-          <span class="i-name">sky-i-divider-line</span
-          ><span class="i-code">0xe87e</span>
+          <i class="demo-icon sky-i-divider-line">&#xe87e;</i> <span class="i-name">sky-i-divider-line</span><span class="i-code">0xe87e</span>
         </div>
         <div class="span3" title="Code: 0xe87f">
-          <i class="demo-icon sky-i-social-share-line">&#xe87f;</i>
-          <span class="i-name">sky-i-social-share-line</span
-          ><span class="i-code">0xe87f</span>
+          <i class="demo-icon sky-i-social-share-line">&#xe87f;</i> <span class="i-name">sky-i-social-share-line</span><span class="i-code">0xe87f</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe880">
-          <i class="demo-icon sky-i-indent-line">&#xe880;</i>
-          <span class="i-name">sky-i-indent-line</span
-          ><span class="i-code">0xe880</span>
+          <i class="demo-icon sky-i-indent-line">&#xe880;</i> <span class="i-name">sky-i-indent-line</span><span class="i-code">0xe880</span>
         </div>
         <div class="span3" title="Code: 0xe881">
-          <i class="demo-icon sky-i-outdent-line">&#xe881;</i>
-          <span class="i-name">sky-i-outdent-line</span
-          ><span class="i-code">0xe881</span>
+          <i class="demo-icon sky-i-outdent-line">&#xe881;</i> <span class="i-name">sky-i-outdent-line</span><span class="i-code">0xe881</span>
         </div>
         <div class="span3" title="Code: 0xe882">
-          <i class="demo-icon sky-i-download-line">&#xe882;</i>
-          <span class="i-name">sky-i-download-line</span
-          ><span class="i-code">0xe882</span>
+          <i class="demo-icon sky-i-download-line">&#xe882;</i> <span class="i-name">sky-i-download-line</span><span class="i-code">0xe882</span>
         </div>
         <div class="span3" title="Code: 0xe883">
-          <i class="demo-icon sky-i-bb-diamond">&#xe883;</i>
-          <span class="i-name">sky-i-bb-diamond</span
-          ><span class="i-code">0xe883</span>
+          <i class="demo-icon sky-i-bb-diamond">&#xe883;</i> <span class="i-name">sky-i-bb-diamond</span><span class="i-code">0xe883</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe886">
-          <i class="demo-icon sky-i-attach-line">&#xe886;</i>
-          <span class="i-name">sky-i-attach-line</span
-          ><span class="i-code">0xe886</span>
+          <i class="demo-icon sky-i-attach-line">&#xe886;</i> <span class="i-name">sky-i-attach-line</span><span class="i-code">0xe886</span>
         </div>
         <div class="span3" title="Code: 0xe887">
-          <i class="demo-icon sky-i-bars-2-line">&#xe887;</i>
-          <span class="i-name">sky-i-bars-2-line</span
-          ><span class="i-code">0xe887</span>
+          <i class="demo-icon sky-i-bars-2-line">&#xe887;</i> <span class="i-name">sky-i-bars-2-line</span><span class="i-code">0xe887</span>
         </div>
         <div class="span3" title="Code: 0xe888">
-          <i class="demo-icon sky-i-cog-2-line">&#xe888;</i>
-          <span class="i-name">sky-i-cog-2-line</span
-          ><span class="i-code">0xe888</span>
+          <i class="demo-icon sky-i-cog-2-line">&#xe888;</i> <span class="i-name">sky-i-cog-2-line</span><span class="i-code">0xe888</span>
         </div>
         <div class="span3" title="Code: 0xe889">
-          <i class="demo-icon sky-i-cog-2-solid">&#xe889;</i>
-          <span class="i-name">sky-i-cog-2-solid</span
-          ><span class="i-code">0xe889</span>
+          <i class="demo-icon sky-i-cog-2-solid">&#xe889;</i> <span class="i-name">sky-i-cog-2-solid</span><span class="i-code">0xe889</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe88a">
-          <i class="demo-icon sky-i-collapse-2-line">&#xe88a;</i>
-          <span class="i-name">sky-i-collapse-2-line</span
-          ><span class="i-code">0xe88a</span>
+          <i class="demo-icon sky-i-collapse-2-line">&#xe88a;</i> <span class="i-name">sky-i-collapse-2-line</span><span class="i-code">0xe88a</span>
         </div>
         <div class="span3" title="Code: 0xe88b">
-          <i class="demo-icon sky-i-database-2-line">&#xe88b;</i>
-          <span class="i-name">sky-i-database-2-line</span
-          ><span class="i-code">0xe88b</span>
+          <i class="demo-icon sky-i-database-2-line">&#xe88b;</i> <span class="i-name">sky-i-database-2-line</span><span class="i-code">0xe88b</span>
         </div>
         <div class="span3" title="Code: 0xe88c">
-          <i class="demo-icon sky-i-database-2-solid">&#xe88c;</i>
-          <span class="i-name">sky-i-database-2-solid</span
-          ><span class="i-code">0xe88c</span>
+          <i class="demo-icon sky-i-database-2-solid">&#xe88c;</i> <span class="i-name">sky-i-database-2-solid</span><span class="i-code">0xe88c</span>
         </div>
         <div class="span3" title="Code: 0xe88d">
-          <i class="demo-icon sky-i-form-2-solid">&#xe88d;</i>
-          <span class="i-name">sky-i-form-2-solid</span
-          ><span class="i-code">0xe88d</span>
+          <i class="demo-icon sky-i-form-2-solid">&#xe88d;</i> <span class="i-name">sky-i-form-2-solid</span><span class="i-code">0xe88d</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe88e">
-          <i class="demo-icon sky-i-expand-2-line">&#xe88e;</i>
-          <span class="i-name">sky-i-expand-2-line</span
-          ><span class="i-code">0xe88e</span>
+          <i class="demo-icon sky-i-expand-2-line">&#xe88e;</i> <span class="i-name">sky-i-expand-2-line</span><span class="i-code">0xe88e</span>
         </div>
         <div class="span3" title="Code: 0xe88f">
-          <i class="demo-icon sky-i-form-2-line">&#xe88f;</i>
-          <span class="i-name">sky-i-form-2-line</span
-          ><span class="i-code">0xe88f</span>
+          <i class="demo-icon sky-i-form-2-line">&#xe88f;</i> <span class="i-name">sky-i-form-2-line</span><span class="i-code">0xe88f</span>
         </div>
         <div class="span3" title="Code: 0xe890">
-          <i class="demo-icon sky-i-lock-2-line">&#xe890;</i>
-          <span class="i-name">sky-i-lock-2-line</span
-          ><span class="i-code">0xe890</span>
+          <i class="demo-icon sky-i-lock-2-line">&#xe890;</i> <span class="i-name">sky-i-lock-2-line</span><span class="i-code">0xe890</span>
         </div>
         <div class="span3" title="Code: 0xe891">
-          <i class="demo-icon sky-i-lock-2-solid">&#xe891;</i>
-          <span class="i-name">sky-i-lock-2-solid</span
-          ><span class="i-code">0xe891</span>
+          <i class="demo-icon sky-i-lock-2-solid">&#xe891;</i> <span class="i-name">sky-i-lock-2-solid</span><span class="i-code">0xe891</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe892">
-          <i class="demo-icon sky-i-money-2-line">&#xe892;</i>
-          <span class="i-name">sky-i-money-2-line</span
-          ><span class="i-code">0xe892</span>
+          <i class="demo-icon sky-i-money-2-line">&#xe892;</i> <span class="i-name">sky-i-money-2-line</span><span class="i-code">0xe892</span>
         </div>
         <div class="span3" title="Code: 0xe893">
-          <i class="demo-icon sky-i-money-2-solid">&#xe893;</i>
-          <span class="i-name">sky-i-money-2-solid</span
-          ><span class="i-code">0xe893</span>
+          <i class="demo-icon sky-i-money-2-solid">&#xe893;</i> <span class="i-name">sky-i-money-2-solid</span><span class="i-code">0xe893</span>
         </div>
         <div class="span3" title="Code: 0xe894">
-          <i class="demo-icon sky-i-notifications-2-line">&#xe894;</i>
-          <span class="i-name">sky-i-notifications-2-line</span
-          ><span class="i-code">0xe894</span>
+          <i class="demo-icon sky-i-notifications-2-line">&#xe894;</i> <span class="i-name">sky-i-notifications-2-line</span><span class="i-code">0xe894</span>
         </div>
         <div class="span3" title="Code: 0xe895">
-          <i class="demo-icon sky-i-notifications-2-solid">&#xe895;</i>
-          <span class="i-name">sky-i-notifications-2-solid</span
-          ><span class="i-code">0xe895</span>
+          <i class="demo-icon sky-i-notifications-2-solid">&#xe895;</i> <span class="i-name">sky-i-notifications-2-solid</span><span class="i-code">0xe895</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe896">
-          <i class="demo-icon sky-i-bb-diamond-2-line">&#xe896;</i>
-          <span class="i-name">sky-i-bb-diamond-2-line</span
-          ><span class="i-code">0xe896</span>
+          <i class="demo-icon sky-i-bb-diamond-2-line">&#xe896;</i> <span class="i-name">sky-i-bb-diamond-2-line</span><span class="i-code">0xe896</span>
         </div>
         <div class="span3" title="Code: 0xe897">
-          <i class="demo-icon sky-i-bb-diamond-2-solid">&#xe897;</i>
-          <span class="i-name">sky-i-bb-diamond-2-solid</span
-          ><span class="i-code">0xe897</span>
+          <i class="demo-icon sky-i-bb-diamond-2-solid">&#xe897;</i> <span class="i-name">sky-i-bb-diamond-2-solid</span><span class="i-code">0xe897</span>
         </div>
         <div class="span3" title="Code: 0xe89a">
-          <i class="demo-icon sky-i-star">&#xe89a;</i>
-          <span class="i-name">sky-i-star</span
-          ><span class="i-code">0xe89a</span>
+          <i class="demo-icon sky-i-star">&#xe89a;</i> <span class="i-name">sky-i-star</span><span class="i-code">0xe89a</span>
         </div>
         <div class="span3" title="Code: 0xe89b">
-          <i class="demo-icon sky-i-image-file-line">&#xe89b;</i>
-          <span class="i-name">sky-i-image-file-line</span
-          ><span class="i-code">0xe89b</span>
+          <i class="demo-icon sky-i-image-file-line">&#xe89b;</i> <span class="i-name">sky-i-image-file-line</span><span class="i-code">0xe89b</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe89c">
-          <i class="demo-icon sky-i-text-file-line">&#xe89c;</i>
-          <span class="i-name">sky-i-text-file-line</span
-          ><span class="i-code">0xe89c</span>
+          <i class="demo-icon sky-i-text-file-line">&#xe89c;</i> <span class="i-name">sky-i-text-file-line</span><span class="i-code">0xe89c</span>
         </div>
         <div class="span3" title="Code: 0xe89d">
-          <i class="demo-icon sky-i-video-file-line">&#xe89d;</i>
-          <span class="i-name">sky-i-video-file-line</span
-          ><span class="i-code">0xe89d</span>
+          <i class="demo-icon sky-i-video-file-line">&#xe89d;</i> <span class="i-name">sky-i-video-file-line</span><span class="i-code">0xe89d</span>
         </div>
         <div class="span3" title="Code: 0xe89e">
-          <i class="demo-icon sky-i-double-chevron-up">&#xe89e;</i>
-          <span class="i-name">sky-i-double-chevron-up</span
-          ><span class="i-code">0xe89e</span>
+          <i class="demo-icon sky-i-double-chevron-up">&#xe89e;</i> <span class="i-name">sky-i-double-chevron-up</span><span class="i-code">0xe89e</span>
         </div>
         <div class="span3" title="Code: 0xe89f">
-          <i class="demo-icon sky-i-double-chevron-down">&#xe89f;</i>
-          <span class="i-name">sky-i-double-chevron-down</span
-          ><span class="i-code">0xe89f</span>
+          <i class="demo-icon sky-i-double-chevron-down">&#xe89f;</i> <span class="i-name">sky-i-double-chevron-down</span><span class="i-code">0xe89f</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe8a0">
-          <i class="demo-icon sky-i-__do_not_delete">&#xe8a0;</i>
-          <span class="i-name">sky-i-__do_not_delete</span
-          ><span class="i-code">0xe8a0</span>
+          <i class="demo-icon sky-i-__do_not_delete">&#xe8a0;</i> <span class="i-name">sky-i-__do_not_delete</span><span class="i-code">0xe8a0</span>
         </div>
         <div class="span3" title="Code: 0xe8a1">
-          <i class="demo-icon sky-i-audio-file-line">&#xe8a1;</i>
-          <span class="i-name">sky-i-audio-file-line</span
-          ><span class="i-code">0xe8a1</span>
+          <i class="demo-icon sky-i-audio-file-line">&#xe8a1;</i> <span class="i-name">sky-i-audio-file-line</span><span class="i-code">0xe8a1</span>
         </div>
         <div class="span3" title="Code: 0xe8a2">
-          <i class="demo-icon sky-i-code-file-line">&#xe8a2;</i>
-          <span class="i-name">sky-i-code-file-line</span
-          ><span class="i-code">0xe8a2</span>
+          <i class="demo-icon sky-i-code-file-line">&#xe8a2;</i> <span class="i-name">sky-i-code-file-line</span><span class="i-code">0xe8a2</span>
         </div>
         <div class="span3" title="Code: 0xe8a3">
-          <i class="demo-icon sky-i-archive-file-line">&#xe8a3;</i>
-          <span class="i-name">sky-i-archive-file-line</span
-          ><span class="i-code">0xe8a3</span>
+          <i class="demo-icon sky-i-archive-file-line">&#xe8a3;</i> <span class="i-name">sky-i-archive-file-line</span><span class="i-code">0xe8a3</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe8a4">
-          <i class="demo-icon sky-i-ppt-file-line">&#xe8a4;</i>
-          <span class="i-name">sky-i-ppt-file-line</span
-          ><span class="i-code">0xe8a4</span>
+          <i class="demo-icon sky-i-ppt-file-line">&#xe8a4;</i> <span class="i-name">sky-i-ppt-file-line</span><span class="i-code">0xe8a4</span>
         </div>
         <div class="span3" title="Code: 0xe8a5">
-          <i class="demo-icon sky-i-bluetooth-on-line-1">&#xe8a5;</i>
-          <span class="i-name">sky-i-bluetooth-on-line-1</span
-          ><span class="i-code">0xe8a5</span>
+          <i class="demo-icon sky-i-bluetooth-on-line-1">&#xe8a5;</i> <span class="i-name">sky-i-bluetooth-on-line-1</span><span class="i-code">0xe8a5</span>
         </div>
         <div class="span3" title="Code: 0xe8a6">
-          <i class="demo-icon sky-i-phone-action-credit-card-line-1"
-            >&#xe8a6;</i
-          >
-          <span class="i-name">sky-i-phone-action-credit-card-line-1</span
-          ><span class="i-code">0xe8a6</span>
+          <i class="demo-icon sky-i-phone-action-credit-card-line-1">&#xe8a6;</i> <span class="i-name">sky-i-phone-action-credit-card-line-1</span><span class="i-code">0xe8a6</span>
         </div>
         <div class="span3" title="Code: 0xe8a7">
-          <i class="demo-icon sky-i-online-learning-2-line">&#xe8a7;</i>
-          <span class="i-name">sky-i-online-learning-2-line</span
-          ><span class="i-code">0xe8a7</span>
+          <i class="demo-icon sky-i-online-learning-2-line">&#xe8a7;</i> <span class="i-name">sky-i-online-learning-2-line</span><span class="i-code">0xe8a7</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe8a8">
-          <i class="demo-icon sky-i-donation-charity-hand-heart-2-line"
-            >&#xe8a8;</i
-          >
-          <span class="i-name">sky-i-donation-charity-hand-heart-2-line</span
-          ><span class="i-code">0xe8a8</span>
+          <i class="demo-icon sky-i-donation-charity-hand-heart-2-line">&#xe8a8;</i> <span class="i-name">sky-i-donation-charity-hand-heart-2-line</span><span class="i-code">0xe8a8</span>
         </div>
         <div class="span3" title="Code: 0xe8a9">
-          <i class="demo-icon sky-i-workflow-teamwork-user-2-line">&#xe8a9;</i>
-          <span class="i-name">sky-i-workflow-teamwork-user-2-line</span
-          ><span class="i-code">0xe8a9</span>
+          <i class="demo-icon sky-i-workflow-teamwork-user-2-line">&#xe8a9;</i> <span class="i-name">sky-i-workflow-teamwork-user-2-line</span><span class="i-code">0xe8a9</span>
         </div>
         <div class="span3" title="Code: 0xe8aa">
-          <i class="demo-icon sky-i-phone-action-credit-card-line">&#xe8aa;</i>
-          <span class="i-name">sky-i-phone-action-credit-card-line</span
-          ><span class="i-code">0xe8aa</span>
+          <i class="demo-icon sky-i-phone-action-credit-card-line">&#xe8aa;</i> <span class="i-name">sky-i-phone-action-credit-card-line</span><span class="i-code">0xe8aa</span>
         </div>
         <div class="span3" title="Code: 0xe8ab">
-          <i class="demo-icon sky-i-bluetooth-on-line">&#xe8ab;</i>
-          <span class="i-name">sky-i-bluetooth-on-line</span
-          ><span class="i-code">0xe8ab</span>
+          <i class="demo-icon sky-i-bluetooth-on-line">&#xe8ab;</i> <span class="i-name">sky-i-bluetooth-on-line</span><span class="i-code">0xe8ab</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe8af">
-          <i class="demo-icon sky-i-donation-charity-hand-heart-2-solid"
-            >&#xe8af;</i
-          >
-          <span class="i-name">sky-i-donation-charity-hand-heart-2-solid</span
-          ><span class="i-code">0xe8af</span>
+          <i class="demo-icon sky-i-donation-charity-hand-heart-2-solid">&#xe8af;</i> <span class="i-name">sky-i-donation-charity-hand-heart-2-solid</span><span class="i-code">0xe8af</span>
         </div>
         <div class="span3" title="Code: 0xe8b0">
-          <i class="demo-icon sky-i-online-learning-2-solid">&#xe8b0;</i>
-          <span class="i-name">sky-i-online-learning-2-solid</span
-          ><span class="i-code">0xe8b0</span>
+          <i class="demo-icon sky-i-online-learning-2-solid">&#xe8b0;</i> <span class="i-name">sky-i-online-learning-2-solid</span><span class="i-code">0xe8b0</span>
         </div>
         <div class="span3" title="Code: 0xe8b1">
-          <i class="demo-icon sky-i-workflow-teamwork-user-2-solid">&#xe8b1;</i>
-          <span class="i-name">sky-i-workflow-teamwork-user-2-solid</span
-          ><span class="i-code">0xe8b1</span>
+          <i class="demo-icon sky-i-workflow-teamwork-user-2-solid">&#xe8b1;</i> <span class="i-name">sky-i-workflow-teamwork-user-2-solid</span><span class="i-code">0xe8b1</span>
         </div>
         <div class="span3" title="Code: 0xe8b2">
-          <i class="demo-icon sky-i-saving-bank-2-line">&#xe8b2;</i>
-          <span class="i-name">sky-i-saving-bank-2-line</span
-          ><span class="i-code">0xe8b2</span>
+          <i class="demo-icon sky-i-saving-bank-2-line">&#xe8b2;</i> <span class="i-name">sky-i-saving-bank-2-line</span><span class="i-code">0xe8b2</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe8b3">
-          <i class="demo-icon sky-i-accounting-invoice-mail-2-line">&#xe8b3;</i>
-          <span class="i-name">sky-i-accounting-invoice-mail-2-line</span
-          ><span class="i-code">0xe8b3</span>
+          <i class="demo-icon sky-i-accounting-invoice-mail-2-line">&#xe8b3;</i> <span class="i-name">sky-i-accounting-invoice-mail-2-line</span><span class="i-code">0xe8b3</span>
         </div>
         <div class="span3" title="Code: 0xe8b4">
-          <i class="demo-icon sky-i-saving-bank-2-solid">&#xe8b4;</i>
-          <span class="i-name">sky-i-saving-bank-2-solid</span
-          ><span class="i-code">0xe8b4</span>
+          <i class="demo-icon sky-i-saving-bank-2-solid">&#xe8b4;</i> <span class="i-name">sky-i-saving-bank-2-solid</span><span class="i-code">0xe8b4</span>
         </div>
         <div class="span3" title="Code: 0xe8b5">
-          <i class="demo-icon sky-i-general-ledger-2-solid">&#xe8b5;</i>
-          <span class="i-name">sky-i-general-ledger-2-solid</span
-          ><span class="i-code">0xe8b5</span>
+          <i class="demo-icon sky-i-general-ledger-2-solid">&#xe8b5;</i> <span class="i-name">sky-i-general-ledger-2-solid</span><span class="i-code">0xe8b5</span>
         </div>
         <div class="span3" title="Code: 0xe8b6">
-          <i class="demo-icon sky-i-cash-payment-bill-2-solid">&#xe8b6;</i>
-          <span class="i-name">sky-i-cash-payment-bill-2-solid</span
-          ><span class="i-code">0xe8b6</span>
+          <i class="demo-icon sky-i-cash-payment-bill-2-solid">&#xe8b6;</i> <span class="i-name">sky-i-cash-payment-bill-2-solid</span><span class="i-code">0xe8b6</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe8b7">
-          <i class="demo-icon sky-i-cash-payment-bill-2-line">&#xe8b7;</i>
-          <span class="i-name">sky-i-cash-payment-bill-2-line</span
-          ><span class="i-code">0xe8b7</span>
+          <i class="demo-icon sky-i-cash-payment-bill-2-line">&#xe8b7;</i> <span class="i-name">sky-i-cash-payment-bill-2-line</span><span class="i-code">0xe8b7</span>
         </div>
         <div class="span3" title="Code: 0xe8b8">
-          <i class="demo-icon sky-i-general-ledger-2-line">&#xe8b8;</i>
-          <span class="i-name">sky-i-general-ledger-2-line</span
-          ><span class="i-code">0xe8b8</span>
+          <i class="demo-icon sky-i-general-ledger-2-line">&#xe8b8;</i> <span class="i-name">sky-i-general-ledger-2-line</span><span class="i-code">0xe8b8</span>
         </div>
         <div class="span3" title="Code: 0xe8bb">
-          <i class="demo-icon sky-i-accounting-invoice-mail-2-solid"
-            >&#xe8bb;</i
-          >
-          <span class="i-name">sky-i-accounting-invoice-mail-2-solid</span
-          ><span class="i-code">0xe8bb</span>
+          <i class="demo-icon sky-i-accounting-invoice-mail-2-solid">&#xe8bb;</i> <span class="i-name">sky-i-accounting-invoice-mail-2-solid</span><span class="i-code">0xe8bb</span>
         </div>
         <div class="span3" title="Code: 0xe8bc">
-          <i class="demo-icon sky-i-hammer-wrench-2-solid">&#xe8bc;</i>
-          <span class="i-name">sky-i-hammer-wrench-2-solid</span
-          ><span class="i-code">0xe8bc</span>
+          <i class="demo-icon sky-i-hammer-wrench-2-solid">&#xe8bc;</i> <span class="i-name">sky-i-hammer-wrench-2-solid</span><span class="i-code">0xe8bc</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe8bd">
-          <i class="demo-icon sky-i-hammer-wrench-2-line">&#xe8bd;</i>
-          <span class="i-name">sky-i-hammer-wrench-2-line</span
-          ><span class="i-code">0xe8bd</span>
+          <i class="demo-icon sky-i-hammer-wrench-2-line">&#xe8bd;</i> <span class="i-name">sky-i-hammer-wrench-2-line</span><span class="i-code">0xe8bd</span>
         </div>
         <div class="span3" title="Code: 0xe958">
-          <i class="demo-icon sky-i-sparkles-2-solid">&#xe958;</i>
-          <span class="i-name">sky-i-sparkles-2-solid</span
-          ><span class="i-code">0xe958</span>
+          <i class="demo-icon sky-i-sparkles-2-solid">&#xe958;</i> <span class="i-name">sky-i-sparkles-2-solid</span><span class="i-code">0xe958</span>
         </div>
         <div class="span3" title="Code: 0xe959">
-          <i class="demo-icon sky-i-sparkles-2-line">&#xe959;</i>
-          <span class="i-name">sky-i-sparkles-2-line</span
-          ><span class="i-code">0xe959</span>
+          <i class="demo-icon sky-i-sparkles-2-line">&#xe959;</i> <span class="i-name">sky-i-sparkles-2-line</span><span class="i-code">0xe959</span>
         </div>
         <div class="span3" title="Code: 0xe97a">
-          <i class="demo-icon sky-i-workflow-teammate-circle-2-line"
-            >&#xe97a;</i
-          >
-          <span class="i-name">sky-i-workflow-teammate-circle-2-line</span
-          ><span class="i-code">0xe97a</span>
+          <i class="demo-icon sky-i-workflow-teammate-circle-2-line">&#xe97a;</i> <span class="i-name">sky-i-workflow-teammate-circle-2-line</span><span class="i-code">0xe97a</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe97b">
-          <i class="demo-icon sky-i-workflow-teammate-circle-2-solid"
-            >&#xe97b;</i
-          >
-          <span class="i-name">sky-i-workflow-teammate-circle-2-solid</span
-          ><span class="i-code">0xe97b</span>
+          <i class="demo-icon sky-i-workflow-teammate-circle-2-solid">&#xe97b;</i> <span class="i-name">sky-i-workflow-teammate-circle-2-solid</span><span class="i-code">0xe97b</span>
         </div>
         <div class="span3" title="Code: 0xe97d">
-          <i class="demo-icon sky-i-hide">&#xe97d;</i>
-          <span class="i-name">sky-i-hide</span
-          ><span class="i-code">0xe97d</span>
+          <i class="demo-icon sky-i-hide">&#xe97d;</i> <span class="i-name">sky-i-hide</span><span class="i-code">0xe97d</span>
         </div>
         <div class="span3" title="Code: 0xe97e">
-          <i class="demo-icon sky-i-show">&#xe97e;</i>
-          <span class="i-name">sky-i-show</span
-          ><span class="i-code">0xe97e</span>
+          <i class="demo-icon sky-i-show">&#xe97e;</i> <span class="i-name">sky-i-show</span><span class="i-code">0xe97e</span>
         </div>
         <div class="span3" title="Code: 0xe997">
-          <i class="demo-icon sky-i-xls-file-line-depricated">&#xe997;</i>
-          <span class="i-name">sky-i-xls-file-line-depricated</span
-          ><span class="i-code">0xe997</span>
+          <i class="demo-icon sky-i-xls-file-line-depricated">&#xe997;</i> <span class="i-name">sky-i-xls-file-line-depricated</span><span class="i-code">0xe997</span>
         </div>
       </div>
       <div class="row">
         <div class="span3" title="Code: 0xe998">
-          <i class="demo-icon sky-i-doc-file-line-depreciated">&#xe998;</i>
-          <span class="i-name">sky-i-doc-file-line-depreciated</span
-          ><span class="i-code">0xe998</span>
+          <i class="demo-icon sky-i-doc-file-line-depreciated">&#xe998;</i> <span class="i-name">sky-i-doc-file-line-depreciated</span><span class="i-code">0xe998</span>
         </div>
         <div class="span3" title="Code: 0xe999">
-          <i class="demo-icon sky-i-pdf-file-line-deprecated">&#xe999;</i>
-          <span class="i-name">sky-i-pdf-file-line-deprecated</span
-          ><span class="i-code">0xe999</span>
+          <i class="demo-icon sky-i-pdf-file-line-deprecated">&#xe999;</i> <span class="i-name">sky-i-pdf-file-line-deprecated</span><span class="i-code">0xe999</span>
         </div>
       </div>
     </div>
-    <div class="container footer">
-      Generated by <a href="https://fontello.com">fontello.com</a>
-    </div>
+    <div class="container footer">Generated by <a href="https://fontello.com">fontello.com</a></div>
   </body>
 </html>

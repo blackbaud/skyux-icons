@@ -2,54 +2,62 @@
 
 ## [7.1.0](https://github.com/blackbaud/skyux-icons/compare/7.0.0...7.1.0) (2024-04-12)
 
+
 ### Features
 
-- add icon for CI ([#94](https://github.com/blackbaud/skyux-icons/issues/94)) ([569d548](https://github.com/blackbaud/skyux-icons/commit/569d5487d8b0e095ace7b8f6ab7775621aa65398))
+* add icon for CI ([#94](https://github.com/blackbaud/skyux-icons/issues/94)) ([569d548](https://github.com/blackbaud/skyux-icons/commit/569d5487d8b0e095ace7b8f6ab7775621aa65398))
 
 ## [7.0.0](https://github.com/blackbaud/skyux-icons/compare/6.10.2...7.0.0) (2024-03-22)
 
+
 ### ⚠ BREAKING CHANGES
 
-- The file icon fallback aliases have been updated to use the desired version of the corresponding Font Awesome icons. The alternate version will no longer be accessible when used as part of a SKY UX icon component.
+* The file icon fallback aliases have been updated to use the desired version of the corresponding Font Awesome icons. The alternate version will no longer be accessible when used as part of a SKY UX icon component.
 
 ### Features
 
-- update file icon fallback to align with design guidance ([5cd1781](https://github.com/blackbaud/skyux-icons/commit/5cd1781afd64e4c5d666b70a018148c27d961ffe))
+* update file icon fallback to align with design guidance ([5cd1781](https://github.com/blackbaud/skyux-icons/commit/5cd1781afd64e4c5d666b70a018148c27d961ffe))
 
 ## [6.10.2](https://github.com/blackbaud/skyux-icons/compare/6.10.1...6.10.2) (2024-03-13)
 
+
 ### Bug Fixes
 
-- copy-to-clipboard uses correct Font Awesome fallback ([#88](https://github.com/blackbaud/skyux-icons/issues/88)) ([562d36c](https://github.com/blackbaud/skyux-icons/commit/562d36cd85d12d9f733ea6f34a45a2e3dfdebf51))
+* copy-to-clipboard uses correct Font Awesome fallback ([#88](https://github.com/blackbaud/skyux-icons/issues/88)) ([562d36c](https://github.com/blackbaud/skyux-icons/commit/562d36cd85d12d9f733ea6f34a45a2e3dfdebf51))
 
 ## [6.10.1](https://github.com/blackbaud/skyux-icons/compare/6.10.0...6.10.1) (2024-02-29)
 
+
 ### Bug Fixes
 
-- align metadata names with icon selectors ([#85](https://github.com/blackbaud/skyux-icons/issues/85)) ([bf3f8f3](https://github.com/blackbaud/skyux-icons/commit/bf3f8f3e62d36fdfa5439d82df89409bebbc127b))
-- share, social-share, and arrow-up icons use correct Font Awesome fallback ([#86](https://github.com/blackbaud/skyux-icons/issues/86)) ([ce20d4e](https://github.com/blackbaud/skyux-icons/commit/ce20d4e4a1e9792e9c8c2c5b2c67dbe0e5917501))
+* align metadata names with icon selectors ([#85](https://github.com/blackbaud/skyux-icons/issues/85)) ([bf3f8f3](https://github.com/blackbaud/skyux-icons/commit/bf3f8f3e62d36fdfa5439d82df89409bebbc127b))
+* share, social-share, and arrow-up icons use correct Font Awesome fallback ([#86](https://github.com/blackbaud/skyux-icons/issues/86)) ([ce20d4e](https://github.com/blackbaud/skyux-icons/commit/ce20d4e4a1e9792e9c8c2c5b2c67dbe0e5917501))
 
 ## [6.10.0](https://github.com/blackbaud/skyux-icons/compare/6.9.0...6.10.0) (2024-02-14)
 
+
 ### Features
 
-- add up arrow ([#82](https://github.com/blackbaud/skyux-icons/issues/82)) ([e132990](https://github.com/blackbaud/skyux-icons/commit/e132990e6132f6228454d64c2998486fb96dba1f))
+* add up arrow ([#82](https://github.com/blackbaud/skyux-icons/issues/82)) ([e132990](https://github.com/blackbaud/skyux-icons/commit/e132990e6132f6228454d64c2998486fb96dba1f))
+
 
 ### Bug Fixes
 
-- add missing icon metadata ([#82](https://github.com/blackbaud/skyux-icons/issues/82)) ([e132990](https://github.com/blackbaud/skyux-icons/commit/e132990e6132f6228454d64c2998486fb96dba1f))
+* add missing icon metadata ([#82](https://github.com/blackbaud/skyux-icons/issues/82)) ([e132990](https://github.com/blackbaud/skyux-icons/commit/e132990e6132f6228454d64c2998486fb96dba1f))
 
 ## [6.9.0](https://github.com/blackbaud/skyux-icons/compare/6.8.1...6.9.0) (2024-02-02)
 
+
 ### Features
 
-- add map marker ([#79](https://github.com/blackbaud/skyux-icons/issues/79)) ([10dc898](https://github.com/blackbaud/skyux-icons/commit/10dc89849d726814e70e2ae4b382c1f39e5ff8ee))
+* add map marker ([#79](https://github.com/blackbaud/skyux-icons/issues/79)) ([10dc898](https://github.com/blackbaud/skyux-icons/commit/10dc89849d726814e70e2ae4b382c1f39e5ff8ee))
 
 ## [6.8.1](https://github.com/blackbaud/skyux-icons/compare/6.8.0...6.8.1) (2024-01-23)
 
+
 ### Bug Fixes
 
-- add attribution for Streamline font ([#74](https://github.com/blackbaud/skyux-icons/issues/74)) ([eedb49e](https://github.com/blackbaud/skyux-icons/commit/eedb49e74d3a6d49eff41f064fd7650261b7356c))
+* add attribution for Streamline font ([#74](https://github.com/blackbaud/skyux-icons/issues/74)) ([eedb49e](https://github.com/blackbaud/skyux-icons/commit/eedb49e74d3a6d49eff41f064fd7650261b7356c))
 
 ## 6.8.0 (2024-01-17)
 

@@ -1,5 +1,4 @@
-[class^='sky-i-'],
-[class*=' sky-i-'] {
+[class^="sky-i-"], [class*=" sky-i-"] {
   font-family: 'skyux-icons';
   font-style: normal;
   font-weight: normal;
@@ -11,1143 +10,193 @@
   /* font-size: 120%; */
 }
 
-.sky-i-house-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe800;&nbsp;'
-  );
-}
-.sky-i-calendar {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe801;&nbsp;'
-  );
-}
-.sky-i-form-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe802;&nbsp;'
-  );
-}
-.sky-i-clock {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe803;&nbsp;'
-  );
-}
-.sky-i-filter-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe804;&nbsp;'
-  );
-}
-.sky-i-sort {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe805;&nbsp;'
-  );
-}
-.sky-i-columns {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe806;&nbsp;'
-  );
-}
-.sky-i-help-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe807;&nbsp;'
-  );
-}
-.sky-i-copy-to-clipboard-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe808;&nbsp;'
-  );
-}
-.sky-i-edit-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe809;&nbsp;'
-  );
-}
-.sky-i-check {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe80a;&nbsp;'
-  );
-}
-.sky-i-chevron-right {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe80b;&nbsp;'
-  );
-}
-.sky-i-chevron-up {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe80c;&nbsp;'
-  );
-}
-.sky-i-ban-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe80d;&nbsp;'
-  );
-}
-.sky-i-business-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe80e;&nbsp;'
-  );
-}
-.sky-i-chevron-down {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe80f;&nbsp;'
-  );
-}
-.sky-i-number-list-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe810;&nbsp;'
-  );
-}
-.sky-i-font-size-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe811;&nbsp;'
-  );
-}
-.sky-i-add {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe812;&nbsp;'
-  );
-}
-.sky-i-chevron-left {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe813;&nbsp;'
-  );
-}
-.sky-i-search {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe814;&nbsp;'
-  );
-}
-.sky-i-highlighter-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe815;&nbsp;'
-  );
-}
-.sky-i-subscript-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe816;&nbsp;'
-  );
-}
-.sky-i-xls-file-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe817;&nbsp;'
-  );
-}
-.sky-i-close {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe818;&nbsp;'
-  );
-}
-.sky-i-folder-open-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe819;&nbsp;'
-  );
-}
-.sky-i-pdf-file-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe81a;&nbsp;'
-  );
-}
-.sky-i-calendar-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe81b;&nbsp;'
-  );
-}
-.sky-i-clock-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe81c;&nbsp;'
-  );
-}
-.sky-i-pencil-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe81d;&nbsp;'
-  );
-}
-.sky-i-trash-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe81e;&nbsp;'
-  );
-}
-.sky-i-house-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe81f;&nbsp;'
-  );
-}
-.sky-i-edit {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe820;&nbsp;'
-  );
-}
-.sky-i-users-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe821;&nbsp;'
-  );
-}
-.sky-i-users-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe822;&nbsp;'
-  );
-}
-.sky-i-ellipsis {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe823;&nbsp;'
-  );
-}
-.sky-i-dollar-bill-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe824;&nbsp;'
-  );
-}
-.sky-i-dollar-bill-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe825;&nbsp;'
-  );
-}
-.sky-i-cog-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe826;&nbsp;'
-  );
-}
-.sky-i-cog-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe827;&nbsp;'
-  );
-}
-.sky-i-bell-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe828;&nbsp;'
-  );
-}
-.sky-i-bell-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe829;&nbsp;'
-  );
-}
-.sky-i-help-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe82a;&nbsp;'
-  );
-}
-.sky-i-filter {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe82b;&nbsp;'
-  );
-}
-.sky-i-double-chevron-left {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe82c;&nbsp;'
-  );
-}
-.sky-i-double-chevron-right {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe82d;&nbsp;'
-  );
-}
-.sky-i-doc-file-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe82e;&nbsp;'
-  );
-}
-.sky-i-trash-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe82f;&nbsp;'
-  );
-}
-.sky-i-pie-chart-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe830;&nbsp;'
-  );
-}
-.sky-i-donut-chart-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe831;&nbsp;'
-  );
-}
-.sky-i-share-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe832;&nbsp;'
-  );
-}
-.sky-i-envelope-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe833;&nbsp;'
-  );
-}
-.sky-i-envelope-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe834;&nbsp;'
-  );
-}
-.sky-i-talk-bubbles-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe835;&nbsp;'
-  );
-}
-.sky-i-talk-bubbles-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe836;&nbsp;'
-  );
-}
-.sky-i-copy-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe837;&nbsp;'
-  );
-}
-.sky-i-menu {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe838;&nbsp;'
-  );
-}
-.sky-i-printer-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe839;&nbsp;'
-  );
-}
-.sky-i-printer-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe83a;&nbsp;'
-  );
-}
-.sky-i-credit-card-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe83b;&nbsp;'
-  );
-}
-.sky-i-credit-card-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe83c;&nbsp;'
-  );
-}
-.sky-i-open {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe83d;&nbsp;'
-  );
-}
-.sky-i-pencil-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe83e;&nbsp;'
-  );
-}
-.sky-i-delete-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe83f;&nbsp;'
-  );
-}
-.sky-i-delete-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe840;&nbsp;'
-  );
-}
-.sky-i-open-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe841;&nbsp;'
-  );
-}
-.sky-i-open-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe842;&nbsp;'
-  );
-}
-.sky-i-notification-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe843;&nbsp;'
-  );
-}
-.sky-i-notification-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe844;&nbsp;'
-  );
-}
-.sky-i-settings-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe845;&nbsp;'
-  );
-}
-.sky-i-settings-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe846;&nbsp;'
-  );
-}
-.sky-i-money-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe847;&nbsp;'
-  );
-}
-.sky-i-money-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe848;&nbsp;'
-  );
-}
-.sky-i-book-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe849;&nbsp;'
-  );
-}
-.sky-i-coin-bag-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe84a;&nbsp;'
-  );
-}
-.sky-i-wand-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe84b;&nbsp;'
-  );
-}
-.sky-i-bar-chart-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe84c;&nbsp;'
-  );
-}
-.sky-i-user-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe84d;&nbsp;'
-  );
-}
-.sky-i-align-left-text-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe84e;&nbsp;'
-  );
-}
-.sky-i-align-right-text-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe84f;&nbsp;'
-  );
-}
-.sky-i-center-text-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe850;&nbsp;'
-  );
-}
-.sky-i-list-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe851;&nbsp;'
-  );
-}
-.sky-i-note-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe852;&nbsp;'
-  );
-}
-.sky-i-link-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe853;&nbsp;'
-  );
-}
-.sky-i-tile-drag {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe854;&nbsp;'
-  );
-}
-.sky-i-trash {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe855;&nbsp;'
-  );
-}
-.sky-i-cloud-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe856;&nbsp;'
-  );
-}
-.sky-i-grid-view-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe857;&nbsp;'
-  );
-}
-.sky-i-map-marker-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe858;&nbsp;'
-  );
-}
-.sky-i-tag-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe859;&nbsp;'
-  );
-}
-.sky-i-save-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe85a;&nbsp;'
-  );
-}
-.sky-i-upload-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe85b;&nbsp;'
-  );
-}
-.sky-i-zoom-out-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe85c;&nbsp;'
-  );
-}
-.sky-i-zoom-in-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe85d;&nbsp;'
-  );
-}
-.sky-i-image-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe85e;&nbsp;'
-  );
-}
-.sky-i-bullet-list-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe85f;&nbsp;'
-  );
-}
-.sky-i-help-i {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe860;&nbsp;'
-  );
-}
-.sky-i-bold-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe861;&nbsp;'
-  );
-}
-.sky-i-triangle-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe862;&nbsp;'
-  );
-}
-.sky-i-exclamation {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe863;&nbsp;'
-  );
-}
-.sky-i-circle-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe864;&nbsp;'
-  );
-}
-.sky-i-italic-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe865;&nbsp;'
-  );
-}
-.sky-i-strikethrough-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe866;&nbsp;'
-  );
-}
-.sky-i-text-color-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe867;&nbsp;'
-  );
-}
-.sky-i-superscript-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe868;&nbsp;'
-  );
-}
-.sky-i-undo-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe869;&nbsp;'
-  );
-}
-.sky-i-underline-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe86a;&nbsp;'
-  );
-}
-.sky-i-justify-text-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe86b;&nbsp;'
-  );
-}
-.sky-i-unlink-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe86c;&nbsp;'
-  );
-}
-.sky-i-file-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe86d;&nbsp;'
-  );
-}
-.sky-i-file-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe86e;&nbsp;'
-  );
-}
-.sky-i-thumbs-up-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe86f;&nbsp;'
-  );
-}
-.sky-i-thumbs-up-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe870;&nbsp;'
-  );
-}
-.sky-i-phone-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe871;&nbsp;'
-  );
-}
-.sky-i-phone-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe872;&nbsp;'
-  );
-}
-.sky-i-headline-chart-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe873;&nbsp;'
-  );
-}
-.sky-i-table-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe874;&nbsp;'
-  );
-}
-.sky-i-bar-chart-line-1 {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe875;&nbsp;'
-  );
-}
-.sky-i-horizontal-bar-chart-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe876;&nbsp;'
-  );
-}
-.sky-i-line-chart-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe877;&nbsp;'
-  );
-}
-.sky-i-bullet-chart-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe878;&nbsp;'
-  );
-}
-.sky-i-redo-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe879;&nbsp;'
-  );
-}
-.sky-i-arrow-up-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe87a;&nbsp;'
-  );
-}
-.sky-i-align-image-center-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe87b;&nbsp;'
-  );
-}
-.sky-i-align-image-left-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe87c;&nbsp;'
-  );
-}
-.sky-i-align-image-right-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe87d;&nbsp;'
-  );
-}
-.sky-i-divider-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe87e;&nbsp;'
-  );
-}
-.sky-i-social-share-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe87f;&nbsp;'
-  );
-}
-.sky-i-indent-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe880;&nbsp;'
-  );
-}
-.sky-i-outdent-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe881;&nbsp;'
-  );
-}
-.sky-i-download-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe882;&nbsp;'
-  );
-}
-.sky-i-bb-diamond {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe883;&nbsp;'
-  );
-}
-.sky-i-attach-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe886;&nbsp;'
-  );
-}
-.sky-i-bars-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe887;&nbsp;'
-  );
-}
-.sky-i-cog-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe888;&nbsp;'
-  );
-}
-.sky-i-cog-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe889;&nbsp;'
-  );
-}
-.sky-i-collapse-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe88a;&nbsp;'
-  );
-}
-.sky-i-database-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe88b;&nbsp;'
-  );
-}
-.sky-i-database-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe88c;&nbsp;'
-  );
-}
-.sky-i-form-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe88d;&nbsp;'
-  );
-}
-.sky-i-expand-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe88e;&nbsp;'
-  );
-}
-.sky-i-form-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe88f;&nbsp;'
-  );
-}
-.sky-i-lock-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe890;&nbsp;'
-  );
-}
-.sky-i-lock-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe891;&nbsp;'
-  );
-}
-.sky-i-money-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe892;&nbsp;'
-  );
-}
-.sky-i-money-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe893;&nbsp;'
-  );
-}
-.sky-i-notifications-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe894;&nbsp;'
-  );
-}
-.sky-i-notifications-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe895;&nbsp;'
-  );
-}
-.sky-i-bb-diamond-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe896;&nbsp;'
-  );
-}
-.sky-i-bb-diamond-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe897;&nbsp;'
-  );
-}
-.sky-i-star {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe89a;&nbsp;'
-  );
-}
-.sky-i-image-file-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe89b;&nbsp;'
-  );
-}
-.sky-i-text-file-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe89c;&nbsp;'
-  );
-}
-.sky-i-video-file-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe89d;&nbsp;'
-  );
-}
-.sky-i-double-chevron-up {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe89e;&nbsp;'
-  );
-}
-.sky-i-double-chevron-down {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe89f;&nbsp;'
-  );
-}
-.sky-i-__do_not_delete {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8a0;&nbsp;'
-  );
-}
-.sky-i-audio-file-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8a1;&nbsp;'
-  );
-}
-.sky-i-code-file-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8a2;&nbsp;'
-  );
-}
-.sky-i-archive-file-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8a3;&nbsp;'
-  );
-}
-.sky-i-ppt-file-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8a4;&nbsp;'
-  );
-}
-.sky-i-bluetooth-on-line-1 {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8a5;&nbsp;'
-  );
-}
-.sky-i-phone-action-credit-card-line-1 {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8a6;&nbsp;'
-  );
-}
-.sky-i-online-learning-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8a7;&nbsp;'
-  );
-}
-.sky-i-donation-charity-hand-heart-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8a8;&nbsp;'
-  );
-}
-.sky-i-workflow-teamwork-user-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8a9;&nbsp;'
-  );
-}
-.sky-i-phone-action-credit-card-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8aa;&nbsp;'
-  );
-}
-.sky-i-bluetooth-on-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8ab;&nbsp;'
-  );
-}
-.sky-i-donation-charity-hand-heart-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8af;&nbsp;'
-  );
-}
-.sky-i-online-learning-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8b0;&nbsp;'
-  );
-}
-.sky-i-workflow-teamwork-user-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8b1;&nbsp;'
-  );
-}
-.sky-i-saving-bank-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8b2;&nbsp;'
-  );
-}
-.sky-i-accounting-invoice-mail-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8b3;&nbsp;'
-  );
-}
-.sky-i-saving-bank-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8b4;&nbsp;'
-  );
-}
-.sky-i-general-ledger-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8b5;&nbsp;'
-  );
-}
-.sky-i-cash-payment-bill-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8b6;&nbsp;'
-  );
-}
-.sky-i-cash-payment-bill-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8b7;&nbsp;'
-  );
-}
-.sky-i-general-ledger-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8b8;&nbsp;'
-  );
-}
-.sky-i-accounting-invoice-mail-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8bb;&nbsp;'
-  );
-}
-.sky-i-hammer-wrench-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8bc;&nbsp;'
-  );
-}
-.sky-i-hammer-wrench-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe8bd;&nbsp;'
-  );
-}
-.sky-i-sparkles-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe958;&nbsp;'
-  );
-}
-.sky-i-sparkles-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe959;&nbsp;'
-  );
-}
-.sky-i-workflow-teammate-circle-2-line {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe97a;&nbsp;'
-  );
-}
-.sky-i-workflow-teammate-circle-2-solid {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe97b;&nbsp;'
-  );
-}
-.sky-i-hide {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe97d;&nbsp;'
-  );
-}
-.sky-i-show {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe97e;&nbsp;'
-  );
-}
-.sky-i-xls-file-line-depricated {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe997;&nbsp;'
-  );
-}
-.sky-i-doc-file-line-depreciated {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe998;&nbsp;'
-  );
-}
-.sky-i-pdf-file-line-deprecated {
-  *zoom: expression(
-    this.runtimeStyle[ 'zoom'] = '1',
-    this.innerHTML = '&#xe999;&nbsp;'
-  );
-}
+.sky-i-house-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.sky-i-calendar { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
+.sky-i-form-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
+.sky-i-clock { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;'); }
+.sky-i-filter-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe804;&nbsp;'); }
+.sky-i-sort { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe805;&nbsp;'); }
+.sky-i-columns { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe806;&nbsp;'); }
+.sky-i-help-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe807;&nbsp;'); }
+.sky-i-copy-to-clipboard-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe808;&nbsp;'); }
+.sky-i-edit-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe809;&nbsp;'); }
+.sky-i-check { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80a;&nbsp;'); }
+.sky-i-chevron-right { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80b;&nbsp;'); }
+.sky-i-chevron-up { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80c;&nbsp;'); }
+.sky-i-ban-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80d;&nbsp;'); }
+.sky-i-business-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80e;&nbsp;'); }
+.sky-i-chevron-down { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80f;&nbsp;'); }
+.sky-i-number-list-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe810;&nbsp;'); }
+.sky-i-font-size-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe811;&nbsp;'); }
+.sky-i-add { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe812;&nbsp;'); }
+.sky-i-chevron-left { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe813;&nbsp;'); }
+.sky-i-search { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe814;&nbsp;'); }
+.sky-i-highlighter-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe815;&nbsp;'); }
+.sky-i-subscript-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe816;&nbsp;'); }
+.sky-i-xls-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe817;&nbsp;'); }
+.sky-i-close { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe818;&nbsp;'); }
+.sky-i-folder-open-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe819;&nbsp;'); }
+.sky-i-pdf-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81a;&nbsp;'); }
+.sky-i-calendar-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81b;&nbsp;'); }
+.sky-i-clock-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81c;&nbsp;'); }
+.sky-i-pencil-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81d;&nbsp;'); }
+.sky-i-trash-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81e;&nbsp;'); }
+.sky-i-house-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81f;&nbsp;'); }
+.sky-i-edit { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe820;&nbsp;'); }
+.sky-i-users-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe821;&nbsp;'); }
+.sky-i-users-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe822;&nbsp;'); }
+.sky-i-ellipsis { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe823;&nbsp;'); }
+.sky-i-dollar-bill-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe824;&nbsp;'); }
+.sky-i-dollar-bill-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe825;&nbsp;'); }
+.sky-i-cog-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe826;&nbsp;'); }
+.sky-i-cog-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe827;&nbsp;'); }
+.sky-i-bell-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe828;&nbsp;'); }
+.sky-i-bell-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe829;&nbsp;'); }
+.sky-i-help-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82a;&nbsp;'); }
+.sky-i-filter { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82b;&nbsp;'); }
+.sky-i-double-chevron-left { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82c;&nbsp;'); }
+.sky-i-double-chevron-right { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82d;&nbsp;'); }
+.sky-i-doc-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82e;&nbsp;'); }
+.sky-i-trash-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82f;&nbsp;'); }
+.sky-i-pie-chart-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe830;&nbsp;'); }
+.sky-i-donut-chart-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe831;&nbsp;'); }
+.sky-i-share-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe832;&nbsp;'); }
+.sky-i-envelope-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe833;&nbsp;'); }
+.sky-i-envelope-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe834;&nbsp;'); }
+.sky-i-talk-bubbles-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe835;&nbsp;'); }
+.sky-i-talk-bubbles-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe836;&nbsp;'); }
+.sky-i-copy-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe837;&nbsp;'); }
+.sky-i-menu { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe838;&nbsp;'); }
+.sky-i-printer-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe839;&nbsp;'); }
+.sky-i-printer-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83a;&nbsp;'); }
+.sky-i-credit-card-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83b;&nbsp;'); }
+.sky-i-credit-card-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83c;&nbsp;'); }
+.sky-i-open { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83d;&nbsp;'); }
+.sky-i-pencil-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83e;&nbsp;'); }
+.sky-i-delete-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83f;&nbsp;'); }
+.sky-i-delete-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe840;&nbsp;'); }
+.sky-i-open-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe841;&nbsp;'); }
+.sky-i-open-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe842;&nbsp;'); }
+.sky-i-notification-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe843;&nbsp;'); }
+.sky-i-notification-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe844;&nbsp;'); }
+.sky-i-settings-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe845;&nbsp;'); }
+.sky-i-settings-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe846;&nbsp;'); }
+.sky-i-money-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe847;&nbsp;'); }
+.sky-i-money-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe848;&nbsp;'); }
+.sky-i-book-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe849;&nbsp;'); }
+.sky-i-coin-bag-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe84a;&nbsp;'); }
+.sky-i-wand-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe84b;&nbsp;'); }
+.sky-i-bar-chart-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe84c;&nbsp;'); }
+.sky-i-user-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe84d;&nbsp;'); }
+.sky-i-align-left-text-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe84e;&nbsp;'); }
+.sky-i-align-right-text-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe84f;&nbsp;'); }
+.sky-i-center-text-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe850;&nbsp;'); }
+.sky-i-list-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe851;&nbsp;'); }
+.sky-i-note-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe852;&nbsp;'); }
+.sky-i-link-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe853;&nbsp;'); }
+.sky-i-tile-drag { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe854;&nbsp;'); }
+.sky-i-trash { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe855;&nbsp;'); }
+.sky-i-cloud-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe856;&nbsp;'); }
+.sky-i-grid-view-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe857;&nbsp;'); }
+.sky-i-map-marker-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe858;&nbsp;'); }
+.sky-i-tag-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe859;&nbsp;'); }
+.sky-i-save-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe85a;&nbsp;'); }
+.sky-i-upload-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe85b;&nbsp;'); }
+.sky-i-zoom-out-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe85c;&nbsp;'); }
+.sky-i-zoom-in-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe85d;&nbsp;'); }
+.sky-i-image-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe85e;&nbsp;'); }
+.sky-i-bullet-list-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe85f;&nbsp;'); }
+.sky-i-help-i { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe860;&nbsp;'); }
+.sky-i-bold-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe861;&nbsp;'); }
+.sky-i-triangle-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe862;&nbsp;'); }
+.sky-i-exclamation { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe863;&nbsp;'); }
+.sky-i-circle-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe864;&nbsp;'); }
+.sky-i-italic-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe865;&nbsp;'); }
+.sky-i-strikethrough-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe866;&nbsp;'); }
+.sky-i-text-color-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe867;&nbsp;'); }
+.sky-i-superscript-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe868;&nbsp;'); }
+.sky-i-undo-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe869;&nbsp;'); }
+.sky-i-underline-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe86a;&nbsp;'); }
+.sky-i-justify-text-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe86b;&nbsp;'); }
+.sky-i-unlink-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe86c;&nbsp;'); }
+.sky-i-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe86d;&nbsp;'); }
+.sky-i-file-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe86e;&nbsp;'); }
+.sky-i-thumbs-up-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe86f;&nbsp;'); }
+.sky-i-thumbs-up-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe870;&nbsp;'); }
+.sky-i-phone-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe871;&nbsp;'); }
+.sky-i-phone-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe872;&nbsp;'); }
+.sky-i-headline-chart-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe873;&nbsp;'); }
+.sky-i-table-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe874;&nbsp;'); }
+.sky-i-bar-chart-line-1 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe875;&nbsp;'); }
+.sky-i-horizontal-bar-chart-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe876;&nbsp;'); }
+.sky-i-line-chart-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe877;&nbsp;'); }
+.sky-i-bullet-chart-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe878;&nbsp;'); }
+.sky-i-redo-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe879;&nbsp;'); }
+.sky-i-arrow-up-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe87a;&nbsp;'); }
+.sky-i-align-image-center-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe87b;&nbsp;'); }
+.sky-i-align-image-left-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe87c;&nbsp;'); }
+.sky-i-align-image-right-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe87d;&nbsp;'); }
+.sky-i-divider-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe87e;&nbsp;'); }
+.sky-i-social-share-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe87f;&nbsp;'); }
+.sky-i-indent-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe880;&nbsp;'); }
+.sky-i-outdent-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe881;&nbsp;'); }
+.sky-i-download-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe882;&nbsp;'); }
+.sky-i-bb-diamond { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe883;&nbsp;'); }
+.sky-i-attach-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe886;&nbsp;'); }
+.sky-i-bars-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe887;&nbsp;'); }
+.sky-i-cog-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe888;&nbsp;'); }
+.sky-i-cog-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe889;&nbsp;'); }
+.sky-i-collapse-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe88a;&nbsp;'); }
+.sky-i-database-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe88b;&nbsp;'); }
+.sky-i-database-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe88c;&nbsp;'); }
+.sky-i-form-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe88d;&nbsp;'); }
+.sky-i-expand-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe88e;&nbsp;'); }
+.sky-i-form-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe88f;&nbsp;'); }
+.sky-i-lock-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe890;&nbsp;'); }
+.sky-i-lock-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe891;&nbsp;'); }
+.sky-i-money-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe892;&nbsp;'); }
+.sky-i-money-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe893;&nbsp;'); }
+.sky-i-notifications-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe894;&nbsp;'); }
+.sky-i-notifications-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe895;&nbsp;'); }
+.sky-i-bb-diamond-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe896;&nbsp;'); }
+.sky-i-bb-diamond-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe897;&nbsp;'); }
+.sky-i-star { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe89a;&nbsp;'); }
+.sky-i-image-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe89b;&nbsp;'); }
+.sky-i-text-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe89c;&nbsp;'); }
+.sky-i-video-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe89d;&nbsp;'); }
+.sky-i-double-chevron-up { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe89e;&nbsp;'); }
+.sky-i-double-chevron-down { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe89f;&nbsp;'); }
+.sky-i-__do_not_delete { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a0;&nbsp;'); }
+.sky-i-audio-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a1;&nbsp;'); }
+.sky-i-code-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a2;&nbsp;'); }
+.sky-i-archive-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a3;&nbsp;'); }
+.sky-i-ppt-file-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a4;&nbsp;'); }
+.sky-i-bluetooth-on-line-1 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a5;&nbsp;'); }
+.sky-i-phone-action-credit-card-line-1 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a6;&nbsp;'); }
+.sky-i-online-learning-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a7;&nbsp;'); }
+.sky-i-donation-charity-hand-heart-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a8;&nbsp;'); }
+.sky-i-workflow-teamwork-user-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a9;&nbsp;'); }
+.sky-i-phone-action-credit-card-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8aa;&nbsp;'); }
+.sky-i-bluetooth-on-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8ab;&nbsp;'); }
+.sky-i-donation-charity-hand-heart-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8af;&nbsp;'); }
+.sky-i-online-learning-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8b0;&nbsp;'); }
+.sky-i-workflow-teamwork-user-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8b1;&nbsp;'); }
+.sky-i-saving-bank-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8b2;&nbsp;'); }
+.sky-i-accounting-invoice-mail-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8b3;&nbsp;'); }
+.sky-i-saving-bank-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8b4;&nbsp;'); }
+.sky-i-general-ledger-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8b5;&nbsp;'); }
+.sky-i-cash-payment-bill-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8b6;&nbsp;'); }
+.sky-i-cash-payment-bill-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8b7;&nbsp;'); }
+.sky-i-general-ledger-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8b8;&nbsp;'); }
+.sky-i-accounting-invoice-mail-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8bb;&nbsp;'); }
+.sky-i-hammer-wrench-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8bc;&nbsp;'); }
+.sky-i-hammer-wrench-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8bd;&nbsp;'); }
+.sky-i-sparkles-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe958;&nbsp;'); }
+.sky-i-sparkles-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe959;&nbsp;'); }
+.sky-i-workflow-teammate-circle-2-line { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe97a;&nbsp;'); }
+.sky-i-workflow-teammate-circle-2-solid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe97b;&nbsp;'); }
+.sky-i-hide { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe97d;&nbsp;'); }
+.sky-i-show { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe97e;&nbsp;'); }
+.sky-i-xls-file-line-depricated { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe997;&nbsp;'); }
+.sky-i-doc-file-line-depreciated { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe998;&nbsp;'); }
+.sky-i-pdf-file-line-deprecated { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe999;&nbsp;'); }
