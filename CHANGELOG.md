@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.2.0](https://github.com/blackbaud/skyux-icons/compare/7.1.0...7.2.0) (2024-06-21)
+
+
+### Features
+
+* add new tab icon ([#98](https://github.com/blackbaud/skyux-icons/issues/98)) ([cffc13c](https://github.com/blackbaud/skyux-icons/commit/cffc13c5fc2670124b8ea004879a1650e2f1b6f5))
+
 ## [7.1.0](https://github.com/blackbaud/skyux-icons/compare/7.0.0...7.1.0) (2024-04-12)
 
 
