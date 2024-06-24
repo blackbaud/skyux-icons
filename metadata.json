@@ -66,6 +66,11 @@
       "faNames": ["download", "cloud-download"]
     },
     {
+      "name": "open-new-tab-line",
+      "usage": ["Open in new tab"],
+      "owner": ["Webalys, LLC"]
+    },
+    {
       "name": "phone-line",
       "usage": ["Phone"],
       "faNames": ["phone"]
