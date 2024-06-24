@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.3.0](https://github.com/blackbaud/skyux-icons/compare/7.2.0...7.3.0) (2024-06-24)
+
+
+### Features
+
+* adding to metadata ([#100](https://github.com/blackbaud/skyux-icons/issues/100)) ([3f3d5ff](https://github.com/blackbaud/skyux-icons/commit/3f3d5ff6a99b8eac98f73b870f995ce720593071))
+
 ## [7.2.0](https://github.com/blackbaud/skyux-icons/compare/7.1.0...7.2.0) (2024-06-21)
 
 
