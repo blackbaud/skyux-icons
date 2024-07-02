@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.4.0](https://github.com/blackbaud/skyux-icons/compare/7.3.0...7.4.0) (2024-07-02)
+
+
+### Features
+
+* create SVG sprite for Fluent and Blackbaud icons ([#102](https://github.com/blackbaud/skyux-icons/issues/102)) ([7c55c00](https://github.com/blackbaud/skyux-icons/commit/7c55c00432252f2fe6e1cc0d99b5831aabab2a27))
+
 ## [7.3.0](https://github.com/blackbaud/skyux-icons/compare/7.2.0...7.3.0) (2024-06-24)
 
 
