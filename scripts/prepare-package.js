@@ -2,6 +2,7 @@ const CleanCSS = require('clean-css');
 const crossSpawn = require('cross-spawn');
 const fs = require('fs-extra');
 const path = require('path');
+const { generateSprite } = require('./generate-sprite');
 
 const projectPath = path.join(__dirname, '..');
 const srcPath = path.join(projectPath, 'src');
@@ -57,7 +58,7 @@ async function processCss() {
 
     const cssMinifiedFilePath = path.join(
       cssFileParsedPath.dir,
-      `${cssFileParsedPath.name}.min${cssFileParsedPath.ext}`
+      `${cssFileParsedPath.name}.min${cssFileParsedPath.ext}`,
     );
 
     await writeUtf8(cssMinifiedFilePath, cssMinified);
@@ -104,7 +105,7 @@ async function compileTypeScriptModule(manifest) {
   crossSpawn.sync('tsc', ['--project', 'tsconfig.json'], { stdio: 'inherit' });
 
   const manifestFunctionPath = path.normalize(
-    'dist/module/__get-icon-manifest.js'
+    'dist/module/__get-icon-manifest.js',
   );
   const manifestFunctionContents = await fs.readFile(manifestFunctionPath, {
     encoding: 'utf-8',
@@ -115,8 +116,8 @@ async function compileTypeScriptModule(manifest) {
     manifestFunctionPath,
     manifestFunctionContents.replace(
       'return {};',
-      `return ${JSON.stringify(manifest)};`
-    )
+      `return ${JSON.stringify(manifest)};`,
+    ),
   );
 }
 
@@ -128,7 +129,7 @@ async function setVersion() {
 
   await fs.writeFile(
     versionFilePath,
-    versionFileContents.replace('0.0.0-PLACEHOLDER', packageJson.version)
+    versionFileContents.replace('0.0.0-PLACEHOLDER', packageJson.version),
   );
 }
 
@@ -136,6 +137,7 @@ async function setVersion() {
   try {
     await copyToDist();
     await processCss();
+    await generateSprite();
     const manifest = await createManifest();
     await compileTypeScriptModule(manifest);
     await setVersion();
