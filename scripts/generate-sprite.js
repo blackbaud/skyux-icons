@@ -110,7 +110,7 @@ async function generateSprite() {
   );
 
   if (notFoundFluentIds.length) {
-    throw new Error(`The following Fluent icons were not found:
+    throw new Error(`The following Fluent UI icons were not found:
 ${notFoundFluentIds.join('\n')}`);
   }
 
