@@ -1,6 +1,6 @@
 {
   "name": "@skyux/icons",
-  "version": "7.2.0",
+  "version": "7.4.0",
   "main": "./index.js",
   "types": "./index.d.ts",
   "description": "A glyph font and stylesheet for displaying SKY UX icons.",
@@ -79,6 +79,7 @@
     }
   },
   "devDependencies": {
+    "@fluentui/svg-icons": "1.1.245",
     "@ryansonshine/commitizen": "4.2.8",
     "@ryansonshine/cz-conventional-changelog": "3.3.4",
     "@skyux/dev-infra-private": "github:blackbaud/skyux-dev-infra-private-builds#10.0.0-alpha.2",
@@ -90,7 +91,9 @@
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "fs-extra": "11.2.0",
+    "glob": "10.3.15",
     "prettier": "3.2.5",
+    "svg-sprite": "2.0.4",
     "typescript": "5.3.3"
   }
 }
