@@ -823,6 +823,18 @@
       "owner": ["Webalys, LLC"]
     },
     {
+      "name": "workflow-teammate-circle-2-line",
+      "usage": ["Workplace culture"],
+      "aliases": ["workflow-teammate-circle-2-line"],
+      "owner": ["Webalys, LLC"]
+    },
+    {
+      "name": "workflow-teammate-circle-2-solid",
+      "usage": ["Workplace culture"],
+      "aliases": ["workflow-teammate-circle-2-solid"],
+      "owner": ["Webalys, LLC"]
+    },
+    {
       "name": "sparkles-2-line",
       "usage": ["AI"],
       "owner": ["Webalys, LLC"]
