@@ -3,6 +3,8 @@ alert
 arrow-download
 arrow-redo
 arrow-sort
+arrow-trending
+arrow-trending-down
 arrow-undo
 arrow-upload
 attach
@@ -29,6 +31,7 @@ clock
 cloud
 color-line
 copy
+data trending
 database
 delete
 dismiss
