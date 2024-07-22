@@ -31,7 +31,7 @@ clock
 cloud
 color-line
 copy
-data trending
+data-trending
 database
 delete
 dismiss
