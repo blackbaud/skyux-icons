@@ -1,5 +1,13 @@
 # Changelog
 
+## [7.5.0](https://github.com/blackbaud/skyux-icons/compare/7.4.0...7.5.0) (2024-07-25)
+
+
+### Features
+
+* add icons to svg list ([#107](https://github.com/blackbaud/skyux-icons/issues/107)) ([6a0cf49](https://github.com/blackbaud/skyux-icons/commit/6a0cf4920be450632bb3395303713dcb3b02e640))
+* update metadata.json with new tab icon and workplace culture ([#104](https://github.com/blackbaud/skyux-icons/issues/104)) ([ac0196c](https://github.com/blackbaud/skyux-icons/commit/ac0196cd2ad8d03d5af8ba9926f148b1e257ec03))
+
 ## [7.4.0](https://github.com/blackbaud/skyux-icons/compare/7.3.0...7.4.0) (2024-07-02)
 
 
