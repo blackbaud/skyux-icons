@@ -3,15 +3,20 @@ alert
 arrow-download
 arrow-redo
 arrow-sort
+arrow-trending
+arrow-trending-down
 arrow-undo
 arrow-upload
 attach
 bluetooth
+book
 building
+building-bank
 calendar-ltr
 call
 chat-multiple
 check
+checkmark
 chevron-double-down
 chevron-double-left
 chevron-double-right
@@ -26,7 +31,8 @@ clock
 cloud
 color-line
 copy
-database-stack
+data-trending
+database
 delete
 dismiss
 divider-tall
@@ -35,7 +41,10 @@ eye
 eye-off
 filter
 folder-open
+gift
 grid
+hand-open-heart
+home
 image
 link
 link-dismiss
@@ -52,6 +61,7 @@ people-team
 person
 print
 question-circle
+receipt
 re-order-dots-vertical
 save
 search
@@ -59,6 +69,7 @@ settings
 share
 share-android
 star
+table
 table-freeze-column
 tag
 text-align-center
@@ -79,5 +90,6 @@ text-superscript
 text-underline
 thumb-dislike
 thumb-like
+wrench-screwdriver
 zoom-in
 zoom-out
