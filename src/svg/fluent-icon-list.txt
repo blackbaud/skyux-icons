@@ -38,6 +38,7 @@ delete
 dismiss
 divider-tall
 edit
+error-circle
 eye
 eye-off
 filter
