@@ -25,6 +25,7 @@ chevron-down
 chevron-left
 chevron-right
 chevron-up
+circle-half-fill
 circle-off
 clipboard-multiple
 clock
