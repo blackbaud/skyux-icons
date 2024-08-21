@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.6.0](https://github.com/blackbaud/skyux-icons/compare/7.5.0...7.6.0) (2024-08-21)
+
+
+### Features
+
+* add Fluent icon: `circle-half-fill` ([7f800f8](https://github.com/blackbaud/skyux-icons/commit/7f800f84467a828990fd105661cd6871ec4fdee4))
+
 ## [7.5.0](https://github.com/blackbaud/skyux-icons/compare/7.4.0...7.5.0) (2024-07-25)
 
 
