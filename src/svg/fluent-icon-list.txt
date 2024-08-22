@@ -26,7 +26,6 @@ chevron-left
 chevron-right
 chevron-up
 circle
-circle-off
 circle-half-fill
 circle-off
 clipboard-multiple
