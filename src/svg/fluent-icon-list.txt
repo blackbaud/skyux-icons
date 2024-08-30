@@ -1,6 +1,7 @@
 add
 alert
 arrow-download
+arrow-fit
 arrow-redo
 arrow-sort
 arrow-trending
@@ -25,6 +26,7 @@ chevron-down
 chevron-left
 chevron-right
 chevron-up
+circle
 circle-half-fill
 circle-off
 clipboard-multiple
