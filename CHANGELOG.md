@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.8.0](https://github.com/blackbaud/skyux-icons/compare/7.7.0...7.8.0) (2024-09-05)
+
+
+### Features
+
+* adding streamline icons to txt file ([#114](https://github.com/blackbaud/skyux-icons/issues/114)) ([26194ab](https://github.com/blackbaud/skyux-icons/commit/26194ab96f39f43bc14389ac5b928cc1b169d2d9))
+
 ## [7.7.0](https://github.com/blackbaud/skyux-icons/compare/7.6.0...7.7.0) (2024-09-04)
 
 
