@@ -9,12 +9,14 @@ arrow-trending-down
 arrow-undo
 arrow-upload
 attach
+bb-diamond
 bluetooth
 book
 building
 building-bank
 calendar-ltr
 call
+cash-payment-bill
 chat-multiple
 check
 checkmark
@@ -59,6 +61,7 @@ money
 more-horizontal
 navigation
 notepad-edit
+online-learning
 payment
 people-team
 person
@@ -93,6 +96,7 @@ text-superscript
 text-underline
 thumb-dislike
 thumb-like
+tools
 wrench-screwdriver
 zoom-in
 zoom-out
