@@ -96,7 +96,6 @@ text-superscript
 text-underline
 thumb-dislike
 thumb-like
-tools
 wrench-screwdriver
 zoom-in
 zoom-out
