@@ -19,7 +19,6 @@ call
 cash-payment-bill
 chat-multiple
 check
-checkbox
 checkmark
 chevron-double-down
 chevron-double-left
