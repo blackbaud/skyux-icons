@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.7.0](https://github.com/blackbaud/skyux-icons/compare/7.6.0...7.7.0) (2024-09-04)
+
+
+### Features
+
+* add-fluent circle icon ([#112](https://github.com/blackbaud/skyux-icons/issues/112)) ([f261797](https://github.com/blackbaud/skyux-icons/commit/f2617979318df2fab85d1bb7961e8931ece91fac))
+
 ## [7.6.0](https://github.com/blackbaud/skyux-icons/compare/7.5.0...7.6.0) (2024-08-21)
 
 
