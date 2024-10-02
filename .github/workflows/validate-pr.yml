@@ -35,5 +35,3 @@ jobs:
             chore
             revert
             deprecation
-          validateSingleCommit: true
-          validateSingleCommitMatchesPrTitle: true
