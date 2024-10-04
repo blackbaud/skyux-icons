@@ -62,6 +62,7 @@ notepad-edit
 payment
 people-team
 person
+play
 print
 question-circle
 receipt
