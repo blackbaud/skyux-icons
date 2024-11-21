@@ -87,7 +87,7 @@
     "@typescript-eslint/eslint-plugin": "6.20.0",
     "@typescript-eslint/parser": "6.20.0",
     "clean-css": "4.2.3",
-    "cross-spawn": "7.0.3",
+    "cross-spawn": "7.0.6",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "fs-extra": "11.2.0",
