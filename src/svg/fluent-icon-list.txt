@@ -75,6 +75,7 @@ star
 table
 table-freeze-column
 tag
+target
 text-align-center
 text-align-justify
 text-align-left
