@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.9.0](https://github.com/blackbaud/skyux-icons/compare/7.8.0...7.9.0) (2024-12-12)
+
+
+### Features
+
+* add target icon ([#121](https://github.com/blackbaud/skyux-icons/issues/121)) ([be8f3dd](https://github.com/blackbaud/skyux-icons/commit/be8f3dd1d6761714fd0dc386bcfbb572c4e005a1))
+
 ## [7.8.0](https://github.com/blackbaud/skyux-icons/compare/7.7.0...7.8.0) (2024-09-05)
 
 
