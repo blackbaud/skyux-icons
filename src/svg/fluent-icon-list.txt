@@ -33,6 +33,7 @@ clipboard-multiple
 clock
 cloud
 color-line
+contact-card
 copy
 data-trending
 database
@@ -44,9 +45,11 @@ eye
 eye-off
 filter
 folder-open
+form
 gift
 grid
 hand-open-heart
+handshake
 home
 image
 link
@@ -66,6 +69,7 @@ print
 question-circle
 receipt
 re-order-dots-vertical
+ribbon
 save
 search
 settings
