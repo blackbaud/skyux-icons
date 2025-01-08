@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.10.0](https://github.com/blackbaud/skyux-icons/compare/7.9.0...7.10.0) (2025-01-08)
+
+
+### Features
+
+* update for vert nav ([#123](https://github.com/blackbaud/skyux-icons/issues/123)) ([d2f9fb1](https://github.com/blackbaud/skyux-icons/commit/d2f9fb161cf9f35024ec88562e37157d4ac3363d))
+
 ## [7.9.0](https://github.com/blackbaud/skyux-icons/compare/7.8.0...7.9.0) (2024-12-12)
 
 
