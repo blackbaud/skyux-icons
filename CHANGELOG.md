@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.11.0](https://github.com/blackbaud/skyux-icons/compare/7.10.0...7.11.0) (2025-01-21)
+
+
+### Features
+
+* add info, success, and warning icons ([#126](https://github.com/blackbaud/skyux-icons/issues/126)) ([e57493c](https://github.com/blackbaud/skyux-icons/commit/e57493cd8288553a13bc50ddb207e1a3ef777ac6))
+
 ## [7.10.0](https://github.com/blackbaud/skyux-icons/compare/7.9.0...7.10.0) (2025-01-08)
 
 
