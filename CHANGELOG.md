@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.12.0](https://github.com/blackbaud/skyux-icons/compare/7.11.0...7.12.0) (2025-01-21)
+
+
+### Features
+
+* add open, arrow right, and alert line variant icons ([#128](https://github.com/blackbaud/skyux-icons/issues/128)) ([c144648](https://github.com/blackbaud/skyux-icons/commit/c1446480e5a7e282701ffa606804dc62c45202ca))
+
 ## [7.11.0](https://github.com/blackbaud/skyux-icons/compare/7.10.0...7.11.0) (2025-01-21)
 
 
