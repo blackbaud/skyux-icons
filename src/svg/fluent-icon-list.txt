@@ -3,6 +3,7 @@ alert
 arrow-download
 arrow-fit
 arrow-redo
+arrow-right
 arrow-sort
 arrow-trending
 arrow-trending-down
@@ -62,6 +63,7 @@ money
 more-horizontal
 navigation
 notepad-edit
+open
 payment
 people-team
 person
