@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.12.1](https://github.com/blackbaud/skyux-icons/compare/7.12.0...7.12.1) (2025-01-22)
+
+
+### Bug Fixes
+
+* disable class namespacing, remove default fill ([#130](https://github.com/blackbaud/skyux-icons/issues/130)) ([7b190e8](https://github.com/blackbaud/skyux-icons/commit/7b190e8d2ca4b506b93bfec1d60859c55dd88d09))
+
 ## [7.12.0](https://github.com/blackbaud/skyux-icons/compare/7.11.0...7.12.0) (2025-01-21)
 
 
