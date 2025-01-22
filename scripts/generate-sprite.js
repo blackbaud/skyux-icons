@@ -92,6 +92,7 @@ async function generateSprite() {
       rootAttributes: {
         id: 'sky-icon-svg-sprite',
       },
+      namespaceClassnames: false,
     },
   });
 
