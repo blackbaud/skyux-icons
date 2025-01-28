@@ -2,7 +2,6 @@ accessibility
 add
 add-square
 alert
-arrow-bidirectional
 arrow-circle-left
 arrow-circle-right
 arrow-down
@@ -22,7 +21,6 @@ arrow-undo
 arrow-up
 arrow-upload
 attach
-ban
 bluetooth
 book
 book-contacts
@@ -31,6 +29,7 @@ bot
 branch-fork
 building
 building-bank
+building-factory
 calculator
 calendar-ltr
 call
@@ -97,7 +96,6 @@ eraser
 error-circle
 eye
 eye-off
-factory
 filter
 flag
 flash
@@ -111,7 +109,7 @@ globe
 grid
 grid-dots
 group
-hand
+hand-left
 hand-open-heart
 handshake
 hat-graduation
@@ -144,12 +142,12 @@ more-vertical
 navigation
 news
 note
+note-edit
 notepad-edit
 open
 options
 paint-brush
 payment
-pencil-edit
 people-team
 person
 person-add
@@ -192,14 +190,14 @@ stop
 street-sign
 subtract
 subtract-circle
-support
+support-person
 table
 table-freeze-column
 tablet
 tag
 tag-multiple
 target
-task-list
+task-list-ltr
 temperature
 text-align-center
 text-align-justify
@@ -220,12 +218,11 @@ text-superscript
 text-underline
 thumb-dislike
 thumb-like
-ticket
+ticket-diagonal
 toolbox
 top-speed
-trash
-truck
 vehicle-subway
+vehicle-truck-profile
 video
 wallet
 wand
