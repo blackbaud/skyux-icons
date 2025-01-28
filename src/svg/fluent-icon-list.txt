@@ -155,6 +155,7 @@ person-available
 person-circle
 person-lock
 person-note
+person-support
 person-tag
 phone
 play
@@ -190,7 +191,6 @@ stop
 street-sign
 subtract
 subtract-circle
-support-person
 table
 table-freeze-column
 tablet
