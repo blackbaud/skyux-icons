@@ -32,7 +32,6 @@ branch-fork
 building
 building-bank
 calculator
-calendar
 calendar-ltr
 call
 caret-down
