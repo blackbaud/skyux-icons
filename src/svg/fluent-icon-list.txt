@@ -204,12 +204,6 @@ text-align-justify
 text-align-left
 text-align-right
 text-bold
-text-bold-b
-text-bold-f
-text-bold-m
-text-bold-s
-text-bold-t
-text-bold-w
 text-bullet-list
 text-bullet-list-ltr
 text-color
@@ -217,13 +211,11 @@ text-font-size
 text-indent-decrease
 text-indent-increase
 text-italic
-text-italic-i
 text-number-list-ltr
 text-strikethrough
 text-subscript
 text-superscript
 text-underline
-text-underline-u
 thumb-dislike
 thumb-like
 ticket-diagonal
