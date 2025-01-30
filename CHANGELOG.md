@@ -1,5 +1,14 @@
 # Changelog
 
+## [7.13.0](https://github.com/blackbaud/skyux-icons/compare/7.12.1...7.13.0) (2025-01-30)
+
+
+### Features
+
+* added doc and logo svgs ([#133](https://github.com/blackbaud/skyux-icons/issues/133)) ([35f4b55](https://github.com/blackbaud/skyux-icons/commit/35f4b55960d3133601a711ae7814403fe25d5525))
+* added many new Fluent icons to support SKY UX 12 icon conversions ([#132](https://github.com/blackbaud/skyux-icons/issues/132)) ([2f560b8](https://github.com/blackbaud/skyux-icons/commit/2f560b8bd29d72aacca97adf49002b412e66f682))
+* new letter icons ([#135](https://github.com/blackbaud/skyux-icons/issues/135)) ([04e936b](https://github.com/blackbaud/skyux-icons/commit/04e936b1bc7ca0f01ea767536438dbe012b1fcf3))
+
 ## [7.12.1](https://github.com/blackbaud/skyux-icons/compare/7.12.0...7.12.1) (2025-01-22)
 
 
