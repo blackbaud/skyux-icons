@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.14.0](https://github.com/blackbaud/skyux-icons/compare/7.13.0...7.14.0) (2025-02-21)
+
+
+### Features
+
+* adding file type svgs ([#136](https://github.com/blackbaud/skyux-icons/issues/136)) ([ae04220](https://github.com/blackbaud/skyux-icons/commit/ae0422075e9ce4e6c2158a6d1168d7db5969d598))
+
 ## [7.13.0](https://github.com/blackbaud/skyux-icons/compare/7.12.1...7.13.0) (2025-01-30)
 
 
