@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.14.1](https://github.com/blackbaud/skyux-icons/compare/7.14.0...7.14.1) (2025-02-24)
+
+
+### Bug Fixes
+
+* size solid success icon correctly ([#138](https://github.com/blackbaud/skyux-icons/issues/138)) ([adce248](https://github.com/blackbaud/skyux-icons/commit/adce248171a58e99f448da10c0f972012ec5754e))
+
 ## [7.14.0](https://github.com/blackbaud/skyux-icons/compare/7.13.0...7.14.0) (2025-02-21)
 
 
