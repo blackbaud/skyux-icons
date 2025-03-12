@@ -3,12 +3,14 @@
     {
       "name": "add",
       "usage": ["Add"],
-      "faNames": ["plus-circle"]
+      "faNames": ["plus-circle"],
+      "iconName": "add"
     },
     {
       "name": "edit",
       "usage": ["Edit"],
-      "faNames": ["pencil"]
+      "faNames": ["pencil"],
+      "iconName": "edit"
     },
     {
       "name": "pencil-solid",
@@ -18,7 +20,8 @@
     {
       "name": "trash",
       "usage": ["Delete", "Remove"],
-      "faNames": ["trash", "trash-o"]
+      "faNames": ["trash", "trash-o"],
+      "iconName": "delete"
     },
     {
       "name": "trash-solid",
@@ -28,22 +31,26 @@
     {
       "name": "close",
       "usage": ["Cancel", "Close"],
-      "faNames": ["times", "close", "remove"]
+      "faNames": ["times", "close", "remove"],
+      "iconName": "dismiss"
     },
     {
       "name": "open",
       "usage": ["Open file"],
-      "faNames": ["folder-open-o"]
+      "faNames": ["folder-open-o"],
+      "iconName": "folder-open"
     },
     {
       "name": "copy-to-clipboard-line",
       "usage": ["Copy to clipboard"],
-      "faNames": ["clipboard"]
+      "faNames": ["clipboard"],
+      "iconName": "clipboard-multiple"
     },
     {
       "name": "copy-line",
       "usage": ["Duplicate"],
-      "faNames": ["copy"]
+      "faNames": ["copy"],
+      "iconName": "copy"
     },
     {
       "name": "folder-open-solid",
@@ -53,57 +60,68 @@
     {
       "name": "save-line",
       "usage": ["Save"],
-      "faNames": ["floppy-o"]
+      "faNames": ["floppy-o"],
+      "iconName": "save"
     },
     {
       "name": "upload-line",
       "usage": ["Upload"],
-      "faNames": ["upload", "cloud-upload"]
+      "faNames": ["upload", "cloud-upload"],
+      "iconName": "arrow-upload"
     },
     {
       "name": "download-line",
       "usage": ["Download"],
-      "faNames": ["download", "cloud-download"]
+      "faNames": ["download", "cloud-download"],
+      "iconName": "arrow-download"
     },
     {
       "name": "open-new-tab-line",
       "usage": ["Open in new tab"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "open"
     },
     {
       "name": "phone-line",
       "usage": ["Phone"],
-      "faNames": ["phone"]
+      "faNames": ["phone"],
+      "iconName": "call"
     },
     {
       "name": "zoom-out-line",
       "usage": ["Zoom out"],
-      "faNames": ["search-minus"]
+      "faNames": ["search-minus"],
+      "iconName": "zoom-out"
     },
     {
       "name": "zoom-in-line",
       "usage": ["Zoom in"],
-      "faNames": ["search-plus"]
+      "faNames": ["search-plus"],
+      "iconName": "zoom-in"
     },
     {
       "name": "hide",
       "usage": ["Hide input"],
-      "faNames": ["eye-slash"]
+      "faNames": ["eye-slash"],
+      "iconName": "eye-off"
     },
     {
       "name": "show",
       "usage": ["Show input"],
-      "faNames": ["eye"]
+      "faNames": ["eye"],
+      "iconName": "eye"
     },
     {
       "name": "search",
       "usage": ["Search"],
-      "faNames": ["search"]
+      "faNames": ["search"],
+      "iconName": "search"
     },
     {
       "name": "filter",
       "usage": ["Filter"],
-      "faNames": ["filter"]
+      "faNames": ["filter"],
+      "iconName": "filter"
     },
     {
       "name": "filter-line",
@@ -113,77 +131,92 @@
     {
       "name": "sort",
       "usage": ["Sort"],
-      "faNames": ["sort", "unsorted"]
+      "faNames": ["sort", "unsorted"],
+      "iconName": "arrow-sort"
     },
     {
       "name": "columns",
       "usage": ["Column layout"],
-      "faNames": ["columns"]
+      "faNames": ["columns"],
+      "iconName": "table-freeze-column"
     },
     {
       "name": "chevron-down",
       "usage": ["Expand"],
-      "faNames": ["chevron-down", "caret-down"]
+      "faNames": ["chevron-down", "caret-down"],
+      "iconName": "chevron-down"
     },
     {
       "name": "chevron-up",
       "usage": ["Collapse"],
-      "faNames": ["chevron-up", "caret-up"]
+      "faNames": ["chevron-up", "caret-up"],
+      "iconName": "chevron-up"
     },
     {
       "name": "chevron-right",
       "usage": ["Navigate to"],
-      "faNames": ["chevron-right", "caret-right"]
+      "faNames": ["chevron-right", "caret-right"],
+      "iconName": "chevron-right"
     },
     {
       "name": "chevron-left",
       "usage": ["Back to"],
-      "faNames": ["chevron-left", "caret-left"]
+      "faNames": ["chevron-left", "caret-left"],
+      "iconName": "chevron-left"
     },
     {
       "name": "double-chevron-left",
       "usage": ["Collapse navigation"],
-      "faNames": ["angle-double-left"]
+      "faNames": ["angle-double-left"],
+      "iconName": "chevron-double-left"
     },
     {
       "name": "double-chevron-right",
       "usage": ["Expand navigation"],
-      "faNames": ["angle-double-right"]
+      "faNames": ["angle-double-right"],
+      "iconName": "chevron-double-right"
     },
     {
       "name": "double-chevron-down",
       "usage": ["Expand all"],
-      "faNames": ["angle-double-down"]
+      "faNames": ["angle-double-down"],
+      "iconName": "chevron-double-down"
     },
     {
       "name": "double-chevron-up",
       "usage": ["Collapse all"],
-      "faNames": ["angle-double-up"]
+      "faNames": ["angle-double-up"],
+      "iconName": "chevron-double-up"
     },
     {
       "name": "arrow-up-line",
       "usage": ["Arrow up"],
-      "faNames": ["arrow-up"]
+      "faNames": ["arrow-up"],
+      "iconName": "arrow-up"
     },
     {
       "name": "ellipsis",
       "usage": ["More actions"],
-      "faNames": ["ellipsis-h"]
+      "faNames": ["ellipsis-h"],
+      "iconName": "more-horizontal"
     },
     {
       "name": "menu",
       "usage": ["Navigation menu"],
-      "faNames": ["bars", "navicon", "reorder"]
+      "faNames": ["bars", "navicon", "reorder"],
+      "iconName": "navigation"
     },
     {
       "name": "tile-drag",
       "usage": ["Drag and drop handle"],
-      "faNames": ["th"]
+      "faNames": ["th"],
+      "iconName": "re-order-dot-vertical"
     },
     {
       "name": "calendar",
       "usage": ["Calendar", "Date"],
-      "faNames": ["calendar"]
+      "faNames": ["calendar"],
+      "iconName": "calendar-ltr"
     },
     {
       "name": "calendar-solid",
@@ -193,7 +226,8 @@
     {
       "name": "clock",
       "usage": ["Time", "Timepicker"],
-      "faNames": ["clock-o"]
+      "faNames": ["clock-o"],
+      "iconName": "clock"
     },
     {
       "name": "clock-solid",
@@ -203,12 +237,14 @@
     {
       "name": "check",
       "usage": ["Complete", "Success"],
-      "faNames": ["check"]
+      "faNames": ["check"],
+      "iconName": "checkmark"
     },
     {
       "name": "help-line",
       "usage": ["Help"],
-      "faNames": ["question-circle", "question-circle-o"]
+      "faNames": ["question-circle", "question-circle-o"],
+      "iconName": "question-circle"
     },
     {
       "name": "help-solid",
@@ -218,7 +254,8 @@
     {
       "name": "bell-line",
       "usage": ["Notification"],
-      "faNames": ["bell", "bell-o"]
+      "faNames": ["bell", "bell-o"],
+      "iconName": "alert"
     },
     {
       "name": "bell-solid",
@@ -252,7 +289,8 @@
     {
       "name": "settings-line",
       "usage": ["Settings"],
-      "faNames": ["cog", "gear"]
+      "faNames": ["cog", "gear"],
+      "iconName": "settings"
     },
     {
       "name": "settings-solid",
@@ -262,16 +300,19 @@
     {
       "name": "form-line",
       "usage": ["Form"],
-      "faNames": ["pencil-square-o"]
+      "faNames": ["pencil-square-o"],
+      "iconName": "note-edit"
     },
     {
       "name": "grid-view-line",
-      "usage": ["Tiled view"]
+      "usage": ["Tiled view"],
+      "iconName": "grid"
     },
     {
       "name": "users-line",
       "usage": ["User group"],
-      "faNames": ["users", "group"]
+      "faNames": ["users", "group"],
+      "iconName": "people-team"
     },
     {
       "name": "users-solid",
@@ -281,7 +322,8 @@
     {
       "name": "house-line",
       "usage": ["Home"],
-      "faNames": ["home"]
+      "faNames": ["home"],
+      "iconName": "home"
     },
     {
       "name": "house-solid",
@@ -291,7 +333,8 @@
     {
       "name": "credit-card-line",
       "usage": ["Credit card"],
-      "faNames": ["credit-card", "credit-card-alt"]
+      "faNames": ["credit-card", "credit-card-alt"],
+      "iconName": "payment"
     },
     {
       "name": "credit-card-solid",
@@ -301,7 +344,8 @@
     {
       "name": "money-line",
       "usage": ["Financial"],
-      "faNames": ["money"]
+      "faNames": ["money"],
+      "iconName": "money"
     },
     {
       "name": "money-solid",
@@ -322,289 +366,349 @@
     },
     {
       "name": "phone-action-credit-card-line",
-      "usage": ["Payments"]
+      "usage": ["Payments"],
+      "iconName": "payment-wireless"
     },
     {
       "name": "bluetooth-on-line",
-      "usage": ["Payments"]
+      "usage": ["Payments"],
+      "iconName": "bluetooth"
     },
     {
       "name": "user-line",
       "usage": ["User single"],
-      "faNames": ["user-o"]
+      "faNames": ["user-o"],
+      "iconName": "person"
     },
     {
       "name": "align-left-text-line",
       "usage": ["Left align text"],
-      "faNames": ["align-left"]
+      "faNames": ["align-left"],
+      "iconName": "text-align-left"
     },
     {
       "name": "align-right-text-line",
       "usage": ["Right align text"],
-      "faNames": ["align-right"]
+      "faNames": ["align-right"],
+      "iconName": "text-align-right"
     },
     {
       "name": "center-text-line",
       "usage": ["Center align text"],
-      "faNames": ["align-center"]
+      "faNames": ["align-center"],
+      "iconName": "text-align-center"
     },
     {
       "name": "justify-text-line",
       "usage": ["Justify text"],
-      "faNames": ["align-justify"]
+      "faNames": ["align-justify"],
+      "iconName": "text-align-justify"
     },
     {
       "name": "divider-line",
-      "usage": ["Divider"]
+      "usage": ["Divider"],
+      "iconName": "divider-tall"
     },
     {
       "name": "note-line",
       "usage": ["Note"],
-      "faNames": ["pencil-square-o"]
+      "faNames": ["pencil-square-o"],
+      "iconName": "note"
     },
     {
       "name": "attach-line",
       "usage": ["Attach"],
-      "faNames": ["paperclip"]
+      "faNames": ["paperclip"],
+      "iconName": "attach"
     },
     {
       "name": "link-line",
       "usage": ["Hyperlink"],
-      "faNames": ["link", "chain"]
+      "faNames": ["link", "chain"],
+      "iconName": "link"
     },
     {
       "name": "unlink-line",
       "usage": ["Remove hyperlink"],
-      "faNames": ["unlink", "chain-broken"]
+      "faNames": ["unlink", "chain-broken"],
+      "iconName": "link-dismiss"
     },
     {
       "name": "ban-line",
       "usage": ["Ban"],
-      "faNames": ["ban"]
+      "faNames": ["ban"],
+      "iconName": "circle-off"
     },
     {
       "name": "business-line",
       "usage": ["Building"],
-      "faNames": ["building-o", "building"]
+      "faNames": ["building-o", "building"],
+      "iconName": "building"
     },
     {
       "name": "cloud-line",
       "usage": ["Cloud"],
-      "faNames": ["cloud"]
+      "faNames": ["cloud"],
+      "iconName": "cloud"
     },
     {
       "name": "list-line",
       "usage": ["List"],
-      "faNames": ["list"]
+      "faNames": ["list"],
+      "iconName": "text-bullet-list"
     },
     {
       "name": "map-marker-line",
       "usage": ["Map view"],
-      "faNames": ["map-marker"]
+      "faNames": ["map-marker"],
+      "iconName": "location"
     },
     {
       "name": "star",
       "usage": ["Favorite"],
-      "faNames": ["star", "star-o"]
+      "faNames": ["star", "star-o"],
+      "iconName": "star"
     },
     {
       "name": "tag-line",
       "usage": ["Tag"],
-      "faNames": ["tag"]
+      "faNames": ["tag"],
+      "iconName": "tag"
     },
     {
       "name": "bullet-list-line",
       "usage": ["Bulleted list"],
-      "faNames": ["list-ul"]
+      "faNames": ["list-ul"],
+      "iconName": "text-bullet-list-ltr"
     },
     {
       "name": "number-list-line",
       "usage": ["Numbered list"],
-      "faNames": ["list-ol"]
+      "faNames": ["list-ol"],
+      "iconName": "text-number-list-ltr"
     },
     {
       "name": "bold-line",
       "usage": ["Bold text"],
-      "faNames": ["bold"]
+      "faNames": ["bold"],
+      "iconName": "text-bold"
     },
     {
       "name": "font-size-line",
       "usage": ["Font size"],
-      "faNames": ["text-height"]
+      "faNames": ["text-height"],
+      "iconName": "text-font-size"
     },
     {
       "name": "highlighter-line",
-      "usage": ["Highlight text"]
+      "usage": ["Highlight text"],
+      "iconName": "color-line"
     },
     {
       "name": "text-color-line",
-      "usage": ["Text color"]
+      "usage": ["Text color"],
+      "iconName": "text-color"
     },
     {
       "name": "subscript-line",
       "usage": ["Subscript text"],
-      "faNames": ["subscript"]
+      "faNames": ["subscript"],
+      "iconName": "text-subscript"
     },
     {
       "name": "superscript-line",
       "usage": ["Superscript text"],
-      "faNames": ["superscript"]
+      "faNames": ["superscript"],
+      "iconName": "text-superscript"
     },
     {
       "name": "italic-line",
       "usage": ["Italicize text"],
-      "faNames": ["italic"]
+      "faNames": ["italic"],
+      "iconName": "text-italic"
     },
     {
       "name": "strikethrough-line",
       "usage": ["Strikethrough text"],
-      "faNames": ["strikethrough"]
+      "faNames": ["strikethrough"],
+      "iconName": "text-strikethrough"
     },
     {
       "name": "underline-line",
       "usage": ["Underline text"],
-      "faNames": ["underline"]
+      "faNames": ["underline"],
+      "iconName": "text-underline"
     },
     {
       "name": "undo-line",
       "usage": ["Undo"],
-      "faNames": ["undo", "rotate-left"]
+      "faNames": ["undo", "rotate-left"],
+      "iconName": "arrow-undo"
     },
     {
       "name": "redo-line",
       "usage": ["Redo"],
-      "faNames": ["repeat", "rotate-right"]
+      "faNames": ["repeat", "rotate-right"],
+      "iconName": "arrow-redo"
     },
     {
       "name": "indent-line",
       "usage": ["Indent"],
-      "faNames": ["indent"]
+      "faNames": ["indent"],
+      "iconName": "text-indent-increase"
     },
     {
       "name": "outdent-line",
       "usage": ["Outdent"],
-      "faNames": ["outdent", "dedent"]
+      "faNames": ["outdent", "dedent"],
+      "iconName": "text-indent-decrease"
     },
     {
       "name": "align-image-center-line",
-      "usage": ["Image align center"]
+      "usage": ["Image align center"],
+      "iconName": "align-center-horizontal"
     },
     {
       "name": "align-image-right-line",
-      "usage": ["Image align right"]
+      "usage": ["Image align right"],
+      "iconName": "align-right"
     },
     {
       "name": "align-image-left-line",
-      "usage": ["Image align left"]
+      "usage": ["Image align left"],
+      "iconName": "align-left"
     },
     {
       "name": "image-line",
       "usage": ["Image"],
-      "faNames": ["picture-o", "photo", "image"]
+      "faNames": ["picture-o", "photo", "image"],
+      "iconName": "image"
     },
     {
       "name": "file-line",
       "usage": ["Unknown file type"],
-      "faNames": ["file-o"]
+      "faNames": ["file-o"],
+      "iconName": "document"
     },
     {
       "name": "audio-file-line",
       "usage": ["Audio file type"],
-      "faNames": ["file-audio-o"]
+      "faNames": ["file-audio-o"],
+      "iconName": "document-audio"
     },
     {
       "name": "archive-file-line",
       "usage": ["Archive file type"],
-      "faNames": ["file-archive-o"]
+      "faNames": ["file-archive-o"],
+      "iconName": "document-archive"
     },
     {
       "name": "code-file-line",
       "usage": ["Code file type"],
-      "faNames": ["file-code-o"]
+      "faNames": ["file-code-o"],
+      "iconName": "document-chevron-double"
     },
     {
       "name": "doc-file-line",
       "usage": ["Word file type"],
-      "faNames": ["file-word-o"]
+      "faNames": ["file-word-o"],
+      "iconName": "document-doc"
     },
     {
       "name": "image-file-line",
       "usage": ["Image file type"],
-      "faNames": ["file-image-o"]
+      "faNames": ["file-image-o"],
+      "iconName": "document-image"
     },
     {
       "name": "pdf-file-line",
       "usage": ["PDF file type"],
-      "faNames": ["file-pdf-o"]
+      "faNames": ["file-pdf-o"],
+      "iconName": "document-pdf"
     },
     {
       "name": "ppt-file-line",
       "usage": ["PowerPoint file type"],
-      "faNames": ["file-powerpoint-o"]
+      "faNames": ["file-powerpoint-o"],
+      "iconName": "document-ppt"
     },
     {
       "name": "text-file-line",
       "usage": ["Text file type"],
-      "faNames": ["file-text-o"]
+      "faNames": ["file-text-o"],
+      "iconName": "document-text"
     },
     {
       "name": "video-file-line",
       "usage": ["Video file type"],
-      "faNames": ["file-video-o"]
+      "faNames": ["file-video-o"],
+      "iconName": "document-video"
     },
     {
       "name": "xls-file-line",
       "usage": ["Excel file type"],
-      "faNames": ["file-excel-o"]
+      "faNames": ["file-excel-o"],
+      "iconName": "document-xls"
     },
     {
       "name": "bluetooth-on-line",
-      "usage": ["Bluetooth connection"]
+      "usage": ["Bluetooth connection"],
+      "iconName": "bluetooth"
     },
     {
       "name": "phone-action-credit-card-line",
-      "usage": ["Mobile payment"]
+      "usage": ["Mobile payment"],
+      "iconName": "payment-wireless"
     },
     {
       "name": "table-line",
       "usage": ["Table"],
-      "faNames": ["table"]
+      "faNames": ["table"],
+      "iconName": "table"
     },
     {
       "name": "bullet-chart-line",
-      "usage": ["Bullet chart"]
+      "usage": ["Bullet chart"],
+      "iconName": "bullet-chart"
     },
     {
       "name": "donut-chart-line",
-      "usage": ["Donut chart"]
+      "usage": ["Donut chart"],
+      "iconName": "donut-chart"
     },
     {
       "name": "pie-chart-line",
       "usage": ["Pie chart"],
-      "faNames": ["pie-chart"]
+      "faNames": ["pie-chart"],
+      "iconName": "data-pie"
     },
     {
       "name": "headline-chart-line",
-      "usage": ["Headline chart"]
+      "usage": ["Headline chart"],
+      "iconName": "headline-chart"
     },
     {
       "name": "bar-chart-line",
       "usage": ["Bar chart"],
-      "faNames": ["bar-chart", "bar-chart-o"]
+      "faNames": ["bar-chart", "bar-chart-o"],
+      "iconName": "data-bar-vertical-ascending"
     },
     {
       "name": "horizontal-bar-chart-line",
-      "usage": ["Horizontal bar chart"]
+      "usage": ["Horizontal bar chart"],
+      "iconName": "data-bar-horizontal"
     },
     {
       "name": "line-chart-line",
       "usage": ["Line chart"],
-      "faNames": ["line-chart"]
+      "faNames": ["line-chart"],
+      "iconName": "data-line"
     },
     {
       "name": "envelope-line",
       "usage": ["Email"],
-      "faNames": ["envelope", "envelope-o"]
+      "faNames": ["envelope", "envelope-o"],
+      "iconName": "mail"
     },
     {
       "name": "envelope-solid",
@@ -614,7 +718,8 @@
     {
       "name": "printer-line",
       "usage": ["Print"],
-      "faNames": ["print"]
+      "faNames": ["print"],
+      "iconName": "print"
     },
     {
       "name": "printer-solid",
@@ -624,17 +729,20 @@
     {
       "name": "social-share-line",
       "usage": ["Social share"],
-      "faNames": ["share-alt"]
+      "faNames": ["share-alt"],
+      "iconName": "share-android"
     },
     {
       "name": "share-line",
       "usage": ["Share"],
-      "faNames": ["share"]
+      "faNames": ["share"],
+      "iconName": "share"
     },
     {
       "name": "talk-bubbles-line",
       "usage": ["Talk bubbles"],
-      "faNames": ["comments", "comments-o"]
+      "faNames": ["comments", "comments-o"],
+      "iconName": "chat-multiple"
     },
     {
       "name": "coin-bag-line",
@@ -662,13 +770,15 @@
       "name": "bars-2-line",
       "usage": ["Menu"],
       "faNames": ["bars", "navicon", "reorder"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "navigation"
     },
     {
       "name": "cog-2-line",
       "usage": ["Settings"],
       "faNames": ["cog", "gear"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "settings"
     },
     {
       "name": "cog-2-solid",
@@ -680,19 +790,22 @@
       "name": "collapse-2-line",
       "usage": ["Collapse nav"],
       "faNames": ["angle-double-left"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "chevron-double-left"
     },
     {
       "name": "expand-2-line",
       "usage": ["Expand nav"],
       "faNames": ["angle-double-right"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "chevron-double-right"
     },
     {
       "name": "database-2-line",
       "usage": ["Database"],
       "faNames": ["database"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "database-stack"
     },
     {
       "name": "database-2-solid",
@@ -710,13 +823,15 @@
       "name": "form-2-line",
       "usage": ["Form"],
       "faNames": ["pencil-square-o"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "note-edit"
     },
     {
       "name": "lock-2-line",
       "usage": ["Lock"],
       "faNames": ["lock"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "lock-closed"
     },
     {
       "name": "lock-2-solid",
@@ -728,7 +843,8 @@
       "name": "money-2-line",
       "usage": ["Money"],
       "faNames": ["money"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "money"
     },
     {
       "name": "money-2-solid",
@@ -739,7 +855,8 @@
     {
       "name": "saving-bank-2-line",
       "usage": ["Bank"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "building-bank"
     },
     {
       "name": "saving-bank-2-solid",
@@ -749,7 +866,8 @@
     {
       "name": "accounting-invoice-mail-2-line",
       "usage": ["Invoice"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "document-table"
     },
     {
       "name": "accounting-invoice-mail-2-solid",
@@ -759,7 +877,8 @@
     {
       "name": "cash-payment-bill-2-line",
       "usage": ["Payment"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "cash-payment-bill"
     },
     {
       "name": "cash-payment-bill-2-solid",
@@ -769,7 +888,8 @@
     {
       "name": "general-ledger-2-line",
       "usage": ["General ledger"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "general-ledger"
     },
     {
       "name": "general-ledger-2-solid",
@@ -779,7 +899,8 @@
     {
       "name": "hammer-wrench-2-line",
       "usage": ["Tools"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "wrench-screwdriver"
     },
     {
       "name": "hammer-wrench-2-solid",
@@ -790,7 +911,8 @@
       "name": "online-learning-2-line",
       "usage": ["Online learning"],
       "aliases": ["online-learning-line-2"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "online-learning"
     },
     {
       "name": "online-learning-2-solid",
@@ -802,7 +924,8 @@
       "name": "donation-charity-hand-heart-2-line",
       "usage": ["Donation heart"],
       "aliases": ["donation-charity-hand-heart-line-2"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "donation-charity-hand-heart"
     },
     {
       "name": "donation-charity-hand-heart-2-solid",
@@ -837,7 +960,8 @@
     {
       "name": "sparkles-2-line",
       "usage": ["AI"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "sparkles"
     },
     {
       "name": "sparkles-2-solid",
@@ -848,7 +972,8 @@
       "name": "notifications-2-line",
       "usage": ["Notifications"],
       "faNames": ["bell", "bell-o"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "alert"
     },
     {
       "name": "notifications-2-solid",
@@ -858,7 +983,8 @@
     },
     {
       "name": "bb-diamond-2-line",
-      "usage": ["Blackbaud brand glyph"]
+      "usage": ["Blackbaud brand glyph"],
+      "iconName": "bb-diamond"
     },
     {
       "name": "bb-diamond-2-solid",
