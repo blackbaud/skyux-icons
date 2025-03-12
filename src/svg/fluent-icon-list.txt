@@ -2,6 +2,9 @@ accessibility
 add
 add-square
 alert
+align-center-horizontal
+align-left
+align-right
 arrow-circle-left
 arrow-circle-right
 arrow-down
@@ -148,6 +151,7 @@ open
 options
 paint-brush
 payment
+payment-wireless
 people-team
 person
 person-add
