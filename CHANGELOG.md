@@ -1,5 +1,13 @@
 # Changelog
 
+## [7.15.0](https://github.com/blackbaud/skyux-icons/compare/7.14.1...7.15.0) (2025-03-12)
+
+
+### Features
+
+* add chart icons ([#140](https://github.com/blackbaud/skyux-icons/issues/140)) ([3dfa23b](https://github.com/blackbaud/skyux-icons/commit/3dfa23bd9e18c2a888c5b64c28696c78e3f4b6f4))
+* add fluent icons to metadata ([#141](https://github.com/blackbaud/skyux-icons/issues/141)) ([b2fcc45](https://github.com/blackbaud/skyux-icons/commit/b2fcc45c69d4176e547e12255dcde9b37f5eaef0))
+
 ## [7.14.1](https://github.com/blackbaud/skyux-icons/compare/7.14.0...7.14.1) (2025-02-24)
 
 
