@@ -91,8 +91,10 @@ async function generateSprite() {
     svg: {
       rootAttributes: {
         id: 'sky-icon-svg-sprite',
+        hidden: true,
       },
       namespaceClassnames: false,
+      dimensionAttributes: false,
     },
   });
 
@@ -119,11 +121,15 @@ ${notFoundFluentIds.join('\n')}`);
 
   const { result } = await spriter.compileAsync();
 
+  const output = result.symbol.sprite.contents
+    .toString()
+    .replace(/\sstyle=("|')[^"']*("|')/gi, '');
+
   await fs.ensureDir(path.normalize('dist/assets/svg'));
 
   await fs.writeFile(
     path.normalize('dist/assets/svg/skyux-icons.svg'),
-    result.symbol.sprite.contents,
+    output,
     {
       encoding: 'utf-8',
     },
