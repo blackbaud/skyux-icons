@@ -1,5 +1,13 @@
 # Changelog
 
+## [7.16.0](https://github.com/blackbaud/skyux-icons/compare/7.15.0...7.16.0) (2025-03-13)
+
+
+### Features
+
+* remove inline styles from SVG icons ([#143](https://github.com/blackbaud/skyux-icons/issues/143)) ([8c0eaa9](https://github.com/blackbaud/skyux-icons/commit/8c0eaa981dec72eaceeb268eecaee3c642f61815))
+* remove inline styles from SVG sprite ([#145](https://github.com/blackbaud/skyux-icons/issues/145)) ([a2a4843](https://github.com/blackbaud/skyux-icons/commit/a2a4843dcf3923c1b960737176e0230eb9b59d9f))
+
 ## [7.15.0](https://github.com/blackbaud/skyux-icons/compare/7.14.1...7.15.0) (2025-03-12)
 
 
