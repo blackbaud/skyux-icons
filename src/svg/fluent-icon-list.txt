@@ -64,6 +64,7 @@ cloud
 code
 color-line
 compass-northwest
+connected
 contact-card
 copy
 crop
