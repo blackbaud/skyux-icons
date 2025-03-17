@@ -1,5 +1,13 @@
 # Changelog
 
+## [7.17.0](https://github.com/blackbaud/skyux-icons/compare/7.16.0...7.17.0) (2025-03-17)
+
+
+### Features
+
+* added icons for help center ([#148](https://github.com/blackbaud/skyux-icons/issues/148)) ([977da13](https://github.com/blackbaud/skyux-icons/commit/977da137819cd420ba9adf397f1a78c9fdf1fd8c))
+* adding branded icons ([#146](https://github.com/blackbaud/skyux-icons/issues/146)) ([6c4016e](https://github.com/blackbaud/skyux-icons/commit/6c4016ee8596adcbe9c4953d1a8d449134f4c6c0))
+
 ## [7.16.0](https://github.com/blackbaud/skyux-icons/compare/7.15.0...7.16.0) (2025-03-13)
 
 
