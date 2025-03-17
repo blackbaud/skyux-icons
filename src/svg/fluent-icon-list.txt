@@ -116,6 +116,7 @@ hand-left
 hand-open-heart
 handshake
 hat-graduation
+headset
 history
 home
 hourglass-half
