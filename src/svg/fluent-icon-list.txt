@@ -40,6 +40,7 @@ caret-down
 caret-left
 caret-right
 caret-up
+chat-help
 chat-multiple
 check
 checkmark
