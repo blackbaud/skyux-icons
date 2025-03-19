@@ -169,6 +169,7 @@ play-circle
 plug-disconnected
 power
 print
+prohibited
 puzzle-piece
 question
 question-circle
