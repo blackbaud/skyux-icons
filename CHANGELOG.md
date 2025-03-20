@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.19.0](https://github.com/blackbaud/skyux-icons/compare/7.18.0...7.19.0) (2025-03-20)
+
+
+### Features
+
+* pull in missing fluent icons ([#151](https://github.com/blackbaud/skyux-icons/issues/151)) ([4f8d028](https://github.com/blackbaud/skyux-icons/commit/4f8d0284effb3eaefde0ffcbb788dc812948f6c6))
+
 ## [7.18.0](https://github.com/blackbaud/skyux-icons/compare/7.17.0...7.18.0) (2025-03-19)
 
 
