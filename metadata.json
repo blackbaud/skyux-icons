@@ -437,7 +437,7 @@
       "name": "ban-line",
       "usage": ["Ban"],
       "faNames": ["ban"],
-      "iconName": "circle-off"
+      "iconName": "prohibited"
     },
     {
       "name": "business-line",

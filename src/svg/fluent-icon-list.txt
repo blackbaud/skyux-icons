@@ -5,6 +5,7 @@ alert
 align-center-horizontal
 align-left
 align-right
+arrow-bidirectional-up-down
 arrow-circle-left
 arrow-circle-right
 arrow-down
@@ -40,6 +41,7 @@ caret-down
 caret-left
 caret-right
 caret-up
+chat-empty
 chat-help
 chat-multiple
 check
@@ -85,6 +87,7 @@ database-stack
 delete
 desktop
 dismiss
+dismiss-circle
 divider-tall
 document
 document-chevron-double
@@ -125,6 +128,7 @@ hourglass-half
 image
 image-multiple
 info
+insert
 key
 keyboard
 laptop
@@ -170,6 +174,7 @@ play-circle
 plug-disconnected
 power
 print
+prohibited
 puzzle-piece
 question
 question-circle
