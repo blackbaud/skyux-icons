@@ -42,6 +42,7 @@ caret-left
 caret-right
 caret-up
 chat-empty
+chat-help
 chat-multiple
 check
 checkmark
