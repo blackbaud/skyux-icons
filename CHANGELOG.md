@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.19.1](https://github.com/blackbaud/skyux-icons/compare/7.19.0...7.19.1) (2025-03-21)
+
+
+### Bug Fixes
+
+* remove sky prefix, update metadata, remove duplicate icons ([#154](https://github.com/blackbaud/skyux-icons/issues/154)) ([163bf1e](https://github.com/blackbaud/skyux-icons/commit/163bf1ed397597a7964c41b0b99f289800464fb5))
+
 ## [7.19.0](https://github.com/blackbaud/skyux-icons/compare/7.18.0...7.19.0) (2025-03-20)
 
 
