@@ -132,7 +132,7 @@
       "name": "sort",
       "usage": ["Sort"],
       "faNames": ["sort", "unsorted"],
-      "iconName": "arrow-sort"
+      "iconName": "arrow-bidirectional-up-down"
     },
     {
       "name": "columns",
@@ -407,7 +407,7 @@
     {
       "name": "divider-line",
       "usage": ["Divider"],
-      "iconName": "divider-tall"
+      "iconName": "insert"
     },
     {
       "name": "note-line",
@@ -742,7 +742,7 @@
       "name": "talk-bubbles-line",
       "usage": ["Talk bubbles"],
       "faNames": ["comments", "comments-o"],
-      "iconName": "chat-multiple"
+      "iconName": "chat-empty"
     },
     {
       "name": "coin-bag-line",

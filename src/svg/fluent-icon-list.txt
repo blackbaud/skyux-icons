@@ -1,5 +1,4 @@
 accessibility
-add
 add-square
 alert
 align-center-horizontal
@@ -45,20 +44,14 @@ chat-empty
 chat-help
 chat-multiple
 check
-checkmark
 checkmark-square
 chess
 chevron-double-down
 chevron-double-left
 chevron-double-right
 chevron-double-up
-chevron-down
-chevron-left
-chevron-right
-chevron-up
 circle
 circle-half-fill
-circle-off
 clipboard-bullet-list
 clipboard-checkmark
 clipboard-multiple
@@ -86,9 +79,7 @@ database
 database-stack
 delete
 desktop
-dismiss
 dismiss-circle
-divider-tall
 document
 document-chevron-double
 document-contract
@@ -115,7 +106,6 @@ gavel
 gift
 globe
 grid
-grid-dots
 group
 hand-left
 hand-open-heart
@@ -127,7 +117,6 @@ home
 hourglass-half
 image
 image-multiple
-info
 insert
 key
 keyboard
@@ -147,7 +136,6 @@ mention
 mic
 money
 money-hand
-more-horizontal
 more-vertical
 navigation
 news
@@ -185,7 +173,6 @@ ribbon
 road
 rocket
 save
-search
 send
 server
 settings
