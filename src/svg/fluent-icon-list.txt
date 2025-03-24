@@ -7,6 +7,7 @@ align-right
 arrow-bidirectional-up-down
 arrow-circle-left
 arrow-circle-right
+arrow-clockwise
 arrow-down
 arrow-download
 arrow-fit
@@ -121,6 +122,7 @@ insert
 key
 keyboard
 laptop
+layout-column-three
 lightbulb
 link
 link-dismiss
