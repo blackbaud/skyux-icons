@@ -10,6 +10,7 @@ arrow-circle-right
 arrow-clockwise
 arrow-down
 arrow-download
+arrow-enter
 arrow-fit
 arrow-left
 arrow-maximize
@@ -21,6 +22,7 @@ arrow-sort
 arrow-sync
 arrow-trending
 arrow-trending-down
+arrow-trending-lines
 arrow-undo
 arrow-up
 arrow-upload
@@ -67,9 +69,10 @@ copy
 crop
 cube-multiple
 cube-tree
-currency-dollar-euro
 data-bar-horizontal
+data-bar-horizontal-descending
 data-bar-vertical-ascending
+data-histogram
 data-line
 data-pie
 data-scatter
@@ -81,6 +84,7 @@ database-stack
 delete
 desktop
 dismiss-circle
+dismiss-square
 document
 document-chevron-double
 document-contract
@@ -103,6 +107,7 @@ folder-open
 food
 food-cake
 form
+gantt-chart
 gavel
 gift
 globe
@@ -182,6 +187,7 @@ settings-cog-multiple
 shapes
 share
 share-android
+share-screen-person
 shield
 shield-keyhole
 speaker-mute
@@ -204,6 +210,7 @@ text-align-center
 text-align-justify
 text-align-left
 text-align-right
+text-arrow-down-right-column
 text-bold
 text-bullet-list
 text-bullet-list-ltr
