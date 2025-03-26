@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.21.1](https://github.com/blackbaud/skyux-icons/compare/7.21.0...7.21.1) (2025-03-26)
+
+
+### Bug Fixes
+
+* use correct path style for line status icons ([#161](https://github.com/blackbaud/skyux-icons/issues/161)) ([9ba4d50](https://github.com/blackbaud/skyux-icons/commit/9ba4d50757649d5563215c04f27be4c7a5758dfe))
+
 ## [7.21.0](https://github.com/blackbaud/skyux-icons/compare/7.20.0...7.21.0) (2025-03-26)
 
 
