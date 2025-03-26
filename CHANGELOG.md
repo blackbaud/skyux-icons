@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.21.0](https://github.com/blackbaud/skyux-icons/compare/7.20.0...7.21.0) (2025-03-26)
+
+
+### Features
+
+* added more custom svgs ([#158](https://github.com/blackbaud/skyux-icons/issues/158)) ([91d1b16](https://github.com/blackbaud/skyux-icons/commit/91d1b16f59ae7db7b96c32592e3572b929c8ae6f))
+
 ## [7.20.0](https://github.com/blackbaud/skyux-icons/compare/7.19.1...7.20.0) (2025-03-25)
 
 
