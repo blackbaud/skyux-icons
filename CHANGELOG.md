@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.21.2](https://github.com/blackbaud/skyux-icons/compare/7.21.1...7.21.2) (2025-03-28)
+
+
+### Bug Fixes
+
+* use correct SVG icons in metadata ([#163](https://github.com/blackbaud/skyux-icons/issues/163)) ([bc0a6bc](https://github.com/blackbaud/skyux-icons/commit/bc0a6bc23edc461afbe1789a7a1984adf60c85a3))
+
 ## [7.21.1](https://github.com/blackbaud/skyux-icons/compare/7.21.0...7.21.1) (2025-03-26)
 
 
