@@ -32,7 +32,7 @@
       "name": "close",
       "usage": ["Cancel", "Close"],
       "faNames": ["times", "close", "remove"],
-      "iconName": "dismiss"
+      "iconName": "close"
     },
     {
       "name": "open",
@@ -198,7 +198,7 @@
       "name": "ellipsis",
       "usage": ["More actions"],
       "faNames": ["ellipsis-h"],
-      "iconName": "more-horizontal"
+      "iconName": "more-actions"
     },
     {
       "name": "menu",
@@ -210,7 +210,7 @@
       "name": "tile-drag",
       "usage": ["Drag and drop handle"],
       "faNames": ["th"],
-      "iconName": "re-order-dot-vertical"
+      "iconName": "re-order-dots-vertical"
     },
     {
       "name": "calendar",
@@ -889,7 +889,7 @@
       "name": "general-ledger-2-line",
       "usage": ["General ledger"],
       "owner": ["Webalys, LLC"],
-      "iconName": "general-ledger"
+      "iconName": "book"
     },
     {
       "name": "general-ledger-2-solid",
@@ -925,7 +925,7 @@
       "usage": ["Donation heart"],
       "aliases": ["donation-charity-hand-heart-line-2"],
       "owner": ["Webalys, LLC"],
-      "iconName": "donation-charity-hand-heart"
+      "iconName": "hand-open-heart"
     },
     {
       "name": "donation-charity-hand-heart-2-solid",
@@ -937,7 +937,8 @@
       "name": "workflow-teamwork-user-2-line",
       "usage": ["Volunteering"],
       "aliases": ["workflow-teamwork-user-line-2"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "hand-open-heart"
     },
     {
       "name": "workflow-teamwork-user-2-solid",
@@ -949,7 +950,8 @@
       "name": "workflow-teammate-circle-2-line",
       "usage": ["Workplace culture"],
       "aliases": ["workflow-teammate-circle-2-line"],
-      "owner": ["Webalys, LLC"]
+      "owner": ["Webalys, LLC"],
+      "iconName": "workflow-teammate-circle"
     },
     {
       "name": "workflow-teammate-circle-2-solid",
