@@ -36,6 +36,7 @@ branch-fork
 building
 building-bank
 building-factory
+building-shop
 calculator
 calendar-ltr
 call
