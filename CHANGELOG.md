@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.22.0](https://github.com/blackbaud/skyux-icons/compare/7.21.2...7.22.0) (2025-04-01)
+
+
+### Features
+
+* add building shop ([#165](https://github.com/blackbaud/skyux-icons/issues/165)) ([e11dd28](https://github.com/blackbaud/skyux-icons/commit/e11dd283adc97b64584bc524d7ebabfe491a15b8))
+
 ## [7.21.2](https://github.com/blackbaud/skyux-icons/compare/7.21.1...7.21.2) (2025-03-28)
 
 
