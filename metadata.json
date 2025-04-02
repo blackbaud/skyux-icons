@@ -681,12 +681,12 @@
       "name": "bar-chart-line",
       "usage": ["Bar chart"],
       "faNames": ["bar-chart", "bar-chart-o"],
-      "iconName": "bar-chart"
+      "iconName": "bar-chart-vertical"
     },
     {
       "name": "horizontal-bar-chart-line",
       "usage": ["Horizontal bar chart"],
-      "iconName": "horizontal-bar-chart"
+      "iconName": "bar-chart-horizontal"
     },
     {
       "name": "line-chart-line",
