@@ -1,7 +1,11 @@
-const fs = require('fs-extra');
-const glob = require('glob');
-const path = require('node:path');
-const SVGSpriter = require('svg-sprite');
+import fs from 'fs-extra';
+import * as glob from 'glob';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import SVGSpriter from 'svg-sprite';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const PATH_BRANDED = path.resolve(__dirname, '..', 'src', 'svg', 'branded');
 
@@ -100,12 +104,12 @@ function createSpriter() {
 }
 
 async function addIcons(spriter, globPath, filterSet, includedSet) {
-  for await (const file of glob.globIterate(path.normalize(globPath))) {
-    let fileName = path.basename(file);
+  for await (const filePath of glob.globIterate(path.normalize(globPath))) {
+    let fileName = path.basename(filePath);
     let iconId = getFluentIconId(fileName);
 
     if (!filterSet || filterSet.has(iconId)) {
-      spriter.add(file, null, await fs.readFile(file));
+      spriter.add(filePath, null, await fs.readFile(filePath));
       includedSet?.add(iconId);
     }
   }
@@ -174,6 +178,4 @@ async function generateSprite() {
   );
 }
 
-module.exports = {
-  generateSprite,
-};
+export { generateSprite };

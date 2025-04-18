@@ -1,8 +1,13 @@
-const CleanCSS = require('clean-css');
-const crossSpawn = require('cross-spawn');
-const fs = require('fs-extra');
-const path = require('path');
-const { generateSprite } = require('./generate-sprite');
+import CleanCSS from 'clean-css';
+import crossSpawn from 'cross-spawn';
+import fs from 'fs-extra';
+import { fileURLToPath } from 'node:url';
+import path from 'path';
+
+import { generateSprite } from './generate-sprite.mjs';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const projectPath = path.join(__dirname, '..');
 const srcPath = path.join(projectPath, 'src');
