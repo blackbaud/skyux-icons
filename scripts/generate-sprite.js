@@ -3,6 +3,8 @@ const glob = require('glob');
 const path = require('node:path');
 const SVGSpriter = require('svg-sprite');
 
+const PATH_BRANDED = path.resolve(__dirname, '..', 'src', 'svg', 'branded');
+
 function getFluentIconId(fileName, includeSize, includeVariant) {
   const parts = fileName.split('_');
 
@@ -24,34 +26,25 @@ function getFluentIconId(fileName, includeSize, includeVariant) {
   return name;
 }
 
-async function addSprites(spriter, globPath, filterSet, includedSet) {
-  for await (const file of glob.globIterate(path.normalize(globPath))) {
-    let fileName = path.basename(file);
-    let iconId = getFluentIconId(fileName);
+function addBrandedCssClass(shape, _, callback) {
+  if (path.normalize(shape.source.dirname) === PATH_BRANDED) {
+    const documentEl = shape.dom.documentElement;
 
-    if (!filterSet || filterSet.has(iconId)) {
-      spriter.add(file, null, await fs.readFile(file));
-      includedSet?.add(iconId);
+    let cssClass = documentEl.getAttribute('class') ?? '';
+
+    if (cssClass) {
+      cssClass += ' ';
     }
+
+    cssClass += 'sky-i-branded';
+
+    documentEl.setAttribute('class', cssClass);
   }
+
+  callback(null);
 }
 
-async function getFluentList() {
-  const fluentIconsText = await fs.readFile(
-    path.normalize('src/svg/fluent-icon-list.txt'),
-    {
-      encoding: 'utf-8',
-    },
-  );
-
-  const fluentIcons = new Set(
-    fluentIconsText.split('\n').filter((name) => !!name),
-  );
-
-  return fluentIcons;
-}
-
-async function generateSprite() {
+function createSpriter() {
   const ids = new Set();
 
   const spriter = new SVGSpriter({
@@ -62,6 +55,11 @@ async function generateSprite() {
       },
     },
     shape: {
+      transform: [
+        {
+          addBrandedCssClass,
+        },
+      ],
       id: {
         generator(fileName) {
           let id;
@@ -98,10 +96,41 @@ async function generateSprite() {
     },
   });
 
+  return spriter;
+}
+
+async function addIcons(spriter, globPath, filterSet, includedSet) {
+  for await (const file of glob.globIterate(path.normalize(globPath))) {
+    let fileName = path.basename(file);
+    let iconId = getFluentIconId(fileName);
+
+    if (!filterSet || filterSet.has(iconId)) {
+      spriter.add(file, null, await fs.readFile(file));
+      includedSet?.add(iconId);
+    }
+  }
+}
+
+async function getFluentList() {
+  const fluentIconsText = await fs.readFile(
+    path.normalize('src/svg/fluent-icon-list.txt'),
+    {
+      encoding: 'utf-8',
+    },
+  );
+
+  const fluentIcons = new Set(
+    fluentIconsText.split('\n').filter((name) => !!name),
+  );
+
+  return fluentIcons;
+}
+
+async function addFluentIcons(spriter) {
   const includedFluentSet = new Set();
   const filterFluentSet = await getFluentList();
 
-  await addSprites(
+  await addIcons(
     spriter,
     'node_modules/@fluentui/svg-icons/icons/*.svg',
     filterFluentSet,
@@ -116,8 +145,17 @@ async function generateSprite() {
     throw new Error(`The following Fluent UI icons were not found:
 ${notFoundFluentIds.join('\n')}`);
   }
+}
 
-  await addSprites(spriter, 'src/svg/*.svg');
+async function addCustomIcons(spriter) {
+  await addIcons(spriter, 'src/svg/**/*.svg');
+}
+
+async function generateSprite() {
+  const spriter = createSpriter();
+
+  await addFluentIcons(spriter);
+  await addCustomIcons(spriter);
 
   const { result } = await spriter.compileAsync();
 
