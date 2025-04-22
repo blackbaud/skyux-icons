@@ -1,12 +1,13 @@
 {
   "name": "@skyux/icons",
-  "version": "7.22.0",
+  "version": "7.23.0",
   "main": "./index.js",
   "types": "./index.d.ts",
   "description": "A glyph font and stylesheet for displaying SKY UX icons.",
   "scripts": {
-    "build": "rimraf dist && node ./scripts/prepare-package.js",
-    "test": "eslint module --ext .ts",
+    "build": "rimraf dist && node ./scripts/prepare-package.mjs",
+    "test": "eslint module --ext .ts && vitest run --coverage",
+    "watch": "vitest --coverage",
     "dev:pristine": "skyux-dev pristine-commit"
   },
   "repository": {
@@ -86,6 +87,7 @@
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@typescript-eslint/eslint-plugin": "6.20.0",
     "@typescript-eslint/parser": "6.20.0",
+    "@vitest/coverage-v8": "3.1.1",
     "clean-css": "4.2.3",
     "cross-spawn": "7.0.6",
     "eslint": "8.57.0",
@@ -94,6 +96,7 @@
     "glob": "10.3.15",
     "prettier": "3.2.5",
     "svg-sprite": "2.0.4",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "vitest": "3.1.1"
   }
 }

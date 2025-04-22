@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.23.0](https://github.com/blackbaud/skyux-icons/compare/7.22.0...7.23.0) (2025-04-21)
+
+
+### Features
+
+* add branded icon support ([#168](https://github.com/blackbaud/skyux-icons/issues/168)) ([926dbb4](https://github.com/blackbaud/skyux-icons/commit/926dbb4611e5f80c2ae6ada73efee1f98f3d08fe))
+
 ## [7.22.0](https://github.com/blackbaud/skyux-icons/compare/7.21.2...7.22.0) (2025-04-01)
 
 
