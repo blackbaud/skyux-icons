@@ -101,6 +101,7 @@ eraser
 error-circle
 eye
 eye-off
+filmstrip-play
 filter
 flag
 flash

@@ -132,13 +132,13 @@
       "name": "sort",
       "usage": ["Sort"],
       "faNames": ["sort", "unsorted"],
-      "iconName": "arrow-bidirectional-up-down"
+      "iconName": "arrow-sort"
     },
     {
       "name": "columns",
       "usage": ["Column layout"],
       "faNames": ["columns"],
-      "iconName": "table-freeze-column"
+      "iconName": "layout-column-three"
     },
     {
       "name": "chevron-down",
@@ -301,7 +301,7 @@
       "name": "form-line",
       "usage": ["Form"],
       "faNames": ["pencil-square-o"],
-      "iconName": "note-edit"
+      "iconName": "notepad-edit"
     },
     {
       "name": "grid-view-line",
@@ -365,16 +365,6 @@
       "deprecated": "true"
     },
     {
-      "name": "phone-action-credit-card-line",
-      "usage": ["Payments"],
-      "iconName": "payment-wireless"
-    },
-    {
-      "name": "bluetooth-on-line",
-      "usage": ["Payments"],
-      "iconName": "bluetooth"
-    },
-    {
       "name": "user-line",
       "usage": ["User single"],
       "faNames": ["user-o"],
@@ -413,7 +403,7 @@
       "name": "note-line",
       "usage": ["Note"],
       "faNames": ["pencil-square-o"],
-      "iconName": "note"
+      "iconName": "note-edit"
     },
     {
       "name": "attach-line",
@@ -658,7 +648,7 @@
     {
       "name": "phone-action-credit-card-line",
       "usage": ["Mobile payment"],
-      "iconName": "payment-wireless"
+      "iconName": "phone-action-credit-card-line"
     },
     {
       "name": "table-line",
@@ -680,7 +670,7 @@
       "name": "pie-chart-line",
       "usage": ["Pie chart"],
       "faNames": ["pie-chart"],
-      "iconName": "data-pie"
+      "iconName": "pie-chart"
     },
     {
       "name": "headline-chart-line",
@@ -691,18 +681,18 @@
       "name": "bar-chart-line",
       "usage": ["Bar chart"],
       "faNames": ["bar-chart", "bar-chart-o"],
-      "iconName": "data-bar-vertical-ascending"
+      "iconName": "bar-chart-vertical"
     },
     {
       "name": "horizontal-bar-chart-line",
       "usage": ["Horizontal bar chart"],
-      "iconName": "data-bar-horizontal"
+      "iconName": "bar-chart-horizontal"
     },
     {
       "name": "line-chart-line",
       "usage": ["Line chart"],
       "faNames": ["line-chart"],
-      "iconName": "data-line"
+      "iconName": "line-chart"
     },
     {
       "name": "envelope-line",
@@ -824,7 +814,7 @@
       "usage": ["Form"],
       "faNames": ["pencil-square-o"],
       "owner": ["Webalys, LLC"],
-      "iconName": "note-edit"
+      "iconName": "notepad-edit"
     },
     {
       "name": "lock-2-line",
