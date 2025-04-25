@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.23.1](https://github.com/blackbaud/skyux-icons/compare/7.23.0...7.23.1) (2025-04-25)
+
+
+### Bug Fixes
+
+* svg inventory updates for post-v12 release ([#167](https://github.com/blackbaud/skyux-icons/issues/167)) ([fd155a8](https://github.com/blackbaud/skyux-icons/commit/fd155a87ccba9e861915dd25ebc7d03b58b0a229))
+
 ## [7.23.0](https://github.com/blackbaud/skyux-icons/compare/7.22.0...7.23.0) (2025-04-21)
 
 
