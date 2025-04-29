@@ -53,7 +53,7 @@ function createSpriter() {
 
   const spriter = new SVGSpriter({
     mode: {
-      symbol: {
+      defs: {
         example: true,
         inline: true,
       },
@@ -163,7 +163,7 @@ async function generateSprite() {
 
   const { result } = await spriter.compileAsync();
 
-  const output = result.symbol.sprite.contents
+  const output = result.defs.sprite.contents
     .toString()
     .replace(/\sstyle=("|')[^"']*("|')/gi, '');
 
