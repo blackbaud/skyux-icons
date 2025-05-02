@@ -1,5 +1,18 @@
 # Changelog
 
+## [7.24.0](https://github.com/blackbaud/skyux-icons/compare/7.23.1...7.24.0) (2025-05-02)
+
+
+### Features
+
+* additional data entry grid icons ([#173](https://github.com/blackbaud/skyux-icons/issues/173)) ([d89d496](https://github.com/blackbaud/skyux-icons/commit/d89d49654dc33c57cf8220e3f1af5b6c4a5f671d))
+* updated info icons ([#172](https://github.com/blackbaud/skyux-icons/issues/172)) ([55fc3c6](https://github.com/blackbaud/skyux-icons/commit/55fc3c6de42b90399aaf24ba8eef55fb2c946f39))
+
+
+### Bug Fixes
+
+* info line variant is only one path ([#175](https://github.com/blackbaud/skyux-icons/issues/175)) ([262c615](https://github.com/blackbaud/skyux-icons/commit/262c615485a6afb51a418ecc521dbb920d1c12f2))
+
 ## [7.23.1](https://github.com/blackbaud/skyux-icons/compare/7.23.0...7.23.1) (2025-04-25)
 
 
