@@ -1,4 +1,5 @@
 accessibility
+add-circle
 add-square
 alert
 align-center-horizontal
@@ -8,13 +9,17 @@ arrow-bidirectional-up-down
 arrow-circle-left
 arrow-circle-right
 arrow-clockwise
+arrow-collapse-all
 arrow-down
 arrow-download
 arrow-enter
 arrow-fit
 arrow-left
 arrow-maximize
+arrow-minimize
 arrow-move
+arrow-next
+arrow-previous
 arrow-redo
 arrow-repeat-all
 arrow-right
@@ -56,6 +61,7 @@ chevron-double-right
 chevron-double-up
 circle
 circle-half-fill
+clipboard-arrow-right
 clipboard-bullet-list
 clipboard-checkmark
 clipboard-multiple
@@ -70,6 +76,7 @@ copy
 crop
 cube-multiple
 cube-tree
+cut
 data-bar-horizontal
 data-bar-horizontal-descending
 data-bar-vertical-ascending
@@ -166,6 +173,8 @@ person-note
 person-support
 person-tag
 phone
+pin
+pivot
 play
 play-circle
 plug-disconnected
