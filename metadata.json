@@ -648,7 +648,7 @@
     {
       "name": "phone-action-credit-card-line",
       "usage": ["Mobile payment"],
-      "iconName": "phone-action-credit-card-line"
+      "iconName": "phone-action-credit-card"
     },
     {
       "name": "table-line",
