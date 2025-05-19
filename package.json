@@ -83,20 +83,20 @@
     "@fluentui/svg-icons": "1.1.245",
     "@ryansonshine/commitizen": "4.2.8",
     "@ryansonshine/cz-conventional-changelog": "3.3.4",
-    "@skyux/dev-infra-private": "github:blackbaud/skyux-dev-infra-private-builds#10.0.0-alpha.17",
+    "@skyux/dev-infra-private": "github:blackbaud/skyux-dev-infra-private-builds#12.0.0-alpha.3",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@typescript-eslint/eslint-plugin": "6.20.0",
     "@typescript-eslint/parser": "6.20.0",
-    "@vitest/coverage-v8": "3.1.1",
-    "clean-css": "4.2.3",
+    "@vitest/coverage-v8": "3.1.4",
+    "clean-css": "5.3.3",
     "cross-spawn": "7.0.6",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
-    "fs-extra": "11.2.0",
-    "glob": "10.3.15",
-    "prettier": "3.2.5",
+    "fs-extra": "11.3.0",
+    "glob": "11.0.2",
+    "prettier": "3.5.3",
     "svg-sprite": "2.0.4",
-    "typescript": "5.3.3",
-    "vitest": "3.1.1"
+    "typescript": "5.8.3",
+    "vitest": "3.1.4"
   }
 }
