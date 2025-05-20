@@ -69,7 +69,7 @@ describe('generate-sprites', () => {
   });
 
   it('should add the branded CSS class to icons in the branded folder', async () => {
-    await generateSprite();
+    await generateSprite(fluentIconList);
 
     expect(fs.writeFile).toHaveBeenCalledWith(
       'dist/assets/svg/skyux-icons.svg',
@@ -81,7 +81,7 @@ describe('generate-sprites', () => {
   it('should throw an error if Fluent UI icons are missing', async () => {
     fluentIconList = ['icon1', 'icon2'];
 
-    await expect(generateSprite()).rejects.toThrow(
+    await expect(generateSprite(fluentIconList)).rejects.toThrow(
       'The following Fluent UI icons were not found:\nicon1\nicon2',
     );
   });
