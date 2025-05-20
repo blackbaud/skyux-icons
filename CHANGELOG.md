@@ -1,5 +1,22 @@
 # Changelog
 
+## [8.0.0](https://github.com/blackbaud/skyux-icons/compare/7.24.0...8.0.0) (2025-05-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* use correctly sized search icon SVGs ([#178](https://github.com/blackbaud/skyux-icons/issues/178))
+
+### Features
+
+* add additional fluent icon list to manifest ([#183](https://github.com/blackbaud/skyux-icons/issues/183)) ([cf77f2f](https://github.com/blackbaud/skyux-icons/commit/cf77f2f47033dfb83d8f66531af97e4dcf10cf0b))
+* use correctly sized search icon SVGs ([#178](https://github.com/blackbaud/skyux-icons/issues/178)) ([a172899](https://github.com/blackbaud/skyux-icons/commit/a172899a45bafb7e1f1e3071453b6a1f354c95a7))
+
+
+### Bug Fixes
+
+* correct iconName for phone-action-credit-card ([#176](https://github.com/blackbaud/skyux-icons/issues/176)) ([160a8af](https://github.com/blackbaud/skyux-icons/commit/160a8af3bac4ebd8bcc35bb690eb972298b771a5))
+
 ## [7.24.0](https://github.com/blackbaud/skyux-icons/compare/7.23.1...7.24.0) (2025-05-02)
 
 
