@@ -104,7 +104,7 @@ function createSpriter() {
 }
 
 async function addIcons(spriter, globPath, filterSet, includedSet) {
-  for await (const filePath of glob.globIterate(path.normalize(globPath))) {
+  for await (const filePath of glob.globIterate(globPath)) {
     let fileName = path.basename(filePath);
     let iconId = getFluentIconId(fileName);
 
@@ -116,23 +116,17 @@ async function addIcons(spriter, globPath, filterSet, includedSet) {
 }
 
 async function getFluentList() {
-  const fluentIconsText = await fs.readFile(
-    path.normalize('src/svg/fluent-icon-list.txt'),
-    {
-      encoding: 'utf-8',
-    },
-  );
-
-  const fluentIcons = new Set(
-    fluentIconsText.split('\n').filter((name) => !!name),
-  );
-
-  return fluentIcons;
+  return (
+    await fs.readFile(path.normalize('src/svg/fluent-icon-list.txt'), 'utf-8')
+  )
+    .split('\n')
+    .map((name) => name.trim())
+    .filter((name) => !!name);
 }
 
-async function addFluentIcons(spriter) {
+async function addFluentIcons(spriter, fluentIcons) {
   const includedFluentSet = new Set();
-  const filterFluentSet = await getFluentList();
+  const filterFluentSet = new Set(fluentIcons);
 
   await addIcons(
     spriter,
@@ -155,10 +149,10 @@ async function addCustomIcons(spriter) {
   await addIcons(spriter, 'src/svg/**/*.svg');
 }
 
-async function generateSprite() {
+async function generateSprite(fluentIcons) {
   const spriter = createSpriter();
 
-  await addFluentIcons(spriter);
+  await addFluentIcons(spriter, fluentIcons);
   await addCustomIcons(spriter);
 
   const { result } = await spriter.compileAsync();
@@ -178,4 +172,4 @@ async function generateSprite() {
   );
 }
 
-export { generateSprite };
+export { generateSprite, getFluentList };

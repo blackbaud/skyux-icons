@@ -4,7 +4,7 @@ import fs from 'fs-extra';
 import { fileURLToPath } from 'node:url';
 import path from 'path';
 
-import { generateSprite } from './generate-sprite.mjs';
+import { generateSprite, getFluentList } from './generate-sprite.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -70,7 +70,7 @@ async function processCss() {
   }
 }
 
-async function createManifest() {
+async function createManifest(fluentIcons) {
   const configPath = path.join(srcPath, 'config.json');
   const metadataPath = path.join(projectPath, 'metadata.json');
 
@@ -81,6 +81,7 @@ async function createManifest() {
     name: config.name,
     cssPrefix: config.css_prefix_text,
     glyphs: [],
+    additionalFluentIcons: [],
   };
 
   for (const glyph of metadata.glyphs) {
@@ -93,6 +94,12 @@ async function createManifest() {
       });
 
       manifest.glyphs.push(manifestGlyph);
+    }
+  }
+
+  for (const fluentIcon of fluentIcons) {
+    if (!manifest.glyphs.some((glyph) => glyph.iconName === fluentIcon)) {
+      manifest.additionalFluentIcons.push(fluentIcon);
     }
   }
 
@@ -142,8 +149,9 @@ async function setVersion() {
   try {
     await copyToDist();
     await processCss();
-    await generateSprite();
-    const manifest = await createManifest();
+    const fluentIcons = await getFluentList();
+    await generateSprite(fluentIcons);
+    const manifest = await createManifest(fluentIcons);
     await compileTypeScriptModule(manifest);
     await setVersion();
   } catch (err) {
