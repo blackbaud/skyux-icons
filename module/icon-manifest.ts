@@ -15,6 +15,10 @@ export interface SkyIconManifest {
   glyphs: SkyIconManifestGlyph[];
 
   /**
+   * A list of additional Fluent icons.
+   */
+  additionalFluentIcons: string[];
+  /**
    * The name of the font as it is registered with the SKY UX stylesheet.
    */
   name: string;
