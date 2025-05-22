@@ -23,6 +23,7 @@ arrow-previous
 arrow-redo
 arrow-repeat-all
 arrow-right
+arrow-split
 arrow-sort
 arrow-sync
 arrow-trending
@@ -160,6 +161,7 @@ note-edit
 notepad-edit
 open
 options
+organization-horizontal
 paint-brush
 payment
 payment-wireless
