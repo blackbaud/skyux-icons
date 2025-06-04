@@ -1,5 +1,13 @@
 # Changelog
 
+## [8.1.0](https://github.com/blackbaud/skyux-icons/compare/8.0.0...8.1.0) (2025-06-04)
+
+
+### Features
+
+* add building bank link icon ([#185](https://github.com/blackbaud/skyux-icons/issues/185)) ([13622b5](https://github.com/blackbaud/skyux-icons/commit/13622b548fb2afbba205054b2c32108743eb5abd))
+* added arrow-split ([#179](https://github.com/blackbaud/skyux-icons/issues/179)) ([6bae483](https://github.com/blackbaud/skyux-icons/commit/6bae4830b95e8afe4fd2d590b18aaedb2cc4d063))
+
 ## [8.0.0](https://github.com/blackbaud/skyux-icons/compare/7.24.0...8.0.0) (2025-05-20)
 
 
