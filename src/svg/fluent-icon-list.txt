@@ -41,6 +41,7 @@ bot
 branch-fork
 building
 building-bank
+building-bank-link
 building-factory
 building-shop
 calculator

@@ -80,7 +80,7 @@
     }
   },
   "devDependencies": {
-    "@fluentui/svg-icons": "1.1.245",
+    "@fluentui/svg-icons": "1.1.302",
     "@ryansonshine/commitizen": "4.2.8",
     "@ryansonshine/cz-conventional-changelog": "3.3.4",
     "@skyux/dev-infra-private": "github:blackbaud/skyux-dev-infra-private-builds#12.0.0-alpha.3",
