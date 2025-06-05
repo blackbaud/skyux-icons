@@ -15,20 +15,45 @@ To use SKY UX icons, use the [SKY UX icon component](https://developer.blackbaud
 1. Add the icon name to the alphabetized list in `src/svg/fluent-icon-list.txt`
    - Do not include any variant or size information
    - Verify the icon name in the [Fluent icon GitHub repo](https://github.com/microsoft/fluentui-system-icons/tree/main/assets)
-2. Release the `skyux-icons` repo following the release process below
+2. Release the `skyux-icons` repo following the [release process](#release-process)
 
 ### Adding custom icons
 
+#### Single color icons
+
 1. Add SVG files to `src/svg` using file name format: `<name>-<size>-<variant>.svg`
 2. All sizes require both a solid and line variant
-3. SVG files must not contain:
+3. SVG files should contain only one path
+4. SVG files must not contain:
    - Classes
    - `<style>` elements
    - Inline styles
+5. Release the `skyux-icons` repo following the [release process](#release-process)
 
-### Adding branded icons
+#### Mutli-color icons
 
-Branded icons support maintaining brand color customization. Follow the steps for custom icons, but put SVGs in `src/svg/branded`.
+SKY UX icons can support 2 colors.
+
+1. Add SVG files to `src/svg` using file name format: `<name>-<size>-<variant>.svg`
+2. All sizes require both a solid and line variant
+3. Use these classes on each path for colors:
+   - Primary: `sky-i-path-1`
+   - Secondary: `sky-i-path-2`
+4. SVG files must not contain:
+   - `<style>` elements
+   - Inline styles
+5. Release the `skyux-icons` repo following the [release process](#release-process)
+
+#### Branded icons
+
+Branded icons support maintaining brand color customization.
+
+1. Add SVG files to `src/svg/branded` using file name format: `<name>-<size>-<variant>.svg`
+2. All sizes require both a solid and line variant
+3. SVG files must not contain:
+   - `<style>` elements
+   - Inline styles
+4. Release the `skyux-icons` repo following the [release process](#release-process)
 
 ## Release Process
 
