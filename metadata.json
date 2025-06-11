@@ -651,6 +651,11 @@
       "iconName": "phone-action-credit-card"
     },
     {
+      "name": "dollar-line",
+      "usage": ["Dollar"],
+      "iconName": "dollar"
+    },
+    {
       "name": "table-line",
       "usage": ["Table"],
       "faNames": ["table"],
@@ -981,6 +986,76 @@
     {
       "name": "bb-diamond-2-solid",
       "usage": ["Blackbaud brand glyph"]
+    },
+    {
+      "name": "apple",
+      "usage": ["Apple"],
+      "iconName": "apple"
+    },
+    {
+      "name": "apple-branded",
+      "usage": ["Sign in with Apple"],
+      "iconName": "apple-branded"
+    },
+    {
+      "name": "facebook",
+      "usage": ["Facebook"],
+      "iconName": "facebook"
+    },
+    {
+      "name": "facebook-branded",
+      "usage": ["Facebook Login"],
+      "iconName": "facebook-branded"
+    },
+    {
+      "name": "git",
+      "usage": ["Git"],
+      "iconName": "git"
+    },
+    {
+      "name": "github",
+      "usage": ["Github"],
+      "iconName": "github"
+    },
+    {
+      "name": "google",
+      "usage": ["Google"],
+      "iconName": "google"
+    },
+    {
+      "name": "google-branded",
+      "usage": ["Sign in with Google"],
+      "iconName": "google-branded"
+    },
+    {
+      "name": "instagram",
+      "usage": ["Instagram"],
+      "iconName": "instagram"
+    },
+    {
+      "name": "linkedin",
+      "usage": ["LinkedIn"],
+      "iconName": "linkedin"
+    },
+    {
+      "name": "microsoft-branded",
+      "usage": ["Sign in with Microsoft"],
+      "iconName": "microsoft-branded"
+    },
+    {
+      "name": "slack",
+      "usage": ["Slack"],
+      "iconName": "slack"
+    },
+    {
+      "name": "twitter",
+      "usage": ["Twitter"],
+      "iconName": "twitter"
+    },
+    {
+      "name": "youtube",
+      "usage": ["YouTube"],
+      "iconName": "youtube"
     },
     {
       "name": "circle-solid",
