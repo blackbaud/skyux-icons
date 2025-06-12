@@ -142,31 +142,31 @@
     },
     {
       "name": "chevron-down",
-      "usage": ["Expand"],
+      "usage": ["Expand", "Next (down)", "Collapse tree node"],
       "faNames": ["chevron-down", "caret-down"],
       "iconName": "chevron-down"
     },
     {
       "name": "chevron-up",
-      "usage": ["Collapse"],
+      "usage": ["Collapse", "Previous (up)"],
       "faNames": ["chevron-up", "caret-up"],
       "iconName": "chevron-up"
     },
     {
       "name": "chevron-right",
-      "usage": ["Navigate to"],
+      "usage": ["Next", "Expand tree node"],
       "faNames": ["chevron-right", "caret-right"],
       "iconName": "chevron-right"
     },
     {
       "name": "chevron-left",
-      "usage": ["Back to"],
+      "usage": ["Previous"],
       "faNames": ["chevron-left", "caret-left"],
       "iconName": "chevron-left"
     },
     {
       "name": "double-chevron-left",
-      "usage": ["Collapse navigation"],
+      "usage": ["Collapse navigation", "Collapse field"],
       "faNames": ["angle-double-left"],
       "iconName": "chevron-double-left"
     },
