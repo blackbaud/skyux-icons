@@ -242,14 +242,14 @@
     },
     {
       "name": "help-line",
-      "usage": ["Help"],
-      "faNames": ["question-circle", "question-circle-o"],
-      "iconName": "question-circle"
+      "usage": ["Help", "Information"],
+      "faNames": ["info-circle"],
+      "iconName": "info"
     },
     {
       "name": "help-solid",
-      "usage": ["Help"],
-      "faNames": ["question-circle", "question-circle-o"]
+      "usage": ["Help", "Information"],
+      "faNames": ["info-circle"]
     },
     {
       "name": "bell-line",
