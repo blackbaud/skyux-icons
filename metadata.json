@@ -782,20 +782,6 @@
       "owner": ["Webalys, LLC"]
     },
     {
-      "name": "collapse-2-line",
-      "usage": ["Collapse nav"],
-      "faNames": ["angle-double-left"],
-      "owner": ["Webalys, LLC"],
-      "iconName": "chevron-double-left"
-    },
-    {
-      "name": "expand-2-line",
-      "usage": ["Expand nav"],
-      "faNames": ["angle-double-right"],
-      "owner": ["Webalys, LLC"],
-      "iconName": "chevron-double-right"
-    },
-    {
       "name": "database-2-line",
       "usage": ["Database"],
       "faNames": ["database"],
