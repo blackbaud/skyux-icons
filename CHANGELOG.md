@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.2.0](https://github.com/blackbaud/skyux-icons/compare/8.1.0...8.2.0) (2025-06-16)
+
+
+### Features
+
+* add brands and usage updates ([#187](https://github.com/blackbaud/skyux-icons/issues/187)) ([da967ab](https://github.com/blackbaud/skyux-icons/commit/da967ab14789fddd0c9ea07e947389bacdd21226))
+
 ## [8.1.0](https://github.com/blackbaud/skyux-icons/compare/8.0.0...8.1.0) (2025-06-04)
 
 
