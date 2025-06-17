@@ -69,7 +69,7 @@ Branded icons support maintaining brand color customization.
    - `@skyux/icons` package version
    - the major version in the CDN URL in `SkyIconSvgResolverService`
 3. Release the monorepo
-4. Update the docs SPA and omnibar
+4. Update the docs SPA and omnibar SPA packages
 
 ## Maintenance
 
