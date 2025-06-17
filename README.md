@@ -59,7 +59,8 @@ Branded icons support maintaining brand color customization.
 
 ### Minor Version
 
-- Release `skyux-icons` only
+1. Release `skyux-icons`
+2. If metadata changes have been made, update the `@skyux/icons` package version in `@skyux/icon` and release the monorepo.
 
 ### Major Version
 
@@ -67,6 +68,8 @@ Branded icons support maintaining brand color customization.
 2. Update `@skyux/icon` component:
    - `@skyux/icons` package version
    - the major version in the CDN URL in `SkyIconSvgResolverService`
+3. Release the monorepo
+4. Update the docs SPA and omnibar
 
 ## Maintenance
 
