@@ -142,31 +142,31 @@
     },
     {
       "name": "chevron-down",
-      "usage": ["Expand"],
+      "usage": ["Expand", "Next (down)", "Collapse tree node"],
       "faNames": ["chevron-down", "caret-down"],
       "iconName": "chevron-down"
     },
     {
       "name": "chevron-up",
-      "usage": ["Collapse"],
+      "usage": ["Collapse", "Previous (up)"],
       "faNames": ["chevron-up", "caret-up"],
       "iconName": "chevron-up"
     },
     {
       "name": "chevron-right",
-      "usage": ["Navigate to"],
+      "usage": ["Next", "Expand tree node"],
       "faNames": ["chevron-right", "caret-right"],
       "iconName": "chevron-right"
     },
     {
       "name": "chevron-left",
-      "usage": ["Back to"],
+      "usage": ["Previous"],
       "faNames": ["chevron-left", "caret-left"],
       "iconName": "chevron-left"
     },
     {
       "name": "double-chevron-left",
-      "usage": ["Collapse navigation"],
+      "usage": ["Collapse navigation", "Collapse field"],
       "faNames": ["angle-double-left"],
       "iconName": "chevron-double-left"
     },
@@ -242,14 +242,14 @@
     },
     {
       "name": "help-line",
-      "usage": ["Help"],
-      "faNames": ["question-circle", "question-circle-o"],
-      "iconName": "question-circle"
+      "usage": ["Help", "Information"],
+      "faNames": ["info-circle"],
+      "iconName": "info"
     },
     {
       "name": "help-solid",
-      "usage": ["Help"],
-      "faNames": ["question-circle", "question-circle-o"]
+      "usage": ["Help", "Information"],
+      "faNames": ["info-circle"]
     },
     {
       "name": "bell-line",
@@ -651,6 +651,11 @@
       "iconName": "phone-action-credit-card"
     },
     {
+      "name": "dollar-line",
+      "usage": ["Dollar"],
+      "iconName": "dollar"
+    },
+    {
       "name": "table-line",
       "usage": ["Table"],
       "faNames": ["table"],
@@ -775,20 +780,6 @@
       "usage": ["Settings"],
       "faNames": ["cog", "gear"],
       "owner": ["Webalys, LLC"]
-    },
-    {
-      "name": "collapse-2-line",
-      "usage": ["Collapse nav"],
-      "faNames": ["angle-double-left"],
-      "owner": ["Webalys, LLC"],
-      "iconName": "chevron-double-left"
-    },
-    {
-      "name": "expand-2-line",
-      "usage": ["Expand nav"],
-      "faNames": ["angle-double-right"],
-      "owner": ["Webalys, LLC"],
-      "iconName": "chevron-double-right"
     },
     {
       "name": "database-2-line",
@@ -1005,6 +996,76 @@
     {
       "name": "bb-diamond-2-solid",
       "usage": ["Blackbaud brand glyph"]
+    },
+    {
+      "name": "apple",
+      "usage": ["Apple"],
+      "iconName": "apple"
+    },
+    {
+      "name": "apple-branded",
+      "usage": ["Sign in with Apple"],
+      "iconName": "apple-branded"
+    },
+    {
+      "name": "facebook",
+      "usage": ["Facebook"],
+      "iconName": "facebook"
+    },
+    {
+      "name": "facebook-branded",
+      "usage": ["Facebook Login"],
+      "iconName": "facebook-branded"
+    },
+    {
+      "name": "git",
+      "usage": ["Git"],
+      "iconName": "git"
+    },
+    {
+      "name": "github",
+      "usage": ["Github"],
+      "iconName": "github"
+    },
+    {
+      "name": "google",
+      "usage": ["Google"],
+      "iconName": "google"
+    },
+    {
+      "name": "google-branded",
+      "usage": ["Sign in with Google"],
+      "iconName": "google-branded"
+    },
+    {
+      "name": "instagram",
+      "usage": ["Instagram"],
+      "iconName": "instagram"
+    },
+    {
+      "name": "linkedin",
+      "usage": ["LinkedIn"],
+      "iconName": "linkedin"
+    },
+    {
+      "name": "microsoft-branded",
+      "usage": ["Sign in with Microsoft"],
+      "iconName": "microsoft-branded"
+    },
+    {
+      "name": "slack",
+      "usage": ["Slack"],
+      "iconName": "slack"
+    },
+    {
+      "name": "twitter",
+      "usage": ["Twitter"],
+      "iconName": "twitter"
+    },
+    {
+      "name": "youtube",
+      "usage": ["YouTube"],
+      "iconName": "youtube"
     },
     {
       "name": "circle-solid",
