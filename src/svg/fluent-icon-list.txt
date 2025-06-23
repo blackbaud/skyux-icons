@@ -172,6 +172,7 @@ person-add
 person-available
 person-circle
 person-lock
+person-money
 person-note
 person-support
 person-tag
