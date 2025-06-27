@@ -81,10 +81,18 @@ async function createManifest(fluentIcons) {
     name: config.name,
     cssPrefix: config.css_prefix_text,
     glyphs: [],
+    customFluentIcons: [],
     additionalFluentIcons: [],
   };
 
   for (const glyph of metadata.glyphs) {
+    if (glyph.iconName) {
+      manifest.customFluentIcons.push({
+        iconName: glyph.iconName,
+        usage: glyph.usage,
+      });
+    }
+
     const matchingGlyph = config.glyphs.find((item) => item.css === glyph.name);
 
     if (matchingGlyph) {
