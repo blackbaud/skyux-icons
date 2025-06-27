@@ -11,6 +11,4 @@ export interface SkySvgManifestGlyph {
    * A list of descriptions of how the glyph should be used to adhere to SKY UX design patterns.
    */
   usage?: string[];
-
-  isMatching: boolean;
 }
