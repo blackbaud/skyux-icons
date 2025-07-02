@@ -23,6 +23,7 @@ arrow-previous
 arrow-redo
 arrow-repeat-all
 arrow-right
+arrow-split
 arrow-sort
 arrow-sync
 arrow-trending
@@ -40,6 +41,7 @@ bot
 branch-fork
 building
 building-bank
+building-bank-link
 building-factory
 building-shop
 calculator
@@ -161,16 +163,18 @@ note-edit
 notepad-edit
 open
 options
+organization-horizontal
 paint-brush
+pause-circle
 payment
 payment-wireless
-pause-circle
 people-team
 person
 person-add
 person-available
 person-circle
 person-lock
+person-money
 person-note
 person-support
 person-tag
