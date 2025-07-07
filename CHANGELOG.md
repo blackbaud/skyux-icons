@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.3.0](https://github.com/blackbaud/skyux-icons/compare/8.2.0...8.3.0) (2025-07-07)
+
+
+### Features
+
+* add person-money fluent icon ([#191](https://github.com/blackbaud/skyux-icons/issues/191)) ([ececa68](https://github.com/blackbaud/skyux-icons/commit/ececa68b1cbb6e42e61b7d153fdb5165bbfa65ec))
+
 ## [8.2.0](https://github.com/blackbaud/skyux-icons/compare/8.1.0...8.2.0) (2025-06-16)
 
 
