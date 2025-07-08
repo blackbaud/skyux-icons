@@ -941,30 +941,6 @@
       "owner": ["Webalys, LLC"]
     },
     {
-      "name": "virtual-terminal-20-line",
-      "usage": ["Virtual-terminal"],
-      "aliases": ["virtual-terminal-20-line"],
-      "owner": ["Webalys, LLC"]
-    },
-    {
-      "name": "virtual-terminal-20-solid",
-      "usage": ["Virtual-terminal"],
-      "aliases": ["virtual-terminal-20-solid"],
-      "owner": ["Webalys, LLC"]
-    },
-    {
-      "name": "flower-heart-20-line",
-      "usage": ["Stewardship"],
-      "aliases": ["flower-heart-20-line"],
-      "owner": ["Webalys, LLC"]
-    },
-    {
-      "name": "flower-heart-20-solid",
-      "usage": ["Stewardship"],
-      "aliases": ["flower-heart-20-solid"],
-      "owner": ["Webalys, LLC"]
-    },
-    {
       "name": "sparkles-2-line",
       "usage": ["AI"],
       "owner": ["Webalys, LLC"],
