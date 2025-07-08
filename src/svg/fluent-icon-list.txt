@@ -139,6 +139,7 @@ key
 keyboard
 laptop
 layout-column-three
+leaf-two
 lightbulb
 link
 link-dismiss
@@ -164,6 +165,7 @@ open
 options
 organization-horizontal
 paint-brush
+pause-circle
 payment
 payment-wireless
 people-team
