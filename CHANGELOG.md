@@ -1,5 +1,13 @@
 # Changelog
 
+## [8.4.0](https://github.com/blackbaud/skyux-icons/compare/8.3.0...8.4.0) (2025-07-09)
+
+
+### Features
+
+* add `virtual-terminal` icon ([#188](https://github.com/blackbaud/skyux-icons/issues/188)) ([12bbeb5](https://github.com/blackbaud/skyux-icons/commit/12bbeb58d75a9459c12264c77d9a535a36ba02c1))
+* add custom size variations, `flower-heart`, `pause-circle`, and `leaf-two` icons ([#193](https://github.com/blackbaud/skyux-icons/issues/193)) ([c61cb04](https://github.com/blackbaud/skyux-icons/commit/c61cb0412a6b37f1cd0866799dbf212a5b3c0b2c))
+
 ## [8.3.0](https://github.com/blackbaud/skyux-icons/compare/8.2.0...8.3.0) (2025-07-07)
 
 
