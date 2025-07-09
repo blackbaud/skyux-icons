@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.4.1](https://github.com/blackbaud/skyux-icons/compare/8.4.0...8.4.1) (2025-07-09)
+
+
+### Bug Fixes
+
+* revert `add`, `checkmark`, and `more-actions` extra sizes ([#196](https://github.com/blackbaud/skyux-icons/issues/196)) ([39320f4](https://github.com/blackbaud/skyux-icons/commit/39320f4406f3db30cf4e633657bfc215293f4727))
+
 ## [8.4.0](https://github.com/blackbaud/skyux-icons/compare/8.3.0...8.4.0) (2025-07-09)
 
 
