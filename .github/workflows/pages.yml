@@ -32,7 +32,7 @@ jobs:
       uses: actions/upload-artifact@v4
       if: github.event_name == 'pull_request'
       with:
-        name: pr-${{ github.event.pull_request.number }}'
+        name: pr-${{ github.event.pull_request.number }}
         path: './dist'
         retention-days: 30
         if-no-files-found: error
