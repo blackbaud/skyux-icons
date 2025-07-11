@@ -1,5 +1,16 @@
 # Changelog
 
+## [9.0.0](https://github.com/blackbaud/skyux-icons/compare/8.4.1...9.0.0) (2025-07-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* update `fluentui` package to latest version ([#199](https://github.com/blackbaud/skyux-icons/issues/199))
+
+### Features
+
+* update `fluentui` package to latest version ([#199](https://github.com/blackbaud/skyux-icons/issues/199)) ([8bb1ca4](https://github.com/blackbaud/skyux-icons/commit/8bb1ca44bbea926083875942e413a3dce8f89c3c))
+
 ## [8.4.1](https://github.com/blackbaud/skyux-icons/compare/8.4.0...8.4.1) (2025-07-09)
 
 
