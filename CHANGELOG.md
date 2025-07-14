@@ -1,5 +1,12 @@
 # Changelog
 
+## [9.1.0](https://github.com/blackbaud/skyux-icons/compare/9.0.0...9.1.0) (2025-07-14)
+
+
+### Features
+
+* add `document-data` icon ([#201](https://github.com/blackbaud/skyux-icons/issues/201)) ([d45aeab](https://github.com/blackbaud/skyux-icons/commit/d45aeab7c020e2225c8cdc4b688df595b76ba934))
+
 ## [9.0.0](https://github.com/blackbaud/skyux-icons/compare/8.4.1...9.0.0) (2025-07-11)
 
 
