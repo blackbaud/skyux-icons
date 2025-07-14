@@ -98,6 +98,7 @@ dismiss-square
 document
 document-chevron-double
 document-contract
+document-data
 document-image
 document-multiple
 document-pdf
