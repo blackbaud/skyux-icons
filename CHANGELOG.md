@@ -1,5 +1,12 @@
 # Changelog
 
+## [9.2.0](https://github.com/blackbaud/skyux-icons/compare/9.1.0...9.2.0) (2025-08-05)
+
+
+### Features
+
+* add `plug-connected` and `receipt-money` icons ([#203](https://github.com/blackbaud/skyux-icons/issues/203)) ([44dbb97](https://github.com/blackbaud/skyux-icons/commit/44dbb9742e0629351c0c64cd1f47793821b14ed6))
+
 ## [9.1.0](https://github.com/blackbaud/skyux-icons/compare/9.0.0...9.1.0) (2025-07-14)
 
 
