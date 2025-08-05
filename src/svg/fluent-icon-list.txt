@@ -184,6 +184,7 @@ pin
 pivot
 play
 play-circle
+plug-connected
 plug-disconnected
 power
 print
@@ -193,6 +194,7 @@ question
 question-circle
 re-order-dots-vertical
 receipt
+receipt-money
 recycle
 ribbon
 road
