@@ -1,5 +1,12 @@
 # Changelog
 
+## [9.2.1](https://github.com/blackbaud/skyux-icons/compare/9.2.0...9.2.1) (2025-08-07)
+
+
+### Bug Fixes
+
+* use correct name for online learning line icon ([#205](https://github.com/blackbaud/skyux-icons/issues/205)) ([51e8900](https://github.com/blackbaud/skyux-icons/commit/51e8900e601c80a0139f461677b3d34d4202139c))
+
 ## [9.2.0](https://github.com/blackbaud/skyux-icons/compare/9.1.0...9.2.0) (2025-08-05)
 
 
