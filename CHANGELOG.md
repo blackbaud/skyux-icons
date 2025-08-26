@@ -1,5 +1,12 @@
 # Changelog
 
+## [9.3.0](https://github.com/blackbaud/skyux-icons/compare/9.2.1...9.3.0) (2025-08-20)
+
+
+### Features
+
+* add `arrow-sort-down-lines` and `arrow-sort-up-lines` icons ([#207](https://github.com/blackbaud/skyux-icons/issues/207)) ([7e2486e](https://github.com/blackbaud/skyux-icons/commit/7e2486ec33fbefb28dd5c57b1900300a32cc911b))
+
 ## [9.2.1](https://github.com/blackbaud/skyux-icons/compare/9.2.0...9.2.1) (2025-08-07)
 
 

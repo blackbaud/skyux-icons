@@ -25,6 +25,8 @@ arrow-repeat-all
 arrow-right
 arrow-split
 arrow-sort
+arrow-sort-down-lines
+arrow-sort-up-lines
 arrow-sync
 arrow-trending
 arrow-trending-down
