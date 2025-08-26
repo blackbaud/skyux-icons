@@ -90,6 +90,7 @@ data-pie
 data-scatter
 data-trending
 data-usage
+data-usage-settings
 data-whisker
 database
 database-stack
