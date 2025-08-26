@@ -1,5 +1,12 @@
 # Changelog
 
+## [9.4.0](https://github.com/blackbaud/skyux-icons/compare/9.3.0...9.4.0) (2025-08-26)
+
+
+### Features
+
+* add data usage settings fluent icon ([#209](https://github.com/blackbaud/skyux-icons/issues/209)) ([085e2df](https://github.com/blackbaud/skyux-icons/commit/085e2dfee153dcc24290cd5a13b84c1b15dd3507))
+
 ## [9.3.0](https://github.com/blackbaud/skyux-icons/compare/9.2.1...9.3.0) (2025-08-20)
 
 
