@@ -1,5 +1,12 @@
 # Changelog
 
+## [9.5.0](https://github.com/blackbaud/skyux-icons/compare/9.4.0...9.5.0) (2025-09-05)
+
+
+### Features
+
+* add `text-quote` icon ([#211](https://github.com/blackbaud/skyux-icons/issues/211)) ([9bec639](https://github.com/blackbaud/skyux-icons/commit/9bec6398777ba194e2cf968794355f94aa58f79a))
+
 ## [9.4.0](https://github.com/blackbaud/skyux-icons/compare/9.3.0...9.4.0) (2025-08-26)
 
 
