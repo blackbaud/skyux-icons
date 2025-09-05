@@ -243,7 +243,7 @@ text-indent-decrease
 text-indent-increase
 text-italic
 text-number-list-ltr
-text-quote-opening
+text-quote
 text-strikethrough
 text-subscript
 text-superscript
