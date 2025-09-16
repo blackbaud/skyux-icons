@@ -8,6 +8,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const PATH_BRANDED = path.resolve(__dirname, '..', 'src', 'svg', 'branded');
+const PATH_MULTICOLOR = path.resolve(
+  __dirname,
+  '..',
+  'src',
+  'svg',
+  'multicolor',
+);
 
 function getFluentIconId(fileName, includeSize, includeVariant) {
   const parts = fileName.split('_');
@@ -48,6 +55,36 @@ function addBrandedCssClass(shape, _, callback) {
   callback(null);
 }
 
+function addMulticolorCssClass(shape, _, callback) {
+  if (
+    path.normalize(shape.source.dirname) === PATH_MULTICOLOR &&
+    !shape.source.basename.includes('line')
+  ) {
+    const paths = shape.dom.documentElement.getElementsByTagName('path');
+
+    if (paths.length === 2) {
+      let existingClassPath1 = paths[0].getAttribute('class') || '';
+      let existingClassPath2 = paths[1].getAttribute('class') || '';
+
+      if (existingClassPath1) {
+        existingClassPath1 += ' ';
+      }
+      if (existingClassPath2) {
+        existingClassPath2 += ' ';
+      }
+
+      paths[0].setAttribute('class', existingClassPath1 + 'sky-i-path-1');
+      paths[1].setAttribute('class', existingClassPath2 + 'sky-i-path-2');
+    } else {
+      throw new Error(
+        `Multicolor icon "${shape.source.basename}" has ${paths.length} paths. It must have exactly 2 paths.`,
+      );
+    }
+  }
+
+  callback(null);
+}
+
 function createSpriter() {
   const ids = new Set();
 
@@ -62,6 +99,9 @@ function createSpriter() {
       transform: [
         {
           addBrandedCssClass,
+        },
+        {
+          addMulticolorCssClass,
         },
       ],
       id: {
