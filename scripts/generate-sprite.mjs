@@ -56,12 +56,10 @@ function addBrandedCssClass(shape, _, callback) {
 }
 
 function addMulticolorCssClass(shape, _, callback) {
-  console.log('adding path classes');
   if (
     path.normalize(shape.source.dirname) === PATH_MULTICOLOR &&
     !shape.source.basename.includes('line')
   ) {
-    console.log('it is a multicolor icon');
     const paths = shape.dom.documentElement.getElementsByTagName('path');
 
     if (paths.length === 2) {
@@ -78,7 +76,6 @@ function addMulticolorCssClass(shape, _, callback) {
       paths[0].setAttribute('class', existingClassPath1 + 'sky-i-path-1');
       paths[1].setAttribute('class', existingClassPath2 + 'sky-i-path-2');
     } else {
-      console.log('wrong number of paths OMG');
       throw new Error(
         `Multicolor icon "${shape.source.basename}" has ${paths.length} paths. It must have exactly 2 paths.`,
       );
