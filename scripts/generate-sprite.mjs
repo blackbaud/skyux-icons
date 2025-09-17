@@ -186,6 +186,24 @@ ${notFoundFluentIds.join('\n')}`);
 }
 
 async function addCustomIcons(spriter) {
+  // Validate that all custom icons follow the required naming format:
+  // {name}-{digits}-{solid|line}.svg where name contains only letters and hyphens
+  const iconFiles = await glob.glob('src/svg/**/*.svg');
+  const invalidFiles = [];
+  const namePattern = /^[a-zA-Z-]+-\d+-(?:solid|line)\.svg$/;
+
+  for (const filePath of iconFiles) {
+    const fileName = path.basename(filePath);
+    if (!namePattern.test(fileName)) {
+      invalidFiles.push(fileName);
+    }
+  }
+
+  if (invalidFiles.length > 0) {
+    throw new Error(`The following SVG files do not match the required naming format (name-digits-{solid|line}.svg where name contains only letters and hyphens):
+${invalidFiles.join('\n')}`);
+  }
+
   await addIcons(spriter, 'src/svg/**/*.svg');
 }
 
@@ -193,7 +211,9 @@ async function generateSprite(fluentIcons) {
   const spriter = createSpriter();
 
   await addFluentIcons(spriter, fluentIcons);
+  console.log('fluent');
   await addCustomIcons(spriter);
+  console.log('custm');
 
   const { result } = await spriter.compileAsync();
 
