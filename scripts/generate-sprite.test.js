@@ -3,8 +3,7 @@ import { DOMParser } from '@xmldom/xmldom';
 import fs from 'fs-extra';
 import * as glob from 'glob';
 import path from 'node:path';
-import { afterEach } from 'node:test';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { generateSprite } from './generate-sprite.mjs';
 
