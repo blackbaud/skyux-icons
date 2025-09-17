@@ -204,6 +204,63 @@ async function addCustomIcons(spriter) {
 ${invalidFiles.join('\n')}`);
   }
 
+  // Validate that for every size, both solid and line variants exist
+  const iconGroups = new Map(); // key: {name}-{size}, value: Set of variants (solid/line)
+
+  for (const filePath of iconFiles) {
+    const fileName = path.basename(filePath);
+    if (namePattern.test(fileName)) {
+      const match = fileName.match(/^([a-zA-Z-]+)-(\d+)-(solid|line)\.svg$/);
+      if (match) {
+        const [, name, size, variant] = match;
+        const baseKey = `${name}-${size}`;
+
+        if (!iconGroups.has(baseKey)) {
+          iconGroups.set(baseKey, new Set());
+        }
+        iconGroups.get(baseKey).add(variant);
+      }
+    }
+  }
+
+  const missingVariants = [];
+  for (const [baseKey, variants] of iconGroups) {
+    if (!variants.has('solid') || !variants.has('line')) {
+      const missing = [];
+      if (!variants.has('solid')) missing.push('solid');
+      if (!variants.has('line')) missing.push('line');
+      missingVariants.push(
+        `${baseKey}: missing ${missing.join(' and ')} variant(s)`,
+      );
+    }
+  }
+
+  if (missingVariants.length > 0) {
+    throw new Error(`The following icons are missing required variants (both solid and line must exist for each size):
+${missingVariants.join('\n')}`);
+  }
+
+  // Validate that no SVG elements have class attributes
+  const filesWithClassAttributes = [];
+
+  for (const filePath of iconFiles) {
+    const fileName = path.basename(filePath);
+    if (namePattern.test(fileName)) {
+      const svgContent = await fs.readFile(filePath, 'utf-8');
+
+      // Check for class attributes in any HTML element
+      const classAttributePattern = /\s+class\s*=\s*["'][^"']*["']/gi;
+      if (classAttributePattern.test(svgContent)) {
+        filesWithClassAttributes.push(fileName);
+      }
+    }
+  }
+
+  if (filesWithClassAttributes.length > 0) {
+    throw new Error(`The following SVG files contain class attributes, which are not allowed in custom icons:
+${filesWithClassAttributes.join('\n')}`);
+  }
+
   await addIcons(spriter, 'src/svg/**/*.svg');
 }
 
@@ -211,15 +268,15 @@ async function generateSprite(fluentIcons) {
   const spriter = createSpriter();
 
   await addFluentIcons(spriter, fluentIcons);
-  console.log('fluent');
   await addCustomIcons(spriter);
-  console.log('custm');
 
   const { result } = await spriter.compileAsync();
 
   const output = result.symbol.sprite.contents
     .toString()
-    .replace(/\sstyle=("|')[^"']*("|')/gi, '');
+    .replace(/\sstyle=("|')[^"']*("|')/gi, '')
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
+    .replace(/<style[^>]*\/>/gi, '');
 
   await fs.ensureDir(path.normalize('dist/assets/svg'));
 
