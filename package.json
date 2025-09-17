@@ -3,7 +3,7 @@
   "version": "9.5.0",
   "main": "./index.js",
   "types": "./index.d.ts",
-  "description": "A glyph font and stylesheet for displaying SKY UX icons.",
+  "description": "A sprite map for SKY UX SVG icons.",
   "scripts": {
     "build": "rimraf dist && node ./scripts/prepare-package.mjs",
     "test": "eslint module --ext .ts && vitest run --coverage",
@@ -89,7 +89,6 @@
     "@typescript-eslint/parser": "6.20.0",
     "@vitest/coverage-v8": "3.1.4",
     "@xmldom/xmldom": "0.8.11",
-    "clean-css": "5.3.3",
     "cross-spawn": "7.0.6",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
