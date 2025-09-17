@@ -1,4 +1,3 @@
-import CleanCSS from 'clean-css';
 import crossSpawn from 'cross-spawn';
 import fs from 'fs-extra';
 import { fileURLToPath } from 'node:url';
@@ -13,62 +12,6 @@ const projectPath = path.join(__dirname, '..');
 const srcPath = path.join(projectPath, 'src');
 const distPath = path.join(projectPath, 'dist');
 const distAssetsPath = path.join(distPath, 'assets');
-const distAssetsCssPath = path.join(distAssetsPath, 'css');
-
-async function readUtf8(filePath) {
-  return fs.readFile(filePath, { encoding: 'utf-8' });
-}
-
-async function writeUtf8(filePath, contents) {
-  return fs.writeFile(filePath, contents, { encoding: 'utf-8' });
-}
-
-async function copyToDist() {
-  if (await fs.exists(distPath)) {
-    await fs.emptyDir(distPath);
-  }
-
-  await fs.copy(path.join(srcPath, 'css'), distAssetsCssPath);
-
-  await fs.copy(path.join(srcPath, 'font'), path.join(distAssetsPath, 'font'));
-}
-
-async function processCss() {
-  const cssOverridesFileNames = ['skyux-icons-embedded.css', 'skyux-icons.css'];
-
-  const cssOverrides = await readUtf8(path.join(projectPath, 'overrides.css'));
-
-  const cssFiles = await fs.readdir(distAssetsCssPath);
-
-  for (const cssFile of cssFiles) {
-    const cssFilePath = path.join(distAssetsCssPath, cssFile);
-    const cssFileParsedPath = path.parse(cssFilePath);
-
-    let css = await readUtf8(cssFilePath);
-
-    if (cssOverridesFileNames.indexOf(cssFileParsedPath.base) >= 0) {
-      css = `${css}\n\n${cssOverrides}`;
-
-      await writeUtf8(cssFilePath, css);
-    }
-
-    const minifier = new CleanCSS({
-      compatibility: cssFileParsedPath.name.indexOf('-ie7') ? 'ie7' : '*',
-      inline: false,
-      level: 1,
-      returnPromise: true,
-    });
-
-    const cssMinified = (await minifier.minify(css)).styles;
-
-    const cssMinifiedFilePath = path.join(
-      cssFileParsedPath.dir,
-      `${cssFileParsedPath.name}.min${cssFileParsedPath.ext}`,
-    );
-
-    await writeUtf8(cssMinifiedFilePath, cssMinified);
-  }
-}
 
 async function createManifest(fluentIcons) {
   const configPath = path.join(srcPath, 'config.json');
@@ -147,8 +90,6 @@ async function setVersion() {
 
 (async () => {
   try {
-    await copyToDist();
-    await processCss();
     const fluentIcons = await getFluentList();
     await generateSprite(fluentIcons);
     const manifest = await createManifest(fluentIcons);
