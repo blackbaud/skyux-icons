@@ -41,15 +41,7 @@ function addBrandedCssClass(shape, _, callback) {
   if (path.normalize(shape.source.dirname) === PATH_BRANDED) {
     const documentEl = shape.dom.documentElement;
 
-    let cssClass = documentEl.getAttribute('class') ?? '';
-
-    if (cssClass) {
-      cssClass += ' ';
-    }
-
-    cssClass += 'sky-i-branded';
-
-    documentEl.setAttribute('class', cssClass);
+    documentEl.setAttribute('class', 'sky-i-branded');
   }
 
   callback(null);
@@ -63,18 +55,8 @@ function addMulticolorCssClass(shape, _, callback) {
     const paths = shape.dom.documentElement.getElementsByTagName('path');
 
     if (paths.length === 2) {
-      let existingClassPath1 = paths[0].getAttribute('class') || '';
-      let existingClassPath2 = paths[1].getAttribute('class') || '';
-
-      if (existingClassPath1) {
-        existingClassPath1 += ' ';
-      }
-      if (existingClassPath2) {
-        existingClassPath2 += ' ';
-      }
-
-      paths[0].setAttribute('class', existingClassPath1 + 'sky-i-path-1');
-      paths[1].setAttribute('class', existingClassPath2 + 'sky-i-path-2');
+      paths[0].setAttribute('class', 'sky-i-path-1');
+      paths[1].setAttribute('class', 'sky-i-path-2');
     } else {
       throw new Error(
         `Multicolor icon "${shape.source.basename}" has ${paths.length} paths. It must have exactly 2 paths.`,
