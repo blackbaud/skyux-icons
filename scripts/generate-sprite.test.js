@@ -3,7 +3,7 @@ import { DOMParser } from '@xmldom/xmldom';
 import fs from 'fs-extra';
 import * as glob from 'glob';
 import path from 'node:path';
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { generateSprite } from './generate-sprite.mjs';
 
@@ -129,11 +129,6 @@ describe('generate-sprites', () => {
     svg = parser.parseFromString(svgContent, 'text/xml');
   });
 
-  afterEach(() => {
-    vi.resetModules();
-    vi.restoreAllMocks();
-  });
-
   // Helper function to get icon element by ID
   function getIconElement(iconId) {
     const iconElement = svg.getElementById(iconId);
@@ -224,12 +219,6 @@ describe('custom icon validation', () => {
     vi.resetModules();
     mockFsAndGlob();
   });
-
-  afterEach(() => {
-    vi.restoreAllMocks();
-    vi.resetModules();
-  });
-
   it('should accept valid icon names with correct format', async () => {
     vi.mocked(glob.glob).mockResolvedValue([
       'src/svg/add-24-line.svg',
