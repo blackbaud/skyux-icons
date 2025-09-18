@@ -41,15 +41,7 @@ function addBrandedCssClass(shape, _, callback) {
   if (path.normalize(shape.source.dirname) === PATH_BRANDED) {
     const documentEl = shape.dom.documentElement;
 
-    let cssClass = documentEl.getAttribute('class') ?? '';
-
-    if (cssClass) {
-      cssClass += ' ';
-    }
-
-    cssClass += 'sky-i-branded';
-
-    documentEl.setAttribute('class', cssClass);
+    documentEl.setAttribute('class', 'sky-i-branded');
   }
 
   callback(null);
@@ -63,18 +55,8 @@ function addMulticolorCssClass(shape, _, callback) {
     const paths = shape.dom.documentElement.getElementsByTagName('path');
 
     if (paths.length === 2) {
-      let existingClassPath1 = paths[0].getAttribute('class') || '';
-      let existingClassPath2 = paths[1].getAttribute('class') || '';
-
-      if (existingClassPath1) {
-        existingClassPath1 += ' ';
-      }
-      if (existingClassPath2) {
-        existingClassPath2 += ' ';
-      }
-
-      paths[0].setAttribute('class', existingClassPath1 + 'sky-i-path-1');
-      paths[1].setAttribute('class', existingClassPath2 + 'sky-i-path-2');
+      paths[0].setAttribute('class', 'sky-i-path-1');
+      paths[1].setAttribute('class', 'sky-i-path-2');
     } else {
       throw new Error(
         `Multicolor icon "${shape.source.basename}" has ${paths.length} paths. It must have exactly 2 paths.`,
@@ -186,6 +168,81 @@ ${notFoundFluentIds.join('\n')}`);
 }
 
 async function addCustomIcons(spriter) {
+  // Validate that all custom icons follow the required naming format:
+  // {name}-{digits}-{solid|line}.svg where name contains only letters and hyphens
+  const iconFiles = await glob.glob('src/svg/**/*.svg');
+  const invalidFiles = [];
+  const namePattern = /^[a-zA-Z-]+-\d+-(?:solid|line)\.svg$/;
+
+  for (const filePath of iconFiles) {
+    const fileName = path.basename(filePath);
+    if (!namePattern.test(fileName)) {
+      invalidFiles.push(fileName);
+    }
+  }
+
+  if (invalidFiles.length > 0) {
+    throw new Error(`The following SVG files do not match the required naming format (name-digits-{solid|line}.svg where name contains only letters and hyphens):
+${invalidFiles.join('\n')}`);
+  }
+
+  // Validate that for every size, both solid and line variants exist
+  const iconGroups = new Map(); // key: {name}-{size}, value: Set of variants (solid/line)
+
+  for (const filePath of iconFiles) {
+    const fileName = path.basename(filePath);
+    if (namePattern.test(fileName)) {
+      const match = fileName.match(/^([a-zA-Z-]+)-(\d+)-(solid|line)\.svg$/);
+      if (match) {
+        const [, name, size, variant] = match;
+        const baseKey = `${name}-${size}`;
+
+        if (!iconGroups.has(baseKey)) {
+          iconGroups.set(baseKey, new Set());
+        }
+        iconGroups.get(baseKey).add(variant);
+      }
+    }
+  }
+
+  const missingVariants = [];
+  for (const [baseKey, variants] of iconGroups) {
+    if (!variants.has('solid') || !variants.has('line')) {
+      const missing = [];
+      if (!variants.has('solid')) missing.push('solid');
+      if (!variants.has('line')) missing.push('line');
+      missingVariants.push(
+        `${baseKey}: missing ${missing.join(' and ')} variant(s)`,
+      );
+    }
+  }
+
+  if (missingVariants.length > 0) {
+    throw new Error(`The following icons are missing required variants (both solid and line must exist for each size):
+${missingVariants.join('\n')}`);
+  }
+
+  // Validate that no SVG elements have class attributes
+  const filesWithClassAttributes = [];
+
+  for (const filePath of iconFiles) {
+    const fileName = path.basename(filePath);
+    if (namePattern.test(fileName)) {
+      const svgContent = await fs.readFile(filePath, 'utf-8');
+
+      // Check for class attributes in any HTML element
+      const classAttributePattern = /\s+class\s*=\s*["'][^"']*["']/gi;
+      if (classAttributePattern.test(svgContent)) {
+        filesWithClassAttributes.push(fileName);
+      }
+    }
+  }
+
+  if (filesWithClassAttributes.length > 0) {
+    throw new Error(`The following SVG files contain class attributes, which are not allowed in custom icons:
+${filesWithClassAttributes.join('\n')}`);
+  }
+
   await addIcons(spriter, 'src/svg/**/*.svg');
 }
 
@@ -199,7 +256,9 @@ async function generateSprite(fluentIcons) {
 
   const output = result.symbol.sprite.contents
     .toString()
-    .replace(/\sstyle=("|')[^"']*("|')/gi, '');
+    .replace(/\sstyle=("|')[^"']*("|')/gi, '')
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
+    .replace(/<style[^>]*\/>/gi, '');
 
   await fs.ensureDir(path.normalize('dist/assets/svg'));
 
