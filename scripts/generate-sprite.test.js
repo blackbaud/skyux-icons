@@ -5,7 +5,7 @@ import * as glob from 'glob';
 import path from 'node:path';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { generateSprite } from './generate-sprite.mjs';
+import { generateSprite, getFluentList } from './generate-sprite.mjs';
 
 let fluentIconList;
 
@@ -441,5 +441,118 @@ describe('custom icon validation', () => {
 
     // Verify inline styles are removed
     expect(svgContent).not.toMatch(/\sstyle\s*=/);
+  });
+
+  it('should reject custom icons that have the same name as fluent icons', async () => {
+    // Set up fluent icons that will conflict with custom icons
+    fluentIconList = ['add'];
+
+    vi.mocked(glob.glob).mockResolvedValue([
+      'src/svg/add-24-line.svg', // Conflicts with fluent 'add' icon
+      'src/svg/add-24-solid.svg', // Conflicts with fluent 'add' icon
+    ]);
+
+    vi.mocked(glob.globIterate).mockImplementation(async function* (path) {
+      switch (path) {
+        case 'node_modules/@fluentui/svg-icons/icons/*.svg':
+          // Only yield the conflicting fluent icon
+          yield 'node_modules/@fluentui/svg-icons/icons/add_24_filled.svg';
+          break;
+        case 'src/svg/**/*.svg':
+          yield 'src/svg/add-24-line.svg';
+          yield 'src/svg/add-24-solid.svg';
+          break;
+      }
+    });
+
+    // Mock readFile to return valid SVG content for all files
+    vi.mocked(fs.readFile).mockImplementation(async (path, options) => {
+      if (path === 'src/svg/fluent-icon-list.txt') {
+        return fluentIconList.join('\n');
+      }
+      // Return valid SVG content for all files
+      return '<svg xmlns="http://www.w3.org/2000/svg"><path d="test"/></svg>';
+    });
+
+    await expect(generateSprite(fluentIconList)).rejects.toThrow(
+      'The following custom icons have names that conflict with Fluent UI icons:\nadd-24-line.svg\nadd-24-solid.svg',
+    );
+  });
+});
+
+describe('getFluentList', () => {
+  beforeEach(() => {
+    // Reset and re-setup mocks for each test to ensure clean state
+    vi.restoreAllMocks();
+    vi.resetModules();
+  });
+
+  it('should read and parse the fluent icon list file correctly', async () => {
+    const mockFluentListContent = `accessibility
+add-circle
+add-square
+alert
+arrow-left
+arrow-right`;
+
+    vi.mocked(fs.readFile).mockResolvedValue(mockFluentListContent);
+
+    const result = await getFluentList();
+
+    expect(fs.readFile).toHaveBeenCalledWith(
+      path.normalize('src/svg/fluent-icon-list.txt'),
+      'utf-8',
+    );
+    expect(result).toEqual([
+      'accessibility',
+      'add-circle',
+      'add-square',
+      'alert',
+      'arrow-left',
+      'arrow-right',
+    ]);
+  });
+
+  it('should filter out empty lines and trim whitespace', async () => {
+    const mockFluentListContent = `  accessibility
+
+add-circle
+
+\talert\t
+
+  arrow-left  `;
+
+    vi.mocked(fs.readFile).mockResolvedValue(mockFluentListContent);
+
+    const result = await getFluentList();
+
+    expect(result).toEqual([
+      'accessibility',
+      'add-circle',
+      'alert',
+      'arrow-left',
+    ]);
+  });
+
+  it('should handle empty file', async () => {
+    vi.mocked(fs.readFile).mockResolvedValue('');
+
+    const result = await getFluentList();
+
+    expect(result).toEqual([]);
+  });
+
+  it('should handle file with only whitespace and empty lines', async () => {
+    vi.mocked(fs.readFile).mockResolvedValue('\n  \n\t\n   \n');
+
+    const result = await getFluentList();
+
+    expect(result).toEqual([]);
+  });
+
+  it('should throw error if file cannot be read', async () => {
+    vi.mocked(fs.readFile).mockRejectedValue(new Error('File not found'));
+
+    await expect(getFluentList()).rejects.toThrow('File not found');
   });
 });
