@@ -1,560 +1,560 @@
 {
-  "glyphs": [
+  "icons": [
     {
-      "usage": ["Add"],
-      "iconName": "add"
+      "iconName": "add",
+      "usage": ["Add"]
     },
     {
-      "usage": ["Edit"],
-      "iconName": "edit"
+      "iconName": "edit",
+      "usage": ["Edit"]
     },
     {
-      "usage": ["Delete", "Remove"],
-      "iconName": "delete"
+      "iconName": "delete",
+      "usage": ["Delete", "Remove"]
     },
     {
-      "usage": ["Cancel", "Close"],
-      "iconName": "close"
+      "iconName": "close",
+      "usage": ["Cancel", "Close"]
     },
     {
-      "usage": ["Open file"],
-      "iconName": "folder-open"
+      "iconName": "folder-open",
+      "usage": ["Open file"]
     },
     {
-      "usage": ["Copy to clipboard"],
-      "iconName": "clipboard-multiple"
+      "iconName": "clipboard-multiple",
+      "usage": ["Copy to clipboard"]
     },
     {
-      "usage": ["Duplicate"],
-      "iconName": "copy"
+      "iconName": "copy",
+      "usage": ["Duplicate"]
     },
     {
-      "usage": ["Save"],
-      "iconName": "save"
+      "iconName": "save",
+      "usage": ["Save"]
     },
     {
-      "usage": ["Upload"],
-      "iconName": "arrow-upload"
+      "iconName": "arrow-upload",
+      "usage": ["Upload"]
     },
     {
-      "usage": ["Download"],
-      "iconName": "arrow-download"
+      "iconName": "arrow-download",
+      "usage": ["Download"]
     },
     {
-      "usage": ["Open in new tab"],
-      "iconName": "open"
+      "iconName": "open",
+      "usage": ["Open in new tab"]
     },
     {
-      "usage": ["Phone"],
-      "iconName": "call"
+      "iconName": "call",
+      "usage": ["Phone"]
     },
     {
-      "usage": ["Zoom out"],
-      "iconName": "zoom-out"
+      "iconName": "zoom-out",
+      "usage": ["Zoom out"]
     },
     {
-      "usage": ["Zoom in"],
-      "iconName": "zoom-in"
+      "iconName": "zoom-in",
+      "usage": ["Zoom in"]
     },
     {
-      "usage": ["Hide input"],
-      "iconName": "eye-off"
+      "iconName": "eye-off",
+      "usage": ["Hide input"]
     },
     {
-      "usage": ["Show input"],
-      "iconName": "eye"
+      "iconName": "eye",
+      "usage": ["Show input"]
     },
     {
-      "usage": ["Search"],
-      "iconName": "search"
+      "iconName": "search",
+      "usage": ["Search"]
     },
     {
-      "usage": ["Filter"],
-      "iconName": "filter"
+      "iconName": "filter",
+      "usage": ["Filter"]
     },
     {
-      "usage": ["Sort"],
-      "iconName": "arrow-sort"
+      "iconName": "arrow-sort",
+      "usage": ["Sort"]
     },
     {
-      "usage": ["Column layout"],
-      "iconName": "layout-column-three"
+      "iconName": "layout-column-three",
+      "usage": ["Column layout"]
     },
     {
-      "usage": ["Expand", "Next (down)", "Collapse tree node"],
-      "iconName": "chevron-down"
+      "iconName": "chevron-down",
+      "usage": ["Expand", "Next (down)", "Collapse tree node"]
     },
     {
-      "usage": ["Collapse", "Previous (up)"],
-      "iconName": "chevron-up"
+      "iconName": "chevron-up",
+      "usage": ["Collapse", "Previous (up)"]
     },
     {
-      "usage": ["Next", "Expand tree node"],
-      "iconName": "chevron-right"
+      "iconName": "chevron-right",
+      "usage": ["Next", "Expand tree node"]
     },
     {
-      "usage": ["Previous"],
-      "iconName": "chevron-left"
+      "iconName": "chevron-left",
+      "usage": ["Previous"]
     },
     {
-      "usage": ["Collapse navigation", "Collapse field"],
-      "iconName": "chevron-double-left"
+      "iconName": "chevron-double-left",
+      "usage": ["Collapse navigation", "Collapse field"]
     },
     {
-      "usage": ["Expand navigation"],
-      "iconName": "chevron-double-right"
+      "iconName": "chevron-double-right",
+      "usage": ["Expand navigation"]
     },
     {
-      "usage": ["Expand all"],
-      "iconName": "chevron-double-down"
+      "iconName": "chevron-double-down",
+      "usage": ["Expand all"]
     },
     {
-      "usage": ["Collapse all"],
-      "iconName": "chevron-double-up"
+      "iconName": "chevron-double-up",
+      "usage": ["Collapse all"]
     },
     {
-      "usage": ["Arrow up"],
-      "iconName": "arrow-up"
+      "iconName": "arrow-up",
+      "usage": ["Arrow up"]
     },
     {
-      "usage": ["More actions"],
-      "iconName": "more-actions"
+      "iconName": "more-actions",
+      "usage": ["More actions"]
     },
     {
-      "usage": ["Navigation menu"],
-      "iconName": "navigation"
+      "iconName": "navigation",
+      "usage": ["Navigation menu"]
     },
     {
-      "usage": ["Drag and drop handle"],
-      "iconName": "re-order-dots-vertical"
+      "iconName": "re-order-dots-vertical",
+      "usage": ["Drag and drop handle"]
     },
     {
-      "usage": ["Calendar", "Date"],
-      "iconName": "calendar-ltr"
+      "iconName": "calendar-ltr",
+      "usage": ["Calendar", "Date"]
     },
     {
-      "usage": ["Time", "Timepicker"],
-      "iconName": "clock"
+      "iconName": "clock",
+      "usage": ["Time", "Timepicker"]
     },
     {
-      "usage": ["Complete", "Success"],
-      "iconName": "checkmark"
+      "iconName": "checkmark",
+      "usage": ["Complete", "Success"]
     },
     {
-      "usage": ["Help", "Information"],
-      "iconName": "info"
+      "iconName": "info",
+      "usage": ["Help", "Information"]
     },
     {
-      "usage": ["Notification"],
-      "iconName": "alert"
+      "iconName": "alert",
+      "usage": ["Notification"]
     },
     {
-      "usage": ["Settings"],
-      "iconName": "settings"
+      "iconName": "settings",
+      "usage": ["Settings"]
     },
     {
-      "usage": ["Form"],
-      "iconName": "notepad-edit"
+      "iconName": "notepad-edit",
+      "usage": ["Form"]
     },
     {
-      "usage": ["Tiled view"],
-      "iconName": "grid"
+      "iconName": "grid",
+      "usage": ["Tiled view"]
     },
     {
-      "usage": ["User group"],
-      "iconName": "people-team"
+      "iconName": "people-team",
+      "usage": ["User group"]
     },
     {
-      "usage": ["Home"],
-      "iconName": "home"
+      "iconName": "home",
+      "usage": ["Home"]
     },
     {
-      "usage": ["Credit card"],
-      "iconName": "payment"
+      "iconName": "payment",
+      "usage": ["Credit card"]
     },
     {
-      "usage": ["Financial"],
-      "iconName": "money"
+      "iconName": "money",
+      "usage": ["Financial"]
     },
     {
-      "usage": ["User single"],
-      "iconName": "person"
+      "iconName": "person",
+      "usage": ["User single"]
     },
     {
-      "usage": ["Left align text"],
-      "iconName": "text-align-left"
+      "iconName": "text-align-left",
+      "usage": ["Left align text"]
     },
     {
-      "usage": ["Right align text"],
-      "iconName": "text-align-right"
+      "iconName": "text-align-right",
+      "usage": ["Right align text"]
     },
     {
-      "usage": ["Center align text"],
-      "iconName": "text-align-center"
+      "iconName": "text-align-center",
+      "usage": ["Center align text"]
     },
     {
-      "usage": ["Justify text"],
-      "iconName": "text-align-justify"
+      "iconName": "text-align-justify",
+      "usage": ["Justify text"]
     },
     {
-      "usage": ["Divider"],
-      "iconName": "insert"
+      "iconName": "insert",
+      "usage": ["Divider"]
     },
     {
-      "usage": ["Note"],
-      "iconName": "note-edit"
+      "iconName": "note-edit",
+      "usage": ["Note"]
     },
     {
-      "usage": ["Attach"],
-      "iconName": "attach"
+      "iconName": "attach",
+      "usage": ["Attach"]
     },
     {
-      "usage": ["Hyperlink"],
-      "iconName": "link"
+      "iconName": "link",
+      "usage": ["Hyperlink"]
     },
     {
-      "usage": ["Remove hyperlink"],
-      "iconName": "link-dismiss"
+      "iconName": "link-dismiss",
+      "usage": ["Remove hyperlink"]
     },
     {
-      "usage": ["Ban"],
-      "iconName": "prohibited"
+      "iconName": "prohibited",
+      "usage": ["Ban"]
     },
     {
-      "usage": ["Building"],
-      "iconName": "building"
+      "iconName": "building",
+      "usage": ["Building"]
     },
     {
-      "usage": ["Cloud"],
-      "iconName": "cloud"
+      "iconName": "cloud",
+      "usage": ["Cloud"]
     },
     {
-      "usage": ["List"],
-      "iconName": "text-bullet-list"
+      "iconName": "text-bullet-list",
+      "usage": ["List"]
     },
     {
-      "usage": ["Map view"],
-      "iconName": "location"
+      "iconName": "location",
+      "usage": ["Map view"]
     },
     {
-      "usage": ["Favorite"],
-      "iconName": "star"
+      "iconName": "star",
+      "usage": ["Favorite"]
     },
     {
-      "usage": ["Tag"],
-      "iconName": "tag"
+      "iconName": "tag",
+      "usage": ["Tag"]
     },
     {
-      "usage": ["Bulleted list"],
-      "iconName": "text-bullet-list-ltr"
+      "iconName": "text-bullet-list-ltr",
+      "usage": ["Bulleted list"]
     },
     {
-      "usage": ["Numbered list"],
-      "iconName": "text-number-list-ltr"
+      "iconName": "text-number-list-ltr",
+      "usage": ["Numbered list"]
     },
     {
-      "usage": ["Bold text"],
-      "iconName": "text-bold"
+      "iconName": "text-bold",
+      "usage": ["Bold text"]
     },
     {
-      "usage": ["Font size"],
-      "iconName": "text-font-size"
+      "iconName": "text-font-size",
+      "usage": ["Font size"]
     },
     {
-      "usage": ["Highlight text"],
-      "iconName": "color-line"
+      "iconName": "color-line",
+      "usage": ["Highlight text"]
     },
     {
-      "usage": ["Text color"],
-      "iconName": "text-color"
+      "iconName": "text-color",
+      "usage": ["Text color"]
     },
     {
-      "usage": ["Subscript text"],
-      "iconName": "text-subscript"
+      "iconName": "text-subscript",
+      "usage": ["Subscript text"]
     },
     {
-      "usage": ["Superscript text"],
-      "iconName": "text-superscript"
+      "iconName": "text-superscript",
+      "usage": ["Superscript text"]
     },
     {
-      "usage": ["Italicize text"],
-      "iconName": "text-italic"
+      "iconName": "text-italic",
+      "usage": ["Italicize text"]
     },
     {
-      "usage": ["Strikethrough text"],
-      "iconName": "text-strikethrough"
+      "iconName": "text-strikethrough",
+      "usage": ["Strikethrough text"]
     },
     {
-      "usage": ["Underline text"],
-      "iconName": "text-underline"
+      "iconName": "text-underline",
+      "usage": ["Underline text"]
     },
     {
-      "usage": ["Undo"],
-      "iconName": "arrow-undo"
+      "iconName": "arrow-undo",
+      "usage": ["Undo"]
     },
     {
-      "usage": ["Redo"],
-      "iconName": "arrow-redo"
+      "iconName": "arrow-redo",
+      "usage": ["Redo"]
     },
     {
-      "usage": ["Indent"],
-      "iconName": "text-indent-increase"
+      "iconName": "text-indent-increase",
+      "usage": ["Indent"]
     },
     {
-      "usage": ["Outdent"],
-      "iconName": "text-indent-decrease"
+      "iconName": "text-indent-decrease",
+      "usage": ["Outdent"]
     },
     {
-      "usage": ["Image align center"],
-      "iconName": "align-center-horizontal"
+      "iconName": "align-center-horizontal",
+      "usage": ["Image align center"]
     },
     {
-      "usage": ["Image align right"],
-      "iconName": "align-right"
+      "iconName": "align-right",
+      "usage": ["Image align right"]
     },
     {
-      "usage": ["Image align left"],
-      "iconName": "align-left"
+      "iconName": "align-left",
+      "usage": ["Image align left"]
     },
     {
-      "usage": ["Image"],
-      "iconName": "image"
+      "iconName": "image",
+      "usage": ["Image"]
     },
     {
-      "usage": ["Unknown file type"],
-      "iconName": "document"
+      "iconName": "document",
+      "usage": ["Unknown file type"]
     },
     {
-      "usage": ["Audio file type"],
-      "iconName": "document-audio"
+      "iconName": "document-audio",
+      "usage": ["Audio file type"]
     },
     {
-      "usage": ["Archive file type"],
-      "iconName": "document-archive"
+      "iconName": "document-archive",
+      "usage": ["Archive file type"]
     },
     {
-      "usage": ["Code file type"],
-      "iconName": "document-chevron-double"
+      "iconName": "document-chevron-double",
+      "usage": ["Code file type"]
     },
     {
-      "usage": ["Word file type"],
-      "iconName": "document-doc"
+      "iconName": "document-doc",
+      "usage": ["Word file type"]
     },
     {
-      "usage": ["Image file type"],
-      "iconName": "document-image"
+      "iconName": "document-image",
+      "usage": ["Image file type"]
     },
     {
-      "usage": ["PDF file type"],
-      "iconName": "document-pdf"
+      "iconName": "document-pdf",
+      "usage": ["PDF file type"]
     },
     {
-      "usage": ["PowerPoint file type"],
-      "iconName": "document-ppt"
+      "iconName": "document-ppt",
+      "usage": ["PowerPoint file type"]
     },
     {
-      "usage": ["Text file type"],
-      "iconName": "document-text"
+      "iconName": "document-text",
+      "usage": ["Text file type"]
     },
     {
-      "usage": ["Video file type"],
-      "iconName": "document-video"
+      "iconName": "document-video",
+      "usage": ["Video file type"]
     },
     {
-      "usage": ["Excel file type"],
-      "iconName": "document-xls"
+      "iconName": "document-xls",
+      "usage": ["Excel file type"]
     },
     {
-      "usage": ["Bluetooth connection"],
-      "iconName": "bluetooth"
+      "iconName": "bluetooth",
+      "usage": ["Bluetooth connection"]
     },
     {
-      "usage": ["Mobile payment"],
-      "iconName": "phone-action-credit-card"
+      "iconName": "phone-action-credit-card",
+      "usage": ["Mobile payment"]
     },
     {
-      "usage": ["Dollar"],
-      "iconName": "dollar"
+      "iconName": "dollar",
+      "usage": ["Dollar"]
     },
     {
-      "usage": ["Table"],
-      "iconName": "table"
+      "iconName": "table",
+      "usage": ["Table"]
     },
     {
-      "usage": ["Bullet chart"],
-      "iconName": "bullet-chart"
+      "iconName": "bullet-chart",
+      "usage": ["Bullet chart"]
     },
     {
-      "usage": ["Donut chart"],
-      "iconName": "donut-chart"
+      "iconName": "donut-chart",
+      "usage": ["Donut chart"]
     },
     {
-      "usage": ["Pie chart"],
-      "iconName": "pie-chart"
+      "iconName": "pie-chart",
+      "usage": ["Pie chart"]
     },
     {
-      "usage": ["Headline chart"],
-      "iconName": "headline-chart"
+      "iconName": "headline-chart",
+      "usage": ["Headline chart"]
     },
     {
-      "usage": ["Bar chart"],
-      "iconName": "bar-chart-vertical"
+      "iconName": "bar-chart-vertical",
+      "usage": ["Bar chart"]
     },
     {
-      "usage": ["Horizontal bar chart"],
-      "iconName": "bar-chart-horizontal"
+      "iconName": "bar-chart-horizontal",
+      "usage": ["Horizontal bar chart"]
     },
     {
-      "usage": ["Line chart"],
-      "iconName": "line-chart"
+      "iconName": "line-chart",
+      "usage": ["Line chart"]
     },
     {
-      "usage": ["Email"],
-      "iconName": "mail"
+      "iconName": "mail",
+      "usage": ["Email"]
     },
     {
-      "usage": ["Print"],
-      "iconName": "print"
+      "iconName": "print",
+      "usage": ["Print"]
     },
     {
-      "usage": ["Social share"],
-      "iconName": "share-android"
+      "iconName": "share-android",
+      "usage": ["Social share"]
     },
     {
-      "usage": ["Share"],
-      "iconName": "share"
+      "iconName": "share",
+      "usage": ["Share"]
     },
     {
-      "usage": ["Talk bubbles"],
-      "iconName": "chat-empty"
+      "iconName": "chat-empty",
+      "usage": ["Talk bubbles"]
     },
     {
-      "usage": ["Menu"],
-      "iconName": "navigation"
+      "iconName": "navigation",
+      "usage": ["Menu"]
     },
     {
-      "usage": ["Settings"],
-      "iconName": "settings"
+      "iconName": "settings",
+      "usage": ["Settings"]
     },
     {
-      "usage": ["Database"],
-      "iconName": "database-stack"
+      "iconName": "database-stack",
+      "usage": ["Database"]
     },
     {
-      "usage": ["Form"],
-      "iconName": "notepad-edit"
+      "iconName": "notepad-edit",
+      "usage": ["Form"]
     },
     {
-      "usage": ["Lock"],
-      "iconName": "lock-closed"
+      "iconName": "lock-closed",
+      "usage": ["Lock"]
     },
     {
-      "usage": ["Money"],
-      "iconName": "money"
+      "iconName": "money",
+      "usage": ["Money"]
     },
     {
-      "usage": ["Bank"],
-      "iconName": "building-bank"
+      "iconName": "building-bank",
+      "usage": ["Bank"]
     },
     {
-      "usage": ["Invoice"],
-      "iconName": "document-table"
+      "iconName": "document-table",
+      "usage": ["Invoice"]
     },
     {
-      "usage": ["Payment"],
-      "iconName": "cash-payment-bill"
+      "iconName": "cash-payment-bill",
+      "usage": ["Payment"]
     },
     {
-      "usage": ["General ledger"],
-      "iconName": "book"
+      "iconName": "book",
+      "usage": ["General ledger"]
     },
     {
-      "usage": ["Tools"],
-      "iconName": "wrench-screwdriver"
+      "iconName": "wrench-screwdriver",
+      "usage": ["Tools"]
     },
     {
-      "usage": ["Online learning"],
-      "iconName": "online-learning"
+      "iconName": "online-learning",
+      "usage": ["Online learning"]
     },
     {
-      "usage": ["Donation heart"],
-      "iconName": "hand-open-heart"
+      "iconName": "hand-open-heart",
+      "usage": ["Donation heart"]
     },
     {
-      "usage": ["Volunteering"],
-      "iconName": "hand-open-heart"
+      "iconName": "hand-open-heart",
+      "usage": ["Volunteering"]
     },
     {
-      "usage": ["Workplace culture"],
-      "iconName": "workflow-teammate-circle"
+      "iconName": "workflow-teammate-circle",
+      "usage": ["Workplace culture"]
     },
     {
-      "usage": ["AI"],
-      "iconName": "sparkles"
+      "iconName": "sparkles",
+      "usage": ["AI"]
     },
     {
-      "usage": ["Notifications"],
-      "iconName": "alert"
+      "iconName": "alert",
+      "usage": ["Notifications"]
     },
     {
-      "usage": ["Blackbaud brand glyph"],
-      "iconName": "bb-diamond"
+      "iconName": "bb-diamond",
+      "usage": ["Blackbaud brand glyph"]
     },
     {
-      "usage": ["Apple"],
-      "iconName": "apple"
+      "iconName": "apple",
+      "usage": ["Apple"]
     },
     {
-      "usage": ["Sign in with Apple"],
-      "iconName": "apple-branded"
+      "iconName": "apple-branded",
+      "usage": ["Sign in with Apple"]
     },
     {
-      "usage": ["Facebook"],
-      "iconName": "facebook"
+      "iconName": "facebook",
+      "usage": ["Facebook"]
     },
     {
-      "usage": ["Facebook Login"],
-      "iconName": "facebook-branded"
+      "iconName": "facebook-branded",
+      "usage": ["Facebook Login"]
     },
     {
-      "usage": ["Git"],
-      "iconName": "git"
+      "iconName": "git",
+      "usage": ["Git"]
     },
     {
-      "usage": ["Github"],
-      "iconName": "github"
+      "iconName": "github",
+      "usage": ["Github"]
     },
     {
-      "usage": ["Google"],
-      "iconName": "google"
+      "iconName": "google",
+      "usage": ["Google"]
     },
     {
-      "usage": ["Sign in with Google"],
-      "iconName": "google-branded"
+      "iconName": "google-branded",
+      "usage": ["Sign in with Google"]
     },
     {
-      "usage": ["Instagram"],
-      "iconName": "instagram"
+      "iconName": "instagram",
+      "usage": ["Instagram"]
     },
     {
-      "usage": ["LinkedIn"],
-      "iconName": "linkedin"
+      "iconName": "linkedin",
+      "usage": ["LinkedIn"]
     },
     {
-      "usage": ["Sign in with Microsoft"],
-      "iconName": "microsoft-branded"
+      "iconName": "microsoft-branded",
+      "usage": ["Sign in with Microsoft"]
     },
     {
-      "usage": ["Slack"],
-      "iconName": "slack"
+      "iconName": "slack",
+      "usage": ["Slack"]
     },
     {
-      "usage": ["Twitter"],
-      "iconName": "twitter"
+      "iconName": "twitter",
+      "usage": ["Twitter"]
     },
     {
-      "usage": ["YouTube"],
-      "iconName": "youtube"
+      "iconName": "youtube",
+      "usage": ["YouTube"]
     }
   ]
 }
