@@ -5,7 +5,11 @@ import * as glob from 'glob';
 import path from 'node:path';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { generateSprite, getFluentList } from './generate-sprite.mjs';
+import {
+  generateSprite,
+  getCustomList,
+  getFluentList,
+} from './generate-sprite.mjs';
 
 let fluentIconList;
 
@@ -554,5 +558,42 @@ add-circle
     vi.mocked(fs.readFile).mockRejectedValue(new Error('File not found'));
 
     await expect(getFluentList()).rejects.toThrow('File not found');
+  });
+});
+
+describe('getCustomList', () => {
+  beforeEach(() => {
+    mockFsAndGlob();
+  });
+
+  it('should extract unique icon names from properly formatted SVG files', async () => {
+    vi.mocked(glob.glob).mockResolvedValue([
+      'src/svg/test-unbranded-24-line.svg',
+      'src/svg/test-unbranded-24-solid.svg',
+      'src/svg/branded/test-branded-20-solid.svg',
+      'src/svg/branded/test-branded-20-line.svg',
+      'src/svg/multicolor/test-multicolor-24-solid.svg',
+      'src/svg/multicolor/test-multicolor-24-line.svg',
+      'src/svg/multicolor/test-multicolor-16-line.svg',
+      'src/svg/multicolor/test-multicolor-16-solid.svg',
+    ]);
+
+    const customList = await getCustomList();
+
+    expect(customList.length).toBe(3);
+    expect(customList).toEqual([
+      'test-unbranded',
+      'test-branded',
+      'test-multicolor',
+    ]);
+  });
+
+  it('should handle empty file list', async () => {
+    // Mock empty file list
+    vi.mocked(glob.glob).mockResolvedValue([]);
+
+    const customList = await getCustomList();
+
+    expect(customList).toHaveLength(0);
   });
 });

@@ -9,6 +9,7 @@ vi.mock('cross-spawn');
 vi.mock('./generate-sprite.mjs', () => ({
   generateSprite: vi.fn().mockResolvedValue(undefined),
   getFluentList: vi.fn().mockResolvedValue(['test-icon-1', 'test-icon-2']),
+  getCustomList: vi.fn().mockResolvedValue(['home', 'settings', 'user']),
 }));
 
 async function createCompiledContentAndMockRead() {
@@ -335,6 +336,37 @@ describe('prepare-package functionality', () => {
       const manifest = manifestCall[1];
       expect(manifest.standardIcons).toEqual(defaultMetadataResponse.icons);
       expect(manifest.additionalIcons).toEqual([]);
+    });
+
+    it('should throw an error if an icon in the metadata does not exist', async () => {
+      const consoleSpy = vi
+        .spyOn(console, 'error')
+        .mockImplementation(() => {});
+      const processExitSpy = vi
+        .spyOn(process, 'exit')
+        .mockImplementation(() => {});
+
+      vi.mocked(fs.readJSON).mockImplementation(async (filePath) => {
+        if (filePath.includes('metadata.json')) {
+          return {
+            icons: [
+              ...defaultMetadataResponse.icons,
+              { iconName: 'fake', usage: ['Does not exist'] },
+            ],
+          };
+        }
+        if (filePath.includes('package.json')) {
+          return packageVersion ? { version: packageVersion } : {};
+        }
+        return {};
+      });
+
+      await callPreparePackage();
+
+      expect(consoleSpy).toHaveBeenCalledWith(
+        new Error('fake does not exist and cannot be added to the manifest.'),
+      );
+      expect(processExitSpy).toHaveBeenCalledWith(1);
     });
   });
 

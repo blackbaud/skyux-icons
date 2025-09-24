@@ -3,7 +3,11 @@ import fs from 'fs-extra';
 import { fileURLToPath } from 'node:url';
 import path from 'path';
 
-import { generateSprite, getFluentList } from './generate-sprite.mjs';
+import {
+  generateSprite,
+  getCustomList,
+  getFluentList,
+} from './generate-sprite.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -13,7 +17,7 @@ const srcPath = path.join(projectPath, 'src');
 const distPath = path.join(projectPath, 'dist');
 const distAssetsPath = path.join(distPath, 'assets');
 
-async function createManifest(fluentIcons) {
+async function createManifest(fluentIcons, customIcons) {
   const metadataPath = path.join(projectPath, 'metadata.json');
 
   const metadata = await fs.readJSON(metadataPath);
@@ -26,6 +30,17 @@ async function createManifest(fluentIcons) {
   for (const fluentIcon of fluentIcons) {
     if (!manifest.standardIcons.some((icon) => icon.iconName === fluentIcon)) {
       manifest.additionalIcons.push(fluentIcon);
+    }
+  }
+
+  for (const standardIcon of manifest.standardIcons) {
+    if (
+      !fluentIcons.includes(standardIcon.iconName) &&
+      !customIcons.includes(standardIcon.iconName)
+    ) {
+      throw new Error(
+        `${standardIcon.iconName} does not exist and cannot be added to the manifest.`,
+      );
     }
   }
 
@@ -58,8 +73,9 @@ async function setVersion() {
 (async () => {
   try {
     const fluentIcons = await getFluentList();
+    const customIcons = await getCustomList();
     await generateSprite(fluentIcons);
-    const manifest = await createManifest(fluentIcons);
+    const manifest = await createManifest(fluentIcons, customIcons);
     await compileTypeScriptModule(manifest);
     await setVersion();
   } catch (err) {
