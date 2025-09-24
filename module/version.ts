@@ -1,6 +1,6 @@
 // Taken from Angular's version.ts file.
 // See: https://github.com/angular/angular/blob/16.2.x/packages/core/src/version.ts
-
+// This file is used for the Stackblitz code examples.s
 /**
  * @internal
  */

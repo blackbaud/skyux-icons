@@ -22,12 +22,24 @@ export default defineConfig(() => ({
       include: [
         '{src,tests,module,scripts}/**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
       ],
-      // thresholds: {
-      //   lines: 100,
-      //   functions: 100,
-      //   branches: 100,
-      //   statements: 100,
-      // },
+      thresholds: {
+        lines: 98,
+        functions: 100,
+        branches: 100,
+        statements: 98,
+        'module/*': {
+          lines: 72,
+          functions: 100,
+          branches: 100,
+          statements: 72,
+        },
+        'scripts/*': {
+          lines: 100,
+          functions: 100,
+          branches: 100,
+          statements: 100,
+        },
+      },
     },
   },
 }));

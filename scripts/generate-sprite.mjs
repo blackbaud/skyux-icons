@@ -68,8 +68,6 @@ function addMulticolorCssClass(shape, _, callback) {
 }
 
 function createSpriter() {
-  const ids = new Set();
-
   const spriter = new SVGSpriter({
     mode: {
       symbol: {
@@ -99,14 +97,6 @@ function createSpriter() {
             // Custom Blackbaud icon
             id = fileName.split('.')[0];
           }
-
-          // Ensure a custom Blackbaud icon doesn't have the same name as a
-          // Fluent icon.
-          if (ids.has(id)) {
-            throw new Error(`Duplicate ID found: ${id}`);
-          }
-
-          ids.add(id);
 
           return `sky-i-${id}`;
         },
@@ -167,7 +157,7 @@ ${notFoundFluentIds.join('\n')}`);
   }
 }
 
-async function addCustomIcons(spriter) {
+async function addCustomIcons(spriter, fluentIcons) {
   // Validate that all custom icons follow the required naming format:
   // {name}-{digits}-{solid|line}.svg where name contains only letters and hyphens
   const iconFiles = await glob.glob('src/svg/**/*.svg');
@@ -184,6 +174,29 @@ async function addCustomIcons(spriter) {
   if (invalidFiles.length > 0) {
     throw new Error(`The following SVG files do not match the required naming format (name-digits-{solid|line}.svg where name contains only letters and hyphens):
 ${invalidFiles.join('\n')}`);
+  }
+
+  // Validate that custom icons don't have the same name as fluent icons
+  const fluentIconSet = new Set(fluentIcons);
+  const conflictingIcons = [];
+
+  for (const filePath of iconFiles) {
+    const fileName = path.basename(filePath);
+    if (namePattern.test(fileName)) {
+      // Extract the base name from the custom icon (e.g., "add-24-line.svg" -> "add")
+      const match = fileName.match(/^([a-zA-Z-]+)-\d+-(solid|line)\.svg$/);
+      if (match) {
+        const baseName = match[1];
+        if (fluentIconSet.has(baseName)) {
+          conflictingIcons.push(fileName);
+        }
+      }
+    }
+  }
+
+  if (conflictingIcons.length > 0) {
+    throw new Error(`The following custom icons have names that conflict with Fluent UI icons:
+${conflictingIcons.join('\n')}`);
   }
 
   // Validate that for every size, both solid and line variants exist
@@ -250,7 +263,7 @@ async function generateSprite(fluentIcons) {
   const spriter = createSpriter();
 
   await addFluentIcons(spriter, fluentIcons);
-  await addCustomIcons(spriter);
+  await addCustomIcons(spriter, fluentIcons);
 
   const { result } = await spriter.compileAsync();
 
