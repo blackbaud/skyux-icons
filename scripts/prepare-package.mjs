@@ -14,35 +14,18 @@ const distPath = path.join(projectPath, 'dist');
 const distAssetsPath = path.join(distPath, 'assets');
 
 async function createManifest(fluentIcons) {
-  const configPath = path.join(srcPath, 'config.json');
   const metadataPath = path.join(projectPath, 'metadata.json');
 
-  const config = await fs.readJSON(configPath);
   const metadata = await fs.readJSON(metadataPath);
 
   const manifest = {
-    name: config.name,
-    cssPrefix: config.css_prefix_text,
-    glyphs: [],
-    additionalFluentIcons: [],
+    standardIcons: metadata.icons,
+    additionalIcons: [],
   };
 
-  for (const glyph of metadata.glyphs) {
-    const matchingGlyph = config.glyphs.find((item) => item.css === glyph.name);
-
-    if (matchingGlyph) {
-      const manifestGlyph = Object.assign({}, glyph, {
-        name: matchingGlyph.css,
-        code: matchingGlyph.code,
-      });
-
-      manifest.glyphs.push(manifestGlyph);
-    }
-  }
-
   for (const fluentIcon of fluentIcons) {
-    if (!manifest.glyphs.some((glyph) => glyph.iconName === fluentIcon)) {
-      manifest.additionalFluentIcons.push(fluentIcon);
+    if (!manifest.standardIcons.some((icon) => icon.iconName === fluentIcon)) {
+      manifest.additionalIcons.push(fluentIcon);
     }
   }
 
@@ -55,25 +38,9 @@ async function createManifest(fluentIcons) {
   return manifest;
 }
 
-async function compileTypeScriptModule(manifest) {
+async function compileTypeScriptModule() {
   // Run the transpiler.
   crossSpawn.sync('tsc', ['--project', 'tsconfig.json'], { stdio: 'inherit' });
-
-  const manifestFunctionPath = path.normalize(
-    'dist/module/__get-icon-manifest.js',
-  );
-  const manifestFunctionContents = await fs.readFile(manifestFunctionPath, {
-    encoding: 'utf-8',
-  });
-
-  // Convert the manifest.json contents into a JavaScript object.
-  await fs.writeFile(
-    manifestFunctionPath,
-    manifestFunctionContents.replace(
-      'return {};',
-      `return ${JSON.stringify(manifest)};`,
-    ),
-  );
 }
 
 async function setVersion() {
