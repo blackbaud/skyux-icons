@@ -3,7 +3,11 @@ import fs from 'fs-extra';
 import { fileURLToPath } from 'node:url';
 import path from 'path';
 
-import { generateSprite, getFluentList } from './generate-sprite.mjs';
+import {
+  generateSprite,
+  getCustomList,
+  getFluentList,
+} from './generate-sprite.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -13,36 +17,30 @@ const srcPath = path.join(projectPath, 'src');
 const distPath = path.join(projectPath, 'dist');
 const distAssetsPath = path.join(distPath, 'assets');
 
-async function createManifest(fluentIcons) {
-  const configPath = path.join(srcPath, 'config.json');
+async function createManifest(fluentIcons, customIcons) {
   const metadataPath = path.join(projectPath, 'metadata.json');
 
-  const config = await fs.readJSON(configPath);
   const metadata = await fs.readJSON(metadataPath);
 
   const manifest = {
-    name: config.name,
-    cssPrefix: config.css_prefix_text,
-    glyphs: [],
-    additionalFluentIcons: [],
+    standardIcons: metadata.icons,
+    additionalIcons: [],
   };
 
-  for (const glyph of metadata.glyphs) {
-    const matchingGlyph = config.glyphs.find((item) => item.css === glyph.name);
-
-    if (matchingGlyph) {
-      const manifestGlyph = Object.assign({}, glyph, {
-        name: matchingGlyph.css,
-        code: matchingGlyph.code,
-      });
-
-      manifest.glyphs.push(manifestGlyph);
+  for (const fluentIcon of fluentIcons) {
+    if (!manifest.standardIcons.some((icon) => icon.iconName === fluentIcon)) {
+      manifest.additionalIcons.push(fluentIcon);
     }
   }
 
-  for (const fluentIcon of fluentIcons) {
-    if (!manifest.glyphs.some((glyph) => glyph.iconName === fluentIcon)) {
-      manifest.additionalFluentIcons.push(fluentIcon);
+  for (const standardIcon of manifest.standardIcons) {
+    if (
+      !fluentIcons.includes(standardIcon.iconName) &&
+      !customIcons.includes(standardIcon.iconName)
+    ) {
+      throw new Error(
+        `${standardIcon.iconName} does not exist and cannot be added to the manifest.`,
+      );
     }
   }
 
@@ -55,25 +53,9 @@ async function createManifest(fluentIcons) {
   return manifest;
 }
 
-async function compileTypeScriptModule(manifest) {
+async function compileTypeScriptModule() {
   // Run the transpiler.
   crossSpawn.sync('tsc', ['--project', 'tsconfig.json'], { stdio: 'inherit' });
-
-  const manifestFunctionPath = path.normalize(
-    'dist/module/__get-icon-manifest.js',
-  );
-  const manifestFunctionContents = await fs.readFile(manifestFunctionPath, {
-    encoding: 'utf-8',
-  });
-
-  // Convert the manifest.json contents into a JavaScript object.
-  await fs.writeFile(
-    manifestFunctionPath,
-    manifestFunctionContents.replace(
-      'return {};',
-      `return ${JSON.stringify(manifest)};`,
-    ),
-  );
 }
 
 async function setVersion() {
@@ -91,8 +73,9 @@ async function setVersion() {
 (async () => {
   try {
     const fluentIcons = await getFluentList();
+    const customIcons = await getCustomList();
     await generateSprite(fluentIcons);
-    const manifest = await createManifest(fluentIcons);
+    const manifest = await createManifest(fluentIcons, customIcons);
     await compileTypeScriptModule(manifest);
     await setVersion();
   } catch (err) {

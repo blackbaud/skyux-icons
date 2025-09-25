@@ -157,10 +157,33 @@ ${notFoundFluentIds.join('\n')}`);
   }
 }
 
+async function getCustomIconFiles() {
+  return await glob.glob('src/svg/**/*.svg');
+}
+
+async function getCustomList() {
+  const iconNames = new Set();
+  const iconFiles = await getCustomIconFiles();
+
+  for (const filePath of iconFiles) {
+    const fileName = path.basename(filePath);
+
+    // Extract the name portion from files that follow the proper naming pattern:
+    // {name}-{digit}-{solid|line}.svg
+    // Example: 'headline-chart-16-solid.svg' -> 'headline-chart'
+    const match = fileName.match(/^([a-zA-Z-]+)-\d+-(?:solid|line)\.svg$/);
+    if (match) {
+      iconNames.add(match[1]);
+    }
+  }
+
+  return Array.from(iconNames);
+}
+
 async function addCustomIcons(spriter, fluentIcons) {
   // Validate that all custom icons follow the required naming format:
   // {name}-{digits}-{solid|line}.svg where name contains only letters and hyphens
-  const iconFiles = await glob.glob('src/svg/**/*.svg');
+  const iconFiles = await getCustomIconFiles();
   const invalidFiles = [];
   const namePattern = /^[a-zA-Z-]+-\d+-(?:solid|line)\.svg$/;
 
@@ -284,4 +307,4 @@ async function generateSprite(fluentIcons) {
   );
 }
 
-export { generateSprite, getFluentList };
+export { generateSprite, getFluentList, getCustomList };

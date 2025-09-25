@@ -1,6 +1,5 @@
 import crossSpawn from 'cross-spawn';
 import fs from 'fs-extra';
-import { version } from 'os';
 import path from 'path';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
@@ -10,6 +9,7 @@ vi.mock('cross-spawn');
 vi.mock('./generate-sprite.mjs', () => ({
   generateSprite: vi.fn().mockResolvedValue(undefined),
   getFluentList: vi.fn().mockResolvedValue(['test-icon-1', 'test-icon-2']),
+  getCustomList: vi.fn().mockResolvedValue(['home', 'settings', 'user']),
 }));
 
 async function createCompiledContentAndMockRead() {
@@ -29,9 +29,6 @@ async function createCompiledContentAndMockRead() {
     .replace(/readonly /g, '');
 
   vi.mocked(fs.readFile).mockImplementation(async (filePath, options) => {
-    if (filePath.includes('__get-icon-manifest.js')) {
-      return 'function getIconManifest() { return {}; }';
-    }
     if (filePath.includes('version.js')) {
       return Buffer.from(compiledVersionContent);
     }
@@ -70,35 +67,22 @@ function verifyVersion(testVersion) {
 describe('prepare-package functionality', () => {
   // Shared test data
   const defaultMetadataResponse = {
-    glyphs: [
-      {
-        name: 'home',
-        usage: ['Home'],
-        faNames: ['home'],
-        iconName: 'home',
-      },
+    icons: [
+      { iconName: 'home', usage: ['Home'] },
+      { iconName: 'settings', usage: ['Settings'] },
+      { iconName: 'user', usage: ['User'] },
     ],
-  };
-
-  const defaultConfigResponse = {
-    name: 'SKY UX icons',
-    css_prefix_text: 'sky-i-',
-    glyphs: [{ css: 'home', code: 59648 }],
   };
 
   // Helper function to setup custom mocks for specific tests
   const setupCustomMocks = (options = {}) => {
     const {
       packageVersion = '1.0.0',
-      manifestFileContent = 'function getIconManifest() {\n  return {};\n}',
       tscExitCode = 0,
       versionFileContent = 'class Version { constructor(version) { this.version = version || "0.0.0-PLACEHOLDER"; } }',
     } = options;
 
     vi.mocked(fs.readJSON).mockImplementation(async (filePath) => {
-      if (filePath.includes('config.json')) {
-        return defaultConfigResponse;
-      }
       if (filePath.includes('metadata.json')) {
         return defaultMetadataResponse;
       }
@@ -109,9 +93,6 @@ describe('prepare-package functionality', () => {
     });
 
     vi.mocked(fs.readFile).mockImplementation(async (filePath, options) => {
-      if (filePath.includes('__get-icon-manifest.js')) {
-        return manifestFileContent;
-      }
       if (filePath.includes('version.js')) {
         return Buffer.from(versionFileContent);
       }
@@ -145,103 +126,6 @@ describe('prepare-package functionality', () => {
         { stdio: 'inherit' },
       );
     });
-
-    it('should read the compiled manifest file', async () => {
-      await callPreparePackage();
-
-      // Verify the manifest file was read
-      expect(fs.readFile).toHaveBeenCalledWith(
-        path.normalize('dist/module/__get-icon-manifest.js'),
-        { encoding: 'utf-8' },
-      );
-    });
-
-    it('should replace empty return with actual manifest data', async () => {
-      await callPreparePackage();
-
-      // Verify the manifest file was written with the correct content
-      const writeFileCalls = vi.mocked(fs.writeFile).mock.calls;
-      const manifestWriteCall = writeFileCalls.find((call) =>
-        call[0].toString().includes('__get-icon-manifest.js'),
-      );
-
-      expect(manifestWriteCall).toBeDefined();
-      expect(manifestWriteCall[1]).toContain('return {');
-      expect(manifestWriteCall[1]).toContain('"name":"SKY UX icons"');
-      expect(manifestWriteCall[1]).toContain('"cssPrefix":"sky-i-"');
-      expect(manifestWriteCall[1]).toContain('"glyphs":[');
-      expect(manifestWriteCall[1]).toContain(
-        '"additionalFluentIcons":["test-icon-1","test-icon-2"]',
-      );
-      expect(manifestWriteCall[1]).not.toContain('return {};');
-    });
-
-    it('should handle complex manifest content with proper escaping', async () => {
-      const complexManifestContent = `function getIconManifest() {
-  // Some comments
-  const someVar = "test";
-  return {};
-  // More comments
-}`;
-
-      setupCustomMocks({ manifestFileContent: complexManifestContent });
-
-      await callPreparePackage();
-
-      const writeFileCalls = vi.mocked(fs.writeFile).mock.calls;
-      const manifestWriteCall = writeFileCalls.find((call) =>
-        call[0].toString().includes('__get-icon-manifest.js'),
-      );
-
-      expect(manifestWriteCall).toBeDefined();
-      expect(manifestWriteCall[1]).toContain('// Some comments');
-      expect(manifestWriteCall[1]).toContain('const someVar = "test";');
-      expect(manifestWriteCall[1]).toContain('return {');
-      expect(manifestWriteCall[1]).toContain('"name":"SKY UX icons"');
-      expect(manifestWriteCall[1]).toContain('// More comments');
-      expect(manifestWriteCall[1]).not.toContain('return {};');
-    });
-
-    it('should preserve file structure when replacing return statement', async () => {
-      const multiLineManifestContent = `export function getIconManifest() {
-  const config = {
-    debug: true,
-    mode: 'production'
-  };
-
-  if (config.debug) {
-    console.log('Debug mode enabled');
-  }
-
-  return {};
-}
-
-export default getIconManifest;`;
-
-      setupCustomMocks({ manifestFileContent: multiLineManifestContent });
-
-      await callPreparePackage();
-
-      const writeFileCalls = vi.mocked(fs.writeFile).mock.calls;
-      const manifestWriteCall = writeFileCalls.find((call) =>
-        call[0].toString().includes('__get-icon-manifest.js'),
-      );
-
-      expect(manifestWriteCall).toBeDefined();
-      const resultContent = manifestWriteCall[1];
-
-      // Should preserve the function structure
-      expect(resultContent).toContain('export function getIconManifest()');
-      expect(resultContent).toContain('const config = {');
-      expect(resultContent).toContain('if (config.debug)');
-      expect(resultContent).toContain('export default getIconManifest;');
-
-      // Should replace only the return {}; statement
-      expect(resultContent).toContain('return {');
-      expect(resultContent).toContain('"name":"SKY UX icons"');
-      expect(resultContent).not.toContain('return {};');
-    });
-
     it('should handle TypeScript compilation errors gracefully', async () => {
       // Mock TypeScript compilation to fail
       setupCustomMocks({ tscExitCode: 1 });
@@ -254,43 +138,6 @@ export default getIconManifest;`;
         ['--project', 'tsconfig.json'],
         { stdio: 'inherit' },
       );
-    });
-
-    it('should generate manifest with additional fluent icons', async () => {
-      await callPreparePackage();
-
-      const writeFileCalls = vi.mocked(fs.writeFile).mock.calls;
-      const manifestWriteCall = writeFileCalls.find((call) =>
-        call[0].toString().includes('__get-icon-manifest.js'),
-      );
-
-      expect(manifestWriteCall).toBeDefined();
-      const resultContent = manifestWriteCall[1];
-
-      // Should include the additional fluent icons from the mocked getFluentList
-      expect(resultContent).toContain(
-        '"additionalFluentIcons":["test-icon-1","test-icon-2"]',
-      );
-    });
-
-    it('should handle manifest with no additional fluent icons', async () => {
-      // Mock getFluentList to return empty array
-      const { generateSprite, getFluentList } = await import(
-        './generate-sprite.mjs'
-      );
-      vi.mocked(getFluentList).mockResolvedValue([]);
-
-      await callPreparePackage();
-
-      const writeFileCalls = vi.mocked(fs.writeFile).mock.calls;
-      const manifestWriteCall = writeFileCalls.find((call) =>
-        call[0].toString().includes('__get-icon-manifest.js'),
-      );
-
-      expect(manifestWriteCall).toBeDefined();
-      const resultContent = manifestWriteCall[1];
-
-      expect(resultContent).toContain('"additionalFluentIcons":[]');
     });
   });
 
@@ -352,21 +199,21 @@ export default getIconManifest;`;
 
     it('should handle large fluent icons list', async () => {
       // Mock getFluentList to return a large array
-      const largFluentIconsList = Array.from(
+      const largeFluentIconsList = Array.from(
         { length: 1000 },
         (_, i) => `icon-${i}`,
       );
       const { generateSprite, getFluentList } = await import(
         './generate-sprite.mjs'
       );
-      vi.mocked(getFluentList).mockResolvedValue(largFluentIconsList);
+      vi.mocked(getFluentList).mockResolvedValue(largeFluentIconsList);
 
       await callPreparePackage();
 
       // Verify that generateSprite receives the complete large array
       expect(vi.mocked(generateSprite)).toHaveBeenCalledTimes(1);
       expect(vi.mocked(generateSprite)).toHaveBeenCalledWith(
-        largFluentIconsList,
+        largeFluentIconsList,
       );
 
       // Verify the exact length was passed through
@@ -375,13 +222,158 @@ export default getIconManifest;`;
     });
   });
 
+  describe('manifest functionality', () => {
+    it('should create a manifest that includes the standard icons documented in metadata.json', async () => {
+      await callPreparePackage();
+
+      // Verify that writeJSON was called with the manifest
+      const writeJSONCalls = vi.mocked(fs.writeJSON).mock.calls;
+      const manifestCall = writeJSONCalls.find((call) =>
+        call[0].includes('manifest.json'),
+      );
+
+      expect(manifestCall).toBeDefined();
+
+      const manifest = manifestCall[1];
+      expect(manifest).toHaveProperty('standardIcons');
+      expect(manifest.standardIcons).toEqual(defaultMetadataResponse.icons);
+      expect(manifest.standardIcons).toHaveLength(3);
+      expect(manifest.standardIcons[0]).toEqual({
+        iconName: 'home',
+        usage: ['Home'],
+      });
+    });
+
+    it('should create a manifest that includes the additional icons specified by the fluent list', async () => {
+      const testFluentIcons = [
+        'home',
+        'settings',
+        'fluent-icon-1',
+        'fluent-icon-2',
+        'fluent-icon-3',
+      ];
+
+      const { getFluentList } = await import('./generate-sprite.mjs');
+      vi.mocked(getFluentList).mockResolvedValue(testFluentIcons);
+
+      await callPreparePackage();
+
+      const writeJSONCalls = vi.mocked(fs.writeJSON).mock.calls;
+      const manifestCall = writeJSONCalls.find((call) =>
+        call[0].includes('manifest.json'),
+      );
+
+      expect(manifestCall).toBeDefined();
+
+      const manifest = manifestCall[1];
+      expect(manifest).toHaveProperty('additionalIcons');
+      expect(manifest.additionalIcons).toEqual([
+        'fluent-icon-1',
+        'fluent-icon-2',
+        'fluent-icon-3',
+      ]);
+      expect(manifest.additionalIcons).toHaveLength(3);
+      expect(manifest.additionalIcons).toEqual([
+        'fluent-icon-1',
+        'fluent-icon-2',
+        'fluent-icon-3',
+      ]);
+
+      expect(manifest.standardIcons).toEqual(defaultMetadataResponse.icons);
+    });
+
+    it('should publish the manifest to the dist/assets folder', async () => {
+      await callPreparePackage();
+
+      const writeJSONCalls = vi.mocked(fs.writeJSON).mock.calls;
+      const manifestCall = writeJSONCalls.find((call) =>
+        call[0].includes('manifest.json'),
+      );
+
+      expect(manifestCall).toBeDefined();
+      expect(manifestCall[0]).toMatch(/dist[\/\\]assets[\/\\]manifest\.json/);
+
+      const manifest = manifestCall[1];
+      expect(manifest).toHaveProperty('standardIcons');
+      expect(manifest).toHaveProperty('additionalIcons');
+    });
+
+    it('should handle empty fluent list with only standard icons in manifest', async () => {
+      // Mock empty fluent icons list
+      const { getFluentList } = await import('./generate-sprite.mjs');
+      vi.mocked(getFluentList).mockResolvedValue([]);
+
+      await callPreparePackage();
+
+      const writeJSONCalls = vi.mocked(fs.writeJSON).mock.calls;
+      const manifestCall = writeJSONCalls.find((call) =>
+        call[0].includes('manifest.json'),
+      );
+
+      expect(manifestCall).toBeDefined();
+
+      const manifest = manifestCall[1];
+      expect(manifest.standardIcons).toEqual(defaultMetadataResponse.icons);
+      expect(manifest.additionalIcons).toEqual([]);
+    });
+
+    it('should handle case where all fluent icons are already in standard icons', async () => {
+      // All fluent icons are already in metadata
+      const testFluentIcons = ['home', 'settings', 'user'];
+
+      const { getFluentList } = await import('./generate-sprite.mjs');
+      vi.mocked(getFluentList).mockResolvedValue(testFluentIcons);
+
+      await callPreparePackage();
+
+      const writeJSONCalls = vi.mocked(fs.writeJSON).mock.calls;
+      const manifestCall = writeJSONCalls.find((call) =>
+        call[0].includes('manifest.json'),
+      );
+
+      expect(manifestCall).toBeDefined();
+
+      const manifest = manifestCall[1];
+      expect(manifest.standardIcons).toEqual(defaultMetadataResponse.icons);
+      expect(manifest.additionalIcons).toEqual([]);
+    });
+
+    it('should throw an error if an icon in the metadata does not exist', async () => {
+      const consoleSpy = vi
+        .spyOn(console, 'error')
+        .mockImplementation(() => {});
+      const processExitSpy = vi
+        .spyOn(process, 'exit')
+        .mockImplementation(() => {});
+
+      vi.mocked(fs.readJSON).mockImplementation(async (filePath) => {
+        if (filePath.includes('metadata.json')) {
+          return {
+            icons: [
+              ...defaultMetadataResponse.icons,
+              { iconName: 'fake', usage: ['Does not exist'] },
+            ],
+          };
+        }
+        if (filePath.includes('package.json')) {
+          return packageVersion ? { version: packageVersion } : {};
+        }
+        return {};
+      });
+
+      await callPreparePackage();
+
+      expect(consoleSpy).toHaveBeenCalledWith(
+        new Error('fake does not exist and cannot be added to the manifest.'),
+      );
+      expect(processExitSpy).toHaveBeenCalledWith(1);
+    });
+  });
+
   describe('setVersion functionality', () => {
-    function setupManifestAndVersionMocks(testVersion) {
+    function setupMetadataAndVersionMocks(testVersion) {
       // Only override the package.json version, not the entire fs.readFile mock
       vi.mocked(fs.readJSON).mockImplementation(async (filePath) => {
-        if (filePath.includes('config.json')) {
-          return defaultConfigResponse;
-        }
         if (filePath.includes('metadata.json')) {
           return defaultMetadataResponse;
         }
@@ -401,7 +393,7 @@ export default getIconManifest;`;
 
       await createCompiledContentAndMockRead();
 
-      setupManifestAndVersionMocks(testVersion);
+      setupMetadataAndVersionMocks(testVersion);
 
       await callPreparePackage();
 
@@ -413,7 +405,7 @@ export default getIconManifest;`;
 
       await createCompiledContentAndMockRead();
 
-      setupManifestAndVersionMocks(testVersion);
+      setupMetadataAndVersionMocks(testVersion);
 
       await callPreparePackage();
 
@@ -428,7 +420,7 @@ export default getIconManifest;`;
     it('should handle edge case where package.json has no version using actual prepare-package code', async () => {
       await createCompiledContentAndMockRead();
 
-      setupManifestAndVersionMocks(undefined);
+      setupMetadataAndVersionMocks(undefined);
 
       await callPreparePackage();
 
@@ -448,7 +440,7 @@ export default getIconManifest;`;
 
       await createCompiledContentAndMockRead();
 
-      setupManifestAndVersionMocks(testVersion);
+      setupMetadataAndVersionMocks(testVersion);
 
       await callPreparePackage();
 
