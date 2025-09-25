@@ -1,6 +1,6 @@
 {
   "name": "@skyux/icons",
-  "version": "9.5.0",
+  "version": "10.0.0",
   "main": "./index.js",
   "types": "./index.d.ts",
   "description": "A sprite map for SKY UX SVG icons.",

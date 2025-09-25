@@ -1,5 +1,20 @@
 # Changelog
 
+## [10.0.0](https://github.com/blackbaud/skyux-icons/compare/9.5.0...10.0.0) (2025-09-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* update icon manifest generation, remove outdated data ([#219](https://github.com/blackbaud/skyux-icons/issues/219))
+* remove SKY UX icon font ([#216](https://github.com/blackbaud/skyux-icons/issues/216))
+* add multicolor paths automatically to paths in the multicolor dir ([#213](https://github.com/blackbaud/skyux-icons/issues/213))
+
+### Features
+
+* add multicolor paths automatically to paths in the multicolor dir ([#213](https://github.com/blackbaud/skyux-icons/issues/213)) ([21ba105](https://github.com/blackbaud/skyux-icons/commit/21ba1053c250739d5d970cda3d8fc71f5b8853f3))
+* remove SKY UX icon font ([#216](https://github.com/blackbaud/skyux-icons/issues/216)) ([847c8d9](https://github.com/blackbaud/skyux-icons/commit/847c8d934173c1745be8efe649a58c2e7332e125))
+* update icon manifest generation, remove outdated data ([#219](https://github.com/blackbaud/skyux-icons/issues/219)) ([4773c96](https://github.com/blackbaud/skyux-icons/commit/4773c96833beddbe8db52b01d060d4f8d652b3ce))
+
 ## [9.5.0](https://github.com/blackbaud/skyux-icons/compare/9.4.0...9.5.0) (2025-09-05)
 
 
