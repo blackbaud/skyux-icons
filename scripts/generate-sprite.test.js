@@ -350,7 +350,7 @@ describe('custom icon validation', () => {
     ]);
 
     // Mock the readFile function to return SVG content with class attributes
-    vi.mocked(fs.readFile).mockImplementation(async (path, options) => {
+    vi.mocked(fs.readFile).mockImplementation(async (path) => {
       if (path === 'src/svg/invalid-class-icon-16-line.svg') {
         return '<svg xmlns="http://www.w3.org/2000/svg"><path class="some-class" d="invalid"/></svg>';
       }
@@ -377,7 +377,7 @@ describe('custom icon validation', () => {
 
   it('should remove style tags and inline styles from the generated sprite', async () => {
     // Mock SVG content with style tags and inline styles
-    vi.mocked(fs.readFile).mockImplementation(async (path, options) => {
+    vi.mocked(fs.readFile).mockImplementation(async (path) => {
       if (path === 'src/svg/test-with-styles-24-line.svg') {
         return '<svg xmlns="http://www.w3.org/2000/svg"><style>.test { fill: red; }</style><path style="fill: blue;" d="test"/></svg>';
       }
@@ -470,7 +470,7 @@ describe('custom icon validation', () => {
     });
 
     // Mock readFile to return valid SVG content for all files
-    vi.mocked(fs.readFile).mockImplementation(async (path, options) => {
+    vi.mocked(fs.readFile).mockImplementation(async (path) => {
       if (path === 'src/svg/fluent-icon-list.txt') {
         return fluentIconList.join('\n');
       }
