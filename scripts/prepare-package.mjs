@@ -13,7 +13,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const projectPath = path.join(__dirname, '..');
-const srcPath = path.join(projectPath, 'src');
 const distPath = path.join(projectPath, 'dist');
 const distAssetsPath = path.join(distPath, 'assets');
 

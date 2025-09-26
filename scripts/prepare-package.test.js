@@ -28,7 +28,7 @@ async function createCompiledContentAndMockRead() {
     .replace(/public readonly /g, '') // Remove TypeScript modifiers
     .replace(/readonly /g, '');
 
-  vi.mocked(fs.readFile).mockImplementation(async (filePath, options) => {
+  vi.mocked(fs.readFile).mockImplementation(async (filePath) => {
     if (filePath.includes('version.js')) {
       return Buffer.from(compiledVersionContent);
     }
@@ -92,7 +92,7 @@ describe('prepare-package functionality', () => {
       return {};
     });
 
-    vi.mocked(fs.readFile).mockImplementation(async (filePath, options) => {
+    vi.mocked(fs.readFile).mockImplementation(async (filePath) => {
       if (filePath.includes('version.js')) {
         return Buffer.from(versionFileContent);
       }
@@ -291,7 +291,7 @@ describe('prepare-package functionality', () => {
       );
 
       expect(manifestCall).toBeDefined();
-      expect(manifestCall[0]).toMatch(/dist[\/\\]assets[\/\\]manifest\.json/);
+      expect(manifestCall[0]).toMatch(/dist[/\\]assets[/\\]manifest\.json/);
 
       const manifest = manifestCall[1];
       expect(manifest).toHaveProperty('standardIcons');
@@ -356,7 +356,7 @@ describe('prepare-package functionality', () => {
           };
         }
         if (filePath.includes('package.json')) {
-          return packageVersion ? { version: packageVersion } : {};
+          return {};
         }
         return {};
       });
