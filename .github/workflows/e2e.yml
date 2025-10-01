@@ -12,8 +12,8 @@ on:
 permissions:
   actions: read
   contents: read
-  id-token: write
   pages: write
+  id-token: write
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event_name == 'push' && github.run_number || github.head_ref || github.ref_name || github.event.ref }}
@@ -24,10 +24,10 @@ jobs:
     if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout skyux-icons
+      - name: Checkout code
         uses: actions/checkout@v5
         with:
-          path: '${{ github.workspace }}/skyux-icons'
+          path: 'skyux-icons'
           fetch-depth: '0'
           token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
       - name: Checkout skyux
@@ -36,18 +36,19 @@ jobs:
           repository: 'blackbaud/skyux'
           # TODO: change back to main after testing
           ref: 'icons-e2e'
-          path: '${{ github.workspace }}/skyux'
+          path: 'skyux'
           token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
-      - name: Setup Node.js environment
+      - name: Set up Node.js
         uses: actions/setup-node@v5
         with:
-          node-version-file: 'skyux-icons/.nvmrc'
-      - name: Install and build skyux-icons
+          node-version-file: 'skyux/.nvmrc'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build project
         run: |
-          set -euxo pipefail
-          npm ci
           npm run build
-          cp -R dist ../skyux/dist/skyux-icons
+          mkdir -pv ../skyux/dist
+          cp -Rv dist ../skyux/dist/skyux-icons
         working-directory: '${{ github.workspace }}/skyux-icons'
       - name: Review affected icons
         id: affected
@@ -66,92 +67,3 @@ jobs:
           echo "affected=${AFFECTED}" >> $GITHUB_OUTPUT
         working-directory: '${{ github.workspace }}/skyux-icons'
         # TODO: run e2e tests and push to Percy
-
-  preview:
-    if: ${{ github.event_name == 'pull_request' }}
-    runs-on: ubuntu-latest
-    environment:
-      name: 'github-pages'
-      url: steps.deployment.outputs.page_url
-    steps:
-      - name: Checkout skyux-icons
-        uses: actions/checkout@v5
-        with:
-          path: '${{ github.workspace }}/skyux-icons'
-      - name: Checkout skyux
-        uses: actions/checkout@v5
-        with:
-          repository: 'blackbaud/skyux'
-          ref: 'main'
-          path: '${{ github.workspace }}/skyux'
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v5
-        with:
-          node-version-file: 'skyux/.nvmrc'
-      - name: Install
-        run: npm ci
-      - name: Install and build skyux-icons
-        run: |
-          set -euxo pipefail
-          npm ci
-          npm run build
-          cp -R dist ../skyux/dist/skyux-icons
-        working-directory: '${{ github.workspace }}/skyux-icons'
-      - name: Install skyux
-        run: npm ci
-        working-directory: '${{ github.workspace }}/skyux'
-      - name: Build Storybooks
-        run: npx nx run-many -t build-storybook --projects=tag:component-e2e --skip-nx-cache
-        working-directory: '${{ github.workspace }}/skyux'
-      - name: Build playground
-        run: |
-          cat dist/skyux-icons/assets/svg/skyux-icons.svg >> apps/playground/src/index.html
-          npx nx run playground:build
-          mkdir -pv dist/preview-pages
-        working-directory: '${{ github.workspace }}/skyux'
-      - name: Retrieve other preview sites
-        uses: actions/download-artifact@v5
-        with:
-          pattern: 'pr-*'
-          path: skyux/dist/preview-pages/
-      - name: Create preview site for PR ${{ github.event.number }}
-        run: |
-          rm -rfv dist/preview-pages/pr-${{ github.event.number }}
-          mkdir -pv dist/preview-pages/pr-${{ github.event.number }}/storybooks
-          mv -v dist/apps/* dist/preview-pages/pr-${{ github.event.number }}/
-          mv -v dist/storybook/* dist/preview-pages/pr-${{ github.event.number }}/storybooks/
-          npx nx g @skyux-sdk/e2e-schematics:pr-comment --pr=pr-${{ github.event.number }} \
-            --url="https://${{ github.repository_owner }}.github.io/skyux-icons" \
-            --repoUrl="https://github.com/${{ github.repository }}" \
-            --apps="$(ls dist/preview-pages/pr-${{ github.event.number }} | fgrep -v storybooks | tr '\n' ,)" \
-            --storybooks="$(ls dist/preview-pages/pr-${{ github.event.number }}/storybooks | tr '\n' ,)" \
-            --skipCompositeStorybook
-          mv -v dist/pr_index.html dist/preview-pages/pr-${{ github.event.number }}/index.html
-        working-directory: '${{ github.workspace }}/skyux'
-      - name: Save PR ${{ github.event.number }} Preview
-        uses: actions/upload-artifact@v4
-        with:
-          name: pr-${{ github.event.number }}
-          path: skyux/dist/preview-pages/pr-${{ github.event.number }}
-          if-no-files-found: 'error'
-          overwrite: 'true'
-          retention-days: 14
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist/bark-back/browser
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-      - name: Comment
-        run: |
-          COMMENT_ID=$(gh pr view ${{ github.event.number }} -R ${{ github.repository }} --json comments -q '.comments | map(select(.body | contains("Component Storybooks:"))) | .[0].id // empty')
-          if [ -n "$COMMENT_ID" ]; then
-            gh api --method PATCH -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" \
-              /repos/${{ github.repository }}/pulls/comments/${COMMENT_ID} \
-              -f 'body=@skyux/dist/pr_comment.md'
-          else
-            gh pr comment ${{ github.event.number }} -R ${{ github.repository }} -F skyux/dist/pr_comment.md
-          fi
