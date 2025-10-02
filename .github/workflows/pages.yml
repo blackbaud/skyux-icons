@@ -47,23 +47,23 @@ jobs:
         run: npm ci
         working-directory: '${{ github.workspace }}/skyux-icons'
       - name: Build project
-        run: |
-          npm run build
-          mkdir -pv ../skyux/dist
-          cp -Rv dist ../skyux/dist/skyux-icons
+        run: npm run build
         working-directory: '${{ github.workspace }}/skyux-icons'
       - name: Install skyux
         run: npm ci
         working-directory: '${{ github.workspace }}/skyux'
       - name: Build Storybooks
-        run: npx nx run-many -t build-storybook --projects=tag:component-e2e --skip-nx-cache
+        run: npx nx run-many -t build-storybook --projects=tag:icons-preview
         working-directory: '${{ github.workspace }}/skyux'
+        env:
+          NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
       - name: Build playground
         run: |
-          cat dist/skyux-icons/assets/svg/skyux-icons.svg >> apps/playground/src/index.html
           npx nx run playground:build
           mkdir -pv dist/preview-pages
         working-directory: '${{ github.workspace }}/skyux'
+        env:
+          NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
       - name: Retrieve other preview sites
         uses: actions/download-artifact@v5
         with:
@@ -75,6 +75,11 @@ jobs:
           mkdir -pv dist/preview-pages/pr-${{ github.event.number }}/storybooks
           mv -v dist/apps/* dist/preview-pages/pr-${{ github.event.number }}/
           mv -v dist/storybook/* dist/preview-pages/pr-${{ github.event.number }}/storybooks/
+          for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html dist/preview-pages/pr-${{ github.event.number }}/storybooks/*/iframe.html; do
+            echo "Adding skyux-icons.svg to $idx"
+            echo >> $idx
+            cat ../skyux-icons/dist/assets/svg/skyux-icons.svg >> $idx
+          done
           npx nx g @skyux-sdk/e2e-schematics:pr-comment --pr=pr-${{ github.event.number }} \
             --url="https://${{ github.repository_owner }}.github.io/skyux-icons" \
             --repoUrl="https://github.com/${{ github.repository }}" \
@@ -110,3 +115,5 @@ jobs:
           else
             gh pr comment ${{ github.event.number }} -R ${{ github.repository }} -F skyux/dist/pr_comment.md
           fi
+        env:
+          GH_TOKEN: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
