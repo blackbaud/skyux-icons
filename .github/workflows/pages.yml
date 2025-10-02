@@ -1,3 +1,4 @@
+name: Pages
 on:
   push:
     branches:
@@ -17,6 +18,9 @@ permissions:
 concurrency:
   group: pages
   cancel-in-progress: false
+
+env:
+  NX_CLOUD_DISTRIBUTED_EXECUTION: 'false'
 
 jobs:
   pages:
@@ -45,36 +49,45 @@ jobs:
           node-version-file: 'skyux/.nvmrc'
       - name: Install dependencies
         run: npm ci
-        working-directory: '${{ github.workspace }}/skyux-icons'
+        working-directory: 'skyux-icons'
       - name: Build project
         run: npm run build
-        working-directory: '${{ github.workspace }}/skyux-icons'
+        working-directory: 'skyux-icons'
       - name: Install skyux
         run: npm ci
-        working-directory: '${{ github.workspace }}/skyux'
+        working-directory: 'skyux'
+        env:
+          CYPRESS_INSTALL_BINARY: 0
       - name: Build Storybooks
-        run: npx nx run-many -t build-storybook --projects=tag:icons-preview
-        working-directory: '${{ github.workspace }}/skyux'
+        run: npx nx run-many -t build-storybook --projects=tag:icons-preview --no-dte
+        working-directory: 'skyux'
         env:
           NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
       - name: Build playground
         run: |
-          npx nx run playground:build
+          npx nx run playground:build --no-dte
           mkdir -pv dist/preview-pages
-        working-directory: '${{ github.workspace }}/skyux'
+        working-directory: 'skyux'
         env:
           NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
       - name: Retrieve other preview sites
         uses: actions/download-artifact@v5
         with:
-          pattern: 'pr-*'
+          github-token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
           path: skyux/dist/preview-pages/
+          pattern: 'pr-*'
+          repository: '${{ github.repository }}'
       - name: Create preview site for PR ${{ github.event.number }}
         run: |
           rm -rfv dist/preview-pages/pr-${{ github.event.number }}
           mkdir -pv dist/preview-pages/pr-${{ github.event.number }}/storybooks
           mv -v dist/apps/* dist/preview-pages/pr-${{ github.event.number }}/
           mv -v dist/storybook/* dist/preview-pages/pr-${{ github.event.number }}/storybooks/
+          for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html; do
+            APP_BASE_HREF="skyux-icons/pr-${{ github.event.number }}/$(basename $(dirname $idx))"
+            sed -i "s|<base href=\"/\"|<base href=\"/${APP_BASE_HREF}/\"|g" $idx
+            echo "Setting base href to ${APP_BASE_HREF} for $idx"
+          done
           for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html dist/preview-pages/pr-${{ github.event.number }}/storybooks/*/iframe.html; do
             echo "Adding skyux-icons.svg to $idx"
             echo >> $idx
@@ -87,15 +100,15 @@ jobs:
             --storybooks="$(ls dist/preview-pages/pr-${{ github.event.number }}/storybooks | tr '\n' ,)" \
             --skipCompositeStorybook
           mv -v dist/pr_index.html dist/preview-pages/pr-${{ github.event.number }}/index.html
-        working-directory: '${{ github.workspace }}/skyux'
+        working-directory: 'skyux'
       - name: Save PR ${{ github.event.number }} Preview
         uses: actions/upload-artifact@v4
         with:
           name: pr-${{ github.event.number }}
           path: skyux/dist/preview-pages/pr-${{ github.event.number }}
-          if-no-files-found: 'error'
           overwrite: 'true'
-          retention-days: 14
+          retention-days: 30
+          if-no-files-found: error
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

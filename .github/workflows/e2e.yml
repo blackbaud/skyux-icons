@@ -9,15 +9,18 @@ on:
       - master
       - '[0-9]+.x.x'
 
-permissions:
-  actions: read
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.event_name == 'push' && github.run_number || github.head_ref || github.ref_name || github.event.ref }}
   cancel-in-progress: true
+
+env:
+  NX_CLOUD_DISTRIBUTED_EXECUTION: 'false'
+  CYPRESS_VERIFY_TIMEOUT: 120000
+  PERCY_BROWSER_EXECUTABLE: /usr/bin/chromium
+  PERCY_SKIP_UPDATE_CHECK: 'true'
+  PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium
+  PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
+  SB_CHROMIUM_PATH: /usr/bin/chromium
 
 jobs:
   e2e:
@@ -46,11 +49,13 @@ jobs:
         run: npm ci
         working-directory: '${{ github.workspace }}/skyux-icons'
       - name: Build project
-        run: |
-          npm run build
-          mkdir -pv ../skyux/dist
-          cp -Rv dist ../skyux/dist/skyux-icons
+        run: npm run build
         working-directory: '${{ github.workspace }}/skyux-icons'
+      - name: Install skyux
+        run: npm ci
+        working-directory: '${{ github.workspace }}/skyux'
+        env:
+          CYPRESS_INSTALL_BINARY: 0
       - name: Review affected icons
         id: affected
         if: ${{ github.event_name == 'pull_request' }}
@@ -68,3 +73,26 @@ jobs:
           echo "affected=${AFFECTED}" >> $GITHUB_OUTPUT
         working-directory: '${{ github.workspace }}/skyux-icons'
         # TODO: run e2e tests and push to Percy
+      - name: Build Storybooks with icon changes
+        run: |
+          npx nx run-many -t build-storybook --no-dte
+          echo "::group::Adding skyux-icons.svg to Storybook iframes"
+          for idx in dist/storybook/*/iframe.html; do
+            echo "Adding skyux-icons.svg to $idx"
+            echo >> $idx
+            cat ../skyux-icons/dist/assets/svg/skyux-icons.svg >> $idx
+          done
+          echo "::endgroup::"
+        working-directory: '${{ github.workspace }}/skyux'
+        env:
+          NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
+      - name: Run e2e tests
+        run: |
+          npx cypress install
+          npx nx run-many -t e2e -c prebuilt \
+            --projects=${{ steps.affected.outputs.affected }} \
+            --no-dte \
+            --parallel=1
+        working-directory: '${{ github.workspace }}/skyux'
+        env:
+          NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
