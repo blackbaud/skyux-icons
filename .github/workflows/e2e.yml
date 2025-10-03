@@ -1,4 +1,4 @@
-name: E2E and Preview
+name: E2E
 on:
   push:
     branches:
@@ -24,7 +24,6 @@ env:
 
 jobs:
   e2e:
-    if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
