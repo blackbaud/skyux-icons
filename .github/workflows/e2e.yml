@@ -68,16 +68,12 @@ jobs:
           NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
       - name: Apply icon preview
         run: |
-          echo "::group::Adding skyux-icons.svg to Storybook iframes"
           for idx in dist/storybook/*/iframe.html; do
             echo "Adding skyux-icons.svg to $idx"
-            sed -i 's~</head>~<link rel="prefetch" href="/skyux-icons.svg" class="skyux-icons-preview"></head>~' $idx
+            sed -i 's~</head>~<link rel="prefetch" href="./skyux-icons.svg" class="skyux-icons-preview"></head>~' $idx
             cp ../skyux-icons/dist/assets/svg/skyux-icons.svg $(dirname $idx)/
           done
-          echo "::endgroup::"
         working-directory: 'skyux'
-        env:
-          NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
       - name: Run e2e tests
         run: |
           npx percy exec -- npx nx e2e icon-storybook-e2e -c prebuilt --no-dte --skip-nx-cache

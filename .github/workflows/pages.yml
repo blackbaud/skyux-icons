@@ -78,14 +78,20 @@ jobs:
           mv -v dist/storybook/* dist/preview-pages/pr-${{ github.event.number }}/storybooks/
           for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html; do
             APP_BASE_HREF="skyux-icons/pr-${{ github.event.number }}/$(basename $(dirname $idx))"
-            sed -i "s~<base href=\"/\"~<base href=\"/${APP_BASE_HREF}/\"~g" $idx
             echo "Setting base href to ${APP_BASE_HREF} for $idx"
+            sed -i "s~<base href=\"/\"~<base href=\"/${APP_BASE_HREF}/\"~g" $idx
           done
+        working-directory: 'skyux'
+      - name: Apply icon preview link tag
+        run: |
           for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html dist/preview-pages/pr-${{ github.event.number }}/storybooks/*/iframe.html; do
             echo "Adding skyux-icons.svg to $idx"
             sed -i 's~</head>~<link rel="prefetch" href="./skyux-icons.svg" class="skyux-icons-preview"></head>~' $idx
             cp ../skyux-icons/dist/assets/svg/skyux-icons.svg $(dirname $idx)/
           done
+        working-directory: 'skyux'
+      - name: Generate comment for PR ${{ github.event.number }}
+        run: |
           npx nx g @skyux-sdk/e2e-schematics:pr-comment --pr=pr-${{ github.event.number }} \
             --url="https://${{ github.repository_owner }}.github.io/skyux-icons" \
             --repoUrl="https://github.com/${{ github.repository }}" \
