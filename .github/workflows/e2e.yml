@@ -46,13 +46,13 @@ jobs:
           node-version-file: 'skyux/.nvmrc'
       - name: Install dependencies
         run: npm ci
-        working-directory: '${{ github.workspace }}/skyux-icons'
+        working-directory: 'skyux-icons'
       - name: Build project
         run: npm run build
-        working-directory: '${{ github.workspace }}/skyux-icons'
+        working-directory: 'skyux-icons'
       - name: Install skyux
         run: npm ci
-        working-directory: '${{ github.workspace }}/skyux'
+        working-directory: 'skyux'
         env:
           CYPRESS_INSTALL_BINARY: 0
       - name: Install Cypress
@@ -60,23 +60,27 @@ jobs:
           set -euxo pipefail
           npx cypress install
           npx cypress verify
-        working-directory: '${{ github.workspace }}/skyux'
-      - name: Build Storybooks with icon changes
+        working-directory: 'skyux'
+      - name: Build Storybooks
+        run: npx nx build-storybook icon-storybook --no-dte
+        working-directory: 'skyux'
+        env:
+          NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
+      - name: Apply icon preview
         run: |
-          npx nx build-storybook icon-storybook --no-dte
           echo "::group::Adding skyux-icons.svg to Storybook iframes"
           for idx in dist/storybook/*/iframe.html; do
             echo "Adding skyux-icons.svg to $idx"
-            echo >> $idx
-            cat ../skyux-icons/dist/assets/svg/skyux-icons.svg >> $idx
+            sed -i 's~</head>~<link rel="prefetch" href="/skyux-icons.svg" class="skyux-icons-preview"></head>~' $idx
+            cp ../skyux-icons/dist/assets/svg/skyux-icons.svg $(dirname $idx)/
           done
           echo "::endgroup::"
-        working-directory: '${{ github.workspace }}/skyux'
+        working-directory: 'skyux'
         env:
           NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
       - name: Run e2e tests
         run: |
           npx percy exec -- npx nx e2e icon-storybook-e2e -c prebuilt --no-dte --skip-nx-cache
-        working-directory: '${{ github.workspace }}/skyux'
+        working-directory: 'skyux'
         env:
           PERCY_TOKEN: '${{ secrets.PERCY_TOKEN }}'
