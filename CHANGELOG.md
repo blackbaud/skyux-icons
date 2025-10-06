@@ -1,5 +1,12 @@
 # Changelog
 
+## [9.6.0](https://github.com/blackbaud/skyux-icons/compare/9.5.0...9.6.0) (2025-10-06)
+
+
+### Features
+
+* add bank activity icon ([#221](https://github.com/blackbaud/skyux-icons/issues/221)) ([#225](https://github.com/blackbaud/skyux-icons/issues/225)) ([2568e90](https://github.com/blackbaud/skyux-icons/commit/2568e907dd0a05d2b42cf0b287b77a0cd9da041b))
+
 ## [9.5.0](https://github.com/blackbaud/skyux-icons/compare/9.4.0...9.5.0) (2025-09-05)
 
 
