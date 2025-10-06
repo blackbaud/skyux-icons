@@ -1,3 +1,4 @@
 {
-  "baseBranch": "master"
+  "baseBranch": "9.x.x",
+  "releaseBranch": "release-please--branches--{baseBranch}--components--icons"
 }
