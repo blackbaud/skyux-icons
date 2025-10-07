@@ -93,7 +93,7 @@ jobs:
         run: |
           mkdir -pv ${{ runner.temp	}}/stackblitz
           cd ${{ runner.temp }}/stackblitz
-          node ${{ github.workspace }}/skyux-icons/scripts/create-stackblitz-link.mjs
+          node ${{ github.workspace }}/skyux-icons/scripts/create-stackblitz-link.mjs --url="https://${{ github.repository_owner }}.github.io/skyux-icons/pr-${{ github.event.number }}/playground"
           mkdir -pv ${{ github.workspace }}/skyux/dist/preview-pages/pr-${{ github.event.number }}/stackblitz
           cp -v stackblitz.html ${{ github.workspace }}/skyux/dist/preview-pages/pr-${{ github.event.number }}/stackblitz/index.html
       - name: Generate comment for PR ${{ github.event.number }}
