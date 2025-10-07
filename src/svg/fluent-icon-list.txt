@@ -222,7 +222,6 @@ street-sign
 subtract
 subtract-circle
 table
-table-sparkle
 table-freeze-column
 tablet
 tag
