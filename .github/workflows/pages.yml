@@ -89,6 +89,13 @@ jobs:
             cp -v ../skyux-icons/dist/assets/svg/skyux-icons.svg $(dirname $idx)/
           done
         working-directory: 'skyux'
+      - name: Create Stackblitz link
+        run: |
+          mkdir -pv ${{ runner.temp	}}/stackblitz
+          cd ${{ runner.temp }}/stackblitz
+          node ${{ github.workspace }}/skyux-icons/scripts/create-stackblitz-link.mjs
+          mkdir -pv ${{ github.workspace }}/skyux/dist/preview-pages/pr-${{ github.event.number }}/stackblitz
+          cp -v stackblitz.html ${{ github.workspace }}/skyux/dist/preview-pages/pr-${{ github.event.number }}/stackblitz/index.html
       - name: Generate comment for PR ${{ github.event.number }}
         run: |
           npx nx g @skyux-sdk/e2e-schematics:pr-comment --pr=pr-${{ github.event.number }} \
