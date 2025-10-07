@@ -169,6 +169,8 @@ open
 options
 organization-horizontal
 paint-brush
+panel-left-contract
+panel-left-expand
 pause-circle
 payment
 payment-wireless
