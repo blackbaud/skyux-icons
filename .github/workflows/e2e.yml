@@ -1,0 +1,81 @@
+name: E2E
+on:
+  push:
+    branches:
+      - master
+      - '[0-9]+.x.x'
+  pull_request:
+    branches:
+      - master
+      - '[0-9]+.x.x'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name == 'push' && github.run_number || github.head_ref || github.ref_name || github.event.ref }}
+  cancel-in-progress: true
+
+env:
+  NX_CLOUD_DISTRIBUTED_EXECUTION: 'false'
+  CYPRESS_VERIFY_TIMEOUT: 120000
+  PERCY_BROWSER_EXECUTABLE: /usr/bin/chromium
+  PERCY_SKIP_UPDATE_CHECK: 'true'
+  PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium
+  PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
+  SB_CHROMIUM_PATH: /usr/bin/chromium
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+        with:
+          path: 'skyux-icons'
+          fetch-depth: '0'
+          token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
+      - name: Checkout skyux
+        uses: actions/checkout@v5
+        with:
+          repository: 'blackbaud/skyux'
+          ref: 'main'
+          path: 'skyux'
+          token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version-file: 'skyux/.nvmrc'
+      - name: Install dependencies
+        run: npm ci
+        working-directory: 'skyux-icons'
+      - name: Build project
+        run: npm run build
+        working-directory: 'skyux-icons'
+      - name: Install skyux
+        run: npm ci
+        working-directory: 'skyux'
+        env:
+          CYPRESS_INSTALL_BINARY: 0
+      - name: Install Cypress
+        run: |
+          set -euxo pipefail
+          npx cypress install
+          npx cypress verify
+        working-directory: 'skyux'
+      - name: Build Storybooks
+        run: npx nx build-storybook icon-storybook --no-dte
+        working-directory: 'skyux'
+        env:
+          NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
+      - name: Apply icon preview link tag
+        run: |
+          for idx in dist/storybook/*/iframe.html; do
+            echo "Adding skyux-icons.svg to $idx"
+            sed -i'' 's~</head>~<link rel="prefetch" href="./skyux-icons.svg" class="skyux-icons-preview"></head>~' $idx
+            cp -v ../skyux-icons/dist/assets/svg/skyux-icons.svg $(dirname $idx)/
+          done
+        working-directory: 'skyux'
+      - name: Run e2e tests
+        run: |
+          npx percy exec -- npx nx e2e icon-storybook-e2e -c prebuilt --no-dte --skip-nx-cache
+        working-directory: 'skyux'
+        env:
+          PERCY_TOKEN: '${{ secrets.PERCY_TOKEN }}'

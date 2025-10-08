@@ -1,73 +1,137 @@
+name: Pages
 on:
-  push:
-    branches:
-      - master
   pull_request:
     branches:
       - master
+      - '[0-9]+.x.x'
+
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: pages
   cancel-in-progress: false
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: '.nvmrc'
-          cache: 'npm'
-      - name: Install dependencies
-        run: npm ci
-      - name: Build project
-        run: npm run build
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        if: github.event_name == 'pull_request'
-        with:
-          name: pr-${{ github.event.pull_request.number }}
-          path: './dist'
-          retention-days: 30
-          if-no-files-found: error
+env:
+  NX_CLOUD_DISTRIBUTED_EXECUTION: 'false'
 
-  deploy:
+jobs:
+  pages:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: [build]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
-          ref: master
+          path: 'skyux-icons'
+          token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
+      - name: Checkout skyux
+        uses: actions/checkout@v5
+        with:
+          repository: 'blackbaud/skyux'
+          ref: 'main'
+          path: 'skyux'
+          token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version-file: '.nvmrc'
-          cache: 'npm'
+          node-version-file: 'skyux/.nvmrc'
       - name: Install dependencies
         run: npm ci
+        working-directory: 'skyux-icons'
       - name: Build project
         run: npm run build
-      - name: Download artifact
-        uses: actions/download-artifact@v4
+        working-directory: 'skyux-icons'
+      - name: Install skyux
+        run: npm ci
+        working-directory: 'skyux'
+        env:
+          CYPRESS_INSTALL_BINARY: 0
+      - name: Build Storybooks
+        run: npx nx run-many -t build-storybook --projects=tag:icons-preview --no-dte
+        working-directory: 'skyux'
+        env:
+          NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
+      - name: Build playground
+        run: npx nx run playground:build --no-dte && mkdir -pv dist/preview-pages
+        working-directory: 'skyux'
+        env:
+          NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
+      - name: Retrieve other preview sites
+        uses: actions/download-artifact@v5
         with:
           github-token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
-          path: './dist'
+          path: skyux/dist/preview-pages/
           pattern: 'pr-*'
           repository: '${{ github.repository }}'
+      - name: Create preview site for PR ${{ github.event.number }}
+        run: |
+          rm -rfv dist/preview-pages/pr-${{ github.event.number }}
+          mkdir -pv dist/preview-pages/pr-${{ github.event.number }}/storybooks
+          mv -v dist/apps/* dist/preview-pages/pr-${{ github.event.number }}/
+          mv -v dist/storybook/* dist/preview-pages/pr-${{ github.event.number }}/storybooks/
+          for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html; do
+            APP_BASE_HREF="skyux-icons/pr-${{ github.event.number }}/$(basename $(dirname $idx))"
+            echo "Setting base href to ${APP_BASE_HREF} for $idx"
+            sed -i'' 's~<base href="/"~<base href="/'${APP_BASE_HREF}'/"~g' $idx
+          done
+        working-directory: 'skyux'
+      - name: Apply icon preview link tag
+        run: |
+          for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html dist/preview-pages/pr-${{ github.event.number }}/storybooks/*/iframe.html; do
+            echo "Adding skyux-icons.svg to $idx"
+            sed -i'' 's~</head>~<link rel="prefetch" href="./skyux-icons.svg" class="skyux-icons-preview"></head>~' $idx
+            cp -v ../skyux-icons/dist/assets/svg/skyux-icons.svg $(dirname $idx)/
+          done
+        working-directory: 'skyux'
+      - name: Create Stackblitz link
+        run: |
+          mkdir -pv ${{ runner.temp	}}/stackblitz
+          cd ${{ runner.temp }}/stackblitz
+          node ${{ github.workspace }}/skyux-icons/scripts/create-stackblitz-link.mjs --url="https://${{ github.repository_owner }}.github.io/skyux-icons/pr-${{ github.event.number }}/playground"
+          mkdir -pv ${{ github.workspace }}/skyux/dist/preview-pages/pr-${{ github.event.number }}/stackblitz
+          cp -v stackblitz.html ${{ github.workspace }}/skyux/dist/preview-pages/pr-${{ github.event.number }}/stackblitz/index.html
+      - name: Generate comment for PR ${{ github.event.number }}
+        run: |
+          npx nx g @skyux-sdk/e2e-schematics:pr-comment --pr=pr-${{ github.event.number }} \
+            --url="https://${{ github.repository_owner }}.github.io/skyux-icons" \
+            --repoUrl="https://github.com/${{ github.repository }}" \
+            --apps="$(ls dist/preview-pages/pr-${{ github.event.number }} | fgrep -v storybooks | tr '\n' ,)" \
+            --storybooks="$(ls dist/preview-pages/pr-${{ github.event.number }}/storybooks | tr '\n' ,)" \
+            --skipCompositeStorybook
+          mv -v dist/pr_index.html dist/preview-pages/pr-${{ github.event.number }}/index.html
+        working-directory: 'skyux'
+      - name: Save PR ${{ github.event.number }} Preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-${{ github.event.number }}
+          path: skyux/dist/preview-pages/pr-${{ github.event.number }}
+          overwrite: 'true'
+          retention-days: 30
+          if-no-files-found: error
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: skyux/dist/preview-pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Comment
+        run: |
+          COMMENT_ID=$(gh api -H "Accept: application/vnd.github-commitcomment.raw+json" -H "X-GitHub-Api-Version: 2022-11-28" repos/${{ github.repository }}/issues/${{ github.event.number }}/comments -q 'map(select(.body | contains("Component Storybooks:"))) | .[0].id // empty')
+          if [ -n "$COMMENT_ID" ]; then
+            echo "Updating existing comment $COMMENT_ID"
+            gh api --method PATCH -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" repos/${{ github.repository }}/issues/comments/${COMMENT_ID} -F body=@skyux/dist/pr_comment.md
+          else
+            echo "Creating a new comment"
+            gh pr comment ${{ github.event.number }} -R ${{ github.repository }} -F skyux/dist/pr_comment.md
+          fi
+        env:
+          GH_TOKEN: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
