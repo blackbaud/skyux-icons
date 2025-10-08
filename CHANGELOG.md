@@ -1,5 +1,12 @@
 # Changelog
 
+## [10.2.0](https://github.com/blackbaud/skyux-icons/compare/10.1.0...10.2.0) (2025-10-07)
+
+
+### Features
+
+* add panel icons for omnibar ([#232](https://github.com/blackbaud/skyux-icons/issues/232)) ([0eb6dbd](https://github.com/blackbaud/skyux-icons/commit/0eb6dbd9263da992f42d72e0fefa6e022f3c12bd))
+
 ## [10.1.0](https://github.com/blackbaud/skyux-icons/compare/10.0.0...10.1.0) (2025-10-06)
 
 
