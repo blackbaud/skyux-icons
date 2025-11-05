@@ -7,6 +7,7 @@
 ### Features
 
 * add building heart ([#235](https://github.com/blackbaud/skyux-icons/issues/235)) ([753380c](https://github.com/blackbaud/skyux-icons/commit/753380ce2669be7181c1d230f5fee7b86c19fac5))
+* add tiktok ([#234](https://github.com/blackbaud/skyux-icons/issues/234)) ([a0c2fe9](https://github.com/blackbaud/skyux-icons/commit/a0c2fe959edac8d4f48317b786e9e77cbc02051a))
 
 
 
