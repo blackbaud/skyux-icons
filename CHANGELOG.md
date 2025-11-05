@@ -1,5 +1,15 @@
 # Changelog
 
+
+# [10.3.0](https://github.com/blackbaud/skyux-icons/compare/10.2.0...10.3.0) (2025-11-05)
+
+
+### Features
+
+* add building heart ([#235](https://github.com/blackbaud/skyux-icons/issues/235)) ([753380c](https://github.com/blackbaud/skyux-icons/commit/753380ce2669be7181c1d230f5fee7b86c19fac5))
+
+
+
 ## [10.2.0](https://github.com/blackbaud/skyux-icons/compare/10.1.0...10.2.0) (2025-10-07)
 
 
