@@ -1,7 +1,7 @@
 # Changelog
 
 
-# [10.3.0](https://github.com/blackbaud/skyux-icons/compare/10.2.0...10.3.0) (2025-12-13)
+# [10.3.0](https://github.com/blackbaud/skyux-icons/compare/10.2.0...10.3.0) (2025-12-14)
 
 
 ### Features
