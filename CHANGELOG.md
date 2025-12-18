@@ -1,5 +1,17 @@
 # Changelog
 
+
+# [10.3.0](https://github.com/blackbaud/skyux-icons/compare/10.2.0...10.3.0) (2025-12-18)
+
+
+### Features
+
+* add building heart ([#235](https://github.com/blackbaud/skyux-icons/issues/235)) ([753380c](https://github.com/blackbaud/skyux-icons/commit/753380ce2669be7181c1d230f5fee7b86c19fac5))
+* add chevron-up-down ([#237](https://github.com/blackbaud/skyux-icons/issues/237)) ([aa43780](https://github.com/blackbaud/skyux-icons/commit/aa43780fbbe3455be20cd8fb57a7ea6caa236c6b))
+* add tiktok ([#234](https://github.com/blackbaud/skyux-icons/issues/234)) ([a0c2fe9](https://github.com/blackbaud/skyux-icons/commit/a0c2fe959edac8d4f48317b786e9e77cbc02051a))
+
+
+
 ## [10.2.0](https://github.com/blackbaud/skyux-icons/compare/10.1.0...10.2.0) (2025-10-07)
 
 
