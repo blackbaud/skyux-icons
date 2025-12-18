@@ -63,6 +63,7 @@ chevron-double-down
 chevron-double-left
 chevron-double-right
 chevron-double-up
+chevron-up-down
 circle
 circle-half-fill
 clipboard-arrow-right
