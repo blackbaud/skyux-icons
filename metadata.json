@@ -113,6 +113,10 @@
       "usage": ["Collapse all"]
     },
     {
+      "iconName": "chevron-up-down",
+      "usage": ["Expand options"]
+    },
+    {
       "iconName": "arrow-up",
       "usage": ["Arrow up"]
     },
