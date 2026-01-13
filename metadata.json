@@ -97,12 +97,12 @@
       "usage": ["Previous"]
     },
     {
-      "iconName": "chevron-double-left",
-      "usage": ["Collapse navigation", "Collapse field"]
+      "iconName": "chevron-double-right",
+      "usage": ["Expand all"]
     },
     {
-      "iconName": "chevron-double-right",
-      "usage": ["Expand navigation"]
+      "iconName": "chevron-double-left",
+      "usage": ["Collapse all", "Collapse field"]
     },
     {
       "iconName": "chevron-double-down",
@@ -111,6 +111,14 @@
     {
       "iconName": "chevron-double-up",
       "usage": ["Collapse all"]
+    },
+    {
+      "iconName": "panel-left-expand",
+      "usage": ["Expand left panel"]
+    },
+    {
+      "iconName": "panel-left-contract",
+      "usage": ["Collapse left panel"]
     },
     {
       "iconName": "chevron-up-down",
