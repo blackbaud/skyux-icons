@@ -1,6 +1,15 @@
 # Changelog
 
 
+# [10.4.0](https://github.com/blackbaud/skyux-icons/compare/10.3.0...10.4.0) (2026-01-14)
+
+
+### Features
+
+* add panel expand collapse to manifest ([#238](https://github.com/blackbaud/skyux-icons/issues/238)) ([efa6095](https://github.com/blackbaud/skyux-icons/commit/efa6095125cb4b09d7759dbfc027f3475b5da7cd))
+
+
+
 # [10.3.0](https://github.com/blackbaud/skyux-icons/compare/10.2.0...10.3.0) (2025-12-18)
 
 
