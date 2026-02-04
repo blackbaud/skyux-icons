@@ -38,6 +38,7 @@ attach
 bluetooth
 book
 book-contacts
+book-star
 bookmark
 bot
 branch-fork
