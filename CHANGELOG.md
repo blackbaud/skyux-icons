@@ -1,6 +1,15 @@
 # Changelog
 
 
+# [10.5.0](https://github.com/blackbaud/skyux-icons/compare/10.4.0...10.5.0) (2026-02-04)
+
+
+### Features
+
+* add book star ([#240](https://github.com/blackbaud/skyux-icons/issues/240)) ([e0e84f3](https://github.com/blackbaud/skyux-icons/commit/e0e84f3b80208b284246b0c97518b3917669ef6c))
+
+
+
 # [10.4.0](https://github.com/blackbaud/skyux-icons/compare/10.3.0...10.4.0) (2026-01-14)
 
 
