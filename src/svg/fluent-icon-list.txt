@@ -202,6 +202,7 @@ question-circle
 re-order-dots-vertical
 receipt
 receipt-money
+rectangle-landscape
 recycle
 ribbon
 road
@@ -220,6 +221,7 @@ shield-keyhole
 speaker-mute
 spinner-ios
 square
+stack
 star
 stop
 street-sign
