@@ -1,6 +1,15 @@
 # Changelog
 
 
+# [10.6.0](https://github.com/blackbaud/skyux-icons/compare/10.5.0...10.6.0) (2026-02-11)
+
+
+### Features
+
+* add rectangle landscape and stack ([#242](https://github.com/blackbaud/skyux-icons/issues/242)) ([3795a65](https://github.com/blackbaud/skyux-icons/commit/3795a65d79cbcf275a73d40ac15984bee1838fad))
+
+
+
 # [10.5.0](https://github.com/blackbaud/skyux-icons/compare/10.4.0...10.5.0) (2026-02-04)
 
 
