@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [10.7.0](https://github.com/blackbaud/skyux-icons/compare/10.6.0...10.7.0) (2026-02-24)
+
+
+### Features
+
+* add table multiple and column single ([#251](https://github.com/blackbaud/skyux-icons/issues/251)) ([1b13d35](https://github.com/blackbaud/skyux-icons/commit/1b13d35f5160de1a25f00dba37e9a3896b4dc924))
+
 ## [11.0.0](https://github.com/blackbaud/skyux-icons/compare/10.6.0...11.0.0) (2026-02-20)
 
 
