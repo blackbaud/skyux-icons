@@ -229,6 +229,7 @@ subtract
 subtract-circle
 table
 table-freeze-column
+table-multiple
 tablet
 tag
 tag-multiple
