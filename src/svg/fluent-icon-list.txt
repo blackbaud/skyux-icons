@@ -75,6 +75,7 @@ clock
 cloud
 code
 color-line
+column-single
 compass-northwest
 connected
 contact-card
@@ -229,6 +230,7 @@ subtract
 subtract-circle
 table
 table-freeze-column
+table-multiple
 tablet
 tag
 tag-multiple
