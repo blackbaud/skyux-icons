@@ -75,6 +75,7 @@ clock
 cloud
 code
 color-line
+column-single
 compass-northwest
 connected
 contact-card
