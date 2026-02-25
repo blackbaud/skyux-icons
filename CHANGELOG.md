@@ -1,6 +1,8 @@
 # Changelog
 
 
+## [11.0.1](https://github.com/blackbaud/skyux-icons/compare/10.7.0...11.0.1) (2026-02-25)
+
 ## [10.7.0](https://github.com/blackbaud/skyux-icons/compare/10.6.0...10.7.0) (2026-02-24)
 
 
