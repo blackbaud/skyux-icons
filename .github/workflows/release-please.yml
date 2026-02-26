@@ -3,11 +3,13 @@ name: Release Please
 on:
   schedule:
     - cron: '0 5 * * *'
-  workflow_dispatch:
   push:
     branches:
       - master
       - '[0-9]+.x.x'
+  pull_request:
+    paths:
+      - '.github/workflows/release-please.yml'
 
 env:
   RELEASE_PR_PREFIX: 'chore: release'
@@ -24,7 +26,7 @@ jobs:
         with:
           fetch-depth: 0
           token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           cache: 'npm'
           node-version-file: '.nvmrc'
@@ -33,7 +35,12 @@ jobs:
       - name: Next release
         if: ${{ github.event_name != 'push' || ! startsWith(github.event.head_commit.message, env.RELEASE_PR_PREFIX) }}
         # Create or update a release branch and its pull request.
-        run: npx skyux-dev release ${{ github.event_name == 'workflow_dispatch' && ! endsWith(github.event.ref, 'main') && ! endsWith(github.event.ref, '.x.x') && '--dry-run=true' || '' }}
+        id: next-release
+        run: |
+          export DRY_RUN=${{ github.event_name == 'pull_request' && 'true' || 'false' }}
+          echo "dry_run=$DRY_RUN" >> $GITHUB_OUTPUT
+          echo npx skyux-dev release --dry-run=$DRY_RUN
+          npx skyux-dev release --dry-run=$DRY_RUN
         env:
           GH_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
       - uses: actions/github-script@v8
@@ -56,13 +63,33 @@ jobs:
             const releaseExists = await github.rest.repos.getReleaseByTag({ ...context.repo, tag: nextVersion }).then(() => true).catch(() => false);
             if (!releaseExists) {
               const releaseNotes = (await exec.getExecOutput('npx', ['skyux-dev', 'release-notes', `--releaseName=${nextVersion}`])).stdout;
-              await github.rest.repos.createRelease({ ...context.repo, name: `v${nextVersion}`, tag_name: nextVersion, body: releaseNotes, prerelease: nextVersion.includes('-') });
+              await github.rest.repos.createRelease({
+                ...context.repo,
+                name: `v${nextVersion}`,
+                tag_name: nextVersion,
+                target_commitish: context.ref,
+                body: releaseNotes,
+                prerelease: nextVersion.includes('-')
+              });
             }
       - name: Notify Slack
         if: ${{ steps.release.outputs.release_created }}
         uses: rtCamp/action-slack-notify@07cbdbfd6c6190970778d8f98f11d073b2932aae # v2.3.3
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_MESSAGE: Successfully published SKY UX Icons ${{ steps.release.outputs.tag_name }} to NPM. http://github.com/${{ github.repository }}/blob/${{ github.ref_name }}/CHANGELOG.md
+          SLACK_MESSAGE: "Successfully published SKY UX Icons ${{ steps.release.outputs.tag_name }} to NPM${{ steps.next-release.outputs.dry_run == 'true' && ' (DRY RUN)' || '' }}. https://github.com/${{ github.repository }}/blob/${{ github.ref_name }}/CHANGELOG.md"
           SLACK_ICON: https://github.com/blackbaud.png?size=48
           SLACK_USERNAME: SKY UX
+          # dry run to #cor-skyux-notifications, releases to #1bb-skyux-apps-alerts
+          SLACK_CHANNEL: ${{ steps.next-release.outputs.dry_run == 'true' && 'C01GY7ZP4HM' || 'C7CJ0QS75' }}
+      - name: Notify Slack (failure)
+        if: ${{ failure() }}
+        uses: rtCamp/action-slack-notify@07cbdbfd6c6190970778d8f98f11d073b2932aae # v2.3.3
+        env:
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_MESSAGE: "Failed when preparing SKY UX Icons!${{ steps.next-release.outputs.dry_run == 'true' && ' (DRY RUN)' || '' }}"
+          SLACK_ICON: https://github.com/blackbaud.png?size=48
+          SLACK_USERNAME: SKY UX
+          #cor-skyux-notifications
+          SLACK_CHANNEL: C01GY7ZP4HM
