@@ -274,8 +274,8 @@ describe('create-stackblitz-link functionality', () => {
         '-rf',
         '.angular',
         'node_modules',
-        expect.stringContaining('public/favicon.ico'),
-        expect.stringContaining('src/app'),
+        expect.stringMatching(/public[/\\]favicon\.ico/),
+        expect.stringMatching(/src[/\\]app/),
       ]),
       expect.any(Object),
     );
@@ -289,20 +289,20 @@ describe('create-stackblitz-link functionality', () => {
       .mock.calls.find(([cmd, args]) => cmd === 'cp' && args[0] === '-R');
 
     expect(cpCall).toBeDefined();
-    expect(cpCall[1][1]).toContain('stackblitz-app/app');
-    expect(cpCall[1][2]).toContain('src/app');
+    expect(cpCall[1][1]).toMatch(/stackblitz-app[/\\]app/);
+    expect(cpCall[1][2]).toMatch(/src[/\\]app/);
   });
 
   it('should create index.html with playground URL', () => {
     createStackblitzLink();
 
     expect(fs.readFileSync).toHaveBeenCalledWith(
-      expect.stringContaining('stackblitz-app/index.html'),
+      expect.stringMatching(/stackblitz-app[/\\]index\.html/),
       'utf-8',
     );
 
     expect(fs.writeFileSync).toHaveBeenCalledWith(
-      expect.stringContaining('src/index.html'),
+      expect.stringMatching(/src[/\\]index\.html/),
       expect.stringContaining(mockPlaygroundUrl),
     );
 
@@ -321,7 +321,7 @@ describe('create-stackblitz-link functionality', () => {
     );
 
     expect(fs.readFileSync).toHaveBeenCalledWith(
-      expect.stringContaining('stackblitz-app/stackblitz.html'),
+      expect.stringMatching(/stackblitz-app[/\\]stackblitz\.html/),
       'utf-8',
     );
 
