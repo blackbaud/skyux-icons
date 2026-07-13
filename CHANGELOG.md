@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [11.2.0](https://github.com/blackbaud/skyux-icons/compare/11.1.0...11.2.0) (2026-07-13)
+
+
+### Features
+
+* update fluent icons ([#266](https://github.com/blackbaud/skyux-icons/issues/266)) ([87a199e](https://github.com/blackbaud/skyux-icons/commit/87a199e6205ea092322a2648e137379be1761db7))
+
 ## [11.1.0](https://github.com/blackbaud/skyux-icons/compare/11.0.0...11.1.0) (2026-05-01)
 
 
