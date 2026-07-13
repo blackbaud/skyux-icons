@@ -84,7 +84,7 @@
   "devDependencies": {
     "@eslint/compat": "1.4.0",
     "@eslint/js": "9.36.0",
-    "@fluentui/svg-icons": "1.1.319",
+    "@fluentui/svg-icons": "1.1.333",
     "@ryansonshine/commitizen": "4.2.8",
     "@ryansonshine/cz-conventional-changelog": "3.3.4",
     "@skyux/dev-infra-private": "github:blackbaud/skyux-dev-infra-private-builds#12.0.0-alpha.26",
