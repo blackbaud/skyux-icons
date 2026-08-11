@@ -78,7 +78,11 @@ jobs:
           for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html; do
             APP_BASE_HREF="skyux-icons/pr-${{ github.event.number }}/$(basename $(dirname $idx))"
             echo "Setting base href to ${APP_BASE_HREF} for $idx"
-            sed -i'' 's~<base href="/"~<base href="/'${APP_BASE_HREF}'/"~g' $idx
+            if [[ -f $idx ]]; then
+              sed -i'' 's~<base href="/"~<base href="/'${APP_BASE_HREF}'/"~g' $idx
+            else
+              echo "File $idx does not exist"
+            fi
           done
         working-directory: 'skyux'
       - name: Apply icon preview link tag
