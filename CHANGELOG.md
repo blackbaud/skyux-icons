@@ -1,7 +1,12 @@
 # Changelog
 
 
-## [10.7.1](https://github.com/blackbaud/skyux-icons/compare/10.7.0...10.7.1) (2026-02-26)
+## [10.8.0](https://github.com/blackbaud/skyux-icons/compare/10.7.0...10.8.0) (2026-08-11)
+
+
+### Features
+
+* add megaphone-loud ([#270](https://github.com/blackbaud/skyux-icons/issues/270)) ([6a8e550](https://github.com/blackbaud/skyux-icons/commit/6a8e550aae96ada9a7de4541281274f442d33dc0)), closes [AB#4083623](https://dev.azure.com/blackbaud/Products/_workitems/edit/4083623)
 
 ## [10.7.0](https://github.com/blackbaud/skyux-icons/compare/10.6.0...10.7.0) (2026-02-24)
 
