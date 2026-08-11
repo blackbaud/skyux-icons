@@ -75,11 +75,16 @@ jobs:
           mkdir -pv dist/preview-pages/pr-${{ github.event.number }}/storybooks
           mv -v dist/apps/* dist/preview-pages/pr-${{ github.event.number }}/
           mv -v dist/storybook/* dist/preview-pages/pr-${{ github.event.number }}/storybooks/
+          shopt -s nullglob
+          IFS=$'\n\t'
+          echo "Files in dist/preview-pages/pr-${{ github.event.number }}/*/index.html:"
+          ls -l dist/preview-pages/pr-${{ github.event.number }}/*/index.html
+          echo ''
           for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html; do
-            APP_BASE_HREF="skyux-icons/pr-${{ github.event.number }}/$(basename $(dirname $idx))"
+            APP_BASE_HREF="skyux-icons/pr-${{ github.event.number }}/$(basename $(dirname "$idx"))"
             echo "Setting base href to ${APP_BASE_HREF} for $idx"
-            if [[ -f $idx ]]; then
-              sed -i'' 's~<base href="/"~<base href="/'${APP_BASE_HREF}'/"~g' $idx
+            if [[ -f "$idx" ]]; then
+              sed -i'' 's~<base href="/"~<base href="/'${APP_BASE_HREF}'/"~g' "$idx"
             else
               echo "File $idx does not exist"
             fi
@@ -87,10 +92,16 @@ jobs:
         working-directory: 'skyux'
       - name: Apply icon preview link tag
         run: |
+          shopt -s nullglob
+          IFS=$'\n\t'
           for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html dist/preview-pages/pr-${{ github.event.number }}/storybooks/*/iframe.html; do
             echo "Adding skyux-icons.svg to $idx"
-            sed -i'' 's~</head>~<link rel="prefetch" href="./skyux-icons.svg" class="skyux-icons-preview"></head>~' $idx
-            cp -v ../skyux-icons/dist/assets/svg/skyux-icons.svg $(dirname $idx)/
+            if [[ -f "$idx" ]]; then
+              sed -i'' 's~</head>~<link rel="prefetch" href="./skyux-icons.svg" class="skyux-icons-preview"></head>~' "$idx"
+              cp -v ../skyux-icons/dist/assets/svg/skyux-icons.svg "$(dirname "$idx")/"
+            else
+              echo "File $idx does not exist"
+            fi
           done
         working-directory: 'skyux'
       - name: Create Stackblitz link
