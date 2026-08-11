@@ -158,6 +158,7 @@ mail
 mail-inbox
 map
 megaphone
+megaphone-loud
 mention
 mic
 money
