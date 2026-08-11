@@ -77,8 +77,8 @@ jobs:
           mv -v dist/storybook/* dist/preview-pages/pr-${{ github.event.number }}/storybooks/
           shopt -s nullglob
           IFS=$'\n\t'
-          echo "Files in dist/preview-pages/pr-${{ github.event.number }}/*/index.html:"
-          ls -l dist/preview-pages/pr-${{ github.event.number }}/*/index.html
+          echo "Files in dist/preview-pages/pr-${{ github.event.number }}/:"
+          find dist/preview-pages/pr-${{ github.event.number }}/ -type f | sort
           echo ''
           for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html; do
             APP_BASE_HREF="skyux-icons/pr-${{ github.event.number }}/$(basename $(dirname "$idx"))"
