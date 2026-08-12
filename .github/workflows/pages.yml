@@ -73,42 +73,72 @@ jobs:
         run: |
           rm -rfv dist/preview-pages/pr-${{ github.event.number }}
           mkdir -pv dist/preview-pages/pr-${{ github.event.number }}/storybooks
-          mv -v dist/apps/* dist/preview-pages/pr-${{ github.event.number }}/
-          mv -v dist/storybook/* dist/preview-pages/pr-${{ github.event.number }}/storybooks/
-          for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html; do
-            APP_BASE_HREF="skyux-icons/pr-${{ github.event.number }}/$(basename $(dirname $idx))"
-            echo "Setting base href to ${APP_BASE_HREF} for $idx"
-            if [[ -f $idx ]]; then
-              sed -i'' 's~<base href="/"~<base href="/'${APP_BASE_HREF}'/"~g' $idx
-            else
-              echo "File $idx does not exist"
+          shopt -s nullglob
+          for app_dir in dist/apps/*; do
+            [[ -d "$app_dir" ]] || continue
+            app="$(basename "$app_dir")"
+            src="$app_dir"
+            if [[ -d "$app_dir/browser" ]]; then
+              src="$app_dir/browser"
             fi
+            mv -v "$src" "dist/preview-pages/pr-${{ github.event.number }}/$app"
+          done
+          for storybook_dir in dist/storybook/*; do
+            [[ -e "$storybook_dir" ]] || continue
+            mv -v "$storybook_dir" dist/preview-pages/pr-${{ github.event.number }}/storybooks/
+          done
+          echo '' && echo ''
+          echo "Files:"
+          find dist/preview-pages/pr-${{ github.event.number }} -type f
+          echo '' && echo ''
+          for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html; do
+            [[ -f "$idx" ]] || continue
+            APP_BASE_HREF="skyux-icons/pr-${{ github.event.number }}/$(basename "$(dirname "$idx")")"
+            echo "Setting base href to ${APP_BASE_HREF} for $idx"
+            sed -i'' 's~<base href="/"~<base href="/'${APP_BASE_HREF}'/"~g' "$idx"
           done
         working-directory: 'skyux'
       - name: Apply icon preview link tag
         run: |
+          shopt -s nullglob
           for idx in dist/preview-pages/pr-${{ github.event.number }}/*/index.html dist/preview-pages/pr-${{ github.event.number }}/storybooks/*/iframe.html; do
             echo "Adding skyux-icons.svg to $idx"
-            sed -i'' 's~</head>~<link rel="prefetch" href="./skyux-icons.svg" class="skyux-icons-preview"></head>~' $idx
-            cp -v ../skyux-icons/dist/assets/svg/skyux-icons.svg $(dirname $idx)/
+            [[ -f "$idx" ]] || continue
+            sed -i'' 's~</head>~<link rel="prefetch" href="./skyux-icons.svg" class="skyux-icons-preview"></head>~' "$idx"
+            cp -v ../skyux-icons/dist/assets/svg/skyux-icons.svg "$(dirname "$idx")/"
           done
         working-directory: 'skyux'
       - name: Create Stackblitz link
         run: |
-          mkdir -pv ${{ runner.temp	}}/stackblitz
-          cd ${{ runner.temp }}/stackblitz
-          node ${{ github.workspace }}/skyux-icons/scripts/create-stackblitz-link.mjs --url="https://${{ github.repository_owner }}.github.io/skyux-icons/pr-${{ github.event.number }}/playground"
-          mkdir -pv ${{ github.workspace }}/skyux/dist/preview-pages/pr-${{ github.event.number }}/stackblitz
-          cp -v stackblitz.html ${{ github.workspace }}/skyux/dist/preview-pages/pr-${{ github.event.number }}/stackblitz/index.html
+          mkdir -pv "${{ runner.temp }}/stackblitz"
+          cd "${{ runner.temp }}/stackblitz" || exit
+          node "${{ github.workspace }}/skyux-icons/scripts/create-stackblitz-link.mjs" --url="https://${{ github.repository_owner }}.github.io/skyux-icons/pr-${{ github.event.number }}/playground"
+          mkdir -pv "${{ github.workspace }}/skyux/dist/preview-pages/pr-${{ github.event.number }}/stackblitz"
+          cp -v stackblitz.html "${{ github.workspace }}/skyux/dist/preview-pages/pr-${{ github.event.number }}/stackblitz/index.html"
       - name: Generate comment for PR ${{ github.event.number }}
         run: |
+          preview_dir="dist/preview-pages/pr-${{ github.event.number }}"
+          apps=()
+          for app_dir in "$preview_dir"/*; do
+            [[ -d "$app_dir" ]] || continue
+            app="$(basename "$app_dir")"
+            [[ "$app" == "storybooks" ]] && continue
+            apps+=("$app")
+          done
+          storybooks=()
+          for storybook_dir in "$preview_dir"/storybooks/*; do
+            [[ -d "$storybook_dir" ]] || continue
+            storybooks+=("$(basename "$storybook_dir")")
+          done
+          apps_csv="$(IFS=,; echo "${apps[*]}")"
+          storybooks_csv="$(IFS=,; echo "${storybooks[*]}")"
           npx nx g @skyux-sdk/e2e-schematics:pr-comment --pr=pr-${{ github.event.number }} \
             --url="https://${{ github.repository_owner }}.github.io/skyux-icons" \
             --repoUrl="https://github.com/${{ github.repository }}" \
-            --apps="$(ls dist/preview-pages/pr-${{ github.event.number }} | fgrep -v storybooks | tr '\n' ,)" \
-            --storybooks="$(ls dist/preview-pages/pr-${{ github.event.number }}/storybooks | tr '\n' ,)" \
+            --apps="$apps_csv" \
+            --storybooks="$storybooks_csv" \
             --skipCompositeStorybook
-          mv -v dist/pr_index.html dist/preview-pages/pr-${{ github.event.number }}/index.html
+          mv -v dist/pr_index.html "$preview_dir/index.html"
         working-directory: 'skyux'
       - name: Save PR ${{ github.event.number }} Preview
         uses: actions/upload-artifact@v4
