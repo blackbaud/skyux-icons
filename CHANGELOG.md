@@ -1,20 +1,6 @@
 # Changelog
 
 
-## [11.3.0](https://github.com/blackbaud/skyux-icons/compare/11.2.0...11.3.0) (2026-08-11)
-
-
-### Features
-
-* add megaphone-loud ([#270](https://github.com/blackbaud/skyux-icons/issues/270)) ([#273](https://github.com/blackbaud/skyux-icons/issues/273)) ([507b54d](https://github.com/blackbaud/skyux-icons/commit/507b54d13ae7e3585adef8fd47115563787af8d1)), closes [AB#4083623](https://dev.azure.com/blackbaud/Products/_workitems/edit/4083623)
-
-## [10.8.0](https://github.com/blackbaud/skyux-icons/compare/10.7.0...11.2.0) (2026-08-11)
-
-
-### Features
-
-* add megaphone-loud ([#270](https://github.com/blackbaud/skyux-icons/issues/270)) ([6a8e550](https://github.com/blackbaud/skyux-icons/commit/6a8e550aae96ada9a7de4541281274f442d33dc0)), closes [AB#4083623](https://dev.azure.com/blackbaud/Products/_workitems/edit/4083623)
-
 ## [10.8.0](https://github.com/blackbaud/skyux-icons/compare/10.7.0...10.8.0) (2026-08-11)
 
 
@@ -22,37 +8,12 @@
 
 * add megaphone-loud ([#270](https://github.com/blackbaud/skyux-icons/issues/270)) ([6a8e550](https://github.com/blackbaud/skyux-icons/commit/6a8e550aae96ada9a7de4541281274f442d33dc0)), closes [AB#4083623](https://dev.azure.com/blackbaud/Products/_workitems/edit/4083623)
 
-## [11.2.0](https://github.com/blackbaud/skyux-icons/compare/11.1.0...11.2.0) (2026-07-13)
-
-
-### Features
-
-* update fluent icons ([#266](https://github.com/blackbaud/skyux-icons/issues/266)) ([87a199e](https://github.com/blackbaud/skyux-icons/commit/87a199e6205ea092322a2648e137379be1761db7))
-
-## [11.1.0](https://github.com/blackbaud/skyux-icons/compare/11.0.0...11.1.0) (2026-05-01)
-
-
-### Features
-
-* add table multiple and column single ([#251](https://github.com/blackbaud/skyux-icons/issues/251)) ([#252](https://github.com/blackbaud/skyux-icons/issues/252)) ([df5c4a5](https://github.com/blackbaud/skyux-icons/commit/df5c4a5ccd0d4b39dc37680d6782fa143faf41e7))
-
 ## [10.7.0](https://github.com/blackbaud/skyux-icons/compare/10.6.0...10.7.0) (2026-02-24)
 
 
 ### Features
 
 * add table multiple and column single ([#251](https://github.com/blackbaud/skyux-icons/issues/251)) ([1b13d35](https://github.com/blackbaud/skyux-icons/commit/1b13d35f5160de1a25f00dba37e9a3896b4dc924))
-
-## [11.0.0](https://github.com/blackbaud/skyux-icons/compare/10.6.0...11.0.0) (2026-02-20)
-
-
-### ⚠ BREAKING CHANGES
-
-* update fluent icons (#244)
-
-### Features
-
-* update fluent icons ([#244](https://github.com/blackbaud/skyux-icons/issues/244)) ([80d17e5](https://github.com/blackbaud/skyux-icons/commit/80d17e5c33949e1ce4d05afaaa4b16413f87b1c6))
 
 # [10.6.0](https://github.com/blackbaud/skyux-icons/compare/10.5.0...10.6.0) (2026-02-11)
 
