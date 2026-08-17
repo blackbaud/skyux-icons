@@ -1,12 +1,12 @@
 # Changelog
 
 
-## [11.4.0](https://github.com/blackbaud/skyux-icons/compare/11.3.0...11.4.0) (2026-08-17)
+## [10.9.0](https://github.com/blackbaud/skyux-icons/compare/10.8.0...10.9.0) (2026-08-17)
 
 
 ### Features
 
-* publish assets.json file with SVG URL ([#277](https://github.com/blackbaud/skyux-icons/issues/277)) ([#278](https://github.com/blackbaud/skyux-icons/issues/278)) ([cfd0f24](https://github.com/blackbaud/skyux-icons/commit/cfd0f2470b4656459b4570a723ba3f13150526c8))
+* publish assets.json file with SVG URL ([#277](https://github.com/blackbaud/skyux-icons/issues/277)) ([59bd58c](https://github.com/blackbaud/skyux-icons/commit/59bd58c0556a56d6061a6d0477468b8829d535e7))
 
 ## [11.3.0](https://github.com/blackbaud/skyux-icons/compare/11.2.0...11.3.0) (2026-08-11)
 
