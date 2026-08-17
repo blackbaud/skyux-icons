@@ -19,7 +19,7 @@ const distAssetsPath = path.join(distPath, 'assets');
 async function createManifest(fluentIcons, customIcons) {
   const metadataPath = path.join(projectPath, 'metadata.json');
 
-  const metadata = await fs.readJSON(metadataPath);
+  const metadata = await fs.readJson(metadataPath);
 
   const manifest = {
     standardIcons: metadata.icons,
@@ -45,11 +45,29 @@ async function createManifest(fluentIcons, customIcons) {
 
   const manifestDistPath = path.join(distAssetsPath, 'manifest.json');
 
-  await fs.writeJSON(manifestDistPath, manifest, {
+  await fs.writeJson(manifestDistPath, manifest, {
     spaces: 2,
   });
 
   return manifest;
+}
+
+async function createAssetsManifest() {
+  const packageJson = await fs.readJson('package.json');
+
+  const svgUrl = `https://sky.blackbaudcdn.net/static/skyux-icons/${packageJson.version}/assets/svg/skyux-icons.svg`;
+
+  const assets = {
+    svgUrl,
+  };
+
+  const assetsDistPath = path.join(distAssetsPath, 'assets.json');
+
+  await fs.writeJson(assetsDistPath, assets, {
+    spaces: 2,
+  });
+
+  return assets;
 }
 
 async function compileTypeScriptModule() {
@@ -75,6 +93,7 @@ async function setVersion() {
     const customIcons = await getCustomList();
     await generateSprite(fluentIcons);
     const manifest = await createManifest(fluentIcons, customIcons);
+    await createAssetsManifest();
     await compileTypeScriptModule(manifest);
     await setVersion();
   } catch (err) {
