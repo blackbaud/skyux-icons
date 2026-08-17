@@ -82,7 +82,7 @@ describe('prepare-package functionality', () => {
       versionFileContent = 'class Version { constructor(version) { this.version = version || "0.0.0-PLACEHOLDER"; } }',
     } = options;
 
-    vi.mocked(fs.readJSON).mockImplementation(async (filePath) => {
+    vi.mocked(fs.readJson).mockImplementation(async (filePath) => {
       if (filePath.includes('metadata.json')) {
         return defaultMetadataResponse;
       }
@@ -107,7 +107,7 @@ describe('prepare-package functionality', () => {
     vi.resetModules();
 
     // Set up default mocks that work for most tests
-    vi.mocked(fs.writeJSON).mockResolvedValue(undefined);
+    vi.mocked(fs.writeJson).mockResolvedValue(undefined);
     vi.mocked(fs.writeFile).mockResolvedValue(undefined);
     vi.mocked(fs.ensureDir).mockResolvedValue(undefined);
 
@@ -226,9 +226,9 @@ describe('prepare-package functionality', () => {
     it('should create a manifest that includes the standard icons documented in metadata.json', async () => {
       await callPreparePackage();
 
-      // Verify that writeJSON was called with the manifest
-      const writeJSONCalls = vi.mocked(fs.writeJSON).mock.calls;
-      const manifestCall = writeJSONCalls.find((call) =>
+      // Verify that writeJson was called with the manifest
+      const writeJsonCalls = vi.mocked(fs.writeJson).mock.calls;
+      const manifestCall = writeJsonCalls.find((call) =>
         call[0].includes('manifest.json'),
       );
 
@@ -258,8 +258,8 @@ describe('prepare-package functionality', () => {
 
       await callPreparePackage();
 
-      const writeJSONCalls = vi.mocked(fs.writeJSON).mock.calls;
-      const manifestCall = writeJSONCalls.find((call) =>
+      const writeJsonCalls = vi.mocked(fs.writeJson).mock.calls;
+      const manifestCall = writeJsonCalls.find((call) =>
         call[0].includes('manifest.json'),
       );
 
@@ -285,8 +285,8 @@ describe('prepare-package functionality', () => {
     it('should publish the manifest to the dist/assets folder', async () => {
       await callPreparePackage();
 
-      const writeJSONCalls = vi.mocked(fs.writeJSON).mock.calls;
-      const manifestCall = writeJSONCalls.find((call) =>
+      const writeJsonCalls = vi.mocked(fs.writeJson).mock.calls;
+      const manifestCall = writeJsonCalls.find((call) =>
         call[0].includes('manifest.json'),
       );
 
@@ -305,8 +305,8 @@ describe('prepare-package functionality', () => {
 
       await callPreparePackage();
 
-      const writeJSONCalls = vi.mocked(fs.writeJSON).mock.calls;
-      const manifestCall = writeJSONCalls.find((call) =>
+      const writeJsonCalls = vi.mocked(fs.writeJson).mock.calls;
+      const manifestCall = writeJsonCalls.find((call) =>
         call[0].includes('manifest.json'),
       );
 
@@ -326,8 +326,8 @@ describe('prepare-package functionality', () => {
 
       await callPreparePackage();
 
-      const writeJSONCalls = vi.mocked(fs.writeJSON).mock.calls;
-      const manifestCall = writeJSONCalls.find((call) =>
+      const writeJsonCalls = vi.mocked(fs.writeJson).mock.calls;
+      const manifestCall = writeJsonCalls.find((call) =>
         call[0].includes('manifest.json'),
       );
 
@@ -346,7 +346,7 @@ describe('prepare-package functionality', () => {
         .spyOn(process, 'exit')
         .mockImplementation(() => {});
 
-      vi.mocked(fs.readJSON).mockImplementation(async (filePath) => {
+      vi.mocked(fs.readJson).mockImplementation(async (filePath) => {
         if (filePath.includes('metadata.json')) {
           return {
             icons: [
@@ -370,10 +370,32 @@ describe('prepare-package functionality', () => {
     });
   });
 
+  describe('assets manifest functionality', () => {
+    it('should publish assets.json to the dist/assets folder with the sprite CDN URL', async () => {
+      setupCustomMocks({ packageVersion: '11.3.0' });
+
+      await callPreparePackage();
+
+      const writeJsonCalls = vi.mocked(fs.writeJson).mock.calls;
+      const assetsCall = writeJsonCalls.find((call) =>
+        call[0].includes('assets.json'),
+      );
+
+      expect(assetsCall).toBeDefined();
+      expect(assetsCall[0]).toMatch(/dist[/\\]assets[/\\]assets\.json/);
+
+      const assets = assetsCall[1];
+      expect(assets).toEqual({
+        svgUrl:
+          'https://sky.blackbaudcdn.net/static/skyux-icons/11.3.0/assets/svg/skyux-icons.svg',
+      });
+    });
+  });
+
   describe('setVersion functionality', () => {
     function setupMetadataAndVersionMocks(testVersion) {
       // Only override the package.json version, not the entire fs.readFile mock
-      vi.mocked(fs.readJSON).mockImplementation(async (filePath) => {
+      vi.mocked(fs.readJson).mockImplementation(async (filePath) => {
         if (filePath.includes('metadata.json')) {
           return defaultMetadataResponse;
         }
