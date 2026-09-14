@@ -161,19 +161,36 @@ async function getCustomIconFiles() {
   return await glob.glob('src/svg/**/*.svg');
 }
 
+// Custom icons must be named {name}-{size}-{solid|line}[-dark].svg, where the
+// name contains only letters and hyphens and the optional "-dark" suffix marks
+// the dark mode version of an icon.
+const CUSTOM_ICON_PATTERN = /^([a-zA-Z-]+)-(\d+)-(solid|line)(-dark)?\.svg$/;
+
+// Splits a custom icon file name into its parts, or returns undefined when the
+// file name does not follow the required naming format.
+// Example: 'headline-chart-16-solid-dark.svg' ->
+//   { name: 'headline-chart', size: '16', variant: 'solid', isDark: true }
+function parseCustomIconFileName(fileName) {
+  const match = fileName.match(CUSTOM_ICON_PATTERN);
+
+  if (!match) {
+    return undefined;
+  }
+
+  const [, name, size, variant, darkSuffix] = match;
+
+  return { name, size, variant, isDark: !!darkSuffix };
+}
+
 async function getCustomList() {
   const iconNames = new Set();
   const iconFiles = await getCustomIconFiles();
 
   for (const filePath of iconFiles) {
-    const fileName = path.basename(filePath);
+    const parsed = parseCustomIconFileName(path.basename(filePath));
 
-    // Extract the name portion from files that follow the proper naming pattern:
-    // {name}-{digit}-{solid|line}.svg
-    // Example: 'headline-chart-16-solid.svg' -> 'headline-chart'
-    const match = fileName.match(/^([a-zA-Z-]+)-\d+-(?:solid|line)\.svg$/);
-    if (match) {
-      iconNames.add(match[1]);
+    if (parsed) {
+      iconNames.add(parsed.name);
     }
   }
 
@@ -182,20 +199,25 @@ async function getCustomList() {
 
 async function addCustomIcons(spriter, fluentIcons) {
   // Validate that all custom icons follow the required naming format:
-  // {name}-{digits}-{solid|line}.svg where name contains only letters and hyphens
+  // {name}-{digits}-{solid|line}[-dark].svg where name contains only letters
+  // and hyphens
   const iconFiles = await getCustomIconFiles();
+  const parsedIcons = new Map(); // key: file path, value: parsed file name
   const invalidFiles = [];
-  const namePattern = /^[a-zA-Z-]+-\d+-(?:solid|line)\.svg$/;
 
   for (const filePath of iconFiles) {
     const fileName = path.basename(filePath);
-    if (!namePattern.test(fileName)) {
+    const parsed = parseCustomIconFileName(fileName);
+
+    if (parsed) {
+      parsedIcons.set(filePath, parsed);
+    } else {
       invalidFiles.push(fileName);
     }
   }
 
   if (invalidFiles.length > 0) {
-    throw new Error(`The following SVG files do not match the required naming format (name-digits-{solid|line}.svg where name contains only letters and hyphens):
+    throw new Error(`The following SVG files do not match the required naming format (name-digits-{solid|line}[-dark].svg where name contains only letters and hyphens):
 ${invalidFiles.join('\n')}`);
   }
 
@@ -203,17 +225,9 @@ ${invalidFiles.join('\n')}`);
   const fluentIconSet = new Set(fluentIcons);
   const conflictingIcons = [];
 
-  for (const filePath of iconFiles) {
-    const fileName = path.basename(filePath);
-    if (namePattern.test(fileName)) {
-      // Extract the base name from the custom icon (e.g., "add-24-line.svg" -> "add")
-      const match = fileName.match(/^([a-zA-Z-]+)-\d+-(solid|line)\.svg$/);
-      if (match) {
-        const baseName = match[1];
-        if (fluentIconSet.has(baseName)) {
-          conflictingIcons.push(fileName);
-        }
-      }
+  for (const [filePath, { name }] of parsedIcons) {
+    if (fluentIconSet.has(name)) {
+      conflictingIcons.push(path.basename(filePath));
     }
   }
 
@@ -222,34 +236,55 @@ ${invalidFiles.join('\n')}`);
 ${conflictingIcons.join('\n')}`);
   }
 
-  // Validate that for every size, both solid and line variants exist
-  const iconGroups = new Map(); // key: {name}-{size}, value: Set of variants (solid/line)
+  // Validate that for every size, both solid and line variants exist, in light
+  // mode and (when the icon provides dark mode versions) in dark mode.
+  const iconGroups = new Map(); // key: {name}-{size}, value: light/dark variant sets
 
-  for (const filePath of iconFiles) {
-    const fileName = path.basename(filePath);
-    if (namePattern.test(fileName)) {
-      const match = fileName.match(/^([a-zA-Z-]+)-(\d+)-(solid|line)\.svg$/);
-      if (match) {
-        const [, name, size, variant] = match;
-        const baseKey = `${name}-${size}`;
+  for (const { name, size, variant, isDark } of parsedIcons.values()) {
+    const baseKey = `${name}-${size}`;
 
-        if (!iconGroups.has(baseKey)) {
-          iconGroups.set(baseKey, new Set());
-        }
-        iconGroups.get(baseKey).add(variant);
-      }
+    if (!iconGroups.has(baseKey)) {
+      iconGroups.set(baseKey, { light: new Set(), dark: new Set() });
     }
+
+    iconGroups.get(baseKey)[isDark ? 'dark' : 'light'].add(variant);
+  }
+
+  function getMissingVariants(variants) {
+    const missing = [];
+    if (!variants.has('solid')) missing.push('solid');
+    if (!variants.has('line')) missing.push('line');
+
+    return missing;
   }
 
   const missingVariants = [];
-  for (const [baseKey, variants] of iconGroups) {
-    if (!variants.has('solid') || !variants.has('line')) {
-      const missing = [];
-      if (!variants.has('solid')) missing.push('solid');
-      if (!variants.has('line')) missing.push('line');
-      missingVariants.push(
-        `${baseKey}: missing ${missing.join(' and ')} variant(s)`,
-      );
+  const missingDarkVariants = [];
+  const missingLightIcons = [];
+
+  for (const [baseKey, { light, dark }] of iconGroups) {
+    if (light.size === 0) {
+      // Dark mode versions are an addition to an icon, not a replacement, so
+      // the light mode versions of the icon must exist too.
+      missingLightIcons.push(baseKey);
+    } else {
+      const missing = getMissingVariants(light);
+
+      if (missing.length > 0) {
+        missingVariants.push(
+          `${baseKey}: missing ${missing.join(' and ')} variant(s)`,
+        );
+      }
+    }
+
+    if (dark.size > 0) {
+      const missing = getMissingVariants(dark);
+
+      if (missing.length > 0) {
+        missingDarkVariants.push(
+          `${baseKey}: missing dark ${missing.join(' and ')} variant(s)`,
+        );
+      }
     }
   }
 
@@ -258,19 +293,26 @@ ${conflictingIcons.join('\n')}`);
 ${missingVariants.join('\n')}`);
   }
 
+  if (missingDarkVariants.length > 0) {
+    throw new Error(`The following icons are missing required dark variants (both solid and line must exist for each size with dark variants):
+${missingDarkVariants.join('\n')}`);
+  }
+
+  if (missingLightIcons.length > 0) {
+    throw new Error(`The following icons only have dark variants (each "-dark" icon requires the same icon without the "-dark" suffix):
+${missingLightIcons.join('\n')}`);
+  }
+
   // Validate that no SVG elements have class attributes
   const filesWithClassAttributes = [];
 
-  for (const filePath of iconFiles) {
-    const fileName = path.basename(filePath);
-    if (namePattern.test(fileName)) {
-      const svgContent = await fs.readFile(filePath, 'utf-8');
+  for (const filePath of parsedIcons.keys()) {
+    const svgContent = await fs.readFile(filePath, 'utf-8');
 
-      // Check for class attributes in any HTML element
-      const classAttributePattern = /\s+class\s*=\s*["'][^"']*["']/gi;
-      if (classAttributePattern.test(svgContent)) {
-        filesWithClassAttributes.push(fileName);
-      }
+    // Check for class attributes in any HTML element
+    const classAttributePattern = /\s+class\s*=\s*["'][^"']*["']/gi;
+    if (classAttributePattern.test(svgContent)) {
+      filesWithClassAttributes.push(path.basename(filePath));
     }
   }
 

@@ -247,7 +247,7 @@ describe('custom icon validation', () => {
     ]);
 
     await expect(generateSprite(fluentIconList)).rejects.toThrow(
-      'The following SVG files do not match the required naming format (name-digits-{solid|line}.svg where name contains only letters and hyphens):\nicon2-test-24-solid.svg\nicon-24-test-24-solid.svg',
+      'The following SVG files do not match the required naming format (name-digits-{solid|line}[-dark].svg where name contains only letters and hyphens):\nicon2-test-24-solid.svg\nicon-24-test-24-solid.svg',
     );
   });
 
@@ -259,7 +259,7 @@ describe('custom icon validation', () => {
     ]);
 
     await expect(generateSprite(fluentIconList)).rejects.toThrow(
-      'The following SVG files do not match the required naming format (name-digits-{solid|line}.svg where name contains only letters and hyphens):\ntest_icon-24-solid.svg\ntest.icon-16-line.svg',
+      'The following SVG files do not match the required naming format (name-digits-{solid|line}[-dark].svg where name contains only letters and hyphens):\ntest_icon-24-solid.svg\ntest.icon-16-line.svg',
     );
   });
 
@@ -271,7 +271,7 @@ describe('custom icon validation', () => {
     ]);
 
     await expect(generateSprite(fluentIconList)).rejects.toThrow(
-      'The following SVG files do not match the required naming format (name-digits-{solid|line}.svg where name contains only letters and hyphens):\ntest-icon-24-filled.svg\nanother-test-16-outline.svg',
+      'The following SVG files do not match the required naming format (name-digits-{solid|line}[-dark].svg where name contains only letters and hyphens):\ntest-icon-24-filled.svg\nanother-test-16-outline.svg',
     );
   });
 
@@ -284,7 +284,7 @@ describe('custom icon validation', () => {
     ]);
 
     await expect(generateSprite(fluentIconList)).rejects.toThrow(
-      'The following SVG files do not match the required naming format (name-digits-{solid|line}.svg where name contains only letters and hyphens):\ntest-icon-line.svg\nanother-test-24.svg\nno-structure.svg',
+      'The following SVG files do not match the required naming format (name-digits-{solid|line}[-dark].svg where name contains only letters and hyphens):\ntest-icon-line.svg\nanother-test-24.svg\nno-structure.svg',
     );
   });
 
@@ -295,7 +295,7 @@ describe('custom icon validation', () => {
     ]);
 
     await expect(generateSprite(fluentIconList)).rejects.toThrow(
-      'The following SVG files do not match the required naming format (name-digits-{solid|line}.svg where name contains only letters and hyphens):\ntest-icon-24-solid.png',
+      'The following SVG files do not match the required naming format (name-digits-{solid|line}[-dark].svg where name contains only letters and hyphens):\ntest-icon-24-solid.png',
     );
   });
 
@@ -309,7 +309,7 @@ describe('custom icon validation', () => {
     ]);
 
     await expect(generateSprite(fluentIconList)).rejects.toThrow(
-      'The following SVG files do not match the required naming format (name-digits-{solid|line}.svg where name contains only letters and hyphens):\ntest-icon-24-solid-extra.svg\nanother-test-16-line.backup.svg\nsome-icon-20-solid.old.svg\nicon-name-24-solid-2.svg',
+      'The following SVG files do not match the required naming format (name-digits-{solid|line}[-dark].svg where name contains only letters and hyphens):\ntest-icon-24-solid-extra.svg\nanother-test-16-line.backup.svg\nsome-icon-20-solid.old.svg\nicon-name-24-solid-2.svg',
     );
   });
 
@@ -338,6 +338,56 @@ describe('custom icon validation', () => {
 
     await expect(generateSprite(fluentIconList)).rejects.toThrow(
       'The following icons are missing required variants (both solid and line must exist for each size):\nmissing-solid-16: missing solid variant(s)\nmissing-line-20: missing line variant(s)\nanother-missing-solid-32: missing solid variant(s)',
+    );
+  });
+
+  it('should accept dark variants alongside their light counterparts', async () => {
+    vi.mocked(glob.glob).mockResolvedValue([
+      'src/svg/dark-icon-24-line.svg',
+      'src/svg/dark-icon-24-solid.svg',
+      'src/svg/dark-icon-24-line-dark.svg',
+      'src/svg/dark-icon-24-solid-dark.svg',
+      'src/svg/branded/dark-branded-20-line.svg',
+      'src/svg/branded/dark-branded-20-solid.svg',
+      'src/svg/branded/dark-branded-20-line-dark.svg',
+      'src/svg/branded/dark-branded-20-solid-dark.svg',
+    ]);
+
+    // Should not throw an error
+    await expect(generateSprite(fluentIconList)).resolves.not.toThrow();
+  });
+
+  it('should reject icons missing solid/line dark variant pairs', async () => {
+    vi.mocked(glob.glob).mockResolvedValue([
+      'src/svg/complete-icon-24-line.svg',
+      'src/svg/complete-icon-24-solid.svg',
+      'src/svg/complete-icon-24-line-dark.svg',
+      'src/svg/complete-icon-24-solid-dark.svg', // This one is complete
+      'src/svg/missing-solid-16-line.svg',
+      'src/svg/missing-solid-16-solid.svg',
+      'src/svg/missing-solid-16-line-dark.svg', // Missing solid dark variant
+      'src/svg/missing-line-20-line.svg',
+      'src/svg/missing-line-20-solid.svg',
+      'src/svg/missing-line-20-solid-dark.svg', // Missing line dark variant
+    ]);
+
+    await expect(generateSprite(fluentIconList)).rejects.toThrow(
+      'The following icons are missing required dark variants (both solid and line must exist for each size with dark variants):\nmissing-solid-16: missing dark solid variant(s)\nmissing-line-20: missing dark line variant(s)',
+    );
+  });
+
+  it('should reject icons that only have dark variants', async () => {
+    vi.mocked(glob.glob).mockResolvedValue([
+      'src/svg/complete-icon-24-line.svg',
+      'src/svg/complete-icon-24-solid.svg',
+      'src/svg/complete-icon-24-line-dark.svg',
+      'src/svg/complete-icon-24-solid-dark.svg', // This one is complete
+      'src/svg/dark-only-24-line-dark.svg', // Missing light variants
+      'src/svg/dark-only-24-solid-dark.svg', // Missing light variants
+    ]);
+
+    await expect(generateSprite(fluentIconList)).rejects.toThrow(
+      'The following icons only have dark variants (each "-dark" icon requires the same icon without the "-dark" suffix):\ndark-only-24',
     );
   });
 
@@ -586,6 +636,19 @@ describe('getCustomList', () => {
       'test-branded',
       'test-multicolor',
     ]);
+  });
+
+  it('should not treat dark variants as separate icons', async () => {
+    vi.mocked(glob.glob).mockResolvedValue([
+      'src/svg/branded/test-branded-20-line.svg',
+      'src/svg/branded/test-branded-20-solid.svg',
+      'src/svg/branded/test-branded-20-line-dark.svg',
+      'src/svg/branded/test-branded-20-solid-dark.svg',
+    ]);
+
+    const customList = await getCustomList();
+
+    expect(customList).toEqual(['test-branded']);
   });
 
   it('should handle empty file list', async () => {
