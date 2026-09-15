@@ -268,22 +268,22 @@ ${conflictingIcons.join('\n')}`);
       // the light mode versions of the icon must exist too.
       missingLightIcons.push(baseKey);
     } else {
-      const missing = getMissingVariants(light);
+      const missingLight = getMissingVariants(light);
 
-      if (missing.length > 0) {
+      if (missingLight.length > 0) {
         missingVariants.push(
-          `${baseKey}: missing ${missing.join(' and ')} variant(s)`,
+          `${baseKey}: missing ${missingLight.join(' and ')} variant(s)`,
         );
       }
-    }
 
-    if (dark.size > 0) {
-      const missing = getMissingVariants(dark);
+      if (dark.size > 0) {
+        const missingDark = getMissingVariants(dark);
 
-      if (missing.length > 0) {
-        missingDarkVariants.push(
-          `${baseKey}: missing dark ${missing.join(' and ')} variant(s)`,
-        );
+        if (missingDark.length > 0) {
+          missingDarkVariants.push(
+            `${baseKey}: missing dark ${missingDark.join(' and ')} variant(s)`,
+          );
+        }
       }
     }
   }

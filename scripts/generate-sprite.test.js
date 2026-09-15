@@ -391,6 +391,20 @@ describe('custom icon validation', () => {
     );
   });
 
+  it('should report an incomplete dark-only icon as missing its light variants', async () => {
+    vi.mocked(glob.glob).mockResolvedValue([
+      'src/svg/complete-icon-24-line.svg',
+      'src/svg/complete-icon-24-solid.svg',
+      'src/svg/complete-icon-24-line-dark.svg',
+      'src/svg/complete-icon-24-solid-dark.svg', // This one is complete
+      'src/svg/dark-only-24-line-dark.svg', // Missing light variants and solid dark variant
+    ]);
+
+    await expect(generateSprite(fluentIconList)).rejects.toThrow(
+      'The following icons only have dark variants (each "-dark" icon requires the same icon without the "-dark" suffix):\ndark-only-24',
+    );
+  });
+
   it('should reject icons with class attributes', async () => {
     vi.mocked(glob.glob).mockResolvedValue([
       'src/svg/valid-icon-24-line.svg',
