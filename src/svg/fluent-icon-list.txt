@@ -84,6 +84,7 @@ crop
 cube-multiple
 cube-tree
 cut
+dark-theme
 data-bar-horizontal
 data-bar-horizontal-descending
 data-bar-vertical-ascending
