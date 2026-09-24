@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [10.11.0](https://github.com/blackbaud/skyux-icons/compare/10.10.0...10.11.0) (2026-09-24)
+
+
+### Features
+
+* add dark-theme ([#286](https://github.com/blackbaud/skyux-icons/issues/286)) ([8f87a59](https://github.com/blackbaud/skyux-icons/commit/8f87a599d1081320d904233a16c33ac352ec3a33))
+
 ## [10.10.0](https://github.com/blackbaud/skyux-icons/compare/10.9.0...10.10.0) (2026-09-15)
 
 
