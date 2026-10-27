@@ -262,6 +262,7 @@ thumb-like
 ticket-diagonal
 toolbox
 top-speed
+vehicle-ship
 vehicle-subway
 vehicle-truck-profile
 video
