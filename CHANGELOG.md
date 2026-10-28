@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [11.5.0](https://github.com/blackbaud/skyux-icons/compare/11.4.0...11.5.0) (2026-10-28)
+
+
+### Features
+
+* add dark mode versions of apple icons ([#282](https://github.com/blackbaud/skyux-icons/issues/282)) ([#284](https://github.com/blackbaud/skyux-icons/issues/284)) ([c788a68](https://github.com/blackbaud/skyux-icons/commit/c788a68481fe9b4ade7a4fda42e7e3c6533d0ebf))
+
 ## [11.4.0](https://github.com/blackbaud/skyux-icons/compare/11.3.0...11.4.0) (2026-08-17)
 
 
