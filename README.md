@@ -55,6 +55,15 @@ Branded icons support maintaining brand color customization.
    - Inline styles
 4. Release the `skyux-icons` repo following the [release process](#release-process)
 
+#### Dark mode versions
+
+Any custom icon can provide dark mode versions for use on dark backgrounds.
+
+1. Add SVG files beside the light mode files using file name format: `<name>-<size>-<variant>-dark.svg`
+2. All sizes that have dark mode versions require both a solid and line variant
+3. Dark mode versions are an addition to an icon, not a replacement, so the light mode files must exist as well
+4. Release the `skyux-icons` repo following the [release process](#release-process)
+
 ## Release Process
 
 ### Minor Version
