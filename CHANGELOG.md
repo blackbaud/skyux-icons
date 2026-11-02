@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [11.6.0](https://github.com/blackbaud/skyux-icons/compare/11.5.0...11.6.0) (2026-11-02)
+
+
+### Features
+
+* add text-quote-opening icon ([#292](https://github.com/blackbaud/skyux-icons/issues/292)) ([2542dc2](https://github.com/blackbaud/skyux-icons/commit/2542dc2c46c66809fb29b435749c1d3fcd84a774))
+
 ## [11.5.0](https://github.com/blackbaud/skyux-icons/compare/11.4.0...11.5.0) (2026-10-28)
 
 
