@@ -35,6 +35,7 @@ arrow-undo
 arrow-up
 arrow-upload
 attach
+beaker
 bluetooth
 book
 book-contacts
