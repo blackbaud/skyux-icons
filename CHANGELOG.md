@@ -36,20 +36,6 @@
 
 * add dark mode versions of apple icons ([#282](https://github.com/blackbaud/skyux-icons/issues/282)) ([e7f32ad](https://github.com/blackbaud/skyux-icons/commit/e7f32ad5dfd79262870f4dc0ee39c9a1aca01bb5))
 
-## [10.11.0](https://github.com/blackbaud/skyux-icons/compare/10.10.0...10.11.0) (2026-09-24)
-
-
-### Features
-
-* add dark-theme ([#286](https://github.com/blackbaud/skyux-icons/issues/286)) ([8f87a59](https://github.com/blackbaud/skyux-icons/commit/8f87a599d1081320d904233a16c33ac352ec3a33))
-
-## [10.10.0](https://github.com/blackbaud/skyux-icons/compare/10.9.0...10.10.0) (2026-09-15)
-
-
-### Features
-
-* add dark mode versions of apple icons ([#282](https://github.com/blackbaud/skyux-icons/issues/282)) ([e7f32ad](https://github.com/blackbaud/skyux-icons/commit/e7f32ad5dfd79262870f4dc0ee39c9a1aca01bb5))
-
 ## [11.4.0](https://github.com/blackbaud/skyux-icons/compare/11.3.0...11.4.0) (2026-08-17)
 
 
