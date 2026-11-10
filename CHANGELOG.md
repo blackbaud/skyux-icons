@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [11.7.0](https://github.com/blackbaud/skyux-icons/compare/11.6.0...11.7.0) (2026-11-10)
+
+
+### Features
+
+* add dark-theme ([#286](https://github.com/blackbaud/skyux-icons/issues/286)) ([#294](https://github.com/blackbaud/skyux-icons/issues/294)) ([d660406](https://github.com/blackbaud/skyux-icons/commit/d6604060d367acf26d5deee01fc47b0a1b10479f))
+
 ## [11.6.0](https://github.com/blackbaud/skyux-icons/compare/11.5.0...11.6.0) (2026-11-02)
 
 
@@ -14,6 +21,20 @@
 ### Features
 
 * add dark mode versions of apple icons ([#282](https://github.com/blackbaud/skyux-icons/issues/282)) ([#284](https://github.com/blackbaud/skyux-icons/issues/284)) ([c788a68](https://github.com/blackbaud/skyux-icons/commit/c788a68481fe9b4ade7a4fda42e7e3c6533d0ebf))
+
+## [10.11.0](https://github.com/blackbaud/skyux-icons/compare/10.10.0...10.11.0) (2026-09-24)
+
+
+### Features
+
+* add dark-theme ([#286](https://github.com/blackbaud/skyux-icons/issues/286)) ([8f87a59](https://github.com/blackbaud/skyux-icons/commit/8f87a599d1081320d904233a16c33ac352ec3a33))
+
+## [10.10.0](https://github.com/blackbaud/skyux-icons/compare/10.9.0...10.10.0) (2026-09-15)
+
+
+### Features
+
+* add dark mode versions of apple icons ([#282](https://github.com/blackbaud/skyux-icons/issues/282)) ([e7f32ad](https://github.com/blackbaud/skyux-icons/commit/e7f32ad5dfd79262870f4dc0ee39c9a1aca01bb5))
 
 ## [10.11.0](https://github.com/blackbaud/skyux-icons/compare/10.10.0...10.11.0) (2026-09-24)
 
