@@ -121,6 +121,14 @@
       "usage": ["Collapse left panel"]
     },
     {
+      "iconName": "arrow-maximize",
+      "usage": ["Expand to full screen"]
+    },
+    {
+      "iconName": "arrow-minimize",
+      "usage": ["Exit full screen"]
+    },
+    {
       "iconName": "chevron-up-down",
       "usage": ["Expand options"]
     },
