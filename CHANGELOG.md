@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [11.8.0](https://github.com/blackbaud/skyux-icons/compare/11.7.0...11.8.0) (2026-11-21)
+
+
+### Features
+
+* add arrow-maximize and arrow-minimize to standard icons ([#296](https://github.com/blackbaud/skyux-icons/issues/296)) ([b52a14d](https://github.com/blackbaud/skyux-icons/commit/b52a14dbf8fbeed72b70d3331e0845ff920b750c))
+
 ## [11.7.0](https://github.com/blackbaud/skyux-icons/compare/11.6.0...11.7.0) (2026-11-10)
 
 
